@@ -110,7 +110,7 @@
                 android:paddingBottom="@dimen/small_margin"
                 android:src="@drawable/ic_person_vector" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/contact_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -341,7 +341,7 @@
                 android:orientation="vertical"
                 android:visibility="gone" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/contact_notes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -356,7 +356,7 @@
                 android:textSize="@dimen/bigger_text_size"
                 android:visibility="gone" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/contact_ringtone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -371,7 +371,7 @@
                 android:textSize="@dimen/bigger_text_size"
                 android:visibility="gone" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/contact_organization_company"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -386,7 +386,7 @@
                 android:textSize="@dimen/bigger_text_size"
                 android:visibility="gone" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/contact_organization_job_position"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

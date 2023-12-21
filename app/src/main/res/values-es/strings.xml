@@ -91,6 +91,6 @@
     <string name="faq_1_text">Sí, todo lo que tienes que hacer es ir a Ajustes -&gt; Administrar campos del contacto mostrados. Ahí puedes seleccionar que campos deberían ser visibles. Algunos de ellos están desactivados por defecto, así que podrías encontrar algunos nuevos ahí.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

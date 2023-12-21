@@ -9,7 +9,7 @@
     android:paddingEnd="@dimen/normal_margin"
     android:paddingBottom="@dimen/normal_margin">
 
-    <com.simplemobiletools.commons.views.MyTextView
+    <org.fossify.commons.views.MyTextView
         android:id="@+id/contact_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         android:layout_toStartOf="@+id/contact_address_type"
         android:textSize="@dimen/bigger_text_size" />
 
-    <com.simplemobiletools.commons.views.MyTextView
+    <org.fossify.commons.views.MyTextView
         android:id="@+id/contact_address_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -90,6 +90,6 @@
     <string name="faq_1_text">Да, трябва да отворите Настройки → Управление на видимите полета. От там можете да изберете кои полета да са видими. Някои от тях са изключени по подразбиране, така че може да откриете нови полета.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

@@ -92,6 +92,6 @@
     <string name="faq_1_text">Tak. Wszystko, co musisz zrobić, to wejść w Ustawienia -&gt; Zarządzaj wyświetlanymi polami kontaktów. Możesz tam wybrać, które pola mają być wyświetlane. Niektóre z nich są nawet domyślnie wyłączone, więc możesz znaleźć tam kilka nowych.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

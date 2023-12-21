@@ -90,6 +90,6 @@
     <string name="faq_1_text">Ja, dat kan via Instellingen -&gt; Contactvelden tonen/verbergen. Dat laat kiezen welke velden zichtbaar moeten zijn. Sommige velden zijn standaard verborgen, dus misschien zijn er via deze optie meer te ontdekken.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

@@ -90,6 +90,6 @@
     <string name="faq_1_text">Evet, tek yapmanız gereken Ayarlar -&gt; Görüntülenecek kişi alanlarını yönet bölümüne gitmek. Orada hangi alanların görüntüleneceğini seçebilirsiniz. Bazıları öntanımlı olarak devre dışı bile olsa, orada bazı yenilerini bulabilirsiniz.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

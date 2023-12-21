@@ -17,7 +17,7 @@
         app:shapeAppearanceOverlay="@style/roundedImageView"
         tools:src="@drawable/ic_whatsapp_rect_vector" />
 
-    <com.simplemobiletools.commons.views.MyTextView
+    <org.fossify.commons.views.MyTextView
         android:id="@+id/item_social_label"
         android:layout_width="match_parent"
         android:layout_height="@dimen/normal_icon_size"

@@ -91,6 +91,6 @@
     <string name="faq_1_text">Sim, basta aceder a Definições -&gt; Gerir campos a mostrar. Aqui, pode escolher os campos que serão mostrados. Alguns dos campos estão ocultos e, assim, pode mostrar alguns destes.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

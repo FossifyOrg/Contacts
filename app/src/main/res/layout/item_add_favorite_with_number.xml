@@ -55,7 +55,7 @@
             android:textSize="@dimen/bigger_text_size"
             tools:text="0123 456 789" />
 
-        <com.simplemobiletools.commons.views.MyAppCompatCheckbox
+        <org.fossify.commons.views.MyAppCompatCheckbox
             android:id="@+id/contact_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
