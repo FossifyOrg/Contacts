@@ -92,6 +92,6 @@
     <string name="faq_1_text">Так, усё, што вам трэба зрабіць, гэта зайсці ў Налады - &gt; Упраўленне адлюстроўваецца палямі кантактаў. Там вы можаце выбраць, якія поля павінны быць бачныя. Некаторыя з іх нават адключаныя па змаўчанні, так што вы можаце знайсці там некалькі новых.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

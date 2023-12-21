@@ -75,7 +75,7 @@
                 android:paddingBottom="@dimen/small_margin"
                 android:src="@drawable/ic_person_vector" />
 
-            <com.simplemobiletools.commons.views.MyEditText
+            <org.fossify.commons.views.MyEditText
                 android:id="@+id/contact_prefix"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:textCursorDrawable="@null"
                 android:textSize="@dimen/bigger_text_size" />
 
-            <com.simplemobiletools.commons.views.MyAutoCompleteTextView
+            <org.fossify.commons.views.MyAutoCompleteTextView
                 android:id="@+id/contact_first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
                 android:textCursorDrawable="@null"
                 android:textSize="@dimen/bigger_text_size" />
 
-            <com.simplemobiletools.commons.views.MyAutoCompleteTextView
+            <org.fossify.commons.views.MyAutoCompleteTextView
                 android:id="@+id/contact_middle_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                 android:textCursorDrawable="@null"
                 android:textSize="@dimen/bigger_text_size" />
 
-            <com.simplemobiletools.commons.views.MyAutoCompleteTextView
+            <org.fossify.commons.views.MyAutoCompleteTextView
                 android:id="@+id/contact_surname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                 android:textCursorDrawable="@null"
                 android:textSize="@dimen/bigger_text_size" />
 
-            <com.simplemobiletools.commons.views.MyEditText
+            <org.fossify.commons.views.MyEditText
                 android:id="@+id/contact_suffix"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,7 +163,7 @@
                 android:textCursorDrawable="@null"
                 android:textSize="@dimen/bigger_text_size" />
 
-            <com.simplemobiletools.commons.views.MyEditText
+            <org.fossify.commons.views.MyEditText
                 android:id="@+id/contact_nickname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -386,7 +386,7 @@
                 android:paddingBottom="@dimen/small_margin"
                 android:src="@drawable/ic_label_vector" />
 
-            <com.simplemobiletools.commons.views.MyEditText
+            <org.fossify.commons.views.MyEditText
                 android:id="@+id/contact_notes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -412,7 +412,7 @@
                 android:paddingBottom="@dimen/medium_margin"
                 android:src="@drawable/ic_bell_vector" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/contact_ringtone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -438,7 +438,7 @@
                 android:paddingBottom="@dimen/small_margin"
                 android:src="@drawable/ic_business_vector" />
 
-            <com.simplemobiletools.commons.views.MyEditText
+            <org.fossify.commons.views.MyEditText
                 android:id="@+id/contact_organization_company"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -454,7 +454,7 @@
                 android:textCursorDrawable="@null"
                 android:textSize="@dimen/bigger_text_size" />
 
-            <com.simplemobiletools.commons.views.MyEditText
+            <org.fossify.commons.views.MyEditText
                 android:id="@+id/contact_organization_job_position"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -560,7 +560,7 @@
                 android:paddingBottom="@dimen/small_margin"
                 android:src="@drawable/ic_account_box_vector" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/contact_source"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -577,7 +577,7 @@
                 android:paddingBottom="@dimen/normal_margin"
                 android:singleLine="true"
                 android:textSize="@dimen/bigger_text_size"
-                tools:text="hello@simplemobiletools.com" />
+                tools:text="hello@fossify.org" />
 
         </RelativeLayout>
     </ScrollView>

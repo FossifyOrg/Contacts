@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.simplemobiletools.contacts.pro.fragments.FavoritesFragment
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<org.fossify.contacts.fragments.FavoritesFragment xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/favorites_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/fragment_letters_layout"/>
+    <include layout="@layout/fragment_letters_layout" />
 
-</com.simplemobiletools.contacts.pro.fragments.FavoritesFragment>
+</org.fossify.contacts.fragments.FavoritesFragment>

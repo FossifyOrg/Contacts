@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="package_name">com.simplemobiletools.contacts.pro</string>
+    <string name="package_name">org.fossify.contacts</string>
 
     <string name="im">IM</string>
     <string name="aim">AIM</string>
@@ -13,31 +13,4 @@
     <string name="jabber">Jabber</string>
     <string name="telegram">Telegram</string>
     <string name="viber">Viber</string>
-
-    <!-- Release notes -->
-    <string name="release_56">Added an initial implementation of Speed Dial, contacts can be set in the app settings</string>
-    <string name="release_47">Removed the setting for merging duplicate contacts, merge them always</string>
-    <string name="release_40">
-        Removed the Recents tab due to Googles\' latest security policies being stricter than initiall thought\n
-        Allow showing letters on the dialpad
-    </string>
-    <string name="release_39">Changed the way contacts are fetched, please reset your filters.</string>
-    <string name="release_34">Added new options for toggling 24 hour time format and showing only contacts with phone numbers</string>
-    <string name="release_32">Added a simple dialpad, dialer will come soon</string>
-    <string name="release_31">
-        Added an optional IM field\n
-        Added support for custom phone number/email/address types
-    </string>
-    <string name="release_29">Added an optional Nickname field</string>
-    <string name="release_27">
-        Allow customizing which tabs are visible\n
-        Added an optional call confirmation dialog
-    </string>
-    <string name="release_16">
-        Added name prefix/suffix and contact organizations\n
-        Added a settings item \"Manage shown contact fields\" for customizing visible contact details, with some fields disabled by default
-    </string>
-    <string name="release_11">Added Address and Notes fields</string>
-    <string name="release_10">Allow storing contacts in a local database, hidden from other apps</string>
-
 </resources>

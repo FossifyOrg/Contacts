@@ -90,6 +90,6 @@
     <string name="faq_1_text">Ja, allt du behöver göra är att gå till Inställningar -&gt; Hantera visade kontaktfält. Där kan du välja vilka fält som ska vara synliga. Vissa av dem är till och med inaktiverade som standard, så du kanske hittar några nya där.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

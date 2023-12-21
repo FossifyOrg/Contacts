@@ -89,6 +89,6 @@
     <string name="faq_1_text">Có, tất cả những gì bạn phải làm là vào Cài đặt -&gt; Quản lý các trường liên hệ được hiển thị. Ở đó bạn có thể chọn những trường nào sẽ hiển thị. Một số trong số chúng thậm chí còn bị tắt theo mặc định, vì vậy bạn có thể tìm thấy một số cái mới ở đó.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

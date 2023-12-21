@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.simplemobiletools.commons.views.MyRecyclerView
+    <org.fossify.commons.views.MyRecyclerView
         android:id="@+id/select_contact_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,9 +13,9 @@
         android:layoutAnimation="@anim/layout_animation"
         android:paddingEnd="@dimen/big_margin"
         android:scrollbars="none"
-        app:layoutManager="com.simplemobiletools.commons.views.MyLinearLayoutManager" />
+        app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager" />
 
-    <com.simplemobiletools.commons.views.MyTextView
+    <org.fossify.commons.views.MyTextView
         android:id="@+id/select_contact_placeholder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

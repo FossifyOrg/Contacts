@@ -24,12 +24,12 @@
         android:required="false" />
 
     <queries>
-        <package android:name="com.simplemobiletools.contacts.debug" />
-        <package android:name="com.simplemobiletools.contacts" />
+        <package android:name="org.fossify.contacts.debug" />
+        <package android:name="org.fossify.contacts" />
     </queries>
 
     <application
-        android:name=".App"
+        android:name="org.fossify.contacts.App"
         android:allowBackup="true"
         android:appCategory="social"
         android:icon="@mipmap/ic_launcher"
@@ -194,14 +194,14 @@
         </activity>
 
         <activity
-            android:name="com.simplemobiletools.commons.activities.AboutActivity"
+            android:name="org.fossify.commons.activities.AboutActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/about"
             android:parentActivityName=".activities.MainActivity" />
 
         <activity
-            android:name="com.simplemobiletools.commons.activities.CustomizationActivity"
+            android:name="org.fossify.commons.activities.CustomizationActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/customize_colors"
@@ -235,7 +235,7 @@
 
         <provider
             android:name=".contentproviders.MyContactsContentProvider"
-            android:authorities="com.simplemobiletools.commons.contactsprovider"
+            android:authorities="org.fossify.commons.contactsprovider"
             android:exported="true" />
 
         <activity-alias
@@ -366,10 +366,10 @@
 
         <activity-alias
             android:name=".activities.SplashActivity.Green"
-            android:enabled="false"
+            android:enabled="true"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_green"
-            android:roundIcon="@mipmap/ic_launcher_green"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity=".activities.SplashActivity">
 
             <intent-filter>
@@ -436,10 +436,10 @@
 
         <activity-alias
             android:name=".activities.SplashActivity.Orange"
-            android:enabled="true"
+            android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher"
-            android:roundIcon="@mipmap/ic_launcher"
+            android:icon="@mipmap/ic_launcher_orange"
+            android:roundIcon="@mipmap/ic_launcher_orange"
             android:targetActivity=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

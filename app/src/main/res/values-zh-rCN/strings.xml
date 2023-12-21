@@ -90,6 +90,6 @@
     <string name="faq_1_text">可以，您要做的是到[设置] -&gt; [管理显示的联系人字段]。在那里，您可以选择应该看到什么字段。其中有些甚至默认是关闭的，所以您可能会在那里发现一些新的。</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

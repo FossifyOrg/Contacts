@@ -90,6 +90,6 @@
     <string name="faq_1_text">അതെ, നിങ്ങൾ ചെയ്യേണ്ടത് ക്രമീകരണങ്ങളിൽ പോകുക -&gt; കാണിച്ചിരിക്കുന്ന കോൺടാക്റ്റ് ഫീൽഡുകൾ നിയന്ത്രിക്കുക. ഏതൊക്കെ ഫീൽഡുകൾ ദൃശ്യമാകണമെന്ന് അവിടെ നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാം. അവയിൽ ചിലത് സ്ഥിരസ്ഥിതിയായി അപ്രാപ്‌തമാക്കിയിരിക്കുന്നു, അതിനാൽ നിങ്ങൾക്ക് ചില പുതിയവ അവിടെ കണ്ടെത്താം.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

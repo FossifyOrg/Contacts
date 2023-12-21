@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/group_contacts_placeholder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 android:textStyle="italic"
                 android:visibility="gone" />
 
-            <com.simplemobiletools.commons.views.MyTextView
+            <org.fossify.commons.views.MyTextView
                 android:id="@+id/group_contacts_placeholder_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,19 +59,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.simplemobiletools.commons.views.MyRecyclerView
+                <org.fossify.commons.views.MyRecyclerView
                     android:id="@+id/group_contacts_list"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
                     android:layoutAnimation="@anim/layout_animation"
                     android:scrollbars="none"
-                    app:layoutManager="com.simplemobiletools.commons.views.MyLinearLayoutManager" />
+                    app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager" />
 
             </com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller>
         </RelativeLayout>
 
-        <com.simplemobiletools.commons.views.MyFloatingActionButton
+        <org.fossify.commons.views.MyFloatingActionButton
             android:id="@+id/group_contacts_fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
