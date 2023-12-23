@@ -1,1 +1,0 @@
-Kontaktų programėlė įrenginio kontaktų tvarkymui, be reklamų.

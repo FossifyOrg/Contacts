@@ -1,1 +1,0 @@
-Egy reklámmentes app névjegyek kezelésére, amelyik óvja a magánszférádat

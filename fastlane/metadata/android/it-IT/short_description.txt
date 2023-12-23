@@ -1,1 +1,0 @@
-Rubrica per la gestione dei contatti recenti e dei backup dei contatti vcf

@@ -1,1 +1,0 @@
-En adressbok för att hantera kontakter och vcf-backuper

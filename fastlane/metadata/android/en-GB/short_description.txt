@@ -1,1 +1,0 @@
-Contacts address book for managing recent contacts and vcf contact backups

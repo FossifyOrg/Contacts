@@ -1,1 +1,0 @@
-Adresář kontaktů pro správu nedávných kontaktů a zálohování kontaktů jako vcf

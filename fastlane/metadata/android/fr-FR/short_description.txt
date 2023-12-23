@@ -1,1 +1,0 @@
-Une application pour la gestion des contacts, prend en charge groupes et favoris
