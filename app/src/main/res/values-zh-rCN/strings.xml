@@ -44,7 +44,7 @@
     <string name="manage_shown_contact_fields">管理显示的联系人字段</string>
     <string name="contacts">联系人</string>
     <string name="show_only_contacts_with_numbers">只显示含有电话话码的联系人</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
+    <string name="show_private_contacts">将私密联系人显示给 Fossify 拨号器、Fossify 短信和 Fossify 日历</string>
     <string name="merge_duplicate_contacts">合并重复的联系人</string>
     <!-- Favorites -->
     <string name="no_favorites">您似乎还没加入任何我的收藏联系人。</string>
