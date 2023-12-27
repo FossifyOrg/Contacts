@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">シンプル連絡先</string>
     <string name="app_launcher_name">連絡先</string>
     <string name="address">住所</string>
     <string name="inserting">挿入中…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">連絡先に表示するフィールドを管理</string>
     <string name="contacts">連絡先</string>
     <string name="show_only_contacts_with_numbers">電話番号が登録された連絡先のみ表示する</string>
-    <string name="show_private_contacts">シンプルダイヤラー、シンプルSMSメッセンジャー、シンプルカレンダーProに個人の連絡先を表示</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">重複した連絡先を統合する</string>
     <!-- Favorites -->
     <string name="no_favorites">お気に入りの連絡先はまだありません。</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Schlichte Kontakte</string>
     <string name="app_launcher_name">Kontakte</string>
     <string name="address">Adresse</string>
     <string name="inserting">Einfügen …</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Sichtbare Kontaktfelder bearbeiten</string>
     <string name="contacts">Kontakte</string>
     <string name="show_only_contacts_with_numbers">Nur Kontakte mit Telefonnummern anzeigen</string>
-    <string name="show_private_contacts">Zeige private Kontakte in Schlichtem Telefon, SMS Messenger und Kalender Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Duplizierte Kontakte zusammenführen</string>
     <!-- Favorites -->
     <string name="no_favorites">Anscheinend haben Sie bisher keine Kontakte zu den Favoriten hinzugefügt.</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">אנשי קשר</string>
     <string name="app_launcher_name">אנשי קשר</string>
     <string name="address">כתובת</string>
     <string name="inserting">מכניס…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">נהל את שדות אנשי הקשר המוצגים</string>
     <string name="contacts">אנשי קשר</string>
     <string name="show_only_contacts_with_numbers">הצג רק אנשי קשר עם מספרי טלפון</string>
-    <string name="show_private_contacts">הצג אנשי קשר פרטיים ל-Simple Dialer, Simple SMS Messenger ו-Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">מיזוג אנשי קשר כפולים</string>
     <!-- Favorites -->
     <string name="no_favorites">נראה שאין לך עדיין אנשי קשר מועדפים.</string>

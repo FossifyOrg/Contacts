@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Eenvoudig Adresboek</string>
     <string name="app_launcher_name">Contacten</string>
     <string name="address">Adres</string>
     <string name="inserting">Invoegen…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Contactvelden tonen/verbergen</string>
     <string name="contacts">Contacten</string>
     <string name="show_only_contacts_with_numbers">Alleen contacten met telefoonnummer tonen</string>
-    <string name="show_private_contacts">Privécontacten tonen aan Eenvoudige Telefoon, Eenvoudige Berichten en Eenvoudige Agenda Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Dubbele contacten samenvoegen</string>
     <!-- Favorites -->
     <string name="no_favorites">Er zijn nog geen favorieten toegevoegd.</string>

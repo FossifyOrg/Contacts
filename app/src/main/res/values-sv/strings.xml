@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Contacts</string>
     <string name="app_launcher_name">Kontakter</string>
     <string name="address">Adress</string>
     <string name="inserting">Lägger till…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Välj vilka kontaktfält som ska visas</string>
     <string name="contacts">Kontakter</string>
     <string name="show_only_contacts_with_numbers">Visa bara kontakter med telefonnummer</string>
-    <string name="show_private_contacts">Visa privata kontakter till Simpel telefon, Simpel sms messenger och Simpel kalendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Sammanfoga dubbla kontakter</string>
     <!-- Favorites -->
     <string name="no_favorites">Det verkar som att du inte har lagt till några favoritkontakter ännu.</string>

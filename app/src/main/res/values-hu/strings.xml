@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Egyszerű névjegyek</string>
     <string name="app_launcher_name">Névjegyek</string>
     <string name="address">Cím</string>
     <string name="inserting">Hozzáadás…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Megjelenítendő névjegymezők kezelése</string>
     <string name="contacts">Névjegyek</string>
     <string name="show_only_contacts_with_numbers">Csak a telefonszámot tartalmazó névjegyek megjelenítése</string>
-    <string name="show_private_contacts">Privát névjegyek megjelenítése a Simple Dialer, Simple SMS Messenger és a Simple Calendar Pro számára</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Ismétlődő névjegyek egyesítése</string>
     <!-- Favorites -->
     <string name="no_favorites">Úgy tűnik, hogy még nincsenek kedvencek felvéve.</string>

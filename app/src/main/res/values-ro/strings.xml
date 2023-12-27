@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Contacte simple</string>
     <string name="app_launcher_name">Contacte</string>
     <string name="address">Adresă</string>
     <string name="inserting">Inserare…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Gestionați câmpurile de contact afișate</string>
     <string name="contacts">Contacte</string>
     <string name="show_only_contacts_with_numbers">Afișați numai contactele cu numere de telefon</string>
-    <string name="show_private_contacts">Afișați contactele private în Simple Dialer, Simple SMS Messenger și Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Îmbinați contactele duplicate</string>
     <!-- Favorites -->
     <string name="no_favorites">Se pare că nu ați adăugat încă nicio persoană de contact favorită.</string>

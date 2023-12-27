@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Basit Kişiler</string>
     <string name="app_launcher_name">Kişiler</string>
     <string name="address">Adres</string>
     <string name="inserting">Ekleniyor…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Görüntülenecek kişi alanlarını yönet</string>
     <string name="contacts">Kişiler</string>
     <string name="show_only_contacts_with_numbers">Yalnızca telefon numaraları olan kişileri göster</string>
-    <string name="show_private_contacts">Özel kişileri Basit Çevirici, Basit SMS Messenger ve Basit Takvim Pro\'a göster</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Yinelenen kişileri birleştir</string>
     <!-- Favorites -->
     <string name="no_favorites">Henüz herhangi bir favori kişi eklememişsiniz.</string>

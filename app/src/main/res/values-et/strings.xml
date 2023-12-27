@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lihtne telefoniraamat ja kontaktihaldus</string>
     <string name="app_launcher_name">Kontaktid</string>
     <string name="address">Aadress</string>
     <string name="inserting">Lisame…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Halda kuvatavaid kontaktkirje välju</string>
     <string name="contacts">Kontaktid</string>
     <string name="show_only_contacts_with_numbers">Näita vaid kontakte, kellel on telefoninumber</string>
-    <string name="show_private_contacts">Näita privaatseks märgitud kontakte Lihtsas telefonis, Lihtne SMS sõnumikliendis ja Lihtsas kalendris</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Liida topeltkontaktid</string>
     <!-- Favorites -->
     <string name="no_favorites">Tundub, et sa pole veel ühtegi lemmikut lisanud.</string>

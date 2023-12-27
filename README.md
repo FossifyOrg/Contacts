@@ -1,4 +1,4 @@
-# Simple Contacts
+# Fossify Contacts
 <img alt="Logo" src="graphics/icon.png" width="120" />
 
 A lightweight smart contact app for managing your contacts loved by millions of people. The contacts can either be stored on your device only, or they can also be synchronized by different means. This phone number smart contact phone book will help you keeping your contacts in one place without the hassle of backing up your contacts as the contacts backup are always in sync with the contacts you add. This app light on space and is effective when you have to make contacts backup and keep a phone book that will help you in smart contact keeping.

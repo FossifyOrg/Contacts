@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ਸਿੰਪਲ ਕੰਟੈਕਟਸ</string>
     <string name="app_launcher_name">ਸੰਪਰਕ</string>
     <string name="address">ਪਤਾ</string>
     <string name="inserting">ਸ਼ਾਮਲ ਕੀਤਾ ਜਾ ਰਿਹਾ…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Manage shown contact fields</string>
     <string name="contacts">Contacts</string>
     <string name="show_only_contacts_with_numbers">Show only contacts with phone numbers</string>
-    <string name="show_private_contacts">Show private contacts to Simple Dialer, Simple SMS Messenger and Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Merge duplicate contacts</string>
     <!-- Favorites -->
     <string name="no_favorites">Seems like you haven\'t added any favorite contacts yet.</string>

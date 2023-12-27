@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Contacts</string>
     <string name="app_launcher_name">Kontak</string>
     <string name="address">Alamat</string>
     <string name="inserting">Menyimpan…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Kelola ruas kontak yang ditampilkan</string>
     <string name="contacts">Kontak</string>
     <string name="show_only_contacts_with_numbers">Hanya tampilkan kontak dengan nomor telepon</string>
-    <string name="show_private_contacts">Tampilkan kontak privat ke Simple Dialer, Simple SMS Messenger dan Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Gabungkan kontak duplikat</string>
     <!-- Favorites -->
     <string name="no_favorites">Sepertinya anda belum menambahkan kontak favorit.</string>

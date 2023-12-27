@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Jednoduché kontakty</string>
     <string name="app_launcher_name">Kontakty</string>
     <string name="address">Adresa</string>
     <string name="inserting">Vytváří se…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Spravovat zobrazená pole kontaktů</string>
     <string name="contacts">Kontakty</string>
     <string name="show_only_contacts_with_numbers">Zobrazit jen kontakty s telefonními čísly</string>
-    <string name="show_private_contacts">Zobrazit soukromé kontakty do aplikací Jednoduchý telefon, Jednoduché SMS zprávy a Jednoduchý kalendář</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Sloučit duplicitní kontakty</string>
     <!-- Favorites -->
     <string name="no_favorites">Vypadá to, že jste ještě nepřidali žádné oblíbené kontakty.</string>

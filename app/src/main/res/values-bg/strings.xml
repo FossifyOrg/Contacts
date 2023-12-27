@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Обикновени Контакти</string>
     <string name="app_launcher_name">Контакти</string>
     <string name="address">Адрес</string>
     <string name="inserting">Въвеждане…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Управление на видимите полета</string>
     <string name="contacts">Контакти</string>
     <string name="show_only_contacts_with_numbers">Показване само на контакти с телефонен номер</string>
-    <string name="show_private_contacts">Показване на поверителни контакти в Обикновен Телефон, Обикновени SMS Съобщения и Обикновен Календар Про</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Сливане на дублирани контакти</string>
     <!-- Favorites -->
     <string name="no_favorites">Все още нямате добавени контакти към любимите.</string>

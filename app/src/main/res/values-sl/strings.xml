@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Contacts</string>
     <string name="app_launcher_name">Stiki</string>
     <string name="address">Naslov</string>
     <string name="inserting">Vnašam …</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Upravljaj prikazana polja stika</string>
     <string name="contacts">Stiki</string>
     <string name="show_only_contacts_with_numbers">Prikaži le stike s telefonskimi številkami</string>
-    <string name="show_private_contacts">Prikaži zasebne stike v Simple Dialer, Simple SMS Messenger in Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Združi podvojene stike</string>
     <!-- Favorites -->
     <string name="no_favorites">Videti je, da še niste dodali nobenega priljubljenega stika.</string>

@@ -33,7 +33,7 @@
         app:layout_constraintStart_toEndOf="@+id/item_autocomplete_image"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="Simple Mobile" />
+        tools:text="Fossify" />
 
     <TextView
         android:id="@+id/item_autocomplete_number"

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Paprasti adresatai</string>
     <string name="app_launcher_name">Adresatai</string>
     <string name="address">Adresas</string>
     <string name="inserting">Įterpiama…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Taisyti adresatą</string>
     <string name="contacts">Adresatai</string>
     <string name="show_only_contacts_with_numbers">Rodyti tik adresatus su telefono numeriu</string>
-    <string name="show_private_contacts">Rodyti privačius kontaktus \"Simple Dialer\", \"Simple SMS Messenger\" ir \"Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Merge duplicate contacts</string>
     <!-- Favorites -->
     <string name="no_favorites">Atrodo, kad dar nesate pridėję jokių mėgstamų adresatų.</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Kontaktu sinpleak</string>
     <string name="app_launcher_name">Kontaktuak</string>
     <string name="address">Helbidea</string>
     <string name="inserting">Txertatzen…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Kudeatu erakutsitako kontaktu eremuak</string>
     <string name="contacts">Kontaktuak</string>
     <string name="show_only_contacts_with_numbers">Erakutsi telefono zenbakia duten kontaktuak soilik</string>
-    <string name="show_private_contacts">Erakutsi kontaktu pribatuak Simple Dialer, Simple SMS Messenger eta Simple Calendar Pro-ri</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Batu bikoiztutako kontaktuak</string>
     <!-- Favorites -->
     <string name="no_favorites">Ez duzu oraindik gogokorik gehitu.</string>

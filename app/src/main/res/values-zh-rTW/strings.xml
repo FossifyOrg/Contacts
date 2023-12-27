@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">簡易通訊錄</string>
     <string name="app_launcher_name">簡易通訊錄</string>
     <string name="address">地址</string>
     <string name="inserting">添加中…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">管理顯示的聯絡人欄位</string>
     <string name="contacts">聯絡人</string>
     <string name="show_only_contacts_with_numbers">只顯示含有電話話碼的聯絡人</string>
-    <string name="show_private_contacts">Show private contacts to Simple Dialer, Simple SMS Messenger and Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">合併相同的聯絡資訊</string>
     <!-- Favorites -->
     <string name="no_favorites">你似乎還沒加入任何我的最愛聯絡人。</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Једноставни контакти</string>
     <string name="app_launcher_name">Контакти</string>
     <string name="address">Адреса</string>
     <string name="inserting">Уметање…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Управљајте приказаним пољима за контакт</string>
     <string name="contacts">Контакти</string>
     <string name="show_only_contacts_with_numbers">Прикажи само контакте са бројевима телефона</string>
-    <string name="show_private_contacts">Прикажите приватне контакте Симпле Диалер-у, Симпле СМС Мессенгер-у и Симпле Цалендар Про</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Споји дупликате контаката</string>
     <!-- Favorites -->
     <string name="no_favorites">Изгледа да још увек нисте додали ниједан омиљени контакт.</string>

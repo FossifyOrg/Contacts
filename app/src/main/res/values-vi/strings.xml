@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Danh bạ Đơn giản</string>
     <string name="app_launcher_name">Liên lạc</string>
     <string name="address">Địa chỉ</string>
     <string name="inserting">Đang chèn…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Quản lý các trường liên hệ được hiển thị</string>
     <string name="contacts">Liên hệ</string>
     <string name="show_only_contacts_with_numbers">Chỉ hiện danh bạ với số điện thoại</string>
-    <string name="show_private_contacts">Hiển thị danh bạ riêng tư cho Trình quay số đơn giản, Trình nhắn tin SMS đơn giản và Lịch đơn giản</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Hợp nhất các liên hệ trùng lặp</string>
     <!-- Favorites -->
     <string name="no_favorites">Có vẻ như bạn chưa thêm bất kỳ liên hệ yêu thích nào.</string>

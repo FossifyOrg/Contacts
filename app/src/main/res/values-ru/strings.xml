@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Простые контакты</string>
     <string name="app_launcher_name">Контакты</string>
     <string name="address">Адрес</string>
     <string name="inserting">Добавление…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Управление отображаемыми полями контактов</string>
     <string name="contacts">Контакты</string>
     <string name="show_only_contacts_with_numbers">Показывать только контакты с номерами телефонов</string>
-    <string name="show_private_contacts">Показывать личные контакты в \"Простом телефоне\", \"Простых сообщениях\" и \"Простом календаре\"</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Объединять дублирующие контакты</string>
     <!-- Favorites -->
     <string name="no_favorites">Похоже, вы ещё не добавили избранные контакты.</string>

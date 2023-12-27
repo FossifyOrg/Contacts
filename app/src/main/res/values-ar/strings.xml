@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">جهات الاتصال</string>
     <string name="app_launcher_name">جهات الاتصال</string>
     <string name="address">العنوان</string>
     <string name="inserting">إضافة…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">إدارة حقول جهات الاتصال المعروضة</string>
     <string name="contacts">جهات الاتصال</string>
     <string name="show_only_contacts_with_numbers">إظهار جهات الاتصال التي لديها أرقام هواتف فقط</string>
-    <string name="show_private_contacts">إظهار جهات الاتصال الخاصة إلى Simple Dialer و Simple SMS Messenger و Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">دمج جهات الاتصال المكررة</string>
     <!-- Favorites -->
     <string name="no_favorites">يبدو أنك لم تضف أي جهات اتصالٍ مفضلةٍ حتى الآن.</string>

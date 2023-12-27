@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Contacts</string>
     <string name="app_launcher_name">Contactes</string>
     <string name="address">Adreça</string>
     <string name="inserting">S\'està inserint…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Gestiona els camps mostrats de contacte</string>
     <string name="contacts">Contactes</string>
     <string name="show_only_contacts_with_numbers">Mostra només els contactes amb números de telèfon</string>
-    <string name="show_private_contacts">Mostra els contactes privats al Simple Dialer, Simple SMS Messenger i Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Combina els contactes duplicats</string>
     <!-- Favorites -->
     <string name="no_favorites">Sembla que encara no has afegit cap contacte preferit.</string>

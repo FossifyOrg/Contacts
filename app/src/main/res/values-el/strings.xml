@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Απλές Επαφές</string>
     <string name="app_launcher_name">Επαφές</string>
     <string name="address">Διεύθυνση</string>
     <string name="inserting">Εισαγωγή…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Διαχείριση πεδίων επαφής</string>
     <string name="contacts">Επαφές</string>
     <string name="show_only_contacts_with_numbers">Προβολή όλων των Επαφών με αριθμούς τηλεφώνου</string>
-    <string name="show_private_contacts">Εμφάνιση ιδιωτικών επαφών σε Απλή Κλήση, Απλός SMS Messenger και Απλό Ημερολόγιο Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Συγχώνευση διπλών επαφών</string>
     <!-- Favorites -->
     <string name="no_favorites">Φαίνεται ότι δεν έχετε προσθέσει αγαπημένες επαφές ακόμη.</string>

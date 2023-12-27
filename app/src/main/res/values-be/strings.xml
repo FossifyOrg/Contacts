@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Contacts</string>
     <string name="app_launcher_name">Кантакты</string>
     <string name="address">Адрас</string>
     <string name="inserting">Устаўка…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Кіраванне палямі кантактаў, якія адлюстроўваюцца</string>
     <string name="contacts">Кантакты</string>
     <string name="show_only_contacts_with_numbers">Паказваць толькі кантакты з нумарамі тэлефонаў</string>
-    <string name="show_private_contacts">Паказаць асабістыя кантакты ў Simple Dialer, Simple SMS Messenger і Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Аб\'яднаць дублікаты кантактаў</string>
     <!-- Favorites -->
     <string name="no_favorites">Здаецца, вы яшчэ не дадалі ніякіх любімых кантактаў.</string>

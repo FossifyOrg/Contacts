@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Yksinkertaiset yhteystiedot</string>
     <string name="app_launcher_name">Yhteystiedot</string>
     <string name="address">Osoite</string>
     <string name="inserting">Sijoitetaan…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Valitse, mitkä yhteystietojen kentät näytetään</string>
     <string name="contacts">Yhteystiedot</string>
     <string name="show_only_contacts_with_numbers">Näytä ainoastaan numerolliset yhteystiedot</string>
-    <string name="show_private_contacts">Näytä yksityiset yhteystiedot sovelluksissa Simple Dialer, Simple SMS Messenger ja Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Yhdistä päällekkäiset yhteystiedot</string>
     <!-- Favorites -->
     <string name="no_favorites">Näyttää siltä, että et ole vielä lisännyt suosikkiyhteystietoja.</string>

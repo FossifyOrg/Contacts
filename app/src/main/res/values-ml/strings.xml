@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ലളിതമായ കോൺടാക്റ്റുകൾ</string>
     <string name="app_launcher_name">കോണ്ടാക്ട്സ്</string>
     <string name="address">വിലാസം</string>
     <string name="inserting">ചേർക്കുന്നു…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">കോൺടാക്റ്റ് ഫീൽഡുകൾ കാണിക്കുന്നത്‌ നിയന്ത്രിക്കുക</string>
     <string name="contacts">കോണ്ടാക്ടുകൾ </string>
     <string name="show_only_contacts_with_numbers">ഫോൺ നമ്പറുകളുള്ള കോൺടാക്റ്റുകൾ മാത്രം കാണിക്കുക</string>
-    <string name="show_private_contacts">സിമ്പിൾ ഡയലർലേക്കും, സിമ്പിൾ മെസ്സഞ്ചർലേക്കും, സിമ്പിൾ കലണ്ടർ പ്രൊയിലേക്കും സ്വകാര്യ കോൺടാക്റ്റുകൾ കാണിക്കുക</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">ഡ്യൂപ്ലിക്കേറ്റ് കോൺടാക്റ്റുകൾ ഒന്നിച്ചു ചേർക്കുക</string>
     <!-- Favorites -->
     <string name="no_favorites">നിങ്ങൾ ഇതുവരെ പ്രിയപ്പെട്ട കോൺ‌ടാക്റ്റുകളൊന്നും ചേർത്തിട്ടില്ലെന്ന് തോന്നുന്നു.</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Contacts</string>
     <string name="app_launcher_name">Contatos</string>
     <string name="address">Endereço</string>
     <string name="inserting">Inserindo…</string>
@@ -45,7 +44,7 @@
     <string name="manage_shown_contact_fields">Gerenciar os campos visíveis</string>
     <string name="contacts">Contatos</string>
     <string name="show_only_contacts_with_numbers">Mostar apenas os contatos com número de telefone</string>
-    <string name="show_private_contacts">Compartilhar contatos privados com o Simple Dialer, Simple SMS Messenger e Simple Calendar Pro</string>
+    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Mesclar contatos duplicados</string>
     <!-- Favorites -->
     <string name="no_favorites">Parece que você ainda não adicionou nenhum contato favorito.</string>
