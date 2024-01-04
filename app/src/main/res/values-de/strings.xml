@@ -44,10 +44,10 @@
     <string name="manage_shown_contact_fields">Sichtbare Kontaktfelder bearbeiten</string>
     <string name="contacts">Kontakte</string>
     <string name="show_only_contacts_with_numbers">Nur Kontakte mit Telefonnummern anzeigen</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
+    <string name="show_private_contacts">Private Kontakte in Fossify Telefon, Fossify SMS-Messenger und Fossify Kalendar anzeigen</string>
     <string name="merge_duplicate_contacts">Duplizierte Kontakte zusammenführen</string>
     <!-- Favorites -->
-    <string name="no_favorites">Anscheinend haben Sie bisher keine Kontakte zu den Favoriten hinzugefügt.</string>
+    <string name="no_favorites">Anscheinend hast du bisher noch keine Kontakte zu den Favoriten hinzugefügt.</string>
     <string name="toggle_favorite">Favorit umschalten</string>
     <!-- Search -->
     <string name="search_contacts">Kontakte durchsuchen</string>
@@ -86,7 +86,7 @@
     </plurals>
     <!-- FAQ -->
     <string name="faq_1_title">Ich möchte die sichtbaren Kontaktfelder ändern. Kann ich das machen?</string>
-    <string name="faq_1_text">Ja, alles, was Sie tun müssen, ist folgendes: Gehen Sie zu Einstellungen -&gt; Sichtbare Kontaktfelder bearbeiten. Hier können die sichtbaren Felder ausgewählt werden. Einige sind standardmäßig deaktiviert, weshalb hier neue gefunden werden können.</string>
+    <string name="faq_1_text">Ja, alles, was du tun musst, ist folgendes: Gehe zu Einstellungen -&gt; Sichtbare Kontaktfelder bearbeiten. Dort kannst du auswählen, welche Felder sichtbar sein sollen. Einige sind standardmäßig deaktiviert, sodass du dort vielleicht neue Felder findest.</string>
     <!--
         Haven't found some strings? There's more at
         https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
