@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Liên lạc</string>
+    <string name="app_launcher_name">Danh bạ</string>
     <string name="address">Địa chỉ</string>
     <string name="inserting">Đang chèn…</string>
     <string name="updating">Đang cập nhật…</string>
