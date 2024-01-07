@@ -44,7 +44,7 @@
     <string name="manage_shown_contact_fields">Görüntülenecek kişi alanlarını yönet</string>
     <string name="contacts">Kişiler</string>
     <string name="show_only_contacts_with_numbers">Yalnızca telefon numaraları olan kişileri göster</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
+    <string name="show_private_contacts">Özel kişileri Fossify Çevirici, Fossify SMS İletiler ve Fossify Takvim\'de göster</string>
     <string name="merge_duplicate_contacts">Yinelenen kişileri birleştir</string>
     <!-- Favorites -->
     <string name="no_favorites">Henüz herhangi bir favori kişi eklememişsiniz.</string>
