@@ -307,26 +307,27 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
 
     fun onSearchQueryChanged(text: String) {
         val adapter = innerBinding.fragmentList.adapter
+        val fixedText = text.trim().replace("\\s+".toRegex(), " ")
         if (adapter is ContactsAdapter) {
-            val shouldNormalize = text.normalizeString() == text
+            val shouldNormalize = fixedText.normalizeString() == fixedText
             val filtered = contactsIgnoringSearch.filter {
-                getProperText(it.getNameToDisplay(), shouldNormalize).contains(text, true) ||
-                    getProperText(it.nickname, shouldNormalize).contains(text, true) ||
+                getProperText(it.getNameToDisplay(), shouldNormalize).contains(fixedText, true) ||
+                    getProperText(it.nickname, shouldNormalize).contains(fixedText, true) ||
                     it.phoneNumbers.any {
-                        text.normalizePhoneNumber().isNotEmpty() && it.normalizedNumber.contains(text.normalizePhoneNumber(), true)
+                        fixedText.normalizePhoneNumber().isNotEmpty() && it.normalizedNumber.contains(fixedText.normalizePhoneNumber(), true)
                     } ||
-                    it.emails.any { it.value.contains(text, true) } ||
-                    it.addresses.any { getProperText(it.value, shouldNormalize).contains(text, true) } ||
-                    it.IMs.any { it.value.contains(text, true) } ||
-                    getProperText(it.notes, shouldNormalize).contains(text, true) ||
-                    getProperText(it.organization.company, shouldNormalize).contains(text, true) ||
-                    getProperText(it.organization.jobPosition, shouldNormalize).contains(text, true) ||
-                    it.websites.any { it.contains(text, true) }
+                    it.emails.any { it.value.contains(fixedText, true) } ||
+                    it.addresses.any { getProperText(it.value, shouldNormalize).contains(fixedText, true) } ||
+                    it.IMs.any { it.value.contains(fixedText, true) } ||
+                    getProperText(it.notes, shouldNormalize).contains(fixedText, true) ||
+                    getProperText(it.organization.company, shouldNormalize).contains(fixedText, true) ||
+                    getProperText(it.organization.jobPosition, shouldNormalize).contains(fixedText, true) ||
+                    it.websites.any { it.contains(fixedText, true) }
             } as ArrayList
 
             filtered.sortBy {
                 val nameToDisplay = it.getNameToDisplay()
-                !getProperText(nameToDisplay, shouldNormalize).startsWith(text, true) && !nameToDisplay.contains(text, true)
+                !getProperText(nameToDisplay, shouldNormalize).startsWith(fixedText, true) && !nameToDisplay.contains(fixedText, true)
             }
 
             if (filtered.isEmpty() && this@MyViewPagerFragment is FavoritesFragment) {
@@ -336,11 +337,11 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
             }
 
             innerBinding.fragmentPlaceholder.beVisibleIf(filtered.isEmpty())
-            (adapter as? ContactsAdapter)?.updateItems(filtered, text.normalizeString())
+            (adapter as? ContactsAdapter)?.updateItems(filtered, fixedText.normalizeString())
             setupLetterFastscroller(filtered)
         } else if (adapter is GroupsAdapter) {
             val filtered = groupsIgnoringSearch.filter {
-                it.title.contains(text, true)
+                it.title.contains(fixedText, true)
             } as ArrayList
 
             if (filtered.isEmpty()) {
