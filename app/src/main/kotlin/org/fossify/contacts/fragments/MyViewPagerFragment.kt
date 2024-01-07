@@ -313,9 +313,9 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
             val filtered = contactsIgnoringSearch.filter {
                 getProperText(it.getNameToDisplay(), shouldNormalize).contains(fixedText, true) ||
                     getProperText(it.nickname, shouldNormalize).contains(fixedText, true) ||
-                    it.phoneNumbers.any {
+                    (fixedText.toDoubleOrNull() != null && it.phoneNumbers.any {
                         fixedText.normalizePhoneNumber().isNotEmpty() && it.normalizedNumber.contains(fixedText.normalizePhoneNumber(), true)
-                    } ||
+                    }) ||
                     it.emails.any { it.value.contains(fixedText, true) } ||
                     it.addresses.any { getProperText(it.value, shouldNormalize).contains(fixedText, true) } ||
                     it.IMs.any { it.value.contains(fixedText, true) } ||
