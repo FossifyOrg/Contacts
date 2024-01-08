@@ -73,6 +73,8 @@
         <item quantity="one">%d grupo</item>
         <item quantity="many">%d grupos</item>
         <item quantity="other">%d grupos</item>
-    </plurals>    <string name="faq_1_title">Quiero cambiar qué campos son visibles en los contactos. ¿Puedo hacerlo?</string>
+    </plurals>
+    <string name="faq_1_title">Quiero cambiar qué campos son visibles en los contactos. ¿Puedo hacerlo?</string>
     <string name="faq_1_text">Sí, todo lo que tienes que hacer es ir a Ajustes -&gt; Administrar campos del contacto mostrados. Ahí puedes seleccionar que campos deberían ser visibles. Algunos de ellos están desactivados por defecto, así que podrías encontrar algunos nuevos ahí.</string>
+    <string name="show_private_contacts">Mostrar los contactos privados al Marcador Fossify, Mensajero SMS Fossify y Calendario Fossify</string>
 </resources>
