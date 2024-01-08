@@ -70,8 +70,4 @@
         <item quantity="other">%d groups</item>
     </plurals>    <string name="faq_1_title">Hoffwn newid pa feysydd sydd i\'w gweld ar gyfer cysylltiadau. Ydy hyn yn bosib?</string>
     <string name="faq_1_text">Ydy. Y cwbl sy\'n rhaid gwneud ydy mynd i Gosodiadau -&gt; Rheoli pa feysydd cysylltiadau i\'w dangos. Yna, gellir dewis pa feysydd sydd i\'w gweld. Bydd rhai wedi eu gosod i beidio ymddangos fel arfer, felly mae\'n bosib byddi\'n dod o hyd i rai newydd yno.</string>
-    <!--
-        Haven\'t found some strings? There\'s more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

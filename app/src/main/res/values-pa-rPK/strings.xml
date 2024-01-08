@@ -28,7 +28,7 @@
     <string name="show_contact_thumbnails">رابطیاں لئی چھوٹیاں تصویراں ویکھو</string>
     <string name="call_contact">رابطہ کال کرو</string>
     <string name="view_contact">رابطے دے ویروے ویکھو</string>
-    <string name="contacts">رابطے</string>    <!-- Search -->
+    <string name="contacts">رابطے</string>    
     <string name="search_contacts">رابطیاں وچ کھوجو</string>
     <string name="search_groups">سموہاں وچ کھوجو</string>
     <string name="import_contacts">رابطے ایمپورٹ کرو</string>
