@@ -14,14 +14,12 @@
     <string name="send_email_to_group">שלח אימייל לקבוצה</string>
     <string name="fields_empty">יש למלא לפחות שדה אחד</string>
     <string name="must_be_at_edit">עליך להיות במסך העריכה כדי לשנות איש קשר</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">לא נמצאו אנשי קשר עם מיילים</string>
     <string name="no_contacts_with_phone_numbers">לא נמצאו אנשי קשר עם מספרי טלפון</string>
     <string name="new_contact">איש קשר חדש</string>
     <string name="edit_contact">ערוך איש קשר</string>
     <string name="select_contact">בחר איש קשר</string>
     <string name="nickname">כינוי</string>
-    <!-- Groups -->
     <string name="no_groups">אין קבוצות</string>
     <string name="create_new_group">צור קבוצה חדשה</string>
     <string name="remove_from_group">הסר מהקבוצה</string>
@@ -31,10 +29,8 @@
     <string name="create_group">צור קבוצה</string>
     <string name="add_to_group">הוסף לקבוצה</string>
     <string name="create_group_under_account">צור קבוצה תחת חשבון</string>
-    <!-- Photo -->
     <string name="remove_photo">הסר תמונה</string>
     <string name="change_photo">שנה תמונה</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">הצג מספרי טלפון</string>
     <string name="show_contact_thumbnails">הצג תמונות ממוזערות של אנשי קשר</string>
     <string name="show_dialpad_button">הצג כפתור לוח חיוג במסך הראשי</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">נהל את שדות אנשי הקשר המוצגים</string>
     <string name="contacts">אנשי קשר</string>
     <string name="show_only_contacts_with_numbers">הצג רק אנשי קשר עם מספרי טלפון</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">מיזוג אנשי קשר כפולים</string>
-    <!-- Favorites -->
     <string name="no_favorites">נראה שאין לך עדיין אנשי קשר מועדפים.</string>
     <string name="toggle_favorite">החלף מועדף</string>
-    <!-- Search -->
     <string name="search_contacts">חפש אנשי קשר</string>
     <string name="search_favorites">חפש מועדפים</string>
     <string name="search_groups">חפש קבוצות</string>
-    <!-- Export / Import -->
     <string name="import_contacts">ייבוא אנשי קשר</string>
     <string name="export_contacts">ייצוא אנשי קשר</string>
     <string name="import_contacts_from_vcf">ייבא אנשי קשר מקובץ ‎.vcf</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">‌מקור ליצירת קשר יעד</string>
     <string name="include_contact_sources">כלול מקורות ליצירת קשר</string>
     <string name="filename_without_vcf">שם קובץ (ללא .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">חייגן</string>
     <string name="add_number_to_contact">הוסף מספר לאיש קשר</string>
-    <!-- Visible fields -->
     <string name="prefix">קידומת</string>
     <string name="suffix">סיומת</string>
     <string name="phone_numbers">מספרי טלפון</string>
@@ -78,19 +68,12 @@
     <string name="contact_source">מקור ליצירת קשר</string>
     <string name="instant_messaging">הודעות מיידיות (IM)</string>
     <string name="ringtone">רינגטון</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">איש הקשר יוסר מכל מקורות אנשי הקשר.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d קבוצה</item>
         <item quantity="two">%d קבוצות</item>
         <item quantity="many">%d קבוצה</item>
         <item quantity="other">%d קבוצות</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">אני רוצה לשנות אילו שדות גלויים באנשי קשר. האם אני יכול לעשות זאת\?</string>
+    </plurals>    <string name="faq_1_title">אני רוצה לשנות אילו שדות גלויים באנשי קשר. האם אני יכול לעשות זאת\?</string>
     <string name="faq_1_text">כן, כל מה שאתה צריך לעשות הוא להיכנס להגדרות -&gt; נהל שדות אנשי קשר המוצגים. שם תוכל לבחור אילו שדות יהיו גלויים. חלקם אפילו מושבתים כברירת מחדל, אז אולי תמצא שם כמה חדשים.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

@@ -14,14 +14,12 @@
     <string name="send_email_to_group">Trimiteți e-mail către grup</string>
     <string name="fields_empty">Cel puțin 1 câmp trebuie completat</string>
     <string name="must_be_at_edit">Trebuie să fiți în ecranul Editare pentru a modifica un contact</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Nu au fost găsite contacte cu e-mailuri</string>
     <string name="no_contacts_with_phone_numbers">Nu au fost găsite contacte cu numere de telefon</string>
     <string name="new_contact">Contact nou</string>
     <string name="edit_contact">Editați contactul</string>
     <string name="select_contact">Selectați contactul</string>
     <string name="nickname">Poreclă</string>
-    <!-- Groups -->
     <string name="no_groups">Niciun grup</string>
     <string name="create_new_group">Creați un grup nou</string>
     <string name="remove_from_group">Eliminați din grup</string>
@@ -31,10 +29,8 @@
     <string name="create_group">Creați un grup</string>
     <string name="add_to_group">Adăugați la grup</string>
     <string name="create_group_under_account">Creați un grup în cont</string>
-    <!-- Photo -->
     <string name="remove_photo">Ștergeți fotografia</string>
     <string name="change_photo">Schimbă fotografia</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Afișați numerele de telefon</string>
     <string name="show_contact_thumbnails">Afișați miniaturi de contact</string>
     <string name="show_dialpad_button">Afișează unui buton de tastatură telefonică pe ecranul principal</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">Gestionați câmpurile de contact afișate</string>
     <string name="contacts">Contacte</string>
     <string name="show_only_contacts_with_numbers">Afișați numai contactele cu numere de telefon</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Îmbinați contactele duplicate</string>
-    <!-- Favorites -->
     <string name="no_favorites">Se pare că nu ați adăugat încă nicio persoană de contact favorită.</string>
     <string name="toggle_favorite">Comutați favoritele</string>
-    <!-- Search -->
     <string name="search_contacts">Căutați contacte</string>
     <string name="search_favorites">Căutați în favorite</string>
     <string name="search_groups">Căutați în grupuri</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Importați contacte</string>
     <string name="export_contacts">Exportați contacte</string>
     <string name="import_contacts_from_vcf">Importați contacte dintr-un fișier .vcf</string>
@@ -62,11 +54,8 @@
     <string name="target_contact_source">Sursa de contact țintă</string>
     <string name="include_contact_sources">Includeți sursele de contact</string>
     <string name="filename_without_vcf">Numele fișierului (fără .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Tastatură telefonică</string>
     <string name="add_number_to_contact">Adăugați numărul la contact</string>
-    <!-- Visible fields -->
-    <string name="prefix">Prefix</string>
     <string name="suffix">Sufix</string>
     <string name="phone_numbers">Numere de telefon</string>
     <string name="emails">E-mailuri</string>
@@ -78,18 +67,11 @@
     <string name="contact_source">Sursa de contact</string>
     <string name="instant_messaging">Mesagerie instantanee (MI)</string>
     <string name="ringtone">Ton de apel</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Persoana de contact va fi ștearsă din toate sursele de contact.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d grup</item>
         <item quantity="few">%d grupuri</item>
         <item quantity="other">%d grupuri</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Doresc să schimb câmpurile care sunt vizibile la contacte. Pot să fac acest lucru\?</string>
+    </plurals>    <string name="faq_1_title">Doresc să schimb câmpurile care sunt vizibile la contacte. Pot să fac acest lucru\?</string>
     <string name="faq_1_text">Da, tot ce trebuie să faceți este să accesați Setări -&gt; Gestionați câmpurile de contact afișate. Acolo puteți selecta ce câmpuri ar trebui să fie vizibile. Unele dintre ele sunt chiar dezactivate în mod implicit, așa că s-ar putea să găsiți unele noi acolo.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

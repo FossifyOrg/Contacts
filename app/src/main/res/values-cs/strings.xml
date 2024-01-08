@@ -14,14 +14,12 @@
     <string name="send_email_to_group">Poslat skupině e-mail</string>
     <string name="fields_empty">Musí být vyplněno alespoň 1 pole</string>
     <string name="must_be_at_edit">Pro úpravu kontaktu musíte být v Editoru kontaktu</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Nenalezeny žádné kontakty s e-maily</string>
     <string name="no_contacts_with_phone_numbers">Nenalezeny žádné kontakty s telefonními čísly</string>
     <string name="new_contact">Nový kontakt</string>
     <string name="edit_contact">Upravit kontakt</string>
     <string name="select_contact">Zvolte kontakt</string>
     <string name="nickname">Přezdívka</string>
-    <!-- Groups -->
     <string name="no_groups">Žádné skupiny</string>
     <string name="create_new_group">Vytvořit novou skupinu</string>
     <string name="remove_from_group">Odebrat ze skupiny</string>
@@ -31,10 +29,8 @@
     <string name="create_group">Vytvořit skupinu</string>
     <string name="add_to_group">Přidat do skupiny</string>
     <string name="create_group_under_account">Vytvořit skupinu pod účet</string>
-    <!-- Photo -->
     <string name="remove_photo">Odstranit fotku</string>
     <string name="change_photo">Změnit fotku</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Zobrazit telefonní čísla</string>
     <string name="show_contact_thumbnails">Zobrazit obrázky kontaktů</string>
     <string name="show_dialpad_button">Zobrazit tlačítko číselníku na hlavní obrazovce</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">Spravovat zobrazená pole kontaktů</string>
     <string name="contacts">Kontakty</string>
     <string name="show_only_contacts_with_numbers">Zobrazit jen kontakty s telefonními čísly</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Sloučit duplicitní kontakty</string>
-    <!-- Favorites -->
     <string name="no_favorites">Vypadá to, že jste ještě nepřidali žádné oblíbené kontakty.</string>
     <string name="toggle_favorite">Přepínač oblíbenosti</string>
-    <!-- Search -->
     <string name="search_contacts">Hledat kontakty</string>
     <string name="search_favorites">Hledat oblíbené</string>
     <string name="search_groups">Hledat skupiny</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Importovat kontakty</string>
     <string name="export_contacts">Exportovat kontakty</string>
     <string name="import_contacts_from_vcf">Importovat kontakty z .vcf souboru</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">Cílový zdroj kontaktů</string>
     <string name="include_contact_sources">Zahrnout zdroje kontaktů</string>
     <string name="filename_without_vcf">Název souboru (bez .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Číselník</string>
     <string name="add_number_to_contact">Přidat číslo kontaktu</string>
-    <!-- Visible fields -->
     <string name="prefix">Titul před jménem</string>
     <string name="suffix">Titul za příjmením</string>
     <string name="phone_numbers">Telefonní čísla</string>
@@ -78,18 +68,11 @@
     <string name="contact_source">Zdroje kontaktů</string>
     <string name="instant_messaging">Komunikátory (IM)</string>
     <string name="ringtone">Vyzvánění</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Kontakt bude vymazán ze všech zdrojů kontaktů.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d skupinu</item>
         <item quantity="few">%d skupiny</item>
         <item quantity="other">%d skupin</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Chci upravit viditelná pole kontaktů. Lze to?</string>
+    </plurals>    <string name="faq_1_title">Chci upravit viditelná pole kontaktů. Lze to?</string>
     <string name="faq_1_text">Ano, stačí jít do Nastavení -&gt; Spravovat zobrazená pole kontaktů. Tam si můžete zvolit, která pole mají být viditelná. Některá jsou ve výchozím stavu vypnutá, takže tam můžete objevit i nová pole.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

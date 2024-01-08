@@ -14,14 +14,12 @@
     <string name="send_email_to_group">Saada e-kiri rühmale</string>
     <string name="fields_empty">Palun täida vähemalt 1 väli</string>
     <string name="must_be_at_edit">Andmete kohendamiseks palun ava muutmisvaade</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Ei leidunud ühtegi kontakti, kus oleks kirjas e-posti aadress</string>
     <string name="no_contacts_with_phone_numbers">Ei leidunud ühtegi kontakti, kus oleks olemas telefoninumber</string>
     <string name="new_contact">Uus kontakt</string>
     <string name="edit_contact">Muuda kontakti</string>
     <string name="select_contact">Vali kontakt</string>
     <string name="nickname">Hüüdnimi</string>
-    <!-- Groups -->
     <string name="no_groups">Rühmad puuduvad</string>
     <string name="create_new_group">Loo uus rühm</string>
     <string name="remove_from_group">Eemalda rühmast</string>
@@ -31,10 +29,8 @@
     <string name="create_group">Loo rühm</string>
     <string name="add_to_group">Lisa rühma</string>
     <string name="create_group_under_account">Lisa rühm kasutajakontole</string>
-    <!-- Photo -->
     <string name="remove_photo">Eemalda pilt</string>
     <string name="change_photo">Muuda pilti</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Näita telefoninumbreid</string>
     <string name="show_contact_thumbnails">Näita kontaktide pisipilte</string>
     <string name="show_dialpad_button">Näita põhivaates telefoniklahvistikku</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">Halda kuvatavaid kontaktkirje välju</string>
     <string name="contacts">Kontaktid</string>
     <string name="show_only_contacts_with_numbers">Näita vaid kontakte, kellel on telefoninumber</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Liida topeltkontaktid</string>
-    <!-- Favorites -->
     <string name="no_favorites">Tundub, et sa pole veel ühtegi lemmikut lisanud.</string>
     <string name="toggle_favorite">Vaheta olekut lemmikuna</string>
-    <!-- Search -->
     <string name="search_contacts">Otsi kontaktide hulgast</string>
     <string name="search_favorites">Otsi lemmikute hulgast</string>
     <string name="search_groups">Otsi rühmi</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Impordi kontakte</string>
     <string name="export_contacts">Ekspordi kontakte</string>
     <string name="import_contacts_from_vcf">Impordi kontatid .vcf failist</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">Vali andmekogu</string>
     <string name="include_contact_sources">Kaasa andmekogud</string>
     <string name="filename_without_vcf">Faili nimi (ilma .vcf laiendita)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Numbriklahvid</string>
     <string name="add_number_to_contact">Lisa kontaktile telefoninumber</string>
-    <!-- Visible fields -->
     <string name="prefix">Eesliide</string>
     <string name="suffix">Järelliide</string>
     <string name="phone_numbers">Telefoninumbrid</string>
@@ -78,17 +68,10 @@
     <string name="contact_source">Andmekogu</string>
     <string name="instant_messaging">Aadressid sõnumirakendustes</string>
     <string name="ringtone">Helin</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Eemaldame kontakti kõikidest andmekogudest.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d rühm</item>
         <item quantity="other">%d rühma</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Ma soovin muuta kontaktkirje juures näidatavaid andmevälju. Kas ma saan seda teha\?</string>
+    </plurals>    <string name="faq_1_title">Ma soovin muuta kontaktkirje juures näidatavaid andmevälju. Kas ma saan seda teha\?</string>
     <string name="faq_1_text">Jah ikka on võimalik. Ava Seadistused -&gt; Halda kuvatavaid kontaktkirje välju. Sealt saad valida välju, mida tahad näha. Kuna mõned neist on vaikimisi peidetud, siis saad vajadusel ka loendit laiendada.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>
