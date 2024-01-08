@@ -13,15 +13,12 @@
     <string name="send_sms_to_group">Send SMS til gruppe</string>
     <string name="send_email_to_group">Send e-post til gruppe</string>
     <string name="fields_empty">Minst ett felt må fylles ut</string>
-    <string name="must_be_at_edit">You must be at the Edit screen to modify a contact</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Ingen kontakter med e-post er funnet</string>
     <string name="no_contacts_with_phone_numbers">Ingen kontakter med telefonnumre er funnet</string>
     <string name="new_contact">Ny kontakt</string>
     <string name="edit_contact">Rediger kontakt</string>
     <string name="select_contact">Velg kontakt</string>
     <string name="nickname">Kallenavn</string>
-    <!-- Groups -->
     <string name="no_groups">Ingen grupper</string>
     <string name="create_new_group">Opprett en ny gruppe</string>
     <string name="remove_from_group">Fjern fra gruppe</string>
@@ -31,10 +28,7 @@
     <string name="create_group">Opprett gruppe</string>
     <string name="add_to_group">Legg til i gruppe</string>
     <string name="create_group_under_account">Opprett gruppe under konto</string>
-    <!-- Photo -->
     <string name="remove_photo">Fjern bilde</string>
-    <string name="change_photo">Change photo</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Vis telefonnumre</string>
     <string name="show_contact_thumbnails">Vis kontaktminiatyrbilder</string>
     <string name="show_dialpad_button">Vis nummerskiveknapp på hovedskjermen</string>
@@ -44,28 +38,19 @@
     <string name="manage_shown_contact_fields">Håndter viste kontaktfelter</string>
     <string name="contacts">Kontakter</string>
     <string name="show_only_contacts_with_numbers">Kun vis kontakter med telefonnumre</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
-    <string name="merge_duplicate_contacts">Merge duplicate contacts</string>
-    <!-- Favorites -->
     <string name="no_favorites">Det ser ut til at du ikke har lagt til noen favorittkontakter enda.</string>
-    <string name="toggle_favorite">Toggle favorite</string>
-    <!-- Search -->
     <string name="search_contacts">Søk etter kontakter</string>
     <string name="search_favorites">Søk etter favoritter</string>
     <string name="search_groups">Søk etter grupper</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Importer kontakter</string>
     <string name="export_contacts">Eksporter kontakter</string>
     <string name="import_contacts_from_vcf">Importer kontakter fra en .vcf-fil</string>
     <string name="import_contacts_from_vcf_pro">Importer kontakter fra en .vcf-fil (Pro)</string>
     <string name="export_contacts_to_vcf">Eksporter kontakter til en .vcf-fil</string>
-    <string name="target_contact_source">Target contact source</string>
     <string name="include_contact_sources">Inkluder kontaktkilder</string>
     <string name="filename_without_vcf">Filnavn (uten .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Tastatur</string>
     <string name="add_number_to_contact">Legg til nummer i kontakt</string>
-    <!-- Visible fields -->
     <string name="prefix">Prefiks</string>
     <string name="suffix">Suffiks</string>
     <string name="phone_numbers">Telefonnummer</string>
@@ -78,17 +63,9 @@
     <string name="contact_source">Kontaktkilde</string>
     <string name="instant_messaging">Lynmelding</string>
     <string name="ringtone">Ringetone</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Kontakten vil bli fjernet fra alle kontaktkilder.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d gruppe</item>
         <item quantity="other">%d grupper</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Jeg vil endre hvilke felter som er synlige for kontakter. Kan jeg gjøre det\?</string>
-    <string name="faq_1_text">Yes, all you have to do is go in Settings -&gt; Manage shown contact fields. There you can select what fields should be visible. Some of them are even disabled by default, so you might find some new ones there.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
+    </plurals>    <string name="faq_1_title">Jeg vil endre hvilke felter som er synlige for kontakter. Kan jeg gjøre det\?</string>
 </resources>

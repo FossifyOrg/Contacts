@@ -14,14 +14,12 @@
     <string name="send_email_to_group">Skupni pošlji e-pošto</string>
     <string name="fields_empty">Izpolnjeno mora biti vsaj eno polje</string>
     <string name="must_be_at_edit">Za urejanje stika morate biti na zaslonu za urejanje</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Najdenih ni bilo nobenih stikov z e-pošto</string>
     <string name="no_contacts_with_phone_numbers">Najdenih ni bilo nobenih stikov s telefonsko številko</string>
     <string name="new_contact">Nov stik</string>
     <string name="edit_contact">Uredi stik</string>
     <string name="select_contact">Izberi stik</string>
     <string name="nickname">Vzdevek</string>
-    <!-- Groups -->
     <string name="no_groups">Ni skupin</string>
     <string name="create_new_group">Ustvari novo skupino</string>
     <string name="remove_from_group">Odstrani iz skupine</string>
@@ -31,10 +29,8 @@
     <string name="create_group">Ustvari skupino</string>
     <string name="add_to_group">Dodaj k skupini</string>
     <string name="create_group_under_account">Ustvari skupino pod računom</string>
-    <!-- Photo -->
     <string name="remove_photo">Odstrani fotografijo</string>
     <string name="change_photo">Spremeni fotografijo</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Prikaži telefonske številke</string>
     <string name="show_contact_thumbnails">Prikaži sličice stikov</string>
     <string name="show_dialpad_button">Prikaži gumb za številčnico na glavnem zaslonu</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">Upravljaj prikazana polja stika</string>
     <string name="contacts">Stiki</string>
     <string name="show_only_contacts_with_numbers">Prikaži le stike s telefonskimi številkami</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Združi podvojene stike</string>
-    <!-- Favorites -->
     <string name="no_favorites">Videti je, da še niste dodali nobenega priljubljenega stika.</string>
     <string name="toggle_favorite">Preklopi priljubljene</string>
-    <!-- Search -->
     <string name="search_contacts">Poišči stike</string>
     <string name="search_favorites">Išči priljubljene</string>
     <string name="search_groups">Išči skupine</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Uvoz stikov</string>
     <string name="export_contacts">Izvoz stikov</string>
     <string name="import_contacts_from_vcf">Uvozi stike iz datoteke .vcf</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">Vir ciljnega stika</string>
     <string name="include_contact_sources">Vključi vire stikov</string>
     <string name="filename_without_vcf">Ime datoteke (brez .ics)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Številčnica</string>
     <string name="add_number_to_contact">Dodaj številko k stiku</string>
-    <!-- Visible fields -->
     <string name="prefix">Predpona</string>
     <string name="suffix">Pripona</string>
     <string name="phone_numbers">Telefonske številke</string>
@@ -78,15 +68,12 @@
     <string name="contact_source">Vir stika</string>
     <string name="instant_messaging">Takojšnje sporočanje (IM)</string>
     <string name="ringtone">Melodija zvonjenja</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Stik bo odstranjen iz vseh virov stikov.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d skupina</item>
         <item quantity="two">%d skipini</item>
         <item quantity="few">%d skupine</item>
         <item quantity="other">%d skupin</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Spremeniti želim katera polja so vidna pri stikih. Lahko to storim\?</string>
+    </plurals>    <string name="faq_1_title">Spremeniti želim katera polja so vidna pri stikih. Lahko to storim\?</string>
     <string name="faq_1_text">Da, vse kar morate storiti je, da greste v Nastavitve -&gt; Upravljanje prikazanih polj stika. Tam lahko izberete katera polja naj bodo vidna. Nekatera od njih so celo privzeto onemogočena, zato boste tam morda našli nekaj novih.</string>
 </resources>

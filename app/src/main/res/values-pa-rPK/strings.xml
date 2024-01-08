@@ -3,7 +3,6 @@
     <string name="app_launcher_name">رابطے</string>
     <string name="address">پتہ</string>
     <string name="inserting">شامل کیتا جا رہا اے۔ ۔ ۔</string>
-    <string name="updating">Updating…</string>
     <string name="phone_storage">فون دی سٹوریج</string>
     <string name="phone_storage_hidden">فون دی سٹوریج (ہور اَیپاں نوں نظر نہیں آؤندی)</string>
     <string name="company">کمپنی</string>
@@ -13,78 +12,41 @@
     <string name="send_sms_to_group">سموہ نوں سنیہا بھیجو</string>
     <string name="send_email_to_group">سموہ نوں ای‌میل بھیجو</string>
     <string name="fields_empty">گٹھو گھٹ اِکّ تھاں وچ کجھ لکھت پایو</string>
-    <string name="must_be_at_edit">You must be at the Edit screen to modify a contact</string>
-    <!-- Placeholders -->
-    <string name="no_contacts_with_emails">No contacts with emails have been found</string>
-    <string name="no_contacts_with_phone_numbers">No contacts with phone numbers have been found</string>
     <string name="new_contact">نواں رابطہ</string>
     <string name="edit_contact">رابطے دے ویروے سودھو</string>
     <string name="select_contact">رابطہ چݨو</string>
-    <string name="nickname">Nickname</string>
-    <!-- Groups -->
     <string name="no_groups">کوئی سمُدے نہیں اے</string>
     <string name="create_new_group">نواں سموہ بݨاؤ</string>
     <string name="remove_from_group">سموہ وچ ہٹاؤ</string>
-    <string name="no_group_participants">This group is empty</string>
     <string name="add_contacts">رابطے پایو</string>
-    <string name="no_group_created">There are no contact groups on the device</string>
     <string name="create_group">سموہ بݨاؤ</string>
     <string name="add_to_group">سموہ وچ جوڑو</string>
     <string name="create_group_under_account">کھاتے نال سمُدا بݨاؤ</string>
-    <!-- Photo -->
     <string name="remove_photo">تصویر مٹاؤ</string>
     <string name="change_photo">تصویر بدلو</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">فون نمبر ویکھو</string>
     <string name="show_contact_thumbnails">رابطیاں لئی چھوٹیاں تصویراں ویکھو</string>
-    <string name="show_dialpad_button">Show a dialpad button on the main screen</string>
-    <string name="on_contact_click">On contact click</string>
     <string name="call_contact">رابطہ کال کرو</string>
     <string name="view_contact">رابطے دے ویروے ویکھو</string>
-    <string name="manage_shown_contact_fields">Manage shown contact fields</string>
-    <string name="contacts">رابطے</string>
-    <string name="show_only_contacts_with_numbers">Show only contacts with phone numbers</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
-    <string name="merge_duplicate_contacts">Merge duplicate contacts</string>
-    <!-- Favorites -->
-    <string name="no_favorites">Seems like you haven\'t added any favorite contacts yet.</string>
-    <string name="toggle_favorite">Toggle favorite</string>
-    <!-- Search -->
+    <string name="contacts">رابطے</string>    <!-- Search -->
     <string name="search_contacts">رابطیاں وچ کھوجو</string>
-    <string name="search_favorites">Search favorites</string>
     <string name="search_groups">سموہاں وچ کھوجو</string>
-    <!-- Export / Import -->
     <string name="import_contacts">رابطے ایمپورٹ کرو</string>
     <string name="export_contacts">رابطے ایکپورٹ کرو</string>
-    <string name="import_contacts_from_vcf">Import contacts from a .vcf file</string>
-    <string name="import_contacts_from_vcf_pro">Import contacts from a .vcf file (Pro)</string>
-    <string name="export_contacts_to_vcf">Export contacts to a .vcf file</string>
-    <string name="target_contact_source">Target contact source</string>
     <string name="include_contact_sources">رابطیاں دے سروتاں نال</string>
     <string name="filename_without_vcf">فائل دا ناں (‫‎.vcf‬ بنہا)؜</string>
-    <!-- Dialpad -->
     <string name="dialpad">فون کیبورڈ</string>
     <string name="add_number_to_contact">رابطے نوں نمبر جوڑو</string>
-    <!-- Visible fields -->
     <string name="prefix">سابقہ</string>
     <string name="suffix">لاحقہ</string>
     <string name="phone_numbers">فون نمبر</string>
     <string name="emails">ای‌میل</string>
     <string name="addresses">پتے</string>
     <string name="events">ماجرے (شادی، اُسوَ، سماگم، وغیرہ)</string>
-    <string name="organization">Organization</string>
     <string name="websites">ویب‌سائیٹاں</string>
     <string name="groups">سموہ</string>
     <string name="contact_source">رابطے دا سروت</string>
-    <string name="instant_messaging">Instant messaging (IM)</string>
-    <string name="ringtone">رِنگٹون</string>
-    <!-- Confirmation dialog -->
-    <string name="delete_from_all_sources">The contact will be removed from all contact sources.</string>
-    <plurals name="delete_groups">
+    <string name="ringtone">رِنگٹون</string>    <plurals name="delete_groups">
         <item quantity="one">‫%d‬ سموہ</item>
         <item quantity="other">‫%d‬ سموہ</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">I want to change what fields are visible at contacts. Can I do it\?</string>
-    <string name="faq_1_text">Yes, all you have to do is go in Settings -&gt; Manage shown contact fields. There you can select what fields should be visible. Some of them are even disabled by default, so you might find some new ones there.</string>
-</resources>
+    </plurals></resources>

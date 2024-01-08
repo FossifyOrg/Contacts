@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Contacts</string>
     <string name="address">Adresse</string>
     <string name="inserting">Insertion…</string>
     <string name="updating">Mise à jour…</string>
@@ -14,14 +13,12 @@
     <string name="send_email_to_group">Envoyer un courriel au groupe</string>
     <string name="fields_empty">Au moins un champ doit être rempli</string>
     <string name="must_be_at_edit">Vous devez être sur l\'écran « Modifier » pour modifier un contact</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Aucun contact comportant un adresse électronique n\'a été trouvé</string>
     <string name="no_contacts_with_phone_numbers">Aucun contact comportant un numéro de téléphone n\'a été trouvé</string>
     <string name="new_contact">Nouveau contact</string>
     <string name="edit_contact">Modifier le contact</string>
     <string name="select_contact">Sélectionner un contact</string>
     <string name="nickname">Surnom</string>
-    <!-- Groups -->
     <string name="no_groups">Aucun groupe</string>
     <string name="create_new_group">Créer un nouveau groupe</string>
     <string name="remove_from_group">Supprimer du groupe</string>
@@ -31,10 +28,8 @@
     <string name="create_group">Créer un groupe</string>
     <string name="add_to_group">Ajouter à un groupe</string>
     <string name="create_group_under_account">Créer un groupe dans le compte</string>
-    <!-- Photo -->
     <string name="remove_photo">Supprimer la photo</string>
     <string name="change_photo">Changer la photo</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Afficher les numéros de téléphone</string>
     <string name="show_contact_thumbnails">Afficher les miniatures des contacts</string>
     <string name="show_dialpad_button">Afficher un bouton de pavé numérique sur l\'écran principal</string>
@@ -42,18 +37,14 @@
     <string name="call_contact">Appeler le contact</string>
     <string name="view_contact">Afficher les détails du contact</string>
     <string name="manage_shown_contact_fields">Gérer les champs de contact affichés</string>
-    <string name="contacts">Contacts</string>
     <string name="show_only_contacts_with_numbers">Afficher uniquement les contacts qui ont un numéro de téléphone</string>
     <string name="show_private_contacts">Afficher les contacts privés pour Fossify Dialer, Fossify SMS Messenger et Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Fusionner les contacts en double</string>
-    <!-- Favorites -->
     <string name="no_favorites">Il semble que vous n\'ayez pas encore ajouté de contacts favoris.</string>
     <string name="toggle_favorite">Activer/désactiver le favori</string>
-    <!-- Search -->
     <string name="search_contacts">Rechercher des contacts</string>
     <string name="search_favorites">Rechercher des favoris</string>
     <string name="search_groups">Rechercher des groupes</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Importer des contacts</string>
     <string name="export_contacts">Exporter des contacts</string>
     <string name="import_contacts_from_vcf">Importer des contacts depuis un fichier «VCF »</string>
@@ -62,10 +53,8 @@
     <string name="target_contact_source">Source de contact cible</string>
     <string name="include_contact_sources">Inclure les sources de contact</string>
     <string name="filename_without_vcf">Nom du fichier (sans extension « .vcf »)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Pavé numérique</string>
     <string name="add_number_to_contact">Ajouter un numéro au contact</string>
-    <!-- Visible fields -->
     <string name="prefix">Préfixe</string>
     <string name="suffix">Suffixe</string>
     <string name="phone_numbers">Numéros de téléphone</string>
@@ -78,18 +67,11 @@
     <string name="contact_source">Source du contact</string>
     <string name="instant_messaging">Messagerie instantanée (MI)</string>
     <string name="ringtone">Sonnerie</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Le contact sera supprimé de toutes les sources de contact.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d groupe</item>
         <item quantity="many">%d groupes</item>
         <item quantity="other">%d groupes</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Je souhaite modifier les champs affichés dans les contacts. Puis-je le faire \?</string>
+    </plurals>    <string name="faq_1_title">Je souhaite modifier les champs affichés dans les contacts. Puis-je le faire \?</string>
     <string name="faq_1_text">Oui. Rendez-vous dans les « Paramètres », puis dans « Gérer les champs de contact affichés ». Vous pourrez y sélectionner les champs à afficher. Certains champs sont même désactivés par défaut. Vous pourrez donc en trouver de nouveaux.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

@@ -14,14 +14,12 @@
     <string name="send_email_to_group">Gửi email đến nhóm</string>
     <string name="fields_empty">Phải điền ít nhất một trường</string>
     <string name="must_be_at_edit">Bạn phải ở màn hình Chỉnh sửa để sửa đổi một số liên lạc</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Không tìm thấy liên hệ với e-mail</string>
     <string name="no_contacts_with_phone_numbers">Không tìm thấy liên hệ với số điện thoại</string>
     <string name="new_contact">Liên hệ mới</string>
     <string name="edit_contact">Chỉnh sửa liên hệ</string>
     <string name="select_contact">Chọn liên hệ</string>
     <string name="nickname">Tên riêng</string>
-    <!-- Groups -->
     <string name="no_groups">Không có nhóm</string>
     <string name="create_new_group">Tạo một nhóm mới</string>
     <string name="remove_from_group">Loại bỏ khỏi nhóm</string>
@@ -31,10 +29,8 @@
     <string name="create_group">Tạo nhóm</string>
     <string name="add_to_group">Thêm vào nhóm</string>
     <string name="create_group_under_account">Tạo nhóm theo tài khoản</string>
-    <!-- Photo -->
     <string name="remove_photo">Gỡ bỏ hình</string>
     <string name="change_photo">Thay đổi hình ảnh</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Hiển thị số điện thoại</string>
     <string name="show_contact_thumbnails">Hiển thị hình thu nhỏ của liên hệ</string>
     <string name="show_dialpad_button">Hiển thị nút quay số trên màn hình chính</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">Quản lý các trường liên hệ được hiển thị</string>
     <string name="contacts">Liên hệ</string>
     <string name="show_only_contacts_with_numbers">Chỉ hiện danh bạ với số điện thoại</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Hợp nhất các liên hệ trùng lặp</string>
-    <!-- Favorites -->
     <string name="no_favorites">Có vẻ như bạn chưa thêm bất kỳ liên hệ yêu thích nào.</string>
     <string name="toggle_favorite">chuyển đổi yêu thích</string>
-    <!-- Search -->
     <string name="search_contacts">Tìm liên hệ</string>
     <string name="search_favorites">Tìm kiếm yêu thích</string>
     <string name="search_groups">Tìm nhóm</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Nhập liên hệ</string>
     <string name="export_contacts">Xuất liên hệ</string>
     <string name="import_contacts_from_vcf">Nhập liên hệ từ một tệp .vcf</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">Nguồn liên hệ mục tiêu</string>
     <string name="include_contact_sources">Bao gồm các nguồn liên hệ</string>
     <string name="filename_without_vcf">Tên tệp (không có .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Bàn phím quay số</string>
     <string name="add_number_to_contact">Thêm số để liên hệ</string>
-    <!-- Visible fields -->
     <string name="prefix">Tiền tố</string>
     <string name="suffix">Hậu tố</string>
     <string name="phone_numbers">Số điện thoại</string>
@@ -78,16 +68,9 @@
     <string name="contact_source">Nguồn liên hệ</string>
     <string name="instant_messaging">Tin nhắn tức thì (IM)</string>
     <string name="ringtone">Nhạc chuông</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Liên hệ sẽ bị xóa khỏi tất cả các nguồn liên hệ.</string>
     <plurals name="delete_groups">
         <item quantity="other">%d nhóm</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Tôi muốn thay đổi những trường hiển thị tại danh bạ. Tôi có thể làm được không\?</string>
+    </plurals>    <string name="faq_1_title">Tôi muốn thay đổi những trường hiển thị tại danh bạ. Tôi có thể làm được không\?</string>
     <string name="faq_1_text">Có, tất cả những gì bạn phải làm là vào Cài đặt -&gt; Quản lý các trường liên hệ được hiển thị. Ở đó bạn có thể chọn những trường nào sẽ hiển thị. Một số trong số chúng thậm chí còn bị tắt theo mặc định, vì vậy bạn có thể tìm thấy một số cái mới ở đó.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

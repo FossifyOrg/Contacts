@@ -14,14 +14,12 @@
     <string name="send_email_to_group">Надіслати електронний лист групі контактів</string>
     <string name="fields_empty">Потрібно заповнити принаймні 1 поле</string>
     <string name="must_be_at_edit">Для того, щоб змінити контакт, необхідно відкрити меню редагування</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Не знайдено контактів з електронною поштою</string>
     <string name="no_contacts_with_phone_numbers">Не знайдено контактів з телефонними номерами</string>
     <string name="new_contact">Новий контакт</string>
     <string name="edit_contact">Редагувати контакт</string>
     <string name="select_contact">Обрати контакт</string>
     <string name="nickname">Прізвисько</string>
-    <!-- Groups -->
     <string name="no_groups">Немає груп</string>
     <string name="create_new_group">Створити нову групу</string>
     <string name="remove_from_group">Видалити з групи</string>
@@ -31,10 +29,8 @@
     <string name="create_group">Створити групу</string>
     <string name="add_to_group">Додати до групи</string>
     <string name="create_group_under_account">Створити групу в обліковому записі</string>
-    <!-- Photo -->
     <string name="remove_photo">Видалити світлину</string>
     <string name="change_photo">Змінити світлину</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Показувати телефонні номери</string>
     <string name="show_contact_thumbnails">Показувати світлину контакту</string>
     <string name="show_dialpad_button">Показувати панель набору номерів на головному екрані</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">Керування полями контактів, що відображаються</string>
     <string name="contacts">Контакти</string>
     <string name="show_only_contacts_with_numbers">Показувати лише контакти з телефонними номерами</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Об’єднувати повторювані контакти</string>
-    <!-- Favorites -->
     <string name="no_favorites">Здається, ви ще не додали улюблені контакти.</string>
     <string name="toggle_favorite">Перемкнути улюблене</string>
-    <!-- Search -->
     <string name="search_contacts">Пошук контактів</string>
     <string name="search_favorites">Пошук улюблених</string>
     <string name="search_groups">Пошук груп</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Імпортувати контакти</string>
     <string name="export_contacts">Експортувати контакти</string>
     <string name="import_contacts_from_vcf">Імпортувати контакти з .vcf файлу</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">Цілеве джерело контактів</string>
     <string name="include_contact_sources">Приєднати походження контактів</string>
     <string name="filename_without_vcf">Ім\'я файлу (без .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Панель набору</string>
     <string name="add_number_to_contact">Додати номер до контакту</string>
-    <!-- Visible fields -->
     <string name="prefix">Префікс</string>
     <string name="suffix">Суфікс</string>
     <string name="phone_numbers">Телефонні номери</string>
@@ -78,19 +68,12 @@
     <string name="contact_source">Походження контакту</string>
     <string name="instant_messaging">Мессенджери</string>
     <string name="ringtone">Мелодія дзвінка</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Контакт буде видалено з усіх джерел контактів.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d група</item>
         <item quantity="few">%d групи</item>
         <item quantity="many">%d груп</item>
         <item quantity="other">%d груп</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Я хочу змінити налаштування видимих полів контактних даних. Чи можу я це зробити?</string>
+    </plurals>    <string name="faq_1_title">Я хочу змінити налаштування видимих полів контактних даних. Чи можу я це зробити?</string>
     <string name="faq_1_text">Так, вам необхідно перейти у Налаштування -&gt; Керування полями контактів, що відображаються. Там ви можете обрати поля, що відображатимуться. Деякі з них у стандартному режимі деактивовано, а отже ви можете знайти там нові.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>
