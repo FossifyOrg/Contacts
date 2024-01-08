@@ -14,14 +14,12 @@
     <string name="send_email_to_group">グループにメールを送信</string>
     <string name="fields_empty">少なくとも1つのフィールドに入力する必要があります</string>
     <string name="must_be_at_edit">連絡先を編集するには編集画面に切り替えてください</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">メールアドレスが登録された連絡先が見つかりません</string>
     <string name="no_contacts_with_phone_numbers">電話番号が登録された連絡先が見つかりません</string>
     <string name="new_contact">新しい連絡先</string>
     <string name="edit_contact">連絡先を編集</string>
     <string name="select_contact">連絡先を選択</string>
     <string name="nickname">ニックネーム</string>
-    <!-- Groups -->
     <string name="no_groups">グループなし</string>
     <string name="create_new_group">新しいグループを作成</string>
     <string name="remove_from_group">グループから削除</string>
@@ -31,10 +29,8 @@
     <string name="create_group">グループを作成</string>
     <string name="add_to_group">グループに追加</string>
     <string name="create_group_under_account">アカウントの下にグループを作成</string>
-    <!-- Photo -->
     <string name="remove_photo">写真を削除</string>
     <string name="change_photo">写真の変更</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">電話番号を表示</string>
     <string name="show_contact_thumbnails">連絡先のサムネイルを表示</string>
     <string name="show_dialpad_button">メイン画面にダイヤルパッドを表示</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">連絡先に表示するフィールドを管理</string>
     <string name="contacts">連絡先</string>
     <string name="show_only_contacts_with_numbers">電話番号が登録された連絡先のみ表示する</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">重複した連絡先を統合する</string>
-    <!-- Favorites -->
     <string name="no_favorites">お気に入りの連絡先はまだありません。</string>
     <string name="toggle_favorite">お気に入りの切り替え</string>
-    <!-- Search -->
     <string name="search_contacts">連絡先を検索</string>
     <string name="search_favorites">お気に入りを検索</string>
     <string name="search_groups">グループを検索</string>
-    <!-- Export / Import -->
     <string name="import_contacts">連絡先をインポート</string>
     <string name="export_contacts">連絡先をエクスポート</string>
     <string name="import_contacts_from_vcf">.vcfファイルから連絡先をインポート</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">対象となる連絡先のソース</string>
     <string name="include_contact_sources">連絡先のソースを含める</string>
     <string name="filename_without_vcf">ファイル名 (.vcfを含めない)</string>
-    <!-- Dialpad -->
     <string name="dialpad">ダイヤルパッド</string>
     <string name="add_number_to_contact">連絡先に番号を追加</string>
-    <!-- Visible fields -->
     <string name="prefix">敬称（名前の前）</string>
     <string name="suffix">敬称（名前の後）</string>
     <string name="phone_numbers">電話番号</string>
@@ -78,17 +68,10 @@
     <string name="contact_source">インポート元</string>
     <string name="instant_messaging">インスタントメッセージ(IM)</string>
     <string name="ringtone">着信音</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">全ての連絡先ソースから連絡先を消去します。</string>
     <plurals name="delete_groups">
         <item quantity="one">%d件のグループ</item>
         <item quantity="other">%d件のグループ</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">連絡先に表示される項目(フィールド)を変更することはできますか？</string>
+    </plurals>    <string name="faq_1_title">連絡先に表示される項目(フィールド)を変更することはできますか？</string>
     <string name="faq_1_text">可能です。[設定] -&gt; [連絡先に表示するフィールドを管理] から、表示されるフィールドを選択することができます。これらの中にはデフォルトで無効になっているものもあるので、あなたは新しいものを見つけるかもしれません。</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

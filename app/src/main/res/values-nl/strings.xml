@@ -14,14 +14,12 @@
     <string name="send_email_to_group">E-mail naar groep sturen</string>
     <string name="fields_empty">Vul tenminste 1 veld in</string>
     <string name="must_be_at_edit">Kies \"Contact bewerken\" om de gegevens aan te passen</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">Geen contacten met e-mail gevonden</string>
     <string name="no_contacts_with_phone_numbers">Geen contacten met telefoonnummer gevonden</string>
     <string name="new_contact">Nieuw contact</string>
     <string name="edit_contact">Contact bewerken</string>
     <string name="select_contact">Contact kiezen</string>
     <string name="nickname">Bijnaam</string>
-    <!-- Groups -->
     <string name="no_groups">Geen groepen</string>
     <string name="create_new_group">Nieuwe groep aanmaken</string>
     <string name="remove_from_group">Uit groep verwijderen</string>
@@ -31,10 +29,8 @@
     <string name="create_group">Groep maken</string>
     <string name="add_to_group">Aan groep toevoegen</string>
     <string name="create_group_under_account">Groep aanmaken in account</string>
-    <!-- Photo -->
     <string name="remove_photo">Foto verwijderen</string>
     <string name="change_photo">Foto veranderen</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">Telefoonnummers tonen</string>
     <string name="show_contact_thumbnails">Miniaturen van contacten weergeven</string>
     <string name="show_dialpad_button">Knop voor toetsenblok tonen in hoofdscherm</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">Contactvelden tonen/verbergen</string>
     <string name="contacts">Contacten</string>
     <string name="show_only_contacts_with_numbers">Alleen contacten met telefoonnummer tonen</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Dubbele contacten samenvoegen</string>
-    <!-- Favorites -->
     <string name="no_favorites">Er zijn nog geen favorieten toegevoegd.</string>
     <string name="toggle_favorite">Favoriet in-/uitschakelen</string>
-    <!-- Search -->
     <string name="search_contacts">Contact zoeken</string>
     <string name="search_favorites">Favoriet zoeken</string>
     <string name="search_groups">Groep zoeken</string>
-    <!-- Export / Import -->
     <string name="import_contacts">Contacten importeren</string>
     <string name="export_contacts">Contacten exporteren</string>
     <string name="import_contacts_from_vcf">Contacten importeren uit .vcf-bestand</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">Doel-account</string>
     <string name="include_contact_sources">Contactbronnen opnemen</string>
     <string name="filename_without_vcf">Bestandsnaam (zonder .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">Toetsenblok</string>
     <string name="add_number_to_contact">Nummer toevoegen aan contact</string>
-    <!-- Visible fields -->
     <string name="prefix">Voorvoegsel</string>
     <string name="suffix">Achtervoegsel</string>
     <string name="phone_numbers">Telefoonnummers</string>
@@ -73,22 +63,13 @@
     <string name="addresses">Adressen</string>
     <string name="events">Gebeurtenissen (verjaardagen, jubilea)</string>
     <string name="organization">Organisatie</string>
-    <string name="websites">Websites</string>
     <string name="groups">Groepen</string>
     <string name="contact_source">Account</string>
-    <string name="instant_messaging">Instant messaging (IM)</string>
     <string name="ringtone">Beltoon</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">Het contact wordt uit alle contactbronnen verwijderd.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d groep</item>
         <item quantity="other">%d groepen</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">Ik wil wijzigen welke velden zichtbaar zijn bij contacten. Kan dat\?</string>
+    </plurals>    <string name="faq_1_title">Ik wil wijzigen welke velden zichtbaar zijn bij contacten. Kan dat\?</string>
     <string name="faq_1_text">Ja, dat kan via Instellingen -&gt; Contactvelden tonen/verbergen. Dat laat kiezen welke velden zichtbaar moeten zijn. Sommige velden zijn standaard verborgen, dus misschien zijn er via deze optie meer te ontdekken.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

@@ -3,64 +3,14 @@
     <string name="address">주소</string>
     <string name="inserting">등록중…</string>
     <string name="updating">수정중…</string>
-    <string name="phone_storage">Phone storage</string>
-    <string name="phone_storage_hidden">Phone storage (not visible by other apps)</string>
-    <string name="company">Company</string>
-    <string name="job_position">Job position</string>
-    <string name="send_sms_to_contacts">Send SMS to contacts</string>
-    <string name="send_email_to_contacts">Send email to contacts</string>
-    <string name="send_sms_to_group">Send SMS to group</string>
-    <string name="send_email_to_group">Send email to group</string>
-    <string name="fields_empty">At least 1 field has to be filled out</string>
-    <string name="must_be_at_edit">You must be at the Edit screen to modify a contact</string>
-
-    <!-- Placeholders -->
-    <string name="no_contacts_with_emails">No contacts with emails have been found</string>
-    <string name="no_contacts_with_phone_numbers">No contacts with phone numbers have been found</string>
-
     <string name="new_contact">새로운 연락처</string>
     <string name="edit_contact">연락처 수정</string>
     <string name="select_contact">단건 연락처 선택</string>
-    <string name="nickname">Nickname</string>
-
-    <!-- Groups -->
-    <string name="no_groups">No groups</string>
-    <string name="create_new_group">Create a new group</string>
-    <string name="remove_from_group">Remove from group</string>
-    <string name="no_group_participants">This group is empty</string>
-    <string name="add_contacts">Add contacts</string>
-    <string name="no_group_created">There are no contact groups on the device</string>
-    <string name="create_group">Create group</string>
-    <string name="add_to_group">Add to group</string>
-    <string name="create_group_under_account">Create group under account</string>
-
-    <!-- Photo -->
     <string name="remove_photo">사진 삭제</string>
-    <string name="change_photo">Change photo</string>
-
-    <!-- Settings -->
     <string name="show_phone_numbers">메인 스크린에 전화번호 표시</string>
-    <string name="show_contact_thumbnails">Show contact thumbnails</string>
-    <string name="show_dialpad_button">Show a dialpad button on the main screen</string>
-    <string name="on_contact_click">On contact click</string>
-    <string name="call_contact">Call contact</string>
-    <string name="view_contact">View contact details</string>
-    <string name="manage_shown_contact_fields">Manage shown contact fields</string>
-    <string name="contacts">Contacts</string>
-    <string name="show_only_contacts_with_numbers">Show only contacts with phone numbers</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
-    <string name="merge_duplicate_contacts">Merge duplicate contacts</string>
-
-    <!-- Favorites -->
     <string name="no_favorites">자주 사용하는 연락처가 아직 등록되지 않았습니다.</string>
-    <string name="toggle_favorite">Toggle favorite</string>
-
-    <!-- Search -->
     <string name="search_contacts">연락처 검색</string>
     <string name="search_favorites">자주쓰는 연락처 검색</string>
-    <string name="search_groups">Search groups</string>
-
-    <!-- Export / Import -->
     <string name="import_contacts">연락처 가져오기</string>
     <string name="export_contacts">연락처 내보내기</string>
     <string name="import_contacts_from_vcf">.vcf file에서 가져오기</string>
@@ -69,38 +19,4 @@
     <string name="target_contact_source">내보내기 대상</string>
     <string name="include_contact_sources">가져오기 대상</string>
     <string name="filename_without_vcf">파일이름 (.vcf 확장자 생략)</string>
-
-    <!-- Dialpad -->
-    <string name="dialpad">Dialpad</string>
-    <string name="add_number_to_contact">Add number to contact</string>
-
-    <!-- Visible fields -->
-    <string name="prefix">Prefix</string>
-    <string name="suffix">Suffix</string>
-    <string name="phone_numbers">Phone numbers</string>
-    <string name="emails">Emails</string>
-    <string name="addresses">Addresses</string>
-    <string name="events">Events (birthdays, anniversaries)</string>
-    <string name="organization">Organization</string>
-    <string name="websites">Websites</string>
-    <string name="groups">Groups</string>
-    <string name="contact_source">Contact source</string>
-    <string name="instant_messaging">Instant messaging (IM)</string>
-    <string name="ringtone">Ringtone</string>
-
-    <!-- Confirmation dialog -->
-    <string name="delete_from_all_sources">The contact will be removed from all contact sources.</string>
-
-    <plurals name="delete_groups">
-        <item quantity="one">%d group</item>
-        <item quantity="other">%d groups</item>
-    </plurals>
-
-    <!-- FAQ -->
-    <string name="faq_1_title">I want to change what fields are visible at contacts. Can I do it?</string>
-    <string name="faq_1_text">Yes, all you have to do is go in Settings -> Manage shown contact fields. There you can select what fields should be visible. Some of them are even disabled by default, so you might find some new ones there.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

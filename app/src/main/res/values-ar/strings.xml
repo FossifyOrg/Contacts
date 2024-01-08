@@ -14,14 +14,12 @@
     <string name="send_email_to_group">ارسال بريد الكتروني الى مجموعة</string>
     <string name="fields_empty">يجب ملء حقل 1 على الأقل</string>
     <string name="must_be_at_edit">يجب أن تكون في شاشة التعديل لتعديل جهة اتصال</string>
-    <!-- Placeholders -->
     <string name="no_contacts_with_emails">لا توجد جهات اتصال بهذا البريد الإلكتروني</string>
     <string name="no_contacts_with_phone_numbers">لا توجد جهات اتصال بهذا الرقم</string>
     <string name="new_contact">جهة اتصال جديدة</string>
     <string name="edit_contact">تعديل جهة اتصالل</string>
     <string name="select_contact">اختيار جهة اتصال</string>
     <string name="nickname">اللقب</string>
-    <!-- Groups -->
     <string name="no_groups">لا توجد مجموعات</string>
     <string name="create_new_group">انشاء مجموعة جديدة</string>
     <string name="remove_from_group">ازالة من المجموعة</string>
@@ -31,10 +29,8 @@
     <string name="create_group">انشاء مجموعة</string>
     <string name="add_to_group">اضافة الى مجموعة</string>
     <string name="create_group_under_account">انشاء مجموعة ضمن حساب</string>
-    <!-- Photo -->
     <string name="remove_photo">ازالة الصورة</string>
     <string name="change_photo">تغيير الصورة</string>
-    <!-- Settings -->
     <string name="show_phone_numbers">إظهار أرقام الهواتف</string>
     <string name="show_contact_thumbnails">عرض صور مصغرة لجهات الإتصال</string>
     <string name="show_dialpad_button">عرض زر لوحة الإتصال على الشاشةالرئيسية</string>
@@ -44,16 +40,12 @@
     <string name="manage_shown_contact_fields">إدارة حقول جهات الاتصال المعروضة</string>
     <string name="contacts">جهات الاتصال</string>
     <string name="show_only_contacts_with_numbers">إظهار جهات الاتصال التي لديها أرقام هواتف فقط</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Dialer, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="merge_duplicate_contacts">دمج جهات الاتصال المكررة</string>
-    <!-- Favorites -->
     <string name="no_favorites">يبدو أنك لم تضف أي جهات اتصالٍ مفضلةٍ حتى الآن.</string>
     <string name="toggle_favorite">تبديل المفضلة</string>
-    <!-- Search -->
     <string name="search_contacts">بحث في جهات الاتصال</string>
     <string name="search_favorites">بحث في المفضلة</string>
     <string name="search_groups">البحث في المجموعات</string>
-    <!-- Export / Import -->
     <string name="import_contacts">استيراد جهات اتصال</string>
     <string name="export_contacts">تصدير جهات اتصال</string>
     <string name="import_contacts_from_vcf">استيراد جهات اتصال من ملف vcf</string>
@@ -62,10 +54,8 @@
     <string name="target_contact_source">مصدر الاتصال المستهدف</string>
     <string name="include_contact_sources">تضمين مصادر الاتصال</string>
     <string name="filename_without_vcf">اسم الملف (بدون .vcf)</string>
-    <!-- Dialpad -->
     <string name="dialpad">لوحة الاتصال</string>
     <string name="add_number_to_contact">إضافة رقم الى جهة اتصال</string>
-    <!-- Visible fields -->
     <string name="prefix">بادئة</string>
     <string name="suffix">لاحقة</string>
     <string name="phone_numbers">ارقام الهاتف</string>
@@ -78,7 +68,6 @@
     <string name="contact_source">مصدر الاتصال</string>
     <string name="instant_messaging">المراسلة الفورية (IM)</string>
     <string name="ringtone">نغمة الرنين</string>
-    <!-- Confirmation dialog -->
     <string name="delete_from_all_sources">ستتم إزالة جهة الاتصال من جميع مصادر الاتصال.</string>
     <plurals name="delete_groups">
         <item quantity="zero">مجموعة %d</item>
@@ -87,12 +76,6 @@
         <item quantity="few">مجموعة %d</item>
         <item quantity="many">مجموعات %d</item>
         <item quantity="other">مجموعة %d</item>
-    </plurals>
-    <!-- FAQ -->
-    <string name="faq_1_title">أريد تغيير الحقول المرئية في جهات الاتصال. هل يمكنني القيام بذلك؟</string>
+    </plurals>    <string name="faq_1_title">أريد تغيير الحقول المرئية في جهات الاتصال. هل يمكنني القيام بذلك؟</string>
     <string name="faq_1_text">نعم ، كل ما عليك فعله هو الانتقال إلى الإعدادات -&gt; إدارة حقول جهات الاتصال المعروضة. هناك يمكنك تحديد الحقول التي يجب أن تكون مرئية. يتم تعطيل بعضها بشكل افتراضي ، لذلك قد تجد بعض الأشياء الجديدة هناك.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>
