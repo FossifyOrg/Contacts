@@ -72,6 +72,8 @@
     <plurals name="delete_groups">
         <item quantity="one">%d grupo</item>
         <item quantity="other">%d grupos</item>
-    </plurals>    <string name="faq_1_title">Quero cambialos campos visibles nos contactos. Podo facelo\?</string>
+    </plurals>
+    <string name="faq_1_title">Quero cambialos campos visibles nos contactos. Podo facelo\?</string>
     <string name="faq_1_text">Si, chega con acceder a Axustes -&gt; Xestionar campos mostrados. Aquí, pode escoller os campos que serán mostrados. Algúns dos campos xa están agochados e así pode mostrar algúns destes.</string>
+    <string name="show_private_contacts">Mostrar os contactos privados en Marcador Fossify, Mensaxeiro SMS Fossify e Calendario Fossify</string>
 </resources>
