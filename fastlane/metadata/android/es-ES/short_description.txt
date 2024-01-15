@@ -1,0 +1,1 @@
+Agenda de contactos, gestiona contactos recientes y copias de seguridad en vcf

@@ -40,7 +40,7 @@
     <string name="manage_shown_contact_fields">Sichtbare Kontaktfelder bearbeiten</string>
     <string name="contacts">Kontakte</string>
     <string name="show_only_contacts_with_numbers">Nur Kontakte mit Telefonnummern anzeigen</string>
-    <string name="show_private_contacts">Private Kontakte in Fossify Telefon, Fossify SMS-Messenger und Fossify Kalendar anzeigen</string>
+    <string name="show_private_contacts">Private Kontakte in Fossify Dialer, Fossify SMS Messenger und Fossify Calendar anzeigen</string>
     <string name="merge_duplicate_contacts">Duplizierte Kontakte zusammenführen</string>
     <string name="no_favorites">Anscheinend hast du bisher noch keine Kontakte zu den Favoriten hinzugefügt.</string>
     <string name="toggle_favorite">Favorit umschalten</string>

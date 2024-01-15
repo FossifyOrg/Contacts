@@ -1,0 +1,2 @@
+* Se ha corregido un error relacionado con la barra de búsqueda.
+ * Se han añadido algunas mejoras en la interfaz de usuario, la traducción y la estabilidad
