@@ -1,0 +1,1 @@
+Adressbuch für die Verwaltung der Kontakte inklusive vCard-Sicherungen
