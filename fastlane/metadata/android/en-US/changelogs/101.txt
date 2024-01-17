@@ -1,2 +1,0 @@
- * Added a search bar related bugfix
- * Added some UI, translation and stability improvements

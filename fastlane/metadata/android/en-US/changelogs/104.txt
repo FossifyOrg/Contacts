@@ -1,2 +1,0 @@
- * Added autocomplete to names at creating new contacts
- * Added some UI, translation and stability improvements

@@ -1,2 +1,0 @@
- * Properly handle exporting and importing contact favorite numbers
- * Added some UI, translation and stability improvements

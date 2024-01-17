@@ -1,1 +1,1 @@
-Contacts address book for managing recent contacts and vcf contact backups
+Manage your contacts privately and efficiently with vCard support
