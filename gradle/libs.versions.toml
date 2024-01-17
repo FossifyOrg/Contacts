@@ -35,7 +35,7 @@ autofittextview = { module = "me.grantland:autofittextview", version.ref = "auto
 #EzVcard
 ezvcard = { module = "com.googlecode.ez-vcard:ez-vcard", version.ref = "ezvcard" }
 #IndicatorFastScroll
-indicatorfastscroll = { module = "com.github.tibbi:IndicatorFastScroll", version.ref = "indicatorfastscroll" }
+indicatorfastscroll = { module = "org.fossify:IndicatorFastScroll", version.ref = "indicatorfastscroll" }
 #Room
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
