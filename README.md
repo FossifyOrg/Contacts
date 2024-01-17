@@ -1,6 +1,6 @@
 # Fossify Contacts
 <img alt="Logo" src="graphics/icon.webp" width="120" />
-Introducing Fossify Contacts - the next evolution in contact management. Poised to redefine how you manage your contacts, our app combines simplicity with advanced features, tailored for both personal and professional use.
+Introducing Fossify Contacts - the next evolution in contact management. Poised to redefine how you manage your contacts, our app combines simplicity with advanced features, tailored for both personal and professional use. 
 
 **🔍 SMART SEARCH & FIELD CUSTOMIZATION:**  
 Locate contacts quickly with our intelligent search feature. Customize visible fields, enjoy a user-friendly interface, and find contacts effortlessly, saving time and enhancing productivity.
@@ -36,8 +36,7 @@ Download the app now and elevate your contact management to new heights. Your jo
 ➡️ Join the community on Reddit: https://www.reddit.com/r/Fossify<br>
 ➡️ Connect on Telegram: https://t.me/Fossify
 
-
-<div style="display:flex;">
+<div align="center">
 <img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" width="30%">
 <img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png" width="30%">
 <img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" width="30%">
