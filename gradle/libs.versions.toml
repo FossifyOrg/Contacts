@@ -14,7 +14,7 @@ indicatorfastscroll = "4524cd0b61"
 #Room
 room = "2.6.1"
 #Fossify
-commons = "cbf79568d3"
+commons = "1437ab513f"
 #Gradle
 gradlePlugins-agp = "8.2.1"
 #build
