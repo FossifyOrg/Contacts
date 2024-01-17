@@ -2,6 +2,7 @@
 <img alt="Logo" src="graphics/icon.webp" width="120" />
 Introducing Fossify Contacts - the next evolution in contact management. Poised to redefine how you manage your contacts, our app combines simplicity with advanced features, tailored for both personal and professional use. 
 
+
 **🔍 SMART SEARCH & FIELD CUSTOMIZATION:**  
 Locate contacts quickly with our intelligent search feature. Customize visible fields, enjoy a user-friendly interface, and find contacts effortlessly, saving time and enhancing productivity.
 
