@@ -72,6 +72,8 @@
     <plurals name="delete_groups">
         <item quantity="one">%d rühm</item>
         <item quantity="other">%d rühma</item>
-    </plurals>    <string name="faq_1_title">Ma soovin muuta kontaktkirje juures näidatavaid andmevälju. Kas ma saan seda teha\?</string>
+    </plurals>
+    <string name="faq_1_title">Ma soovin muuta kontaktkirje juures näidatavaid andmevälju. Kas ma saan seda teha\?</string>
     <string name="faq_1_text">Jah ikka on võimalik. Ava Seadistused -&gt; Halda kuvatavaid kontaktkirje välju. Sealt saad valida välju, mida tahad näha. Kuna mõned neist on vaikimisi peidetud, siis saad vajadusel ka loendit laiendada.</string>
+    <string name="show_private_contacts">Näita privaatseid kontakte Fossify Telefonis, Fossify SMS Sõnumites and Fossify Kalendris</string>
 </resources>
