@@ -1,6 +1,8 @@
 # Fossify Contacts
 <img alt="Logo" src="graphics/icon.webp" width="120" />
 
+<a href="https://apt.izzysoft.de/fdroid/index/apk/org.fossify.contacts"><img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height=80/></a>
+
 Introducing Fossify Contacts - the next evolution in contact management. Poised to redefine how you manage your contacts, our app combines simplicity with advanced features, tailored for both personal and professional use.  
 
 🔍 **SMART SEARCH & FIELD CUSTOMIZATION:**  
