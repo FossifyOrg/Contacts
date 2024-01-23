@@ -2,6 +2,13 @@
 <resources>
     <string name="app_launcher_name">Contacts</string>
     <string name="address">Address</string>
+    <string name="street">Street</string>
+    <string name="neighborhood">Appartment or suite number</string>
+    <string name="city">City</string>
+    <string name="postcode">Postal code</string>
+    <string name="pobox">Post office box</string>
+    <string name="region">State</string>
+    <string name="country">Country</string>
     <string name="inserting">Inserting…</string>
     <string name="updating">Updating…</string>
     <string name="phone_storage">Phone storage</string>
@@ -82,6 +89,7 @@
     <string name="phone_numbers">Phone numbers</string>
     <string name="emails">Emails</string>
     <string name="addresses">Addresses</string>
+    <string name="structured_addresses">Structured Addresses (edit mode)</string>
     <string name="events">Events (birthdays, anniversaries)</string>
     <string name="organization">Organization</string>
     <string name="websites">Websites</string>
