@@ -24,6 +24,7 @@ class ManageVisibleFieldsDialog(val activity: BaseSimpleActivity, val callback: 
             put(SHOW_EMAILS_FIELD, R.id.manage_visible_fields_emails)
             put(SHOW_ADDRESSES_FIELD, R.id.manage_visible_fields_addresses)
             put(SHOW_IMS_FIELD, R.id.manage_visible_fields_ims)
+            put(SHOW_STRUCTURED_ADDRESSES_FIELD, R.id.manage_visible_fields_structured_addresses)
             put(SHOW_EVENTS_FIELD, R.id.manage_visible_fields_events)
             put(SHOW_NOTES_FIELD, R.id.manage_visible_fields_notes)
             put(SHOW_ORGANIZATION_FIELD, R.id.manage_visible_fields_organization)
