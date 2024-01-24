@@ -224,13 +224,11 @@ class ContactsAdapter(
 
         ContactsHelper(activity).getContacts(true) { allContacts ->
             ensureBackgroundThread {
-                contactsToRemove.forEach {
-                    val contactToRemove = it
-                    val duplicates = allContacts.filter { it.id != contactToRemove.id && it.getHashToCompare() == contactToRemove.getHashToCompare() }
-                        .toMutableList() as ArrayList<Contact>
-                    duplicates.add(contactToRemove)
-                    ContactsHelper(activity).deleteContacts(duplicates)
-                }
+                ContactsHelper(activity).deleteContacts(contactsToRemove
+                    .flatMap { contactToRemove -> allContacts.filter {
+                        (config.mergeDuplicateContacts || it.id == contactToRemove.id) && (it.getHashToCompare() == contactToRemove.getHashToCompare())
+                    } }
+                    .toMutableList() as ArrayList<Contact>)
 
                 activity.runOnUiThread {
                     if (contactItems.isEmpty()) {
