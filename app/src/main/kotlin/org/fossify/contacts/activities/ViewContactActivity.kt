@@ -115,7 +115,7 @@ class ViewContactActivity : ContactActivity() {
             }
 
             findItem(R.id.delete).setOnMenuItemClickListener {
-                deleteContactFromAllSources()
+                deleteContactWithMergeLogic()
                 true
             }
 
@@ -835,8 +835,8 @@ class ViewContactActivity : ContactActivity() {
         }
     }
 
-    private fun deleteContactFromAllSources() {
-        val addition = if (binding.contactSourcesHolder.childCount > 1) {
+    private fun deleteContactWithMergeLogic() {
+        val addition = if (binding.contactSourcesHolder.childCount > 1 && mergeDuplicate) {
             "\n\n${getString(R.string.delete_from_all_sources)}"
         } else {
             ""
@@ -845,7 +845,7 @@ class ViewContactActivity : ContactActivity() {
         val message = "${getString(org.fossify.commons.R.string.proceed_with_deletion)}$addition"
         ConfirmationDialog(this, message) {
             if (contact != null) {
-                ContactsHelper(this).deleteContact(contact!!, true) {
+                ContactsHelper(this).deleteContact(contact!!, mergeDuplicate) {
                     finish()
                 }
             }
