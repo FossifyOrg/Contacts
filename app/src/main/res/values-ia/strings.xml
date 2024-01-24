@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="updating">Actualisante…</string>
+    <string name="search_groups">Cercar gruppos</string>
+    <string name="search_contacts">Cercar contactos</string>
+    <string name="search_favorites">Cercar favoritos</string>
 </resources>
