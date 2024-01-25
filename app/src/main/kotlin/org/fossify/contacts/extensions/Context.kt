@@ -10,10 +10,12 @@ import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.FileProvider
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.*
+import org.fossify.commons.models.contacts.Contact
 import org.fossify.contacts.BuildConfig
 import org.fossify.contacts.R
 import org.fossify.contacts.helpers.AUTOMATIC_BACKUP_REQUEST_CODE
 import org.fossify.contacts.helpers.Config
+import org.fossify.contacts.helpers.VcfExporter
 import org.fossify.contacts.helpers.getNextAutoBackupTime
 import org.fossify.contacts.helpers.getPreviousAutoBackupTime
 import org.fossify.contacts.receivers.AutomaticBackupReceiver
@@ -129,15 +131,15 @@ fun Context.backupContacts() {
                 return@getContactsToExport
             }
 
-            val exportResult = try {
-                ContactsHelper(this).exportContacts(contactsToBackup, outputStream)
-            } catch (e: Exception) {
-                showErrorToast(e)
-            }
-
-            when (exportResult) {
-                ExportResult.EXPORT_OK -> toast(org.fossify.commons.R.string.exporting_successful)
-                else -> toast(org.fossify.commons.R.string.exporting_failed)
+            VcfExporter().exportContacts(
+                context = this,
+                outputStream = outputStream,
+                contacts = contactsToBackup.toMutableList() as ArrayList<Contact>,
+                showExportingToast = false
+            ) { exportResult ->
+                if (exportResult == VcfExporter.ExportResult.EXPORT_FAIL) {
+                    toast(org.fossify.commons.R.string.exporting_failed)
+                }
             }
 
             config.lastAutoBackupTime = DateTime.now().millis

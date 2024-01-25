@@ -1,5 +1,6 @@
 package org.fossify.contacts.helpers
 
+import android.content.Context
 import android.net.Uri
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Event
@@ -12,7 +13,6 @@ import ezvcard.VCard
 import ezvcard.VCardVersion
 import ezvcard.parameter.ImageType
 import ezvcard.property.*
-import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.getByteArray
 import org.fossify.commons.extensions.getDateTimeFromDateString
 import org.fossify.commons.extensions.showErrorToast
@@ -31,7 +31,7 @@ class VcfExporter {
     private var contactsFailed = 0
 
     fun exportContacts(
-        activity: BaseSimpleActivity,
+        context: Context,
         outputStream: OutputStream?,
         contacts: ArrayList<Contact>,
         showExportingToast: Boolean,
@@ -45,7 +45,7 @@ class VcfExporter {
             }
 
             if (showExportingToast) {
-                activity.toast(org.fossify.commons.R.string.exporting)
+                context.toast(org.fossify.commons.R.string.exporting)
             }
 
             val cards = ArrayList<VCard>()
@@ -146,7 +146,7 @@ class VcfExporter {
                 }
 
                 if (contact.thumbnailUri.isNotEmpty()) {
-                    val photoByteArray = MediaStore.Images.Media.getBitmap(activity.contentResolver, Uri.parse(contact.thumbnailUri)).getByteArray()
+                    val photoByteArray = MediaStore.Images.Media.getBitmap(context.contentResolver, Uri.parse(contact.thumbnailUri)).getByteArray()
                     val photo = Photo(photoByteArray, ImageType.JPEG)
                     card.addPhoto(photo)
                 }
@@ -166,7 +166,7 @@ class VcfExporter {
 
             Ezvcard.write(cards).version(version).go(outputStream)
         } catch (e: Exception) {
-            activity.showErrorToast(e)
+            context.showErrorToast(e)
         }
 
         callback(
