@@ -70,6 +70,10 @@
     <plurals name="delete_groups">
         <item quantity="one">%d groep</item>
         <item quantity="other">%d groepen</item>
-    </plurals>    <string name="faq_1_title">Ik wil wijzigen welke velden zichtbaar zijn bij contacten. Kan dat\?</string>
+    </plurals>
+    <string name="faq_1_title">Ik wil wijzigen welke velden zichtbaar zijn bij contacten. Kan dat\?</string>
     <string name="faq_1_text">Ja, dat kan via Instellingen -&gt; Contactvelden tonen/verbergen. Dat laat kiezen welke velden zichtbaar moeten zijn. Sommige velden zijn standaard verborgen, dus misschien zijn er via deze optie meer te ontdekken.</string>
+    <string name="instant_messaging">Instant messaging (IM)</string>
+    <string name="websites">Websites</string>
+    <string name="show_private_contacts">Privécontacten tonen aan Fossify Telefoon, Fossify Berichten en Fossify Agenda</string>
 </resources>

@@ -73,6 +73,8 @@
         <item quantity="one">%d grupo</item>
         <item quantity="many">%d grupos</item>
         <item quantity="other">%d grupos</item>
-    </plurals>    <string name="faq_1_title">Pretendo alterar os campos a mostrar nos contactos. É possível\?</string>
+    </plurals>
+    <string name="faq_1_title">Pretendo alterar os campos a mostrar nos contactos. É possível\?</string>
     <string name="faq_1_text">Sim, basta aceder a Definições -&gt; Gerir campos a mostrar. Aqui, pode escolher os campos que serão mostrados. Alguns dos campos estão ocultos e, assim, pode mostrar alguns destes.</string>
+    <string name="show_private_contacts">Partilhar contactos entre Fossify Dialer, Fossify SMS Messenger e Fossify Calendar</string>
 </resources>

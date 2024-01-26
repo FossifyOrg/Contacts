@@ -71,7 +71,8 @@
     <string name="delete_from_all_sources">Liên hệ sẽ bị xóa khỏi tất cả các nguồn liên hệ.</string>
     <plurals name="delete_groups">
         <item quantity="other">%d nhóm</item>
-    </plurals>    
+    </plurals>
     <string name="faq_1_title">Tôi muốn thay đổi những trường hiển thị tại danh bạ. Tôi có thể làm được không\?</string>
     <string name="faq_1_text">Có, tất cả những gì bạn phải làm là vào Cài đặt -&gt; Quản lý các trường liên hệ được hiển thị. Ở đó bạn có thể chọn những trường nào sẽ hiển thị. Một số trong số chúng thậm chí còn bị tắt theo mặc định, vì vậy bạn có thể tìm thấy một số cái mới ở đó.</string>
+    <string name="show_private_contacts">Cho phép Điện thoại Fossify, Tin nhắn Fossify và Lịch Fossify đọc danh bạ riêng</string>
 </resources>
