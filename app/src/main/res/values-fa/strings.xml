@@ -70,4 +70,10 @@
     <string name="new_contact">مخاطب نو</string>
     <string name="no_groups">بدون گروه</string>
     <string name="create_new_group">ساختن گروهی نو</string>
+    <string name="create_group_under_account">ساختن گروه زیر حساب</string>
+    <string name="on_contact_click">با کلیک بر روی مخاطب</string>
+    <string name="toggle_favorite">نمایش دادن یا ندادن برگزیده ها</string>
+    <string name="target_contact_source">منبع مخاطب انتخابی</string>
+    <string name="faq_1_title">من می‌خواهم کادر ها نشان داده شده برای مخاطبان را تغییر دهم. می‌توانم این کار را انجام دهم؟</string>
+    <string name="faq_1_text">بله؛ باید به قسمت تنظیمات رفته و مدیریت کادرهای نمایان را انتخاب کنید. آنجا می‌توانید انتخاب کنید چه کادر های نشان داده می‌شوند. برخی از آنها به طور پیش فرض غیرفعال شده اند، پس شاید آنجا کادر های تازه ای بیابید.</string>
 </resources>
