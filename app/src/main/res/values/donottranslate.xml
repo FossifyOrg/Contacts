@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="package_name" translatable="false">org.fossify.contacts</string>
-    <string name="app_name">Fossify Contacts</string>
+    <string name="app_name" translatable="false">Fossify Contacts</string>
 
     <string name="im" translatable="false">IM</string>
     <string name="aim" translatable="false">AIM</string>
