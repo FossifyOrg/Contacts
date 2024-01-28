@@ -74,6 +74,6 @@
     </plurals>
     <string name="faq_1_title">Jag vill ändra vilka fält som är synliga vid kontakter. Kan jag göra det\?</string>
     <string name="faq_1_text">Ja, allt du behöver göra är att gå till Inställningar -&gt; Hantera visade kontaktfält. Där kan du välja vilka fält som ska vara synliga. Vissa av dem är till och med inaktiverade som standard, så du kanske hittar några nya där.</string>
-    <string name="show_private_contacts">Visa privata kontakter till Fossify Dialer, Fossify SMS Messenger och Fossify Calendar</string>
+    <string name="show_private_contacts">Visa privata kontakter till Fossify Phone, Fossify SMS Messenger och Fossify Calendar</string>
     <string name="prefix">Prefix</string>
 </resources>
