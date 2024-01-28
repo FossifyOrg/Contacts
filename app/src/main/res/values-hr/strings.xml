@@ -2,10 +2,10 @@
 <resources>
     <string name="app_launcher_name">Kontakti</string>
     <string name="address">Adresa</string>
-    <string name="inserting">Dodavanje…</string>
+    <string name="inserting">Umetanje …</string>
     <string name="updating">Aktualiziranje …</string>
-    <string name="phone_storage">Spremište na mobitelu</string>
-    <string name="phone_storage_hidden">Spremište na mobitelu (nije vidljivo za druge aplikacije)</string>
+    <string name="phone_storage">Memorija mobitela</string>
+    <string name="phone_storage_hidden">Memorija mobitela (nije vidljiva za druge aplikacije)</string>
     <string name="company">Tvrtka</string>
     <string name="job_position">Radno mjesto</string>
     <string name="send_sms_to_contacts">Pošalji SMS kontaktima</string>
@@ -73,6 +73,8 @@
         <item quantity="one">%d grupa</item>
         <item quantity="few">%d grupe</item>
         <item quantity="other">%d grupa</item>
-    </plurals>    <string name="faq_1_title">Želim promijeniti polja koja su vidljiva u kontaktima. Mogu li to napraviti\?</string>
+    </plurals>
+    <string name="faq_1_title">Želim promijeniti polja koja su vidljiva u kontaktima. Mogu li to napraviti\?</string>
     <string name="faq_1_text">Da, idi u Postavke -&gt; Upravljaj prikazanim poljima kontakta. Tamo možeš odabrati vidljiva polja. Neka od njih su čak standardno deaktivirana, tako da možeš pronaći neka nova.</string>
+    <string name="show_private_contacts">Prikaži privatne kontakte aplikacijama Fossify birač, Fossify SMS Messenger i Fossify kalendar</string>
 </resources>
