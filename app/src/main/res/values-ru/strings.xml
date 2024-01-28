@@ -76,5 +76,5 @@
     </plurals>
     <string name="faq_1_title">Я хочу изменить поля, отображаемые у контактов. Могу ли я это сделать?</string>
     <string name="faq_1_text">Да, всё, что вам нужно сделать, это зайти в \"Настройки\" → \"Управление отображаемыми полями контактов\". Там вы сможете выбрать, какие поля должны быть видимы. Некоторые из них даже отключены по умолчанию, так что вы можете найти некоторые новые.</string>
-    <string name="show_private_contacts">Разрешить Fossify Dialer, Fossify SMS Messenger и Fossify Calendar доступ к приватным контактам</string>
+    <string name="show_private_contacts">Разрешить Fossify Phone, Fossify SMS Messenger и Fossify Calendar доступ к приватным контактам</string>
 </resources>
