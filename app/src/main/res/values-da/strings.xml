@@ -40,6 +40,8 @@
     <string name="manage_shown_contact_fields">Administrer viste kontaktfelter</string>
     <string name="contacts">Kontakter</string>
     <string name="show_only_contacts_with_numbers">Vis kun kontakter med telefonnumre</string>
+    <string name="show_private_contacts">Vis private kontakter til Fossify Opkald, Fossify SMS og Fossify Kalender</string>
+    <string name="merge_duplicate_contacts">Flet dubletter af kontakter</string>
     <string name="no_favorites">Det ser ud til, at du ikke har tilføjet nogen favoritkontakter endnu.</string>
     <string name="toggle_favorite">Slå favorit til/fra</string>
     <string name="search_contacts">Søg i kontakter</string>
@@ -65,6 +67,7 @@
     <string name="websites">Hjemmesider</string>
     <string name="groups">Grupper</string>
     <string name="contact_source">Kontaktkilde</string>
+    <string name="instant_messaging">Instant messaging (IM)</string>
     <string name="ringtone">Ringteone</string>
     <string name="delete_from_all_sources">Kontakten vil blive fjernet fra alle kontaktkilder.</string>
     <plurals name="delete_groups">
@@ -72,4 +75,5 @@
         <item quantity="other">%d grupper</item>
     </plurals>    <string name="faq_1_title">Jeg vil ændre, hvilke felter der er synlige ved kontakter. Kan jeg gøre det?</string>
     <string name="faq_1_text">Ja, alt hvad du skal gøre er at gå i Indstillinger -&gt; Administrer viste kontaktfelter. Der kan du vælge, hvilke felter der skal være synlige. Nogle af dem er endda deaktiveret som standard, så du kan muligvis finde nogle nye der.</string>
+    <string name="app_name">Fossify Kontakter</string>
 </resources>
