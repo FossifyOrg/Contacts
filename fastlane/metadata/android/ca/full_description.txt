@@ -1,0 +1,35 @@
+Us presentem Fossify Contacts, la pròxima evolució en la gestió de contactes. Amb la intenció de redefinir com gestioneu els contactes, la nostra aplicació combina senzillesa amb funcionalitats avançades, adaptades tant a l'ús personal com professional.
+
+🔍 CERCA INTEL·LIGENT I PERSONALITZACIÓ DE CAMPS:
+Localitzeu contactes ràpidament amb la nostra funció de cerca intel·ligent. Personalitzeu els camps visibles, gaudiu d'una interfície fàcil d'utilitzar i trobeu els contactes sense esforç, estalviant temps i millorant la productivitat.
+
+✉️ GESTIÓ DE GRUPS I COMUNICACIÓ:
+Gestioneu sense esforç els grups de contactes per a una comunicació racionalitzada. La nostra aplicació facilita l'agrupament per a correus electrònics per lots o SMS, amb funcions per a crear llistes preferides i canviar el nom dels grups, millorant les vostres capacitats organitzatives.
+
+🔄 OPCIONS FIABLES DE CÒPIA DE SEGURETAT I EXPORTACIÓ:
+Assegureu-vos que els vostres contactes estan sempre segurs amb el nostre sistema de còpia de seguretat fiable. Exporteu o importeu contactes sense problemes en el format vCard, fent que la migració de dades i la còpia de seguretat no siguin una preocupació.
+
+🌐 TRANSPARÈNCIA DEL CODI OBERT:
+Construït sobre una plataforma de codi obert, el Fossify Contacts defensa la transparència i la confiança de l'usuari. Accediu al nostre codi font a GitHub i formeu part d'una comunitat que valora la privacitat, l'obertura i la millora col·laborativa.
+
+🖼️ EXPERIÈNCIA D'USUARI PERSONALITZADA:
+Personalitzeu la gestió de contactes amb facilitat. La nostra aplicació ofereix opcions flexibles de configuració i disseny, que us permeten adaptar la interfície al vostre gust. Ordeneu els contactes, trieu els temes i personalitzeu la vostra experiència per a la màxima comoditat.
+
+🔋 EFICIENT I LLEUGER:
+Optimitzat per al rendiment, el Fossify Contacts està dissenyat per ser lleuger pel que fa als recursos del dispositiu. No només organitza els contactes de manera eficient, sinó que també contribueix a una vida útil de la bateria més llarga, assegurant un funcionament suau.
+
+🚀 SINCRONITZACIÓ AVANÇADA:
+Tant si opteu per emmagatzemar els contactes localment com si preferiu sincronitzar-los entre dispositius utilitzant diferents mitjans, la nostra aplicació garanteix una experiència de gestió suau, eficient i segura.
+
+🔐 ENFOCAMENT PRINCIPAL EN LA PRIVADESA:
+La vostra informació dels contactes continua sent confidencial amb el Fossify Contacts. Prioritzem la vostra privacitat, assegurant que les dades no es comparteixin mai amb aplicacions de tercers.
+
+🌙 DISSENY MODERN I INTERFÍCIE FÀCIL D'UTILITZAR:
+Gaudiu d'un disseny net i modern amb una interfície fàcil d'utilitzar. L'aplicació compta amb el «material design» i una opció de tema fosc, proporcionant una experiència d'usuari visualment atractiva i còmoda.
+
+Descarregueu ara l'aplicació i eleveu la gestió de contactes a noves alçades. El vostre viatge a una organització de contactes eficient, segura i intuïtiva comença aquí.
+
+Exploreu més aplicacions de Fossify: https://www.fossify.org
+Codi obert: https://www.github.com/FossifyOrg
+Uniu-vos a la comunitat a Reddit: https://www.reddit.com/r/Fossify
+Connecteu a Telegram: https://t.me/Fossify
