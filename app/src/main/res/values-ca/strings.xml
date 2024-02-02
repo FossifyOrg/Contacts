@@ -70,7 +70,11 @@
     <string name="delete_from_all_sources">El contacte s\'eliminarà de tots els orígens de contactes.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d grup</item>
+        <item quantity="many">%d grups</item>
         <item quantity="other">%d grups</item>
-    </plurals>    <string name="faq_1_title">Vull canviar quins camps són visibles als contactes. Puc fer-ho\?</string>
+    </plurals>
+    <string name="faq_1_title">Vull canviar quins camps són visibles als contactes. Puc fer-ho\?</string>
     <string name="faq_1_text">Sí, tot el que has de fer és anar a Configuració -&gt; Gestiona els camps mostrats de contacte. Allà es pot seleccionar quins camps han de ser visibles. Alguns d\'ells fins i tot estan desactivats de manera predeterminada, de manera que és possible que en trobeu de nous.</string>
+    <string name="prefix">Prefix</string>
+    <string name="show_private_contacts">Mostra els contactes privats en el Fossify Phone, Fossify SMS Messenger i Fossify Calendar</string>
 </resources>
