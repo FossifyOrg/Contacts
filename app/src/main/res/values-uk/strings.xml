@@ -74,6 +74,8 @@
         <item quantity="few">%d групи</item>
         <item quantity="many">%d груп</item>
         <item quantity="other">%d груп</item>
-    </plurals>    <string name="faq_1_title">Я хочу змінити налаштування видимих полів контактних даних. Чи можу я це зробити?</string>
+    </plurals>
+    <string name="faq_1_title">Я хочу змінити налаштування видимих полів контактних даних. Чи можу я це зробити?</string>
     <string name="faq_1_text">Так, вам необхідно перейти у Налаштування -&gt; Керування полями контактів, що відображаються. Там ви можете обрати поля, що відображатимуться. Деякі з них у стандартному режимі деактивовано, а отже ви можете знайти там нові.</string>
+    <string name="show_private_contacts">Показувати приватні контакти в Телефоні Fossify, Fossify SMS Повідомлення та Fossify Календар</string>
 </resources>
