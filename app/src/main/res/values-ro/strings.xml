@@ -43,9 +43,9 @@
     <string name="merge_duplicate_contacts">Îmbinați contactele duplicate</string>
     <string name="no_favorites">Se pare că nu ați adăugat încă nicio persoană de contact favorită.</string>
     <string name="toggle_favorite">Comutați favoritele</string>
-    <string name="search_contacts">Căutați contacte</string>
-    <string name="search_favorites">Căutați în favorite</string>
-    <string name="search_groups">Căutați în grupuri</string>
+    <string name="search_contacts">Căutare contacte</string>
+    <string name="search_favorites">Căutare favorite</string>
+    <string name="search_groups">Căutare grupuri</string>
     <string name="import_contacts">Importați contacte</string>
     <string name="export_contacts">Exportați contacte</string>
     <string name="import_contacts_from_vcf">Importați contacte dintr-un fișier .vcf</string>
@@ -72,6 +72,7 @@
         <item quantity="one">%d grup</item>
         <item quantity="few">%d grupuri</item>
         <item quantity="other">%d grupuri</item>
-    </plurals>    <string name="faq_1_title">Doresc să schimb câmpurile care sunt vizibile la contacte. Pot să fac acest lucru\?</string>
+    </plurals>
+    <string name="faq_1_title">Doresc să schimb câmpurile care sunt vizibile la contacte. Pot să fac acest lucru\?</string>
     <string name="faq_1_text">Da, tot ce trebuie să faceți este să accesați Setări -&gt; Gestionați câmpurile de contact afișate. Acolo puteți selecta ce câmpuri ar trebui să fie vizibile. Unele dintre ele sunt chiar dezactivate în mod implicit, așa că s-ar putea să găsiți unele noi acolo.</string>
 </resources>
