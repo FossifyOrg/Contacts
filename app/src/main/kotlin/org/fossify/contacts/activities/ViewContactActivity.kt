@@ -48,6 +48,7 @@ class ViewContactActivity : ContactActivity() {
     private val binding by viewBinding(ActivityViewContactBinding::inflate)
 
     companion object {
+        public var format_phone_number = true
         private const val COMPARABLE_PHONE_NUMBER_LENGTH = 9
     }
 
@@ -385,7 +386,12 @@ class ViewContactActivity : ContactActivity() {
             phoneNumbers.forEach { phoneNumber ->
                 ItemViewPhoneNumberBinding.inflate(layoutInflater, binding.contactNumbersHolder, false).apply {
                     binding.contactNumbersHolder.addView(root)
-                    contactNumber.text = formatPhoneNumber(phoneNumber.value)
+                    if(format_phone_number) {
+                        contactNumber.text = formatPhoneNumber(phoneNumber.value)
+                    }
+                    else {
+                        contactNumber.text = phoneNumber.value
+                    }
                     contactNumberType.text = getPhoneNumberTypeText(phoneNumber.type, phoneNumber.label)
                     root.copyOnLongClick(phoneNumber.value)
 

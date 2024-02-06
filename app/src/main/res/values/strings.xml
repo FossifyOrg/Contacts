@@ -42,6 +42,7 @@
     <!-- Settings -->
     <string name="show_phone_numbers">Show phone numbers</string>
     <string name="show_contact_thumbnails">Show contact thumbnails</string>
+    <string name="enable_number_formatting">Enable phone number formatting</string>
     <string name="show_dialpad_button">Show a dialpad button on the main screen</string>
     <string name="on_contact_click">On contact click</string>
     <string name="call_contact">Call contact</string>
@@ -100,6 +101,7 @@
     <!-- FAQ -->
     <string name="faq_1_title">I want to change what fields are visible at contacts. Can I do it?</string>
     <string name="faq_1_text">Yes, all you have to do is go in Settings -> Manage shown contact fields. There you can select what fields should be visible. Some of them are even disabled by default, so you might find some new ones there.</string>
+    <string name="format_phone_number" />
     <!--
         Haven't found some strings? There's more at
         https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res

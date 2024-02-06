@@ -52,6 +52,7 @@ class SettingsActivity : SimpleActivity() {
         setupLanguage()
         setupShowContactThumbnails()
         setupShowPhoneNumbers()
+        setupEnableNumberFormatting()
         setupShowContactsWithNumbers()
         setupStartNameWithSurname()
         setupMergeDuplicateContacts()
@@ -163,6 +164,15 @@ class SettingsActivity : SimpleActivity() {
             binding.settingsShowContactThumbnails.toggle()
             config.showContactThumbnails = binding.settingsShowContactThumbnails.isChecked
         }
+    }
+
+    private fun setupEnableNumberFormatting(){
+        binding.phoneNumberFormatting.isChecked = ViewContactActivity.format_phone_number
+        binding.settingsShowPhoneNumberFormattingHolder.setOnClickListener{
+            binding.phoneNumberFormatting.toggle()
+            ViewContactActivity.format_phone_number = binding.phoneNumberFormatting.isChecked
+        }
+
     }
 
     private fun setupShowPhoneNumbers() {

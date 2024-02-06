@@ -313,6 +313,21 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/settings_show_phone_number_formatting_holder"
+                style="@style/SettingsHolderCheckboxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <org.fossify.commons.views.MyAppCompatCheckbox
+                    android:id="@+id/phone_number_formatting"
+                    style="@style/SettingsCheckboxStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enable_number_formatting" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/settings_show_phone_numbers_holder"
                 style="@style/SettingsHolderCheckboxStyle"
                 android:layout_width="match_parent"
