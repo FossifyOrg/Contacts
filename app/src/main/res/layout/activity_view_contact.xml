@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/contact_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/contact_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/contact_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_contact_image_height"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:contentDescription="@string/change_photo"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/ic_person_vector" />
+
+            <ImageView
+                android:id="@+id/contact_photo_bottom_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_shadow_height"
+                android:layout_alignBottom="@+id/contact_photo"
+                android:background="@drawable/gradient_background"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:id="@+id/contact_toggle_favorite"
+                android:layout_width="@dimen/contact_actions_size"
+                android:layout_height="@dimen/contact_actions_size"
+                android:layout_alignStart="@+id/contact_photo"
+                android:layout_alignBottom="@id/contact_photo"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/toggle_favorite"
+                android:padding="@dimen/tiny_margin"
+                android:src="@drawable/ic_star_outline_vector"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_actions_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/contact_photo"
+                android:layout_alignBottom="@id/contact_photo"
+                android:gravity="bottom|end"
+                android:paddingEnd="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin">
+
+                <ImageView
+                    android:id="@+id/contact_send_email"
+                    android:layout_width="@dimen/contact_actions_size"
+                    android:layout_height="@dimen/contact_actions_size"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/send_email"
+                    android:paddingStart="@dimen/small_margin"
+                    android:paddingEnd="@dimen/small_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_mail_vector" />
+
+                <ImageView
+                    android:id="@+id/contact_start_call"
+                    android:layout_width="@dimen/contact_actions_size"
+                    android:layout_height="@dimen/contact_actions_size"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/call_contact"
+                    android:paddingStart="@dimen/small_margin"
+                    android:paddingEnd="@dimen/small_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_phone_vector" />
+
+                <ImageView
+                    android:id="@+id/contact_send_sms"
+                    android:layout_width="@dimen/contact_actions_size"
+                    android:layout_height="@dimen/contact_actions_size"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/send_sms"
+                    android:paddingStart="@dimen/small_margin"
+                    android:paddingEnd="@dimen/small_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_sms_vector" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/contact_name_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_below="@+id/contact_photo"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_person_vector" />
+
+            <org.fossify.commons.views.MyTextView
+                android:id="@+id/contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_photo"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:background="?attr/selectableItemBackground"
+                android:maxLines="2"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingTop="@dimen/normal_margin"
+                android:paddingEnd="@dimen/normal_margin"
+                android:paddingBottom="@dimen/normal_margin"
+                android:textSize="@dimen/bigger_text_size"
+                android:tooltipText="John Doe" />
+
+            <ImageView
+                android:id="@+id/contact_numbers_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_numbers_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_phone_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_emails_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_emails_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_mail_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_addresses_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_addresses_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_place_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_ims_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_ims_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_im"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_events_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_events_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_cake_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_notes_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_notes"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_label_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_ringtone_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_ringtone"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_bell_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_organization_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_organization_company"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_business_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_websites_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_websites_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_link_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_groups_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_groups_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_people_vector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/contact_source_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_alignTop="@+id/contact_sources_holder"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_account_box_vector"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_numbers_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_name"
+                android:layout_toEndOf="@+id/contact_numbers_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_emails_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_numbers_holder"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_addresses_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_emails_holder"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_ims_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_addresses_holder"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_events_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_ims_holder"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_websites_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_organization_job_position"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_groups_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_websites_holder"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contact_sources_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_groups_holder"
+                android:layout_toEndOf="@+id/contact_name_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <org.fossify.commons.views.MyTextView
+                android:id="@+id/contact_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_events_holder"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/contact_notes_image"
+                android:background="?attr/selectableItemBackground"
+                android:lineSpacingExtra="@dimen/medium_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingTop="@dimen/normal_margin"
+                android:paddingBottom="@dimen/normal_margin"
+                android:textSize="@dimen/bigger_text_size"
+                android:visibility="gone" />
+
+            <org.fossify.commons.views.MyTextView
+                android:id="@+id/contact_ringtone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_notes"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/contact_ringtone_image"
+                android:background="?attr/selectableItemBackground"
+                android:lineSpacingExtra="@dimen/medium_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingTop="@dimen/normal_margin"
+                android:paddingBottom="@dimen/normal_margin"
+                android:textSize="@dimen/bigger_text_size"
+                android:visibility="gone" />
+
+            <org.fossify.commons.views.MyTextView
+                android:id="@+id/contact_organization_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_ringtone"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/contact_organization_image"
+                android:background="?attr/selectableItemBackground"
+                android:lineSpacingExtra="@dimen/medium_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingTop="@dimen/normal_margin"
+                android:paddingBottom="@dimen/normal_margin"
+                android:textSize="@dimen/bigger_text_size"
+                android:visibility="gone" />
+
+            <org.fossify.commons.views.MyTextView
+                android:id="@+id/contact_organization_job_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_organization_company"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/contact_organization_image"
+                android:background="?attr/selectableItemBackground"
+                android:lineSpacingExtra="@dimen/medium_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingTop="@dimen/normal_margin"
+                android:paddingBottom="@dimen/normal_margin"
+                android:textSize="@dimen/bigger_text_size"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/contact_photo_big"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#BB000000"
+        android:clickable="true"
+        android:padding="@dimen/activity_margin"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/contact_photo_top_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_shadow_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_background_flipped"
+        android:contentDescription="@null" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/contact_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/contact_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/menu_view_contact"
+            app:navigationIcon="@drawable/ic_arrow_left_vector" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_source_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/contact_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/contact_source_image"
+        android:background="?attr/selectableItemBackground"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="@dimen/small_margin"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingEnd="@dimen/normal_margin"
+        android:paddingBottom="@dimen/normal_margin"
+        android:singleLine="true"
+        android:textSize="@dimen/bigger_text_size" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/contact_source_image"
+        android:layout_width="@dimen/normal_icon_size"
+        android:layout_height="@dimen/normal_icon_size"
+        android:layout_alignTop="@+id/contact_source"
+        android:layout_alignBottom="@+id/contact_source"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/small_margin"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:src="@drawable/ic_whatsapp_rect_vector" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+*.iml
+*.aab
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+keystore.jks
+keystore.properties
+fastlane/fastlane.json
+Gemfile
+Gemfile.lock

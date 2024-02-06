@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AppCompatResource,AlwaysShowAction">
+    <item
+        android:id="@+id/assign_ringtone_to_group"
+        android:icon="@drawable/ic_bell_vector"
+        android:title="@string/ringtone"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/send_sms_to_group"
+        android:icon="@drawable/ic_sms_vector"
+        android:title="@string/send_sms_to_group"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/send_email_to_group"
+        android:icon="@drawable/ic_mail_vector"
+        android:title="@string/send_email_to_group"
+        app:showAsAction="always" />
+</menu>

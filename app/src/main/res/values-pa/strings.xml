@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_launcher_name">ਸੰਪਰਕ</string>
+    <string name="address">ਪਤਾ</string>
+    <string name="inserting">ਸ਼ਾਮਲ ਕੀਤਾ ਜਾ ਰਿਹਾ…</string>
+    <string name="updating">ਅੱਪਡੇਟ ਕੀਤਾ ਜਾ ਰਿਹਾ…</string>
+    <string name="phone_storage">ਫ਼ੋਨ ਸਟੋਰੇਜ</string>
+    <string name="phone_storage_hidden">ਫ਼ੋਨ ਸਟੋਰੇਜ (ਜੋ ਹੋਰ ਐਪਾਂ ਦੁਆਰਾ ਦਿਖਾਈ ਨਹੀਂ ਦਿੰਦੀ)</string>
+    <string name="company">ਕੰਪਨੀ</string>
+    <string name="job_position">ਨੌਕਰੀ ਦਾ ਅਹੁਦਾ</string>
+    <string name="send_sms_to_contacts">ਸੰਪਰਕਾਂ ਨੂੰ SMS ਭੇਜੋ</string>
+    <string name="send_email_to_contacts">ਸੰਪਰਕਾਂ ਨੂੰ ਈਮੇਲ ਭੇਜੋ</string>
+    <string name="send_sms_to_group">ਗਰੁੱਪ ਨੂੰ SMS ਭੇਜੋ</string>
+    <string name="send_email_to_group">ਸਮੂਹ ਨੂੰ ਈਮੇਲ ਭੇਜੋ</string>
+    <string name="fields_empty">ਘੱਟੋ-ਘੱਟ 1 ਖੇਤਰ ਭਰਨਾ ਜ਼ਰੂਰੀ ਹੈ</string>
+    <string name="must_be_at_edit">ਕਿਸੇ ਸੰਪਰਕ ਨੂੰ ਸੋਧਣ ਲਈ ਤੁਹਾਨੂੰ ਸੰਪਾਦਨ ਸਕ੍ਰੀਨ \'ਤੇ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ</string>
+    <string name="no_contacts_with_emails">ਈਮੇਲਾਂ ਵਾਲੇ ਕੋਈ ਸੰਪਰਕ ਨਹੀਂ ਮਿਲੇ ਹਨ</string>
+    <string name="no_contacts_with_phone_numbers">ਫ਼ੋਨ ਨੰਬਰਾਂ ਵਾਲੇ ਕੋਈ ਸੰਪਰਕ ਨਹੀਂ ਮਿਲੇ ਹਨ</string>
+    <string name="new_contact">ਨਵੇਂ ਸੰਪਰਕ</string>
+    <string name="edit_contact">ਸੰਪਰਕ ਦਾ ਸੰਪਾਦਨ ਕਰੋ</string>
+    <string name="select_contact">ਸੰਪਰਕ ਚੁਣੋ</string>
+    <string name="nickname">ਉਪਨਾਮ</string>
+    <string name="no_groups">ਕੋਈ ਗਰੁੱਪ ਨਹੀਂ</string>
+    <string name="create_new_group">ਇੱਕ ਨਵਾਂ ਗਰੁੱਪ ਬਣਾਓ</string>
+    <string name="remove_from_group">ਗਰੁੱਪ ਵਿੱਚੋਂ ਹਟਾਓ</string>
+    <string name="no_group_participants">ਇਹ ਗਰੁੱਪ ਖ਼ਾਲੀ ਹੈ</string>
+    <string name="add_contacts">ਸੰਪਰਕ ਜੋੜੋ</string>
+    <string name="no_group_created">ਡਿਵਾਈਸ \'ਤੇ ਕੋਈ ਸੰਪਰਕ ਸਮੂਹ ਨਹੀਂ ਹਨ</string>
+    <string name="create_group">ਗਰੁੱਪ ਬਣਾਓ</string>
+    <string name="add_to_group">ਗਰੁੱਪ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/insert_edit_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.fossify.commons.views.MySearchMenu
+        android:id="@+id/insert_edit_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/insert_edit_contact_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/new_contact_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:paddingTop="@dimen/medium_margin"
+            android:paddingEnd="@dimen/activity_margin"
+            android:paddingBottom="@dimen/medium_margin"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/new_contact_tmb"
+                android:layout_width="@dimen/normal_icon_size"
+                android:layout_height="@dimen/normal_icon_size"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/medium_margin"
+                android:src="@drawable/ic_add_person_vector" />
+
+            <org.fossify.commons.views.MyTextView
+                android:id="@+id/new_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/new_contact_tmb"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingStart="@dimen/small_margin"
+                android:text="@string/create_new_contact"
+                android:textSize="@dimen/big_text_size" />
+
+        </RelativeLayout>
+
+        <org.fossify.commons.views.MyTextView
+            android:id="@+id/select_contact_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_contact_holder"
+            android:layout_marginStart="@dimen/bigger_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:text="@string/add_to_existing_contact"
+            android:textAllCaps="true"
+            android:textSize="@dimen/smaller_text_size"
+            android:visibility="gone" />
+
+        <org.fossify.commons.views.MyViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/insert_edit_tabs_holder"
+            android:layout_below="@+id/select_contact_label" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/insert_edit_tabs_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:tabIndicator="@null"
+            app:tabMinWidth="150dp"
+            app:tabRippleColor="@null" />
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contact_number_holder"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="?attr/selectableItemBackground"
+    android:paddingStart="@dimen/small_margin"
+    android:paddingEnd="@dimen/normal_margin">
+
+    <ImageView
+        android:id="@+id/default_toggle_icon"
+        android:layout_width="@dimen/contact_icons_size"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/contact_number_type"
+        android:padding="@dimen/tiny_margin"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_star_vector" />
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/default_toggle_icon"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/bigger_text_size" />
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/contact_number_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contact_number"
+        android:layout_alignBottom="@+id/contact_number"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:minWidth="70dp"
+        android:paddingStart="@dimen/medium_margin"
+        android:paddingEnd="@dimen/medium_margin"
+        android:text="@string/mobile"
+        android:textSize="@dimen/bigger_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_launcher_name">연락처</string>
+    <string name="address">주소</string>
+    <string name="inserting">등록중…</string>
+    <string name="updating">수정중…</string>
+    <string name="new_contact">새로운 연락처</string>
+    <string name="edit_contact">연락처 수정</string>
+    <string name="select_contact">단건 연락처 선택</string>
+    <string name="remove_photo">사진 삭제</string>
+    <string name="show_phone_numbers">메인 스크린에 전화번호 표시</string>
+    <string name="no_favorites">자주 사용하는 연락처가 아직 등록되지 않았습니다.</string>
+    <string name="search_contacts">연락처 검색</string>
+    <string name="search_favorites">자주쓰는 연락처 검색</string>
+    <string name="import_contacts">연락처 가져오기</string>
+    <string name="export_contacts">연락처 내보내기</string>
+    <string name="import_contacts_from_vcf">.vcf file에서 가져오기</string>
+    <string name="import_contacts_from_vcf_pro">.vcf file에서 가져오기 (Pro)</string>
+    <string name="export_contacts_to_vcf">.vcf file로 내보내기</string>
+    <string name="target_contact_source">내보내기 대상</string>
+    <string name="include_contact_sources">가져오기 대상</string>
+    <string name="filename_without_vcf">파일이름 (.vcf 확장자 생략)</string>
+</resources>

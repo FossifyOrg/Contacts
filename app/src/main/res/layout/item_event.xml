@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_event_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/activity_margin">
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/contact_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/contact_event_remove"
+        android:alpha="0.5"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="@dimen/small_margin"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingEnd="@dimen/small_margin"
+        android:paddingBottom="@dimen/normal_margin"
+        android:text="@string/unknown"
+        android:textSize="@dimen/bigger_text_size" />
+
+    <ImageView
+        android:id="@+id/contact_event_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contact_event"
+        android:layout_alignBottom="@+id/contact_event"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_toStartOf="@+id/contact_event_type"
+        android:background="@drawable/button_background"
+        android:padding="@dimen/medium_margin"
+        android:src="@drawable/ic_minus_vector"
+        android:visibility="gone" />
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/contact_event_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contact_event"
+        android:layout_alignBottom="@+id/contact_event"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingStart="@dimen/medium_margin"
+        android:paddingEnd="@dimen/medium_margin"
+        android:text="@string/birthday"
+        android:textSize="@dimen/bigger_text_size" />
+
+</RelativeLayout>

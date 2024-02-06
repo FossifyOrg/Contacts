@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_group_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/activity_margin">
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/contact_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/contact_group_remove"
+        android:alpha="0.5"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="@dimen/small_margin"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingEnd="@dimen/small_margin"
+        android:paddingBottom="@dimen/normal_margin"
+        android:text="@string/no_groups"
+        android:textSize="@dimen/bigger_text_size" />
+
+    <ImageView
+        android:id="@+id/contact_group_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contact_group"
+        android:layout_alignBottom="@+id/contact_group"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:background="@drawable/button_background"
+        android:padding="@dimen/medium_margin"
+        android:src="@drawable/ic_minus_vector"
+        android:visibility="gone" />
+
+</RelativeLayout>

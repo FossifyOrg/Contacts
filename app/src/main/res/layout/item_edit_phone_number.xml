@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_number_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/activity_margin">
+
+    <org.fossify.commons.views.MyEditText
+        android:id="@+id/contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/default_toggle_icon"
+        android:hint="@string/number"
+        android:inputType="phone"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/bigger_text_size" />
+
+    <ImageView
+        android:id="@+id/default_toggle_icon"
+        android:layout_width="@dimen/contact_icons_size"
+        android:layout_height="@dimen/contact_icons_size"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/contact_number_type"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/tiny_margin"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_star_outline_vector" />
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/contact_number_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/contact_number"
+        android:layout_alignBottom="@+id/contact_number"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical|end"
+        android:minWidth="70dp"
+        android:paddingStart="@dimen/medium_margin"
+        android:paddingEnd="@dimen/medium_margin"
+        android:textSize="@dimen/bigger_text_size"
+        tools:text="@string/mobile" />
+
+</RelativeLayout>

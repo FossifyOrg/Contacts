@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="package_name" translatable="false">org.fossify.contacts</string>
+    <string name="app_name" translatable="false">Fossify Contacts</string>
+
+    <string name="im" translatable="false">IM</string>
+    <string name="aim" translatable="false">AIM</string>
+    <string name="windows_live" translatable="false">Windows Live</string>
+    <string name="yahoo" translatable="false">Yahoo</string>
+    <string name="skype" translatable="false">Skype</string>
+    <string name="qq" translatable="false">QQ</string>
+    <string name="hangouts" translatable="false">Hangouts</string>
+    <string name="icq" translatable="false">ICQ</string>
+    <string name="jabber" translatable="false">Jabber</string>
+    <string name="telegram" translatable="false">Telegram</string>
+    <string name="viber" translatable="false">Viber</string>
+</resources>

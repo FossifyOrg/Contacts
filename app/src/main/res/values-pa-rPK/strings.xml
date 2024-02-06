@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_launcher_name">رابطے</string>
+    <string name="address">پتہ</string>
+    <string name="inserting">شامل کیتا جا رہا اے۔ ۔ ۔</string>
+    <string name="phone_storage">فون دی سٹوریج</string>
+    <string name="phone_storage_hidden">فون دی سٹوریج (ہور اَیپاں نوں نظر نہیں آؤندی)</string>
+    <string name="company">کمپنی</string>
+    <string name="job_position">کم کار</string>
+    <string name="send_sms_to_contacts">رابطیاں نوں سنیہا بھیجو</string>
+    <string name="send_email_to_contacts">رابطیاں نوں ای‌میل بھیجو</string>
+    <string name="send_sms_to_group">سموہ نوں سنیہا بھیجو</string>
+    <string name="send_email_to_group">سموہ نوں ای‌میل بھیجو</string>
+    <string name="fields_empty">گٹھو گھٹ اِکّ تھاں وچ کجھ لکھت پایو</string>
+    <string name="new_contact">نواں رابطہ</string>
+    <string name="edit_contact">رابطے دے ویروے سودھو</string>
+    <string name="select_contact">رابطہ چݨو</string>
+    <string name="no_groups">کوئی سمُدے نہیں اے</string>
+    <string name="create_new_group">نواں سموہ بݨاؤ</string>
+    <string name="remove_from_group">سموہ وچ ہٹاؤ</string>
+    <string name="add_contacts">رابطے پایو</string>
+    <string name="create_group">سموہ بݨاؤ</string>
+    <string name="add_to_group">سموہ وچ جوڑو</string>
+    <string name="create_group_under_account">کھاتے نال سمُدا بݨاؤ</string>
+    <string name="remove_photo">تصویر مٹاؤ</string>
+    <string name="change_photo">تصویر بدلو</string>
+    <string name="show_phone_numbers">فون نمبر ویکھو</string>
+    <string name="show_contact_thumbnails">رابطیاں لئی چھوٹیاں تصویراں ویکھو</string>
+    <string name="call_contact">رابطہ کال کرو</string>
+    <string name="view_contact">رابطے دے ویروے ویکھو</string>
+    <string name="contacts">رابطے</string>    
+    <string name="search_contacts">رابطیاں وچ کھوجو</string>
+    <string name="search_groups">سموہاں وچ کھوجو</string>
+    <string name="import_contacts">رابطے ایمپورٹ کرو</string>
+    <string name="export_contacts">رابطے ایکپورٹ کرو</string>
+    <string name="include_contact_sources">رابطیاں دے سروتاں نال</string>
+    <string name="filename_without_vcf">فائل دا ناں (‫‎.vcf‬ بنہا)؜</string>
+    <string name="dialpad">فون کیبورڈ</string>
+    <string name="add_number_to_contact">رابطے نوں نمبر جوڑو</string>
+    <string name="prefix">سابقہ</string>
+    <string name="suffix">لاحقہ</string>
+    <string name="phone_numbers">فون نمبر</string>
+    <string name="emails">ای‌میل</string>
+    <string name="addresses">پتے</string>
+    <string name="events">ماجرے (شادی، اُسوَ، سماگم، وغیرہ)</string>
+    <string name="websites">ویب‌سائیٹاں</string>
+    <string name="groups">سموہ</string>
+    <string name="contact_source">رابطے دا سروت</string>
+    <string name="ringtone">رِنگٹون</string>    <plurals name="delete_groups">
+        <item quantity="one">‫%d‬ سموہ</item>
+        <item quantity="other">‫%d‬ سموہ</item>
+    </plurals></resources>

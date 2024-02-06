@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AppCompatResource,AlwaysShowAction">
+    <item
+        android:id="@+id/cab_edit"
+        android:icon="@drawable/ic_edit_vector"
+        android:showAsAction="always"
+        android:title="@string/edit_contact"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cab_add_to_favorites"
+        android:icon="@drawable/ic_star_vector"
+        android:showAsAction="always"
+        android:title="@string/add_to_favorites"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cab_add_to_group"
+        android:icon="@drawable/ic_group_add_vector"
+        android:showAsAction="always"
+        android:title="@string/add_to_group"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cab_share"
+        android:icon="@drawable/ic_share_vector"
+        android:title="@string/share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cab_send_sms_to_contacts"
+        android:icon="@drawable/ic_sms_vector"
+        android:title="@string/send_sms_to_contacts"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cab_send_email_to_contacts"
+        android:icon="@drawable/ic_mail_vector"
+        android:title="@string/send_email_to_contacts"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cab_create_shortcut"
+        android:showAsAction="never"
+        android:title="@string/create_shortcut"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cab_select_all"
+        android:icon="@drawable/ic_select_all_vector"
+        android:title="@string/select_all"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cab_delete"
+        android:icon="@drawable/ic_delete_vector"
+        android:title="@string/delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cab_remove"
+        android:icon="@drawable/ic_minus_circle_vector"
+        android:title="@string/remove_from_favorites"
+        app:showAsAction="ifRoom" />
+</menu>

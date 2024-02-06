@@ -1,0 +1,4 @@
+<resources>
+    <integer name="default_sorting">128</integer>
+    <integer name="default_font_size">2</integer>
+</resources>

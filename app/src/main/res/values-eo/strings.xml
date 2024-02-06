@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_launcher_name">Kontaktadministrilo</string>
+    <string name="address">Adreso</string>
+    <string name="inserting">Enmetante…</string>
+    <string name="updating">Ĝisdatigante…</string>
+    <string name="company">Firmao</string>
+    <string name="new_contact">Nova kontakto</string>
+    <string name="edit_contact">Modifi kontakton</string>
+    <string name="select_contact">Elekti kontakton</string>
+    <string name="nickname">Alnomo</string>
+    <string name="no_groups">Neniu grupo</string>
+    <string name="create_new_group">Krei novan grupon</string>
+    <string name="create_group">Krei grupon</string>
+    <string name="remove_photo">Forigi foton</string>
+    <string name="show_phone_numbers">Montri telefonnumeroj</string>
+    <string name="search_contacts">Serĉi kontaktojn</string>
+</resources>

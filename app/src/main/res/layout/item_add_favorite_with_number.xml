@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/contact_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_row_height"
+        android:paddingStart="@dimen/tiny_margin"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingBottom="@dimen/normal_margin">
+
+        <ImageView
+            android:id="@+id/contact_tmb"
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:padding="@dimen/tiny_margin"
+            android:src="@drawable/ic_person_vector" />
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/contact_checkbox"
+            android:layout_toEndOf="@+id/contact_tmb"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/medium_margin"
+            android:paddingEnd="@dimen/activity_margin"
+            android:textSize="@dimen/bigger_text_size"
+            tools:text="John Doe" />
+
+        <TextView
+            android:id="@+id/contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_name"
+            android:layout_alignStart="@+id/contact_name"
+            android:layout_toStartOf="@+id/contact_checkbox"
+            android:layout_toEndOf="@+id/contact_tmb"
+            android:alpha="0.6"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/medium_margin"
+            android:paddingEnd="@dimen/activity_margin"
+            android:textSize="@dimen/bigger_text_size"
+            tools:text="0123 456 789" />
+
+        <org.fossify.commons.views.MyAppCompatCheckbox
+            android:id="@+id/contact_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:clickable="false"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+</FrameLayout>

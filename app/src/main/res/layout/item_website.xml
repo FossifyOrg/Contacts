@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.fossify.commons.views.MyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_website"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="?attr/selectableItemBackground"
+    android:paddingStart="@dimen/small_margin"
+    android:paddingTop="@dimen/normal_margin"
+    android:paddingEnd="@dimen/small_margin"
+    android:paddingBottom="@dimen/normal_margin"
+    android:text="@string/unknown"
+    android:textSize="@dimen/bigger_text_size" />

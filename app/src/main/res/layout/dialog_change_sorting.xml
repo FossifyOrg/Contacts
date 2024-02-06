@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sorting_dialog_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/sorting_dialog_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/activity_margin"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingEnd="@dimen/activity_margin">
+
+        <RadioGroup
+            android:id="@+id/sorting_dialog_radio_sorting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_margin">
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/first_name" />
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_middle_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/middle_name" />
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/surname" />
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/full_name" />
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_date_created"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/date_created" />
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/custom" />
+
+        </RadioGroup>
+
+        <include
+            android:id="@+id/divider"
+            layout="@layout/divider" />
+
+        <RadioGroup
+            android:id="@+id/sorting_dialog_radio_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:paddingBottom="@dimen/medium_margin">
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_ascending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/ascending" />
+
+            <org.fossify.commons.views.MyCompatRadioButton
+                android:id="@+id/sorting_dialog_radio_descending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin"
+                android:text="@string/descending" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
