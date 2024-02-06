@@ -48,7 +48,6 @@ class ViewContactActivity : ContactActivity() {
     private val binding by viewBinding(ActivityViewContactBinding::inflate)
 
     companion object {
-        public var format_phone_number = true
         private const val COMPARABLE_PHONE_NUMBER_LENGTH = 9
     }
 
@@ -386,7 +385,7 @@ class ViewContactActivity : ContactActivity() {
             phoneNumbers.forEach { phoneNumber ->
                 ItemViewPhoneNumberBinding.inflate(layoutInflater, binding.contactNumbersHolder, false).apply {
                     binding.contactNumbersHolder.addView(root)
-                    if(format_phone_number) {
+                    if(config.showPhoneNumbersFormatting) {
                         contactNumber.text = formatPhoneNumber(phoneNumber.value)
                     }
                     else {
