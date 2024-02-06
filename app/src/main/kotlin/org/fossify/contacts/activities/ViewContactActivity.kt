@@ -2,12 +2,14 @@ package org.fossify.contacts.activities
 
 import android.content.ActivityNotFoundException
 import android.content.ContentUris
+import android.content.Context
 import android.content.Intent
 import android.media.AudioManager
 import android.media.RingtoneManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.telephony.PhoneNumberUtils
 import android.view.View
 import android.view.WindowManager
 import android.widget.RelativeLayout
@@ -383,7 +385,7 @@ class ViewContactActivity : ContactActivity() {
             phoneNumbers.forEach { phoneNumber ->
                 ItemViewPhoneNumberBinding.inflate(layoutInflater, binding.contactNumbersHolder, false).apply {
                     binding.contactNumbersHolder.addView(root)
-                    contactNumber.text = phoneNumber.value
+                    contactNumber.text = formatPhoneNumber(phoneNumber.value)
                     contactNumberType.text = getPhoneNumberTypeText(phoneNumber.type, phoneNumber.label)
                     root.copyOnLongClick(phoneNumber.value)
 
@@ -412,6 +414,15 @@ class ViewContactActivity : ContactActivity() {
             binding.contactSendSms.beVisible()
             binding.contactStartCall.beVisible()
         }
+    }
+
+    private fun getCountryIso(context: Context): String {
+        val locale = context.resources.configuration.locale
+        return locale.country
+    }
+
+    private fun formatPhoneNumber(phoneNumber: String): String {
+        return PhoneNumberUtils.formatNumber(phoneNumber, getCountryIso(this))
     }
 
     // a contact cannot have different emails per contact source. Such contacts are handled as separate ones, not duplicates of each other
