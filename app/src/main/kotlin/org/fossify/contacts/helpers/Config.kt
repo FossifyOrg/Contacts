@@ -1,6 +1,7 @@
 package org.fossify.contacts.helpers
 
 import android.content.Context
+import android.telephony.PhoneNumberUtils
 import org.fossify.commons.helpers.BaseConfig
 import org.fossify.commons.helpers.SHOW_CONTACT_THUMBNAILS
 import org.fossify.commons.helpers.SHOW_TABS

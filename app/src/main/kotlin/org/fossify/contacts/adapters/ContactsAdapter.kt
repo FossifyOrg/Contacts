@@ -1,6 +1,7 @@
 package org.fossify.contacts.adapters
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.content.pm.ShortcutInfo
 import android.content.pm.ShortcutManager
@@ -8,6 +9,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.Icon
 import android.graphics.drawable.LayerDrawable
+import android.telephony.PhoneNumberUtils
 import android.util.TypedValue
 import android.view.Menu
 import android.view.MotionEvent
@@ -45,6 +47,7 @@ import org.fossify.contacts.helpers.*
 import org.fossify.contacts.interfaces.RefreshContactsListener
 import org.fossify.contacts.interfaces.RemoveFromGroupListener
 import java.util.Collections
+import java.util.Locale
 
 class ContactsAdapter(
     activity: SimpleActivity,
@@ -150,11 +153,11 @@ class ContactsAdapter(
             VIEW_TYPE_GRID -> {
                 if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number_grid else org.fossify.commons.R.layout.item_contact_without_number_grid
             }
-
             else -> {
                 if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number else org.fossify.commons.R.layout.item_contact_without_number
             }
         }
+
         return createViewHolder(layout, parent)
     }
 
@@ -408,14 +411,20 @@ class ContactsAdapter(
                 } else {
                     contact.phoneNumbers.firstOrNull { it.value.contains(textToHighlight) } ?: contact.phoneNumbers.firstOrNull()
                 }
-
-                val numberText = phoneNumberToUse?.value ?: ""
+                val phone_number_to_format = phoneNumberToUse?.value ?: ""
+                val numberText = if (config.showPhoneNumbersFormatting) {
+                    ViewContactActivity.formatPhoneNumber(phone_number_to_format)
+                } else {
+                    phoneNumberToUse?.value ?: ""
+                }
                 findViewById<TextView>(org.fossify.commons.R.id.item_contact_number).apply {
                     text = if (textToHighlight.isEmpty()) numberText else numberText.highlightTextPart(textToHighlight, properPrimaryColor, false, true)
                     setTextColor(textColor)
                     setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize)
                 }
             }
+
+
 
             findViewById<TextView>(org.fossify.commons.R.id.item_contact_image).beVisibleIf(showContactThumbnails)
 

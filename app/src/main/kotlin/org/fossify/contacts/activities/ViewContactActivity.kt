@@ -48,6 +48,19 @@ class ViewContactActivity : ContactActivity() {
     private val binding by viewBinding(ActivityViewContactBinding::inflate)
 
     companion object {
+
+        fun getCountryIso(): String {
+            val locale = Locale.getDefault()
+            return locale.country
+        }
+        fun formatPhoneNumber(phoneNumber: String): String {
+            if(phoneNumber.length > 4){
+                return PhoneNumberUtils.formatNumber(phoneNumber, getCountryIso()).toString()
+            } else {
+                return phoneNumber
+            }
+        }
+
         private const val COMPARABLE_PHONE_NUMBER_LENGTH = 9
     }
 
@@ -419,15 +432,6 @@ class ViewContactActivity : ContactActivity() {
             binding.contactSendSms.beVisible()
             binding.contactStartCall.beVisible()
         }
-    }
-
-    private fun getCountryIso(context: Context): String {
-        val locale = context.resources.configuration.locale
-        return locale.country
-    }
-
-    private fun formatPhoneNumber(phoneNumber: String): String {
-        return PhoneNumberUtils.formatNumber(phoneNumber, getCountryIso(this))
     }
 
     // a contact cannot have different emails per contact source. Such contacts are handled as separate ones, not duplicates of each other
