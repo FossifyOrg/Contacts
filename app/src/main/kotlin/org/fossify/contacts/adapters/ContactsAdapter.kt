@@ -424,8 +424,6 @@ class ContactsAdapter(
                 }
             }
 
-
-
             findViewById<TextView>(org.fossify.commons.R.id.item_contact_image).beVisibleIf(showContactThumbnails)
 
             if (showContactThumbnails) {
