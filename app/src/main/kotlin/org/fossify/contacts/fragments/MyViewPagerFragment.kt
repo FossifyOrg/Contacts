@@ -327,6 +327,7 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
 
             filtered.sortBy {
                 val nameToDisplay = it.getNameToDisplay()
+                println(nameToDisplay)
                 !getProperText(nameToDisplay, shouldNormalize).startsWith(fixedText, true) && !nameToDisplay.contains(fixedText, true)
             }
 

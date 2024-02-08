@@ -2,15 +2,23 @@ package org.fossify.contacts.dialogs
 
 import androidx.appcompat.app.AlertDialog
 import com.reddit.indicatorfastscroll.FastScrollItemIndicator
+import android.app.Activity
 import org.fossify.commons.extensions.*
+import org.fossify.commons.helpers.TAB_CONTACTS
+import org.fossify.commons.helpers.TAB_FAVORITES
+import org.fossify.commons.helpers.TAB_GROUPS
+import org.fossify.contacts.adapters.ContactsAdapter
 import org.fossify.commons.helpers.ensureBackgroundThread
 import org.fossify.commons.models.contacts.Contact
+import org.fossify.commons.views.MyRecyclerView
 import org.fossify.contacts.R
 import org.fossify.contacts.activities.SimpleActivity
 import org.fossify.contacts.adapters.SelectContactsAdapter
 import org.fossify.contacts.databinding.ActivityMainBinding
 import org.fossify.contacts.databinding.DialogSelectContactBinding
+import org.fossify.contacts.extensions.config
 import org.fossify.contacts.fragments.FavoritesFragment
+import org.fossify.contacts.fragments.MyViewPagerFragment
 import java.util.Locale
 
 class SelectContactsDialog(
@@ -47,7 +55,7 @@ class SelectContactsDialog(
         binding.apply {
             selectContactList.adapter = SelectContactsAdapter(
                 activity, allContacts, initiallySelectedContacts, allowSelectMultiple,
-                selectContactList, contactClickCallback
+                selectContactList, contactClickCallback, ""
             )
 
             if (root.context.areSystemAnimationsEnabled) {
@@ -91,6 +99,7 @@ class SelectContactsDialog(
         }
 
         binding.mainMenu.onSearchTextChangedListener = { text ->
+
             println(binding.mainMenu.getCurrentQuery())
             println(allContacts)
             val filteredContacts = ArrayList(allContacts.filter { contact ->
@@ -101,7 +110,7 @@ class SelectContactsDialog(
             binding.apply {
                 selectContactList.adapter = SelectContactsAdapter(
                     activity, filteredContacts, initiallySelectedContacts, allowSelectMultiple,
-                    selectContactList, contactClickCallback
+                    selectContactList, contactClickCallback, text
                 )
 
                 if (root.context.areSystemAnimationsEnabled) {
@@ -110,8 +119,8 @@ class SelectContactsDialog(
 
                 selectContactList.beVisibleIf(filteredContacts.isNotEmpty())
                 selectContactPlaceholder.beVisibleIf(filteredContacts.isEmpty())
-
             }
+
 
             setupFastscroller(filteredContacts)
 

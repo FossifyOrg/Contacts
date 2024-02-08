@@ -26,7 +26,7 @@ import org.fossify.contacts.extensions.config
 
 class SelectContactsAdapter(
     val activity: SimpleActivity, var contacts: ArrayList<Contact>, private val selectedContacts: ArrayList<Contact>, private val allowPickMultiple: Boolean,
-    recyclerView: MyRecyclerView, private val itemClick: ((Contact) -> Unit)? = null
+    recyclerView: MyRecyclerView, private val itemClick: ((Contact) -> Unit)? = null, highlightText: String = ""
 ) :
     RecyclerView.Adapter<SelectContactsAdapter.ViewHolder>() {
     private val itemViews = SparseArray<View>()
@@ -38,7 +38,7 @@ class SelectContactsAdapter(
     private val showContactThumbnails = config.showContactThumbnails
     private val showPhoneNumbers = config.showPhoneNumbers
     private val itemBindingClass = if (showPhoneNumbers) Binding.WithNumber else Binding.WithoutNumber
-    private var textToHighlight = ""
+    private var textToHighlight = highlightText
 
     init {
         contacts.forEachIndexed { index, contact ->
