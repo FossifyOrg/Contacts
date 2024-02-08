@@ -46,7 +46,7 @@
     <string name="show_private_contacts">Fossify Phone, Fossify SMS Messenger और Fossify Calendar में निजी संपर्क दिखाएं</string>
     <string name="merge_duplicate_contacts">डुप्लिकेट संपर्कों को मर्ज करें</string>
     <string name="import_contacts_from_vcf">.vcf फ़ाइल से संपर्क आयात करें</string>
-    <string name="import_contacts_from_vcf_pro">.vcf फ़ाइल से संपर्क आयात करें (प्रो)</string>
+    <string name="import_contacts_from_vcf_pro">.vcf फ़ाइल से संपर्क आयात करें (Pro)</string>
     <string name="search_contacts">संपर्क खोजें</string>
     <string name="search_favorites">पसंदीदा खोजें</string>
     <string name="search_groups">समूह खोजें</string>
