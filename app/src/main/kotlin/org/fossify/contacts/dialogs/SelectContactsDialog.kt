@@ -56,7 +56,6 @@ class SelectContactsDialog(
 
         }
 
-
         setupFastscroller(allContacts)
 
         val builder = activity.getAlertDialogBuilder()
@@ -88,9 +87,8 @@ class SelectContactsDialog(
 
         binding.mainMenu.onSearchTextChangedListener = { text ->
             val filteredContacts = ArrayList(allContacts.filter { contact ->
-                (contact.firstName + contact.middleName + contact.surname).contains(text, ignoreCase = true)
+                (contact.firstName + " " + contact.surname + contact.middleName).contains(text, ignoreCase = true)
             })
-
 
             binding.apply {
                 selectContactList.adapter = SelectContactsAdapter(
@@ -105,7 +103,6 @@ class SelectContactsDialog(
                 selectContactList.beVisibleIf(filteredContacts.isNotEmpty())
                 selectContactPlaceholder.beVisibleIf(filteredContacts.isEmpty())
             }
-
 
             setupFastscroller(filteredContacts)
 
