@@ -43,6 +43,7 @@
         android:text="@string/no_contacts_found"
         android:textSize="@dimen/bigger_text_size"
         android:textStyle="italic"
+        android:translationY="50dp"
         android:visibility="gone" />
 
     <com.reddit.indicatorfastscroll.FastScrollerView

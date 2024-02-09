@@ -507,7 +507,6 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
                 getCurrentFragment()?.onSearchQueryChanged(binding.mainMenu.getCurrentQuery())
             }
         }
-//        println(binding.mainMenu.getCurrentQuery())
     }
 
     override fun contactClicked(contact: Contact) {

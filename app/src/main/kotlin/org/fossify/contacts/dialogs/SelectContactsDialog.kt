@@ -2,7 +2,6 @@ package org.fossify.contacts.dialogs
 
 import androidx.appcompat.app.AlertDialog
 import com.reddit.indicatorfastscroll.FastScrollItemIndicator
-import android.app.Activity
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.TAB_CONTACTS
 import org.fossify.commons.helpers.TAB_FAVORITES
@@ -87,7 +86,6 @@ class SelectContactsDialog(
     }
 
     private fun setupOptionsMenu() {
-        binding.mainMenu.getToolbar().inflateMenu(R.menu.menu)
         binding.mainMenu.toggleHideOnScroll(false)
         binding.mainMenu.setupMenu()
 
@@ -99,9 +97,6 @@ class SelectContactsDialog(
         }
 
         binding.mainMenu.onSearchTextChangedListener = { text ->
-
-            println(binding.mainMenu.getCurrentQuery())
-            println(allContacts)
             val filteredContacts = ArrayList(allContacts.filter { contact ->
                 (contact.firstName + contact.middleName + contact.surname).contains(text, ignoreCase = true)
             })
