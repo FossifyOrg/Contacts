@@ -276,7 +276,6 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
     private fun getCurrentFragment(): MyViewPagerFragment<*>? {
         val showTabs = config.showTabs
         val fragments = arrayListOf<MyViewPagerFragment<*>>()
-
         if (showTabs and TAB_CONTACTS != 0) {
             fragments.add(findViewById(R.id.contacts_fragment))
         }
