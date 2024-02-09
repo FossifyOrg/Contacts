@@ -153,6 +153,7 @@ class ContactsAdapter(
             VIEW_TYPE_GRID -> {
                 if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number_grid else org.fossify.commons.R.layout.item_contact_without_number_grid
             }
+
             else -> {
                 if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number else org.fossify.commons.R.layout.item_contact_without_number
             }
@@ -411,9 +412,9 @@ class ContactsAdapter(
                 } else {
                     contact.phoneNumbers.firstOrNull { it.value.contains(textToHighlight) } ?: contact.phoneNumbers.firstOrNull()
                 }
-                val phone_number_to_format = phoneNumberToUse?.value ?: ""
+                val phoneNumberToFormat = phoneNumberToUse?.value ?: ""
                 val numberText = if (config.showPhoneNumbersFormatting) {
-                    ViewContactActivity.formatPhoneNumber(phone_number_to_format)
+                    ViewContactActivity.formatPhoneNumber(phoneNumberToFormat)
                 } else {
                     phoneNumberToUse?.value ?: ""
                 }

@@ -54,7 +54,7 @@ class ViewContactActivity : ContactActivity() {
             return locale.country
         }
         fun formatPhoneNumber(phoneNumber: String): String {
-            if(phoneNumber.length > 4){
+            if (phoneNumber.length > 4){
                 return PhoneNumberUtils.formatNumber(phoneNumber, getCountryIso()).toString()
             } else {
                 return phoneNumber
@@ -398,7 +398,7 @@ class ViewContactActivity : ContactActivity() {
             phoneNumbers.forEach { phoneNumber ->
                 ItemViewPhoneNumberBinding.inflate(layoutInflater, binding.contactNumbersHolder, false).apply {
                     binding.contactNumbersHolder.addView(root)
-                    if(config.showPhoneNumbersFormatting) {
+                    if (config.showPhoneNumbersFormatting) {
                         contactNumber.text = formatPhoneNumber(phoneNumber.value)
                     }
                     else {
