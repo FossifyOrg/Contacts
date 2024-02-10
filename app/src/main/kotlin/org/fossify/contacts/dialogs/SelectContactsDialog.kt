@@ -17,6 +17,7 @@ class SelectContactsDialog(
     private var dialog: AlertDialog? = null
     private val binding = DialogSelectContactBinding.inflate(activity.layoutInflater)
     private var initiallySelectedContacts = ArrayList<Contact>()
+    private var selectedContacts = ArrayList<Contact>()
     private var allContacts = initialContacts
 
     init {
@@ -91,10 +92,21 @@ class SelectContactsDialog(
             })
 
             binding.apply {
+                val adapter = binding.selectContactList.adapter as? SelectContactsAdapter
+
+                if (adapter != null) {
+                    selectedContacts.addAll(
+                        adapter.getSelectedItemsSet()?.toList()?.filterNot {
+                            it in selectedContacts
+                        }.orEmpty()
+                    )
+                }
+
                 selectContactList.adapter = SelectContactsAdapter(
-                    activity, filteredContacts, allContacts, initiallySelectedContacts, allowSelectMultiple,
+                    activity, filteredContacts, allContacts, selectedContacts, allowSelectMultiple,
                     selectContactList, contactClickCallback, text
                 )
+
 
                 if (root.context.areSystemAnimationsEnabled) {
                     selectContactList.scheduleLayoutAnimation()
@@ -112,9 +124,14 @@ class SelectContactsDialog(
     private fun dialogConfirmed() {
         ensureBackgroundThread {
             val adapter = binding.selectContactList.adapter as? SelectContactsAdapter
-            val selectedContacts = adapter?.getSelectedItemsSet()?.toList() ?: ArrayList()
 
-            println(selectedContacts)
+            if (adapter != null) {
+                selectedContacts.addAll(
+                    adapter.getSelectedItemsSet()?.toList()?.filterNot {
+                        it in selectedContacts
+                    }.orEmpty()
+                )
+            }
 
             val newlySelectedContacts = selectedContacts.filter { !initiallySelectedContacts.contains(it) } as ArrayList
             val unselectedContacts = initiallySelectedContacts.filter { !selectedContacts.contains(it) } as ArrayList

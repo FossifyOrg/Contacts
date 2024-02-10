@@ -35,7 +35,7 @@ class SelectContactsAdapter(
     highlightText: String = ""
 ) : RecyclerView.Adapter<SelectContactsAdapter.ViewHolder>() {
     private val itemViews = SparseArray<View>()
-    private val selectedPositions = HashSet<Int>()
+    private val selectedIds = HashSet<Int>()
     private val config = activity.config
     private val adjustedPrimaryColor = activity.getProperPrimaryColor()
     private val fontSize = activity.getTextSize()
@@ -48,7 +48,7 @@ class SelectContactsAdapter(
     init {
         allContacts.forEachIndexed { index, contact ->
             if (selectedContacts.asSequence().map { it.id }.contains(contact.id)) {
-                selectedPositions.add(contact.id)
+                selectedIds.add(contact.id)
             }
         }
 
@@ -60,18 +60,17 @@ class SelectContactsAdapter(
     private fun toggleItemSelection(select: Boolean, pos: Int) {
         if (select) {
             if (itemViews[pos] != null) {
-                selectedPositions.add(contacts[pos].id)
+                selectedIds.add(contacts[pos].id)
             }
         } else {
-            selectedPositions.remove(contacts[pos].id)
+            selectedIds.remove(contacts[pos].id)
         }
-        println(contacts[pos].id)
         itemBindingClass.bind(itemViews[pos]).contactCheckbox.isChecked = select
     }
 
     fun getSelectedItemsSet(): HashSet<Contact> {
-        val selectedItemsSet = HashSet<Contact>(selectedPositions.size)
-        selectedPositions.forEach { id ->
+        val selectedItemsSet = HashSet<Contact>(selectedIds.size)
+        selectedIds.forEach { id ->
             allContacts.find { it.id == id }?.let { selectedItemsSet.add(it) }
         }
         return selectedItemsSet
@@ -85,7 +84,7 @@ class SelectContactsAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val contact = contacts[position]
         itemViews.put(position, holder.bindView(contact))
-        toggleItemSelection(selectedPositions.contains(contact.id), position)
+        toggleItemSelection(selectedIds.contains(contact.id), position)
     }
 
     override fun getItemCount() = contacts.size
