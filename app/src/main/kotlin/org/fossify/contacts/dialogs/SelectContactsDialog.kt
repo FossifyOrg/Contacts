@@ -43,7 +43,7 @@ class SelectContactsDialog(
 
         binding.apply {
             selectContactList.adapter = SelectContactsAdapter(
-                activity, allContacts, initiallySelectedContacts, allowSelectMultiple,
+                activity, allContacts, allContacts, initiallySelectedContacts, allowSelectMultiple,
                 selectContactList, contactClickCallback, ""
             )
 
@@ -92,7 +92,7 @@ class SelectContactsDialog(
 
             binding.apply {
                 selectContactList.adapter = SelectContactsAdapter(
-                    activity, filteredContacts, initiallySelectedContacts, allowSelectMultiple,
+                    activity, filteredContacts, allContacts, initiallySelectedContacts, allowSelectMultiple,
                     selectContactList, contactClickCallback, text
                 )
 
@@ -113,6 +113,8 @@ class SelectContactsDialog(
         ensureBackgroundThread {
             val adapter = binding.selectContactList.adapter as? SelectContactsAdapter
             val selectedContacts = adapter?.getSelectedItemsSet()?.toList() ?: ArrayList()
+
+            println(selectedContacts)
 
             val newlySelectedContacts = selectedContacts.filter { !initiallySelectedContacts.contains(it) } as ArrayList
             val unselectedContacts = initiallySelectedContacts.filter { !selectedContacts.contains(it) } as ArrayList
