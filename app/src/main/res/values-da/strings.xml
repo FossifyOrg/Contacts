@@ -70,6 +70,9 @@
     <plurals name="delete_groups">
         <item quantity="one">%d gruppe</item>
         <item quantity="other">%d grupper</item>
-    </plurals>    <string name="faq_1_title">Jeg vil ændre, hvilke felter der er synlige ved kontakter. Kan jeg gøre det?</string>
+    </plurals>
+    <string name="faq_1_title">Jeg vil ændre, hvilke felter der er synlige ved kontakter. Kan jeg gøre det?</string>
     <string name="faq_1_text">Ja, alt hvad du skal gøre er at gå i Indstillinger -&gt; Administrer viste kontaktfelter. Der kan du vælge, hvilke felter der skal være synlige. Nogle af dem er endda deaktiveret som standard, så du kan muligvis finde nogle nye der.</string>
+    <string name="merge_duplicate_contacts">Flet duplikerede kontakter</string>
+    <string name="instant_messaging">Instant messaging (IM)</string>
 </resources>
