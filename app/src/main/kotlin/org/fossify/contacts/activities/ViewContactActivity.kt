@@ -400,8 +400,7 @@ class ViewContactActivity : ContactActivity() {
                     binding.contactNumbersHolder.addView(root)
                     if (config.showPhoneNumbersFormatting) {
                         contactNumber.text = formatPhoneNumber(phoneNumber.value)
-                    }
-                    else {
+                    } else {
                         contactNumber.text = phoneNumber.value
                     }
                     contactNumberType.text = getPhoneNumberTypeText(phoneNumber.type, phoneNumber.label)
