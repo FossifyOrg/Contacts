@@ -319,7 +319,7 @@
                 android:layout_height="wrap_content">
 
                 <org.fossify.commons.views.MyAppCompatCheckbox
-                    android:id="@+id/phone_number_formatting"
+                    android:id="@+id/enable_formatting_phone_number"
                     style="@style/SettingsCheckboxStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

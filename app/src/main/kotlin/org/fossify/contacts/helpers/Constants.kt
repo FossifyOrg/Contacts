@@ -11,7 +11,7 @@ const val ADD_NEW_CONTACT_NUMBER = "add_new_contact_number"
 const val DEFAULT_FILE_NAME = "contacts.vcf"
 const val AVOID_CHANGING_TEXT_TAG = "avoid_changing_text_tag"
 const val AVOID_CHANGING_VISIBILITY_TAG = "avoid_changing_visibility_tag"
-const val ENABLE_FORMATTING_PHONE_NUMBER = "phone_number_formatting"
+const val ENABLE_FORMATTING_PHONE_NUMBER = "enable_formatting_phone_number"
 
 const val AUTOMATIC_BACKUP_REQUEST_CODE = 10001
 const val AUTO_BACKUP_INTERVAL_IN_DAYS = 1
