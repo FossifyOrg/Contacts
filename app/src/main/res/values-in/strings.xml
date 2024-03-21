@@ -75,5 +75,5 @@
     </plurals>
     <string name="faq_1_title">Saya ingin mengubah ruas yang ditampilkan pada kontak. Bisakah saya melakukannya?</string>
     <string name="faq_1_text">Ya, yang perlu anda lakukan adalah kunjungi Pengaturan -&gt; Kelola ruas kontak yang ditampilkan. Lalu anda bisa memilih ruas yang ingin ditampilkan. Beberapa ruas dinonaktifkan secara bawaan, jadi anda mungkin akan menemukan yang baru di sana.</string>
-    <string name="show_private_contacts">Tampilkan kontak pribadi pada Fossify Phone, Fossify SMS Messenger, dan Fossify Calendar</string>
+    <string name="show_private_contacts">Tampilkan kontak pribadi pada Telepon Fossify, Pengirim SMS Fossify, dan Kalender Fossify</string>
 </resources>
