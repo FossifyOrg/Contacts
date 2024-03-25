@@ -42,6 +42,7 @@ import org.fossify.contacts.activities.ViewContactActivity
 import org.fossify.contacts.dialogs.CreateNewGroupDialog
 import org.fossify.contacts.extensions.config
 import org.fossify.contacts.extensions.editContact
+import org.fossify.contacts.extensions.formatPhoneNumber
 import org.fossify.contacts.extensions.shareContacts
 import org.fossify.contacts.helpers.*
 import org.fossify.contacts.interfaces.RefreshContactsListener
@@ -413,8 +414,8 @@ class ContactsAdapter(
                     contact.phoneNumbers.firstOrNull { it.value.contains(textToHighlight) } ?: contact.phoneNumbers.firstOrNull()
                 }
                 val phoneNumberToFormat = phoneNumberToUse?.value ?: ""
-                val numberText = if (config.showPhoneNumbersFormatting) {
-                    ViewContactActivity.formatPhoneNumber(phoneNumberToFormat)
+                val numberText = if (config.formatPhoneNumbers) {
+                    phoneNumberToFormat.formatPhoneNumber()
                 } else {
                     phoneNumberToUse?.value ?: ""
                 }

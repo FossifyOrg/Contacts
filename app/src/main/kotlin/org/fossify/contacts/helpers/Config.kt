@@ -11,9 +11,9 @@ class Config(context: Context) : BaseConfig(context) {
         fun newInstance(context: Context) = Config(context)
     }
 
-    var showPhoneNumbersFormatting: Boolean
-        get() = prefs.getBoolean(ENABLE_FORMATTING_PHONE_NUMBER, true)
-        set(showPhoneNumbersFormatting) = prefs.edit().putBoolean(ENABLE_FORMATTING_PHONE_NUMBER, showPhoneNumbersFormatting).apply()
+    var formatPhoneNumbers: Boolean
+        get() = prefs.getBoolean(FORMAT_PHONE_NUMBERS, true)
+        set(showPhoneNumbersFormatting) = prefs.edit().putBoolean(FORMAT_PHONE_NUMBERS, showPhoneNumbersFormatting).apply()
 
     var showTabs: Int
         get() = prefs.getInt(SHOW_TABS, ALL_TABS_MASK)

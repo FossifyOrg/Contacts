@@ -167,10 +167,10 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupEnableNumberFormatting(){
-        binding.enableFormattingPhoneNumber.isChecked = config.showPhoneNumbersFormatting
-        binding.settingsShowPhoneNumberFormattingHolder.setOnClickListener{
-            binding.enableFormattingPhoneNumber.toggle()
-            config.showPhoneNumbersFormatting = binding.enableFormattingPhoneNumber.isChecked
+        binding.settingsFormatPhoneNumbers.isChecked = config.formatPhoneNumbers
+        binding.settingsFormatPhoneNumbersHolder.setOnClickListener{
+            binding.settingsFormatPhoneNumbers.toggle()
+            config.formatPhoneNumbers = binding.settingsFormatPhoneNumbers.isChecked
         }
     }
 

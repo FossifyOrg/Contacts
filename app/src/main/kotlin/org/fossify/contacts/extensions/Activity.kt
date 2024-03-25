@@ -3,6 +3,7 @@ package org.fossify.contacts.extensions
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
+import android.telephony.PhoneNumberUtils
 import ezvcard.VCardVersion
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.dialogs.RadioGroupDialog
@@ -19,6 +20,7 @@ import org.fossify.contacts.dialogs.ImportContactsDialog
 import org.fossify.contacts.helpers.DEFAULT_FILE_NAME
 import org.fossify.contacts.helpers.VcfExporter
 import java.io.FileOutputStream
+import java.util.Locale
 
 fun SimpleActivity.startCallIntent(recipient: String) {
     handlePermission(PERMISSION_CALL_PHONE) {
@@ -141,3 +143,11 @@ fun SimpleActivity.showImportContactsDialog(path: String, callback: (Boolean) ->
     ImportContactsDialog(this, path, callback)
 }
 
+fun String.formatPhoneNumber(minimumLength: Int = 4): String {
+    val country = Locale.getDefault().country
+    return if (this.length >= minimumLength){
+        PhoneNumberUtils.formatNumber(this, country).toString()
+    } else {
+        this
+    }
+}

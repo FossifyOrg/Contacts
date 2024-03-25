@@ -29,10 +29,7 @@ import org.fossify.contacts.R
 import org.fossify.contacts.databinding.*
 import org.fossify.contacts.dialogs.ChooseSocialDialog
 import org.fossify.contacts.dialogs.ManageVisibleFieldsDialog
-import org.fossify.contacts.extensions.config
-import org.fossify.contacts.extensions.editContact
-import org.fossify.contacts.extensions.getPackageDrawable
-import org.fossify.contacts.extensions.startCallIntent
+import org.fossify.contacts.extensions.*
 import org.fossify.contacts.helpers.*
 import java.util.Locale
 
@@ -48,19 +45,6 @@ class ViewContactActivity : ContactActivity() {
     private val binding by viewBinding(ActivityViewContactBinding::inflate)
 
     companion object {
-
-        fun getCountryIso(): String {
-            val locale = Locale.getDefault()
-            return locale.country
-        }
-        fun formatPhoneNumber(phoneNumber: String): String {
-            if (phoneNumber.length > 4){
-                return PhoneNumberUtils.formatNumber(phoneNumber, getCountryIso()).toString()
-            } else {
-                return phoneNumber
-            }
-        }
-
         private const val COMPARABLE_PHONE_NUMBER_LENGTH = 9
     }
 
@@ -398,8 +382,8 @@ class ViewContactActivity : ContactActivity() {
             phoneNumbers.forEach { phoneNumber ->
                 ItemViewPhoneNumberBinding.inflate(layoutInflater, binding.contactNumbersHolder, false).apply {
                     binding.contactNumbersHolder.addView(root)
-                    if (config.showPhoneNumbersFormatting) {
-                        contactNumber.text = formatPhoneNumber(phoneNumber.value)
+                    if (config.formatPhoneNumbers) {
+                        contactNumber.text = phoneNumber.value.formatPhoneNumber()
                     } else {
                         contactNumber.text = phoneNumber.value
                     }
