@@ -75,6 +75,8 @@
         <item quantity="few">%d grupy</item>
         <item quantity="many">%d grup</item>
         <item quantity="other">%d grup</item>
-    </plurals>    <string name="faq_1_title">Chcę zmienić, które pola są widoczne w kontaktach. Czy mogę to zrobić?</string>
+    </plurals>
+    <string name="faq_1_title">Chcę zmienić, które pola są widoczne w kontaktach. Czy mogę to zrobić?</string>
     <string name="faq_1_text">Tak. Wszystko, co musisz zrobić, to wejść w Ustawienia -&gt; Zarządzaj wyświetlanymi polami kontaktów. Możesz tam wybrać, które pola mają być wyświetlane. Niektóre z nich są nawet domyślnie wyłączone, więc możesz znaleźć tam kilka nowych.</string>
+    <string name="format_phone_numbers">Formatuj numery telefonów</string>
 </resources>
