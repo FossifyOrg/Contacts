@@ -76,4 +76,5 @@
     <string name="faq_1_title">Módosítani szeretném a névjegyeknél megjelenítendő mezőket. Lehetséges ez\?</string>
     <string name="faq_1_text">Igen, csak menjen a Beállítások -&gt; Megjelenítendő névjegymezők kezelése menüponthoz. Itt kiválaszthatja a megjelenítendő mezőket. Néhány már alapértelmezés szerint sem jelenik meg, így más, új mezőket is találhat itt.</string>
     <string name="show_private_contacts">Privát névjegyek megjelenítése a Fossify Telefon, a Fossify Üzenetek és a Fossify Naptár számára</string>
+    <string name="format_phone_numbers">Telefonszámok formázása</string>
 </resources>
