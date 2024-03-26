@@ -1,9 +1,7 @@
 package org.fossify.contacts.helpers
 
 import android.content.Context
-import android.telephony.PhoneNumberUtils
 import org.fossify.commons.helpers.BaseConfig
-import org.fossify.commons.helpers.SHOW_CONTACT_THUMBNAILS
 import org.fossify.commons.helpers.SHOW_TABS
 
 class Config(context: Context) : BaseConfig(context) {
@@ -13,7 +11,7 @@ class Config(context: Context) : BaseConfig(context) {
 
     var formatPhoneNumbers: Boolean
         get() = prefs.getBoolean(FORMAT_PHONE_NUMBERS, true)
-        set(showPhoneNumbersFormatting) = prefs.edit().putBoolean(FORMAT_PHONE_NUMBERS, showPhoneNumbersFormatting).apply()
+        set(formatPhoneNumbers) = prefs.edit().putBoolean(FORMAT_PHONE_NUMBERS, formatPhoneNumbers).apply()
 
     var showTabs: Int
         get() = prefs.getInt(SHOW_TABS, ALL_TABS_MASK)

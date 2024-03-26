@@ -42,7 +42,7 @@
     <!-- Settings -->
     <string name="show_phone_numbers">Show phone numbers</string>
     <string name="show_contact_thumbnails">Show contact thumbnails</string>
-    <string name="enable_number_formatting">Format phone numbers</string>
+    <string name="format_phone_numbers">Format phone numbers</string>
     <string name="show_dialpad_button">Show a dialpad button on the main screen</string>
     <string name="on_contact_click">On contact click</string>
     <string name="call_contact">Call contact</string>
