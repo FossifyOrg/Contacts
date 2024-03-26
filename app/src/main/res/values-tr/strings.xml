@@ -76,4 +76,5 @@
     </plurals>
     <string name="faq_1_title">Rehberde görüntülenecek alanları değiştirmek istiyorum. Bunu yapabilir miyim?</string>
     <string name="faq_1_text">Evet, tek yapmanız gereken Ayarlar -&gt; Görüntülenecek kişi alanlarını yönet bölümüne gitmek. Orada hangi alanların görüntüleneceğini seçebilirsiniz. Bazıları öntanımlı olarak devre dışı bile olsa, orada bazı yenilerini bulabilirsiniz.</string>
+    <string name="format_phone_numbers">Telefon numaralarını biçimlendir</string>
 </resources>
