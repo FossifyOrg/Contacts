@@ -17,9 +17,9 @@ class SelectContactsDialog(
     private var dialog: AlertDialog? = null
     private val binding = DialogSelectContactBinding.inflate(activity.layoutInflater)
     private var initiallySelectedContacts = ArrayList<Contact>()
+    private var allContacts = initialContacts
 
     init {
-        var allContacts = initialContacts
         if (selectContacts == null) {
             val contactSources = activity.getVisibleContactSources()
             allContacts = allContacts.filter { contactSources.contains(it.source) } as ArrayList<Contact>
@@ -44,7 +44,7 @@ class SelectContactsDialog(
         binding.apply {
             selectContactList.adapter = SelectContactsAdapter(
                 activity, allContacts, initiallySelectedContacts, allowSelectMultiple,
-                selectContactList, contactClickCallback
+                selectContactList, contactClickCallback, ""
             )
 
             if (root.context.areSystemAnimationsEnabled) {
@@ -53,6 +53,7 @@ class SelectContactsDialog(
 
             selectContactList.beVisibleIf(allContacts.isNotEmpty())
             selectContactPlaceholder.beVisibleIf(allContacts.isEmpty())
+
         }
 
         setupFastscroller(allContacts)
@@ -67,6 +68,44 @@ class SelectContactsDialog(
             activity.setupDialogStuff(binding.root, this) { alertDialog ->
                 dialog = alertDialog
             }
+        }
+
+        setupOptionsMenu()
+
+    }
+
+    private fun setupOptionsMenu() {
+        binding.mainMenu.toggleHideOnScroll(false)
+        binding.mainMenu.setupMenu()
+
+        val contactClickCallback: ((Contact) -> Unit)? = if (allowSelectMultiple) {
+            null
+        } else { contact ->
+            callback(arrayListOf(contact), arrayListOf())
+            dialog!!.dismiss()
+        }
+
+        binding.mainMenu.onSearchTextChangedListener = { text ->
+            val filteredContacts = ArrayList(allContacts.filter { contact ->
+                (contact.firstName + " " + contact.surname + contact.middleName).contains(text, ignoreCase = true)
+            })
+
+            binding.apply {
+                selectContactList.adapter = SelectContactsAdapter(
+                    activity, filteredContacts, initiallySelectedContacts, allowSelectMultiple,
+                    selectContactList, contactClickCallback, text
+                )
+
+                if (root.context.areSystemAnimationsEnabled) {
+                    selectContactList.scheduleLayoutAnimation()
+                }
+
+                selectContactList.beVisibleIf(filteredContacts.isNotEmpty())
+                selectContactPlaceholder.beVisibleIf(filteredContacts.isEmpty())
+            }
+
+            setupFastscroller(filteredContacts)
+
         }
     }
 
