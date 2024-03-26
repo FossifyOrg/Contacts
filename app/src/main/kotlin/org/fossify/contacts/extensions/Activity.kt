@@ -140,4 +140,3 @@ fun SimpleActivity.tryImportContactsFromFile(uri: Uri, callback: (Boolean) -> Un
 fun SimpleActivity.showImportContactsDialog(path: String, callback: (Boolean) -> Unit) {
     ImportContactsDialog(this, path, callback)
 }
-

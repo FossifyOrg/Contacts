@@ -2,12 +2,14 @@ package org.fossify.contacts.activities
 
 import android.content.ActivityNotFoundException
 import android.content.ContentUris
+import android.content.Context
 import android.content.Intent
 import android.media.AudioManager
 import android.media.RingtoneManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.telephony.PhoneNumberUtils
 import android.view.View
 import android.view.WindowManager
 import android.widget.RelativeLayout
@@ -27,10 +29,7 @@ import org.fossify.contacts.R
 import org.fossify.contacts.databinding.*
 import org.fossify.contacts.dialogs.ChooseSocialDialog
 import org.fossify.contacts.dialogs.ManageVisibleFieldsDialog
-import org.fossify.contacts.extensions.config
-import org.fossify.contacts.extensions.editContact
-import org.fossify.contacts.extensions.getPackageDrawable
-import org.fossify.contacts.extensions.startCallIntent
+import org.fossify.contacts.extensions.*
 import org.fossify.contacts.helpers.*
 import java.util.Locale
 
@@ -383,7 +382,11 @@ class ViewContactActivity : ContactActivity() {
             phoneNumbers.forEach { phoneNumber ->
                 ItemViewPhoneNumberBinding.inflate(layoutInflater, binding.contactNumbersHolder, false).apply {
                     binding.contactNumbersHolder.addView(root)
-                    contactNumber.text = phoneNumber.value
+                    if (config.formatPhoneNumbers) {
+                        contactNumber.text = phoneNumber.value.formatPhoneNumber()
+                    } else {
+                        contactNumber.text = phoneNumber.value
+                    }
                     contactNumberType.text = getPhoneNumberTypeText(phoneNumber.type, phoneNumber.label)
                     root.copyOnLongClick(phoneNumber.value)
 

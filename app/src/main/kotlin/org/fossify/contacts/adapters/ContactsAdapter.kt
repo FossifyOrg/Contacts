@@ -1,6 +1,7 @@
 package org.fossify.contacts.adapters
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.content.pm.ShortcutInfo
 import android.content.pm.ShortcutManager
@@ -8,6 +9,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.Icon
 import android.graphics.drawable.LayerDrawable
+import android.telephony.PhoneNumberUtils
 import android.util.TypedValue
 import android.view.Menu
 import android.view.MotionEvent
@@ -40,11 +42,13 @@ import org.fossify.contacts.activities.ViewContactActivity
 import org.fossify.contacts.dialogs.CreateNewGroupDialog
 import org.fossify.contacts.extensions.config
 import org.fossify.contacts.extensions.editContact
+import org.fossify.contacts.extensions.formatPhoneNumber
 import org.fossify.contacts.extensions.shareContacts
 import org.fossify.contacts.helpers.*
 import org.fossify.contacts.interfaces.RefreshContactsListener
 import org.fossify.contacts.interfaces.RemoveFromGroupListener
 import java.util.Collections
+import java.util.Locale
 
 class ContactsAdapter(
     activity: SimpleActivity,
@@ -155,6 +159,7 @@ class ContactsAdapter(
                 if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number else org.fossify.commons.R.layout.item_contact_without_number
             }
         }
+
         return createViewHolder(layout, parent)
     }
 
@@ -408,8 +413,12 @@ class ContactsAdapter(
                 } else {
                     contact.phoneNumbers.firstOrNull { it.value.contains(textToHighlight) } ?: contact.phoneNumbers.firstOrNull()
                 }
-
-                val numberText = phoneNumberToUse?.value ?: ""
+                val phoneNumberToFormat = phoneNumberToUse?.value ?: ""
+                val numberText = if (config.formatPhoneNumbers) {
+                    phoneNumberToFormat.formatPhoneNumber()
+                } else {
+                    phoneNumberToUse?.value ?: ""
+                }
                 findViewById<TextView>(org.fossify.commons.R.id.item_contact_number).apply {
                     text = if (textToHighlight.isEmpty()) numberText else numberText.highlightTextPart(textToHighlight, properPrimaryColor, false, true)
                     setTextColor(textColor)
