@@ -76,4 +76,5 @@
     </plurals>
     <string name="faq_1_title">我想要更改在通讯录会看到哪些字段。我能这么做吗?</string>
     <string name="faq_1_text">可以，您要做的是到[设置] -&gt; [管理显示的联系人字段]。在那里，您可以选择应该看到什么字段。其中有些甚至默认是关闭的，所以您可能会在那里发现一些新的。</string>
+    <string name="format_phone_numbers">调整手机号码格式</string>
 </resources>
