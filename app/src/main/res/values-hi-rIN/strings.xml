@@ -76,4 +76,5 @@
         <item quantity="other">%d समूह</item>
     </plurals>
     <string name="faq_1_title">मैं बदलना चाहता हूं कि संपर्कों पर कौन से फ़ील्ड दिखाई दें। क्या मैं यह कर सकता हूं?</string>
+    <string name="format_phone_numbers">फ़ोन नंबरों का प्रारूप</string>
 </resources>
