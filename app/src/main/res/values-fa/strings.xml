@@ -55,7 +55,7 @@
         <item quantity="one">%d گروه</item>
         <item quantity="other">%d گروه</item>
     </plurals>
-    <string name="show_private_contacts">نمایش مخاطبان خصوصی به تلفن، پیامک و گاهشمار</string>
+    <string name="show_private_contacts">نمایش مخاطبان خصوصی به تلفن، پیامک و گاه شمار</string>
     <string name="add_number_to_contact">افزودن شماره به مخاطب</string>
     <string name="phone_numbers">شماره تلفن ها</string>
     <string name="addresses">نشانی ها</string>

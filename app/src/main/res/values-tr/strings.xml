@@ -40,7 +40,7 @@
     <string name="manage_shown_contact_fields">Görüntülenecek kişi alanlarını yönet</string>
     <string name="contacts">Kişiler</string>
     <string name="show_only_contacts_with_numbers">Yalnızca telefon numaraları olan kişileri göster</string>
-    <string name="show_private_contacts">Özel kişileri Fossify Çevirici, Fossify SMS İletiler ve Fossify Takvim\'de göster</string>
+    <string name="show_private_contacts">Özel kişileri Fossify Telefon, Fossify SMS İletiler ve Fossify Takvim\'de göster</string>
     <string name="merge_duplicate_contacts">Yinelenen kişileri birleştir</string>
     <string name="no_favorites">Henüz herhangi bir favori kişi eklememişsiniz.</string>
     <string name="toggle_favorite">Favoriyi göster/gizle</string>
@@ -76,4 +76,5 @@
     </plurals>
     <string name="faq_1_title">Rehberde görüntülenecek alanları değiştirmek istiyorum. Bunu yapabilir miyim?</string>
     <string name="faq_1_text">Evet, tek yapmanız gereken Ayarlar -&gt; Görüntülenecek kişi alanlarını yönet bölümüne gitmek. Orada hangi alanların görüntüleneceğini seçebilirsiniz. Bazıları öntanımlı olarak devre dışı bile olsa, orada bazı yenilerini bulabilirsiniz.</string>
+    <string name="format_phone_numbers">Telefon numaralarını biçimlendir</string>
 </resources>
