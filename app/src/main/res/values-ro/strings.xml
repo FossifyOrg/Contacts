@@ -75,4 +75,7 @@
     </plurals>
     <string name="faq_1_title">Doresc să schimb câmpurile care sunt vizibile la contacte. Pot să fac acest lucru\?</string>
     <string name="faq_1_text">Da, tot ce trebuie să faceți este să accesați Setări -&gt; Gestionați câmpurile de contact afișate. Acolo puteți selecta ce câmpuri ar trebui să fie vizibile. Unele dintre ele sunt chiar dezactivate în mod implicit, așa că s-ar putea să găsiți unele noi acolo.</string>
+    <string name="prefix">Prefix</string>
+    <string name="format_phone_numbers">Formatează numerele de telefon</string>
+    <string name="show_private_contacts">Afișează contacte private în Fossify Phone, Fossify SMS Messenger și Fossify Calendar</string>
 </resources>
