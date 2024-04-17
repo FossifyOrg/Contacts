@@ -278,8 +278,6 @@
                 android:layout_toEndOf="@+id/contact_name_image"
                 android:orientation="vertical">
 
-                <include layout="@layout/item_edit_address" />
-
             </LinearLayout>
 
             <ImageView
