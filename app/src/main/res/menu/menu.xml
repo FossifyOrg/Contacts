@@ -7,12 +7,12 @@
         android:id="@+id/sort"
         android:icon="@drawable/ic_sort_vector"
         android:title="@string/sort_by"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/filter"
         android:icon="@drawable/ic_filter_vector"
         android:title="@string/filter"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/dialpad"
         android:icon="@drawable/ic_dialpad_vector"
@@ -27,17 +27,17 @@
         android:id="@+id/column_count"
         android:icon="@drawable/ic_column_count_vector"
         android:title="@string/column_count"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
     <item
         android:id="@+id/settings"
         android:icon="@drawable/ic_settings_cog_vector"
         android:title="@string/settings"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
     <item
         android:id="@+id/about"
         android:icon="@drawable/ic_info_vector"
         android:title="@string/about"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
     <item
         android:id="@+id/more_apps_from_us"
         android:showAsAction="never"
