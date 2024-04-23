@@ -3,9 +3,9 @@
     <string name="app_launcher_name">通讯录</string>
     <string name="address">地址</string>
     <string name="inserting">添加中…</string>
-    <string name="updating">更新中…</string>
+    <string name="updating">正在更新…</string>
     <string name="phone_storage">手机存储</string>
-    <string name="phone_storage_hidden">手机空间 (其他程序不可见)</string>
+    <string name="phone_storage_hidden">手机存储空间 (其他程序不可访问)</string>
     <string name="company">公司</string>
     <string name="job_position">职位</string>
     <string name="send_sms_to_contacts">发送短信给联系人</string>
@@ -43,9 +43,9 @@
     <string name="show_private_contacts">将私密联系人显示给 Fossify 拨号器、Fossify 短信和 Fossify 日历</string>
     <string name="merge_duplicate_contacts">合并重复的联系人</string>
     <string name="no_favorites">您似乎还没加入任何我的收藏联系人。</string>
-    <string name="toggle_favorite">切换收藏</string>
+    <string name="toggle_favorite">收藏/取消收藏</string>
     <string name="search_contacts">搜索联系人</string>
-    <string name="search_favorites">搜索收藏</string>
+    <string name="search_favorites">搜索收藏内容</string>
     <string name="search_groups">搜索组</string>
     <string name="import_contacts">导入联系人</string>
     <string name="export_contacts">导出联系人</string>
