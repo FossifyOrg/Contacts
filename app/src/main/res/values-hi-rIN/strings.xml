@@ -10,7 +10,7 @@
     <string name="faq_1_text">हां, आपको बस सेटिंग्स में जाना है -&gt; दिखाए गए संपर्क फ़ील्ड प्रबंधित करें। वहां आप चुन सकते हैं कि कौन से फ़ील्ड दिखाई देने चाहिए. उनमें से कुछ डिफ़ॉल्ट रूप से अक्षम भी हैं, इसलिए आपको वहां कुछ नए मिल सकते हैं।</string>
     <string name="app_launcher_name">संपर्क</string>
     <string name="updating">अपडेट हो रहा है…</string>
-    <string name="phone_storage">फ़ोन स्टोरेज</string>
+    <string name="phone_storage">फोन स्टोरेज</string>
     <string name="no_contacts_with_emails">ईमेल वाला कोई संपर्क नहीं मिला</string>
     <string name="new_contact">नया संपर्क</string>
     <string name="change_photo">छवि बदलो</string>
@@ -21,7 +21,7 @@
     <string name="address">पता</string>
     <string name="inserting">सम्मिलित किया जा रहा है…</string>
     <string name="company">कम्पनी</string>
-    <string name="phone_storage_hidden">फ़ोन स्टोरेज (अन्य ऐप्स द्वारा दिखाई नहीं देता)</string>
+    <string name="phone_storage_hidden">फोन स्टोरेज (अन्य ऐप्स द्वारा दिखाई नहीं देता)</string>
     <string name="job_position">कार्य स्थिति</string>
     <string name="send_email_to_group">समूह को ईमेल भेजें</string>
     <string name="send_sms_to_contacts">संपर्कों को SMS भेजें</string>
@@ -76,5 +76,5 @@
         <item quantity="other">%d समूह</item>
     </plurals>
     <string name="faq_1_title">मैं बदलना चाहता हूं कि संपर्कों पर कौन से फ़ील्ड दिखाई दें। क्या मैं यह कर सकता हूं?</string>
-    <string name="format_phone_numbers">फ़ोन नंबरों का प्रारूप</string>
+    <string name="format_phone_numbers">फोन नंबर प्रारूपित करें</string>
 </resources>
