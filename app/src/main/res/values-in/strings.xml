@@ -55,7 +55,7 @@
     <string name="include_contact_sources">Sertakan sumber kontak</string>
     <string name="filename_without_vcf">Nama file (tanpa .vcf)</string>
     <string name="dialpad">Telepon</string>
-    <string name="add_number_to_contact">Tambah nomor ke kontak</string>
+    <string name="add_number_to_contact">Tambahkan nomor ke kontak</string>
     <string name="prefix">Awalan</string>
     <string name="suffix">Akhiran</string>
     <string name="phone_numbers">Nomor telepon</string>
