@@ -172,7 +172,6 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
             findItem(R.id.more_apps_from_us).isVisible = !resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)
         }
     }
-
     private fun setupOptionsMenu() {
         binding.mainMenu.getToolbar().inflateMenu(R.menu.menu)
         binding.mainMenu.toggleHideOnScroll(false)
@@ -203,6 +202,7 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
             return@setOnMenuItemClickListener true
         }
     }
+
 
     private fun changeViewType() {
         ChangeViewTypeDialog(this) {
