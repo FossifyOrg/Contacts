@@ -25,7 +25,7 @@
     <string name="nickname">Kaldenavn</string>
 
     <!-- Grupper -->
-    <string name="no_groups">Ingen grupper</string>
+    <string name="no_groups">Ingen grupper</string>x
     <string name="create_new_group">Lav en ny gruppe</string>
     <string name="remove_from_group">Fjern fra en gruppe</string>
     <string name="no_group_participants">Denne gruppe er ikke tom.</string>
@@ -81,7 +81,7 @@
     <string name="suffix">Suffix</string>
     <string name="phone_numbers">Telefonnumre</string>
     <string name="emails">Email-adresser</string>
-    <string name="addresses">Addresser</string>
+    <string name="addresses">Adresser</string>
     <string name="events">Begivenheder (fødselsdage, årsdage osv.)</string>
     <string name="organization">Organization</string>
     <string name="websites">Hjemmesider</string>
