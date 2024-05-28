@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_launcher_name">Kontakter</string>
-    <string name="address">Addresse</string>
+    <string name="address">Adresse</string>
     <string name="inserting">Indsætter…</string>
     <string name="updating">Opdaterer…</string>
     <string name="phone_storage">Telefonens lager</string>
