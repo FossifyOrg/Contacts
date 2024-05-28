@@ -37,7 +37,7 @@
 
     <!-- Foto -->
     <string name="remove_photo">Fjern foto</string>
-    <string name="change_photo">Ændr foto</string>
+    <string name="change_photo">Skift foto</string>
 
     <!-- Indstillinger -->
     <string name="show_phone_numbers">Vis telefonnumre</string>
