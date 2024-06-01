@@ -13,7 +13,7 @@ import java.util.Locale
 class SelectContactsDialog(
     val activity: SimpleActivity, initialContacts: ArrayList<Contact>, val allowSelectMultiple: Boolean, val showOnlyContactsWithNumber: Boolean,
     selectContacts: ArrayList<Contact>? = null, val callback: (addedContacts: ArrayList<Contact>, removedContacts: ArrayList<Contact>) -> Unit
-) {
+) : SelectContactsAdapter.SelectionCallback {
     private var dialog: AlertDialog? = null
     private val binding = DialogSelectContactBinding.inflate(activity.layoutInflater)
     private var initiallySelectedContacts = ArrayList<Contact>()
@@ -24,6 +24,7 @@ class SelectContactsDialog(
         if (selectContacts == null) {
             val contactSources = activity.getVisibleContactSources()
             allContacts = allContacts.filter { contactSources.contains(it.source) } as ArrayList<Contact>
+
 
             if (showOnlyContactsWithNumber) {
                 allContacts = allContacts.filter { it.phoneNumbers.isNotEmpty() }.toMutableList() as ArrayList<Contact>
@@ -42,10 +43,12 @@ class SelectContactsDialog(
             dialog!!.dismiss()
         }
 
+        allContacts = allContacts.sortedBy { contact -> contact.surname + " " + contact.middleName + " " + contact.firstName }.toMutableList() as ArrayList<Contact>
+
         binding.apply {
             selectContactList.adapter = SelectContactsAdapter(
                 activity, allContacts, allContacts, initiallySelectedContacts, allowSelectMultiple,
-                selectContactList, contactClickCallback, ""
+                selectContactList, contactClickCallback, "", this@SelectContactsDialog // Pass the callback here
             )
 
             if (root.context.areSystemAnimationsEnabled) {
@@ -54,7 +57,6 @@ class SelectContactsDialog(
 
             selectContactList.beVisibleIf(allContacts.isNotEmpty())
             selectContactPlaceholder.beVisibleIf(allContacts.isEmpty())
-
         }
 
         setupFastscroller(allContacts)
@@ -72,7 +74,15 @@ class SelectContactsDialog(
         }
 
         setupOptionsMenu()
+    }
 
+    override fun onItemSelectionChanged(isSelected: Boolean, pos: Int, id: Int) {
+        if (isSelected) {
+            val rightId = allContacts.filter { it.id == id } as ArrayList<Contact>
+            selectedContacts.add(rightId[0])
+        } else {
+            selectedContacts = selectedContacts.filter { it.id != id } as ArrayList<Contact>
+        }
     }
 
     private fun setupOptionsMenu() {
@@ -87,26 +97,17 @@ class SelectContactsDialog(
         }
 
         binding.mainMenu.onSearchTextChangedListener = { text ->
-            val filteredContacts = ArrayList(allContacts.filter { contact ->
+            var filteredContacts = ArrayList(allContacts.filter { contact ->
                 (contact.firstName + " " + contact.surname + contact.middleName).contains(text, ignoreCase = true)
             })
 
+            filteredContacts = filteredContacts.sortedBy { contact -> contact.surname + " " + contact.middleName + " " + contact.firstName }.toMutableList() as ArrayList<Contact>
+
             binding.apply {
-                val adapter = binding.selectContactList.adapter as? SelectContactsAdapter
-
-                if (adapter != null) {
-                    selectedContacts.addAll(
-                        adapter.getSelectedItemsSet()?.toList()?.filterNot {
-                            it in selectedContacts
-                        }.orEmpty()
-                    )
-                }
-
                 selectContactList.adapter = SelectContactsAdapter(
                     activity, filteredContacts, allContacts, selectedContacts, allowSelectMultiple,
-                    selectContactList, contactClickCallback, text
+                    selectContactList, contactClickCallback, text, this@SelectContactsDialog
                 )
-
 
                 if (root.context.areSystemAnimationsEnabled) {
                     selectContactList.scheduleLayoutAnimation()
@@ -123,16 +124,6 @@ class SelectContactsDialog(
 
     private fun dialogConfirmed() {
         ensureBackgroundThread {
-            val adapter = binding.selectContactList.adapter as? SelectContactsAdapter
-
-            if (adapter != null) {
-                selectedContacts.addAll(
-                    adapter.getSelectedItemsSet()?.toList()?.filterNot {
-                        it in selectedContacts
-                    }.orEmpty()
-                )
-            }
-
             val newlySelectedContacts = selectedContacts.filter { !initiallySelectedContacts.contains(it) } as ArrayList
             val unselectedContacts = initiallySelectedContacts.filter { !selectedContacts.contains(it) } as ArrayList
             callback(newlySelectedContacts, unselectedContacts)

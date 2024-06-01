@@ -27,12 +27,13 @@ import org.fossify.contacts.extensions.config
 class SelectContactsAdapter(
     val activity: SimpleActivity,
     var contacts: ArrayList<Contact>,
-    private val allContacts: ArrayList<Contact>,
+    allContacts: ArrayList<Contact>,
     private val selectedContacts: ArrayList<Contact>,
     private val allowPickMultiple: Boolean,
     recyclerView: MyRecyclerView,
     private val itemClick: ((Contact) -> Unit)? = null,
-    highlightText: String = ""
+    highlightText: String = "",
+    private val selectionCallback: SelectionCallback? = null
 ) : RecyclerView.Adapter<SelectContactsAdapter.ViewHolder>() {
     private val itemViews = SparseArray<View>()
     private val selectedIds = HashSet<Int>()
@@ -46,7 +47,7 @@ class SelectContactsAdapter(
     private var textToHighlight = highlightText
 
     init {
-        allContacts.forEachIndexed { index, contact ->
+        allContacts.forEachIndexed { _, contact ->
             if (selectedContacts.asSequence().map { it.id }.contains(contact.id)) {
                 selectedIds.add(contact.id)
             }
@@ -57,6 +58,9 @@ class SelectContactsAdapter(
         }
     }
 
+    interface SelectionCallback {
+        fun onItemSelectionChanged(isSelected: Boolean, pos: Int, id: Int)
+    }
     private fun toggleItemSelection(select: Boolean, pos: Int) {
         if (select) {
             if (itemViews[pos] != null) {
@@ -65,15 +69,13 @@ class SelectContactsAdapter(
         } else {
             selectedIds.remove(contacts[pos].id)
         }
-        itemBindingClass.bind(itemViews[pos]).contactCheckbox.isChecked = select
-    }
 
-    fun getSelectedItemsSet(): HashSet<Contact> {
-        val selectedItemsSet = HashSet<Contact>(selectedIds.size)
-        selectedIds.forEach { id ->
-            allContacts.find { it.id == id }?.let { selectedItemsSet.add(it) }
-        }
-        return selectedItemsSet
+//        println("POS")
+//        println(pos)
+//        println(contacts[pos].id)
+
+        itemBindingClass.bind(itemViews[pos]).contactCheckbox.isChecked = select
+        selectionCallback?.onItemSelectionChanged(select, pos, contacts[pos].id)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
