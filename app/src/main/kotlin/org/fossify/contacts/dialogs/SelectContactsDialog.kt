@@ -83,6 +83,7 @@ class SelectContactsDialog(
         } else {
             selectedContacts = selectedContacts.filter { it.id != id } as ArrayList<Contact>
         }
+
     }
 
     private fun setupOptionsMenu() {
