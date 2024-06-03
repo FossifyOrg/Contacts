@@ -25,12 +25,18 @@ import org.fossify.contacts.databinding.ItemAddFavoriteWithoutNumberBinding
 import org.fossify.contacts.extensions.config
 
 class SelectContactsAdapter(
-    val activity: SimpleActivity, var contacts: ArrayList<Contact>, private val selectedContacts: ArrayList<Contact>, private val allowPickMultiple: Boolean,
-    recyclerView: MyRecyclerView, private val itemClick: ((Contact) -> Unit)? = null
-) :
-    RecyclerView.Adapter<SelectContactsAdapter.ViewHolder>() {
+    val activity: SimpleActivity,
+    var contacts: ArrayList<Contact>,
+    allContacts: ArrayList<Contact>,
+    private val selectedContacts: ArrayList<Contact>,
+    private val allowPickMultiple: Boolean,
+    recyclerView: MyRecyclerView,
+    private val itemClick: ((Contact) -> Unit)? = null,
+    highlightText: String = "",
+    private val selectionCallback: SelectionCallback? = null
+) : RecyclerView.Adapter<SelectContactsAdapter.ViewHolder>() {
     private val itemViews = SparseArray<View>()
-    private val selectedPositions = HashSet<Int>()
+    private val selectedIds = HashSet<Int>()
     private val config = activity.config
     private val adjustedPrimaryColor = activity.getProperPrimaryColor()
     private val fontSize = activity.getTextSize()
@@ -38,12 +44,12 @@ class SelectContactsAdapter(
     private val showContactThumbnails = config.showContactThumbnails
     private val showPhoneNumbers = config.showPhoneNumbers
     private val itemBindingClass = if (showPhoneNumbers) Binding.WithNumber else Binding.WithoutNumber
-    private var textToHighlight = ""
+    private var textToHighlight = highlightText
 
     init {
-        contacts.forEachIndexed { index, contact ->
+        allContacts.forEachIndexed { _, contact ->
             if (selectedContacts.asSequence().map { it.id }.contains(contact.id)) {
-                selectedPositions.add(index)
+                selectedIds.add(contact.id)
             }
         }
 
@@ -52,22 +58,25 @@ class SelectContactsAdapter(
         }
     }
 
+    interface SelectionCallback {
+        fun onItemSelectionChanged(isSelected: Boolean, pos: Int, id: Int)
+    }
+
     private fun toggleItemSelection(select: Boolean, pos: Int) {
         if (select) {
             if (itemViews[pos] != null) {
-                selectedPositions.add(pos)
+                selectedIds.add(contacts[pos].id)
             }
         } else {
-            selectedPositions.remove(pos)
+            selectedIds.remove(contacts[pos].id)
         }
 
-        itemBindingClass.bind(itemViews[pos]).contactCheckbox.isChecked = select
-    }
+//        println("POS")
+//        println(pos)
+//        println(contacts[pos].id)
 
-    fun getSelectedItemsSet(): HashSet<Contact> {
-        val selectedItemsSet = HashSet<Contact>(selectedPositions.size)
-        selectedPositions.forEach { selectedItemsSet.add(contacts[it]) }
-        return selectedItemsSet
+        itemBindingClass.bind(itemViews[pos]).contactCheckbox.isChecked = select
+        selectionCallback?.onItemSelectionChanged(select, pos, contacts[pos].id)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -78,7 +87,7 @@ class SelectContactsAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val contact = contacts[position]
         itemViews.put(position, holder.bindView(contact))
-        toggleItemSelection(selectedPositions.contains(position), position)
+        toggleItemSelection(selectedIds.contains(contact.id), position)
     }
 
     override fun getItemCount() = contacts.size
@@ -144,11 +153,8 @@ class SelectContactsAdapter(
                     if (contact.photoUri.isEmpty() && contact.photo == null) {
                         contactTmb.setImageDrawable(placeholderImage)
                     } else {
-                        val options = RequestOptions()
-                            .signature(ObjectKey(contact.getSignatureKey()))
-                            .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-                            .error(placeholderImage)
-                            .centerCrop()
+                        val options = RequestOptions().signature(ObjectKey(contact.getSignatureKey())).diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                            .error(placeholderImage).centerCrop()
 
                         val itemToLoad: Any? = if (contact.photoUri.isNotEmpty()) {
                             contact.photoUri
@@ -156,11 +162,7 @@ class SelectContactsAdapter(
                             contact.photo
                         }
 
-                        Glide.with(activity)
-                            .load(itemToLoad)
-                            .apply(options)
-                            .apply(RequestOptions.circleCropTransform())
-                            .into(contactTmb)
+                        Glide.with(activity).load(itemToLoad).apply(options).apply(RequestOptions.circleCropTransform()).into(contactTmb)
                     }
                 }
             }
