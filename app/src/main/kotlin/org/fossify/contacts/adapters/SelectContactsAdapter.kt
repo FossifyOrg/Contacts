@@ -61,6 +61,7 @@ class SelectContactsAdapter(
     interface SelectionCallback {
         fun onItemSelectionChanged(isSelected: Boolean, pos: Int, id: Int)
     }
+
     private fun toggleItemSelection(select: Boolean, pos: Int) {
         if (select) {
             if (itemViews[pos] != null) {

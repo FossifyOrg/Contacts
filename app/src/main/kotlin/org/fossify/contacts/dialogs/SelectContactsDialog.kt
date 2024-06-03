@@ -43,7 +43,8 @@ class SelectContactsDialog(
             dialog!!.dismiss()
         }
 
-        allContacts = allContacts.sortedBy { contact -> contact.surname + " " + contact.middleName + " " + contact.firstName }.toMutableList() as ArrayList<Contact>
+        allContacts =
+            allContacts.sortedBy { contact -> contact.surname + " " + contact.middleName + " " + contact.firstName }.toMutableList() as ArrayList<Contact>
 
         binding.apply {
             selectContactList.adapter = SelectContactsAdapter(
@@ -102,7 +103,8 @@ class SelectContactsDialog(
                 (contact.firstName + " " + contact.surname + contact.middleName).contains(text, ignoreCase = true)
             })
 
-            filteredContacts = filteredContacts.sortedBy { contact -> contact.surname + " " + contact.middleName + " " + contact.firstName }.toMutableList() as ArrayList<Contact>
+            filteredContacts = filteredContacts.sortedBy { contact -> contact.surname + " " + contact.middleName + " " + contact.firstName }
+                .toMutableList() as ArrayList<Contact>
 
             binding.apply {
                 selectContactList.adapter = SelectContactsAdapter(
