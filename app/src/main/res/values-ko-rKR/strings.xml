@@ -20,4 +20,5 @@
     <string name="target_contact_source">내보내기 대상</string>
     <string name="include_contact_sources">가져오기 대상</string>
     <string name="filename_without_vcf">파일이름 (.vcf 확장자 생략)</string>
+    <string name="dialpad">키패드</string>
 </resources>
