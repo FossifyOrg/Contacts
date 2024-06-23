@@ -72,6 +72,9 @@
     <plurals name="delete_groups">
         <item quantity="one">%d grupo</item>
         <item quantity="other">%d grupos</item>
-    </plurals>    <string name="faq_1_title">Quero alterar os campos visíveis dos contatos. Posso fazer isso?</string>
+    </plurals>
+    <string name="faq_1_title">Quero alterar os campos visíveis dos contatos. Posso fazer isso?</string>
     <string name="faq_1_text">Sim, você só precisa modificar as definições em Configurações -&gt; Gerenciar os campos visíveis. Alguns campos estão desmarcados por padrão, então você encontrará alguns novos por lá.</string>
+    <string name="show_private_contacts">Mostrar contatos privados para os apps Telefone, Mensagens e Calendário do Fossify</string>
+    <string name="format_phone_numbers">Formatar números de telefone</string>
 </resources>

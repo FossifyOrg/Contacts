@@ -77,4 +77,5 @@
     <string name="faq_1_text">Oui. Rendez-vous dans les « Paramètres », puis dans « Gérer les champs de contact affichés ». Vous pourrez y sélectionner les champs à afficher. Certains champs sont même désactivés par défaut. Vous pourrez donc en trouver de nouveaux.</string>
     <string name="app_launcher_name">Contacts</string>
     <string name="contacts">Contacts</string>
+    <string name="format_phone_numbers">Format des numéros de téléphone</string>
 </resources>
