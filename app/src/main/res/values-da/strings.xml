@@ -4,8 +4,8 @@
     <string name="address">Adresse</string>
     <string name="inserting">Indsætter…</string>
     <string name="updating">Opdaterer…</string>
-    <string name="phone_storage">Telefon lager</string>
-    <string name="phone_storage_hidden">Telefon lager (ikke synlig for andre apps)</string>
+    <string name="phone_storage">Telefonlager</string>
+    <string name="phone_storage_hidden">Telefonlager (ikke synligt for andre apps)</string>
     <string name="company">Firma</string>
     <string name="job_position">Stilling</string>
     <string name="send_sms_to_contacts">Send SMS til kontakter</string>
@@ -50,7 +50,7 @@
     <string name="import_contacts_from_vcf">Importér kontakter fra en .vcf-fil</string>
     <string name="import_contacts_from_vcf_pro">Importér kontakter fra en .vcf-fil (Pro)</string>
     <string name="export_contacts_to_vcf">Eksportér kontakter til en .vcf-fil</string>
-    <string name="target_contact_source">Kontaktskilde</string>
+    <string name="target_contact_source">Mål for kontaktkilde</string>
     <string name="include_contact_sources">Medtag kontaktkilder</string>
     <string name="filename_without_vcf">Filnavn (uden .vcf)</string>
     <string name="dialpad">Tastatur</string>
@@ -75,4 +75,6 @@
     <string name="faq_1_text">Ja, alt hvad du skal gøre er at gå i Indstillinger -&gt; Administrer viste kontaktfelter. Der kan du vælge, hvilke felter der skal være synlige. Nogle af dem er endda deaktiveret som standard, så du kan muligvis finde nogle nye der.</string>
     <string name="merge_duplicate_contacts">Flet duplikerede kontakter</string>
     <string name="instant_messaging">Instant messaging (IM)</string>
+    <string name="format_phone_numbers">Formatér telefonnumre</string>
+    <string name="show_private_contacts">Vis private kontakter til Fossify Phone, Fossify SMS Messenger og Fossify Calendar</string>
 </resources>
