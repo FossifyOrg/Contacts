@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="phone_storage_hidden">手機儲存空間（其他應用程式無法檢視）</string>
+</resources>

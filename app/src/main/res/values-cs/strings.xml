@@ -77,4 +77,5 @@
     <string name="faq_1_title">Chci upravit viditelná pole kontaktů. Lze to?</string>
     <string name="faq_1_text">Ano, stačí jít do Nastavení -&gt; Spravovat zobrazená pole kontaktů. Tam si můžete zvolit, která pole mají být viditelná. Některá jsou ve výchozím stavu vypnutá, takže tam můžete objevit i nová pole.</string>
     <string name="show_private_contacts">Zobrazit soukromé kontakty v aplikacích Fossify Phone, Fossify SMS Messenger a Fossify Calendar</string>
+    <string name="format_phone_numbers">Formátovat telefonní čísla</string>
 </resources>

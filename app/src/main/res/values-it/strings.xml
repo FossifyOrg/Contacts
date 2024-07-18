@@ -71,9 +71,11 @@
     <string name="delete_from_all_sources">Il contatto sarà rimosso da tutte le fonti di contatto.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d gruppo</item>
+        <item quantity="many">%d gruppi</item>
         <item quantity="other">%d gruppi</item>
     </plurals>
     <string name="faq_1_title">Voglio cambiare i campi visibili ai contatti. Come posso fare?</string>
     <string name="faq_1_text">Si può farlo andando in Impostazioni -&gt; Gestisci i campi mostrati. Qui si possono selezionare i campi che saranno visibili, alcuni sono disabilitati in maniera predefinita, quindi si possono trovare campi aggiuntivi.</string>
     <string name="show_private_contacts">Mostra i contatti privati a Telefono Fossify, Messaggi Fossify e Calendario Fossify</string>
+    <string name="format_phone_numbers">Formatta i numeri di telefono</string>
 </resources>

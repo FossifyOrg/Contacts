@@ -53,4 +53,27 @@
     <string name="organization">Təşkilat</string>
     <string name="websites">Vebsaytlar</string>
     <string name="groups">Qruplar </string>
-    <string name="contact_source">Kontakt kökü</string></resources>
+    <string name="contact_source">Kontakt kökü</string>
+    <string name="no_contacts_with_phone_numbers">Telefon nömrəsi olan heç bir kontakt tapılmadı</string>
+    <string name="nickname">Ləqəb</string>
+    <string name="change_photo">Fotonu dəyişdir</string>
+    <string name="toggle_favorite">Sevimlini göstər/gizlət</string>
+    <plurals name="delete_groups">
+        <item quantity="one">%d qrup</item>
+        <item quantity="other">%d qrup</item>
+    </plurals>
+    <string name="faq_1_title">Kontaktlarda görünəcək sahələri dəyişdirmək istəyirəm. Bunu edə bilərəm?</string>
+    <string name="no_contacts_with_emails">E-poçt ünvanı olan heç bir kontakt tapılmadı</string>
+    <string name="show_dialpad_button">Zəng paneli düyməsini əsas ekranda göstər</string>
+    <string name="add_number_to_contact">Kontakta nömrə əlavə et</string>
+    <string name="instant_messaging">Ani mesajlaşma (IM)</string>
+    <string name="ringtone">Zəng melodiyası</string>
+    <string name="delete_from_all_sources">Kontakt bütün kontakt mənbələrindən silinəcək.</string>
+    <string name="fields_empty">Ən azı 1 sahə doldurulmalıdır</string>
+    <string name="format_phone_numbers">Telefon nömrələrini formatlaşdır</string>
+    <string name="search_groups">Qrupları axtar</string>
+    <string name="merge_duplicate_contacts">Dublikat kontaktları birləşdir</string>
+    <string name="show_only_contacts_with_numbers">Yalnız telefon nömrəsi olan kontaktları göstər</string>
+    <string name="dialpad">Zəng paneli</string>
+    <string name="show_private_contacts">Şəxsi kontaktları Fossify Telefon, Fossify SMS Messencer və Fossify Təqvimdə göstər</string>
+</resources>
