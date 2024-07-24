@@ -32,8 +32,7 @@ class CreateNewGroupDialog(val activity: BaseSimpleActivity, val callback: (newG
 
                         val contactSources = ArrayList<ContactSource>()
                         ContactsHelper(activity).getContactSources {
-                            it.filter { it.type.contains("google", true) }.mapTo(contactSources) { ContactSource(it.name, it.type, it.name) }
-                            contactSources.add(activity.getPrivateContactSource())
+                            it.mapTo(contactSources) { ContactSource(it.name, it.type, it.publicName) }
 
                             val items = ArrayList<RadioItem>()
                             contactSources.forEachIndexed { index, contactSource ->
