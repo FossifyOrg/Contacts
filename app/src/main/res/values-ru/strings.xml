@@ -55,7 +55,7 @@
     <string name="include_contact_sources">Включить источники контактов</string>
     <string name="filename_without_vcf">Имя файла (без .vcf)</string>
     <string name="dialpad">Номеронабиратель</string>
-    <string name="add_number_to_contact">Добавить номер к контакту</string>
+    <string name="add_number_to_contact">Добавить номер для контакта</string>
     <string name="prefix">Префикс</string>
     <string name="suffix">Суффикс</string>
     <string name="phone_numbers">Телефонные номера</string>
