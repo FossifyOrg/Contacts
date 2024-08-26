@@ -2,18 +2,18 @@ package org.fossify.contacts.helpers
 
 import android.content.Context
 import android.net.Uri
+import android.os.Build
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Event
 import android.provider.ContactsContract.CommonDataKinds.Im
 import android.provider.ContactsContract.CommonDataKinds.Phone
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
-import android.provider.MediaStore
+import androidx.annotation.RequiresApi
 import ezvcard.Ezvcard
 import ezvcard.VCard
 import ezvcard.VCardVersion
 import ezvcard.parameter.ImageType
 import ezvcard.property.*
-import org.fossify.commons.extensions.getByteArray
 import org.fossify.commons.extensions.getDateTimeFromDateString
 import org.fossify.commons.extensions.showErrorToast
 import org.fossify.commons.extensions.toast
@@ -30,6 +30,7 @@ class VcfExporter {
     private var contactsExported = 0
     private var contactsFailed = 0
 
+    @RequiresApi(Build.VERSION_CODES.P)
     fun exportContacts(
         context: Context,
         outputStream: OutputStream?,
@@ -145,10 +146,17 @@ class VcfExporter {
                     card.addUrl(it)
                 }
 
-                if (contact.thumbnailUri.isNotEmpty()) {
-                    val photoByteArray = MediaStore.Images.Media.getBitmap(context.contentResolver, Uri.parse(contact.thumbnailUri)).getByteArray()
-                    val photo = Photo(photoByteArray, ImageType.JPEG)
-                    card.addPhoto(photo)
+                try {
+                    val inputStream = context.contentResolver.openInputStream(Uri.parse(contact.photoUri))
+
+                    if (inputStream != null) {
+                        val photoByteArray = inputStream.readBytes()
+                        val photo = Photo(photoByteArray, ImageType.JPEG)
+                        card.addPhoto(photo)
+                        inputStream.close()
+                    }
+                } catch (e: Exception) {
+                    e.printStackTrace()
                 }
 
                 if (contact.groups.isNotEmpty()) {
