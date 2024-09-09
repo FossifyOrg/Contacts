@@ -74,4 +74,7 @@
     </plurals>
     <string name="faq_1_title">我想要更改在通訊錄會看到哪些欄位。我能這麼做嗎?</string>
     <string name="faq_1_text">可以，你要做的是到[設定] -&gt; [管理顯示的聯絡人欄位]。在那裡，你可以選擇應該看到什麼欄位。其中有些甚至預設是關閉的，所以你可能會在那裡發現一些新的。</string>
+    <string name="show_private_contacts">顯示私人聯絡人給 Fossify 電話、Fossify 簡訊與 Fossify 行事曆</string>
+    <string name="format_phone_numbers">設定電話號碼格式</string>
+    <string name="toggle_favorite">切換我的最愛</string>
 </resources>
