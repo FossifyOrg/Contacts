@@ -3,9 +3,9 @@
     <string name="app_launcher_name">連絡先</string>
     <string name="address">住所</string>
     <string name="inserting">挿入中…</string>
-    <string name="updating">更新中…</string>
+    <string name="updating">更新しています…</string>
     <string name="phone_storage">内部ストレージ</string>
-    <string name="phone_storage_hidden">内部ストレージ (他のアプリからは表示されません)</string>
+    <string name="phone_storage_hidden">内部ストレージ（他のアプリからは表示されません）</string>
     <string name="company">会社</string>
     <string name="job_position">役職</string>
     <string name="send_sms_to_contacts">連絡先にSMSを送信</string>
@@ -72,6 +72,7 @@
     <plurals name="delete_groups">
         <item quantity="one">%d件のグループ</item>
         <item quantity="other">%d件のグループ</item>
-    </plurals>    <string name="faq_1_title">連絡先に表示される項目(フィールド)を変更することはできますか？</string>
+    </plurals>
+    <string name="faq_1_title">連絡先に表示される項目(フィールド)を変更することはできますか？</string>
     <string name="faq_1_text">可能です。[設定] -&gt; [連絡先に表示するフィールドを管理] から、表示されるフィールドを選択することができます。これらの中にはデフォルトで無効になっているものもあるので、あなたは新しいものを見つけるかもしれません。</string>
 </resources>
