@@ -2,17 +2,17 @@
 <resources>
     <string name="app_launcher_name">連絡先</string>
     <string name="address">住所</string>
-    <string name="inserting">挿入中…</string>
+    <string name="inserting">挿入しています…</string>
     <string name="updating">更新しています…</string>
     <string name="phone_storage">内部ストレージ</string>
-    <string name="phone_storage_hidden">内部ストレージ（他のアプリからは表示されません）</string>
+    <string name="phone_storage_hidden">内部ストレージ（他のアプリには表示されません）</string>
     <string name="company">会社</string>
     <string name="job_position">役職</string>
     <string name="send_sms_to_contacts">連絡先にSMSを送信</string>
     <string name="send_email_to_contacts">連絡先にメールを送信</string>
     <string name="send_sms_to_group">グループにSMSを送信</string>
     <string name="send_email_to_group">グループにメールを送信</string>
-    <string name="fields_empty">少なくとも1つのフィールドに入力する必要があります</string>
+    <string name="fields_empty">少なくとも1つの入力欄に入力する必要があります</string>
     <string name="must_be_at_edit">連絡先を編集するには編集画面に切り替えてください</string>
     <string name="no_contacts_with_emails">メールアドレスが登録された連絡先が見つかりません</string>
     <string name="no_contacts_with_phone_numbers">電話番号が登録された連絡先が見つかりません</string>
@@ -20,7 +20,7 @@
     <string name="edit_contact">連絡先を編集</string>
     <string name="select_contact">連絡先を選択</string>
     <string name="nickname">ニックネーム</string>
-    <string name="no_groups">グループなし</string>
+    <string name="no_groups">グループがありません</string>
     <string name="create_new_group">新しいグループを作成</string>
     <string name="remove_from_group">グループから削除</string>
     <string name="no_group_participants">このグループは空です</string>
@@ -37,10 +37,10 @@
     <string name="on_contact_click">連絡先をタップ</string>
     <string name="call_contact">連絡先に発信</string>
     <string name="view_contact">連絡先の詳細を表示</string>
-    <string name="manage_shown_contact_fields">連絡先に表示するフィールドを管理</string>
+    <string name="manage_shown_contact_fields">表示する連絡先の入力欄を管理</string>
     <string name="contacts">連絡先</string>
-    <string name="show_only_contacts_with_numbers">電話番号が登録された連絡先のみ表示する</string>
-    <string name="merge_duplicate_contacts">重複した連絡先を統合する</string>
+    <string name="show_only_contacts_with_numbers">電話番号が登録された連絡先のみ表示</string>
+    <string name="merge_duplicate_contacts">重複した連絡先を統合</string>
     <string name="no_favorites">お気に入りの連絡先はまだありません。</string>
     <string name="toggle_favorite">お気に入りの切り替え</string>
     <string name="search_contacts">連絡先を検索</string>
@@ -75,4 +75,6 @@
     </plurals>
     <string name="faq_1_title">連絡先に表示される項目(フィールド)を変更することはできますか？</string>
     <string name="faq_1_text">可能です。[設定] -&gt; [連絡先に表示するフィールドを管理] から、表示されるフィールドを選択することができます。これらの中にはデフォルトで無効になっているものもあるので、あなたは新しいものを見つけるかもしれません。</string>
+    <string name="format_phone_numbers">電話番号の形式</string>
+    <string name="show_private_contacts">非公開の連絡先をFossify電話、Fossify SMSメッセンジャー、Fossifyカレンダーに表示</string>
 </resources>
