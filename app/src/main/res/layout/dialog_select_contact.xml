@@ -5,6 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <org.fossify.commons.views.MySearchMenu
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </org.fossify.commons.views.MySearchMenu>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <org.fossify.commons.views.MyRecyclerView
         android:id="@+id/select_contact_list"
         android:layout_width="match_parent"
@@ -13,6 +26,7 @@
         android:layoutAnimation="@anim/layout_animation"
         android:paddingEnd="@dimen/big_margin"
         android:scrollbars="none"
+        android:translationY="60dp"
         app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager" />
 
     <org.fossify.commons.views.MyTextView
@@ -29,6 +43,7 @@
         android:text="@string/no_contacts_found"
         android:textSize="@dimen/bigger_text_size"
         android:textStyle="italic"
+        android:translationY="50dp"
         android:visibility="gone" />
 
     <com.reddit.indicatorfastscroll.FastScrollerView
@@ -37,7 +52,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:paddingTop="@dimen/big_margin"
-        android:paddingBottom="@dimen/big_margin" />
+        android:paddingBottom="@dimen/big_margin"
+        android:translationY="60dp" />
 
     <com.reddit.indicatorfastscroll.FastScrollerThumbView
         android:id="@+id/letter_fastscroller_thumb"
@@ -46,6 +62,7 @@
         android:layout_alignTop="@+id/letter_fastscroller"
         android:layout_alignBottom="@+id/letter_fastscroller"
         android:layout_marginEnd="@dimen/activity_margin"
-        android:layout_toStartOf="@+id/letter_fastscroller" />
+        android:layout_toStartOf="@+id/letter_fastscroller"
+        android:translationY="60dp" />
 
 </RelativeLayout>
