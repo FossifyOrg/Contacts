@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ComplexCondition:ContactActivity.kt$ContactActivity$requestCode == PICK_RINGTONE_INTENT_ID &amp;&amp; resultCode == RESULT_OK &amp;&amp; resultData != null &amp;&amp; resultData.dataString != null</ID>
+    <ID>ComplexCondition:EditContactActivity.kt$EditContactActivity$((contact!!.id == 0 &amp;&amp; action == Intent.ACTION_INSERT) || action == ADD_NEW_CONTACT_NUMBER) &amp;&amp; intent.extras != null</ID>
+    <ID>ComplexCondition:EditContactActivity.kt$EditContactActivity$currentContactPhotoPath.isEmpty() &amp;&amp; getFilledPhoneNumbers().isEmpty() &amp;&amp; getFilledEmails().isEmpty() &amp;&amp; getFilledAddresses().isEmpty() &amp;&amp; getFilledIMs().isEmpty() &amp;&amp; getFilledEvents().isEmpty() &amp;&amp; getFilledWebsites().isEmpty()</ID>
+    <ID>ComplexCondition:MyViewPagerFragment.kt$MyViewPagerFragment$(config.showTabs and TAB_CONTACTS == 0 &amp;&amp; this is ContactsFragment &amp;&amp; activity !is InsertOrEditContactActivity) || (config.showTabs and TAB_FAVORITES == 0 &amp;&amp; this is FavoritesFragment) || (config.showTabs and TAB_GROUPS == 0 &amp;&amp; this is GroupsFragment)</ID>
+    <ID>CyclomaticComplexMethod:ContactsAdapter.kt$ContactsAdapter$private fun setupView(view: View, contact: Contact, holder: ViewHolder)</ID>
+    <ID>CyclomaticComplexMethod:EditContactActivity.kt$EditContactActivity$private fun gotContact()</ID>
+    <ID>CyclomaticComplexMethod:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$override fun refreshContacts(refreshTabsMask: Int)</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$MainActivity$override fun refreshContacts(refreshTabsMask: Int)</ID>
+    <ID>CyclomaticComplexMethod:MyViewPagerFragment.kt$MyViewPagerFragment$fun onSearchQueryChanged(text: String)</ID>
+    <ID>CyclomaticComplexMethod:MyViewPagerFragment.kt$MyViewPagerFragment$fun refreshContacts(contacts: ArrayList&lt;Contact&gt;, placeholderText: String? = null)</ID>
+    <ID>CyclomaticComplexMethod:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$fun bindView(contact: Contact): View</ID>
+    <ID>CyclomaticComplexMethod:VcfExporter.kt$VcfExporter$fun exportContacts( context: Context, outputStream: OutputStream?, contacts: ArrayList&lt;Contact&gt;, showExportingToast: Boolean, version: VCardVersion = VCardVersion.V4_0, callback: (result: ExportResult) -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:VcfImporter.kt$VcfImporter$fun importContacts(path: String, targetContactSource: String): ImportResult</ID>
+    <ID>CyclomaticComplexMethod:ViewContactActivity.kt$ViewContactActivity$private fun setupPhoneNumbers()</ID>
+    <ID>EmptyCatchBlock:ContactsAdapter.kt$ContactsAdapter${ }</ID>
+    <ID>EmptyFunctionBlock:ContactsAdapter.kt$ContactsAdapter${}</ID>
+    <ID>EmptyFunctionBlock:GroupsAdapter.kt$GroupsAdapter${}</ID>
+    <ID>EmptyFunctionBlock:InsertOrEditContactActivity.kt$InsertOrEditContactActivity.&lt;no name provided&gt;${}</ID>
+    <ID>EmptyFunctionBlock:MainActivity.kt$MainActivity.&lt;no name provided&gt;${}</ID>
+    <ID>ImplicitDefaultLocale:VcfImporter.kt$VcfImporter$String.format("%02d", date.date)</ID>
+    <ID>ImplicitDefaultLocale:VcfImporter.kt$VcfImporter$String.format("%02d", date.month + 1)</ID>
+    <ID>ImplicitDefaultLocale:VcfImporter.kt$VcfImporter$String.format("%02d", partialDate.date)</ID>
+    <ID>ImplicitDefaultLocale:VcfImporter.kt$VcfImporter$String.format("%02d", partialDate.month)</ID>
+    <ID>LargeClass:EditContactActivity.kt$EditContactActivity : ContactActivity</ID>
+    <ID>LargeClass:ViewContactActivity.kt$ViewContactActivity : ContactActivity</ID>
+    <ID>LongMethod:ContactsAdapter.kt$ContactsAdapter$private fun setupView(view: View, contact: Contact, holder: ViewHolder)</ID>
+    <ID>LongMethod:Context.kt$fun Context.backupContacts()</ID>
+    <ID>LongMethod:EditContactActivity.kt$EditContactActivity$private fun gotContact()</ID>
+    <ID>LongMethod:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$fun bindView(contact: Contact): View</ID>
+    <ID>LongMethod:VcfExporter.kt$VcfExporter$fun exportContacts( context: Context, outputStream: OutputStream?, contacts: ArrayList&lt;Contact&gt;, showExportingToast: Boolean, version: VCardVersion = VCardVersion.V4_0, callback: (result: ExportResult) -&gt; Unit )</ID>
+    <ID>LongMethod:VcfImporter.kt$VcfImporter$fun importContacts(path: String, targetContactSource: String): ImportResult</ID>
+    <ID>LongMethod:ViewContactActivity.kt$ViewContactActivity$private fun setupContactSources()</ID>
+    <ID>LongMethod:ViewContactActivity.kt$ViewContactActivity$private fun setupPhoneNumbers()</ID>
+    <ID>LongParameterList:ContactsAdapter.kt$ContactsAdapter$( activity: SimpleActivity, var contactItems: MutableList&lt;Contact&gt;, recyclerView: MyRecyclerView, highlightText: String = "", var viewType: Int = VIEW_TYPE_LIST, private val refreshListener: RefreshContactsListener?, private val location: Int, private val removeListener: RemoveFromGroupListener?, private val enableDrag: Boolean = false, itemClick: (Any) -&gt; Unit )</ID>
+    <ID>LongParameterList:VcfExporter.kt$VcfExporter$( context: Context, outputStream: OutputStream?, contacts: ArrayList&lt;Contact&gt;, showExportingToast: Boolean, version: VCardVersion = VCardVersion.V4_0, callback: (result: ExportResult) -&gt; Unit )</ID>
+    <ID>MagicNumber:AutomaticBackupReceiver.kt$AutomaticBackupReceiver$3000</ID>
+    <ID>MagicNumber:Constants.kt$6</ID>
+    <ID>MagicNumber:ContactActivity.kt$ContactActivity$1500</ID>
+    <ID>MagicNumber:ContactActivity.kt$ContactActivity$600</ID>
+    <ID>MagicNumber:EditContactActivity.kt$EditContactActivity$0.5f</ID>
+    <ID>MagicNumber:EditContactActivity.kt$EditContactActivity$100</ID>
+    <ID>MagicNumber:EditContactActivity.kt$EditContactActivity$512</ID>
+    <ID>MagicNumber:GroupContactsActivity.kt$GroupContactsActivity$600</ID>
+    <ID>MagicNumber:MyDatePickerDialog.kt$MyDatePickerDialog$10</ID>
+    <ID>MagicNumber:MyDatePickerDialog.kt$MyDatePickerDialog$4</ID>
+    <ID>MagicNumber:MyDatePickerDialog.kt$MyDatePickerDialog$5</ID>
+    <ID>MagicNumber:MyDatePickerDialog.kt$MyDatePickerDialog$7</ID>
+    <ID>MagicNumber:MyDatePickerDialog.kt$MyDatePickerDialog$8</ID>
+    <ID>MagicNumber:VcfExporter.kt$VcfExporter$1900</ID>
+    <ID>MagicNumber:VcfImporter.kt$VcfImporter$100</ID>
+    <ID>MagicNumber:VcfImporter.kt$VcfImporter$1900</ID>
+    <ID>MaxLineLength:AutoCompleteTextViewAdapter.kt$AutoCompleteTextViewAdapter$val placeholder = BitmapDrawable(activity.resources, SimpleContactsHelper(context).getContactLetterIcon(nameToUse))</ID>
+    <ID>MaxLineLength:AutomaticBackupReceiver.kt$AutomaticBackupReceiver$val wakelock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "simplecontacts:automaticbackupreceiver")</ID>
+    <ID>MaxLineLength:ChangeSortingDialog.kt$ChangeSortingDialog$class</ID>
+    <ID>MaxLineLength:ChangeSortingDialog.kt$ChangeSortingDialog$if</ID>
+    <ID>MaxLineLength:ChooseSocialDialog.kt$ChooseSocialDialog$binding.dialogChooseSocial.addView(item.root, RadioGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT))</ID>
+    <ID>MaxLineLength:ChooseSocialDialog.kt$ChooseSocialDialog$class</ID>
+    <ID>MaxLineLength:Config.kt$Config$set</ID>
+    <ID>MaxLineLength:ContactActivity.kt$ContactActivity$if</ID>
+    <ID>MaxLineLength:ContactActivity.kt$ContactActivity.&lt;no name provided&gt;$override</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$(drawable as LayerDrawable).findDrawableByLayerId(R.id.shortcut_contact_background).applyColorFilter(appIconColor)</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$)</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$Glide.with(activity).clear(holder.itemView.findViewById&lt;ImageView&gt;(org.fossify.commons.R.id.item_contact_image))</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$contact.phoneNumbers.firstOrNull { it.value.contains(textToHighlight) } ?: contact.phoneNumbers.firstOrNull()</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$findItem(R.id.cab_add_to_group).isVisible = location == LOCATION_CONTACTS_TAB || location == LOCATION_FAVORITES_TAB</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$findItem(R.id.cab_delete).isVisible = location == LOCATION_CONTACTS_TAB || location == LOCATION_GROUP_CONTACTS</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$findItem(R.id.cab_remove).isVisible = location == LOCATION_FAVORITES_TAB || location == LOCATION_GROUP_CONTACTS</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$findViewById&lt;ConstraintLayout&gt;(org.fossify.commons.R.id.item_contact_frame)?.isSelected = selectedKeys.contains(contact.id)</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$findViewById&lt;ImageView&gt;(org.fossify.commons.R.id.item_contact_image).setImageDrawable(placeholderImage)</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$findViewById&lt;TextView&gt;(org.fossify.commons.R.id.item_contact_name).text</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number else org.fossify.commons.R.layout.item_contact_without_number</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number_grid else org.fossify.commons.R.layout.item_contact_without_number_grid</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$intent.flags = intent.flags or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NO_HISTORY</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$isOreoPlus() &amp;&amp; isOneItemSelected() &amp;&amp; (location == LOCATION_FAVORITES_TAB || location == LOCATION_CONTACTS_TAB)</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$location == LOCATION_CONTACTS_TAB || location == LOCATION_FAVORITES_TAB || location == LOCATION_GROUP_CONTACTS</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$text = if (textToHighlight.isEmpty()) numberText else numberText.highlightTextPart(textToHighlight, properPrimaryColor, false, true)</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$val</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$val placeholderImage = BitmapDrawable(resources, SimpleContactsHelper(activity).getContactLetterIcon(contact.getNameToDisplay()))</ID>
+    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$val placeholderImage = BitmapDrawable(resources, SimpleContactsHelper(context).getContactLetterIcon(fullName))</ID>
+    <ID>MaxLineLength:ContactsFragment.kt$ContactsFragment$class</ID>
+    <ID>MaxLineLength:Context.kt$AlarmManagerCompat.setAndAllowWhileIdle(alarmManager, AlarmManager.RTC_WAKEUP, backupAtMillis, pendingIntent)</ID>
+    <ID>MaxLineLength:Context.kt$ContactsHelper(this)</ID>
+    <ID>MaxLineLength:Context.kt$applicationContext.contentResolver.openOutputStream(exportFileUri, "wt") ?: FileOutputStream(exportFile)</ID>
+    <ID>MaxLineLength:Context.kt$fun Context.getCachePhotoUri(file: File = getCachePhoto())</ID>
+    <ID>MaxLineLength:Context.kt$return PendingIntent.getBroadcast(this, AUTOMATIC_BACKUP_REQUEST_CODE, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)</ID>
+    <ID>MaxLineLength:CreateNewGroupDialog.kt$CreateNewGroupDialog$it.filter { it.type.contains("google", true) }.mapTo(contactSources) { ContactSource(it.name, it.type, it.name) }</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$// if the last used contact source is not available anymore, use the first available one. Could happen at ejecting SIM card</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$// normalized number +421903123456, then at getting it from the input field we get 0903123456, can happen at WhatsApp contacts</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$// we might have received an URI which we have no permission to send further, so just copy the received image in a new uri (for example from Google Photos)</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$INTENT_CROP_PHOTO -&gt; updateContactPhoto(lastPhotoIntentUri.toString(), binding.contactPhoto, binding.contactPhotoBottomShadow)</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$SelectAlarmSoundDialog</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$binding.contactNumbersAddNew</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$binding.contactPrefix</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$contact!!.phoneNumbers.add(PhoneNumber(phoneNumber, DEFAULT_PHONE_NUMBER_TYPE, "", phoneNumber.normalizePhoneNumber()))</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$if</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$isThirdPartyIntent = action == Intent.ACTION_EDIT || action == Intent.ACTION_INSERT || action == ADD_NEW_CONTACT_NUMBER</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$private fun hasContactChanged()</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$resources.getDrawable(if (on) org.fossify.commons.R.drawable.ic_star_vector else org.fossify.commons.R.drawable.ic_star_outline_vector)</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$updateContactPhoto(contact!!.photoUri, binding.contactPhoto, binding.contactPhotoBottomShadow, contact!!.photo)</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$val addressLabel = if (addressType == StructuredPostal.TYPE_CUSTOM) addressHolder.contactAddressType.value else ""</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$val emailLabel = if (emailType == CommonDataKinds.Email.TYPE_CUSTOM) emailHolder.contactEmailType.value else ""</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$val nameTextViews = arrayOf(binding.contactFirstName, binding.contactMiddleName, binding.contactSurname).filter { it.isVisible() }</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$val number = duplicate.phoneNumbers.find { it.normalizedNumber == toggleState.first!!.normalizedNumber }</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$val number = duplicate.phoneNumbers.find { it.normalizedNumber == toggleState.second!!.normalizedNumber }</ID>
+    <ID>MaxLineLength:EditContactActivity.kt$EditContactActivity$val toggleIcon = ItemEditPhoneNumberBinding.bind(binding.contactNumbersHolder.getChildAt(i)).defaultToggleIcon</ID>
+    <ID>MaxLineLength:ExportContactsDialog.kt$ExportContactsDialog$binding.exportContactsList.adapter = FilterContactSourcesAdapter(activity, contactSourcesWithCount, activity.getVisibleContactSources())</ID>
+    <ID>MaxLineLength:ExportContactsDialog.kt$ExportContactsDialog$val selectedSources = (binding.exportContactsList.adapter as FilterContactSourcesAdapter).getSelectedContactSources()</ID>
+    <ID>MaxLineLength:FavoritesFragment.kt$FavoritesFragment$(innerBinding.fragmentList.layoutManager as? MyGridLayoutManager)?.spanCount = context!!.config.contactsGridColumnCount</ID>
+    <ID>MaxLineLength:FavoritesFragment.kt$FavoritesFragment$class</ID>
+    <ID>MaxLineLength:FilterContactSourcesAdapter.kt$FilterContactSourcesAdapter.ViewHolder$filterContactSourceCheckbox.setColors(activity.getProperTextColor(), activity.getProperPrimaryColor(), activity.getProperBackgroundColor())</ID>
+    <ID>MaxLineLength:FilterContactSourcesDialog.kt$FilterContactSourcesDialog$.</ID>
+    <ID>MaxLineLength:FilterContactSourcesDialog.kt$FilterContactSourcesDialog$binding.filterContactSourcesList.adapter = FilterContactSourcesAdapter(activity, contactSourcesWithCount, selectedSources)</ID>
+    <ID>MaxLineLength:FilterContactSourcesDialog.kt$FilterContactSourcesDialog$val selectedContactSources = (binding.filterContactSourcesList.adapter as FilterContactSourcesAdapter).getSelectedContactSources()</ID>
+    <ID>MaxLineLength:GroupContactsActivity.kt$GroupContactsActivity$private fun getDefaultRingtoneUri()</ID>
+    <ID>MaxLineLength:GroupContactsActivity.kt$GroupContactsActivity$updateMaterialActivityViews(binding.groupContactsCoordinator, binding.groupContactsList, useTransparentNavigation = true, useTopSearchMenu = false)</ID>
+    <ID>MaxLineLength:GroupsAdapter.kt$GroupsAdapter$activity: SimpleActivity</ID>
+    <ID>MaxLineLength:GroupsFragment.kt$GroupsFragment$class</ID>
+    <ID>MaxLineLength:ImportContactsDialog.kt$ImportContactsDialog$class</ID>
+    <ID>MaxLineLength:ImportContactsDialog.kt$ImportContactsDialog$targetContactSource = if (it == activity.getString(R.string.phone_storage_hidden)) SMT_PRIVATE else it</ID>
+    <ID>MaxLineLength:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$binding.insertEditTabsHolder.newTab().setCustomView(org.fossify.commons.R.layout.bottom_tablayout_item)</ID>
+    <ID>MaxLineLength:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$private fun getAllFragments()</ID>
+    <ID>MaxLineLength:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$private fun getInactiveTabIndexes(activeIndex: Int)</ID>
+    <ID>MaxLineLength:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$updateMaterialActivityViews(binding.insertEditCoordinator, binding.insertEditContactHolder, useTransparentNavigation = false, useTopSearchMenu = true)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$(drawable as LayerDrawable).findDrawableByLayerId(org.fossify.commons.R.id.shortcut_plus_background).applyColorFilter(appIconColor)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$binding.mainTabsHolder.newTab().setCustomView(org.fossify.commons.R.layout.bottom_tablayout_item)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$faqItems.add(FAQItem(org.fossify.commons.R.string.faq_2_title_commons, org.fossify.commons.R.string.faq_2_text_commons))</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$faqItems.add(FAQItem(org.fossify.commons.R.string.faq_6_title_commons, org.fossify.commons.R.string.faq_6_text_commons))</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$faqItems.add(FAQItem(org.fossify.commons.R.string.faq_7_title_commons, org.fossify.commons.R.string.faq_7_text_commons))</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$findItem(R.id.column_count).isVisible = currentFragment == findViewById(R.id.favorites_fragment) &amp;&amp; config.viewType == VIEW_TYPE_GRID</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$findItem(R.id.more_apps_from_us).isVisible = !resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$findViewById&lt;MyViewPagerFragment&lt;*&gt;&gt;(R.id.contacts_fragment)?.startNameWithSurnameChanged(configStartNameWithSurname)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$findViewById&lt;MyViewPagerFragment&lt;*&gt;&gt;(R.id.favorites_fragment)?.startNameWithSurnameChanged(configStartNameWithSurname)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$private fun getInactiveTabIndexes(activeIndex: Int)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$resources.getColoredDrawableWithColor(org.fossify.commons.R.drawable.ic_dialpad_vector, properPrimaryColor.getContrastColor())</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$updateMaterialActivityViews(binding.mainCoordinator, binding.mainHolder, useTransparentNavigation = false, useTopSearchMenu = true)</ID>
+    <ID>MaxLineLength:MainActivity.kt$MainActivity$val licenses = LICENSE_JODA or LICENSE_GLIDE or LICENSE_GSON or LICENSE_INDICATOR_FAST_SCROLL or LICENSE_AUTOFITTEXTVIEW</ID>
+    <ID>MaxLineLength:ManageAutoBackupsDialog.kt$ManageAutoBackupsDialog$activity</ID>
+    <ID>MaxLineLength:ManageAutoBackupsDialog.kt$ManageAutoBackupsDialog$binding.backupContactSourcesList.adapter = FilterContactSourcesAdapter(activity, contactSourcesWithCount, selectedContactSources.toList())</ID>
+    <ID>MaxLineLength:ManageAutoBackupsDialog.kt$ManageAutoBackupsDialog$val selectedSources = (binding.backupContactSourcesList.adapter as FilterContactSourcesAdapter).getSelectedContactSources()</ID>
+    <ID>MaxLineLength:ManageVisibleFieldsDialog.kt$ManageVisibleFieldsDialog$class</ID>
+    <ID>MaxLineLength:MyContactsContentProvider.kt$MyContactsContentProvider$override</ID>
+    <ID>MaxLineLength:MyDatePickerDialog.kt$MyDatePickerDialog$class</ID>
+    <ID>MaxLineLength:MyDatePickerDialog.kt$MyDatePickerDialog$val dialogBackgroundColor = activity.getColor(org.fossify.commons.R.color.you_dialog_background_color)</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$!getProperText(nameToDisplay, shouldNormalize).startsWith(fixedText, true) &amp;&amp; !nameToDisplay.contains(fixedText, true)</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$GroupsAdapter</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$abstract</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$contactsIgnoringSearch = (innerBinding.fragmentList.adapter as? ContactsAdapter)?.contactItems ?: ArrayList()</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$contactsIgnoringSearch = (innerBinding.fragmentList.adapter as? ContactsAdapter)?.contactItems ?: listOf()</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$fixedText.normalizePhoneNumber().isNotEmpty() &amp;&amp; it.normalizedNumber.contains(fixedText.normalizePhoneNumber(), true)</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$if</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$innerBinding.fragmentFab.contentDescription = activity.getString(org.fossify.commons.R.string.add_favorites)</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$innerBinding.fragmentFab.contentDescription = activity.getString(org.fossify.commons.R.string.create_new_contact)</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$innerBinding.fragmentPlaceholder.text = activity?.getString(org.fossify.commons.R.string.no_contacts_found)</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$innerBinding.fragmentPlaceholder2.text = activity.getString(org.fossify.commons.R.string.add_favorites)</ID>
+    <ID>MaxLineLength:MyViewPagerFragment.kt$MyViewPagerFragment$storedGroups</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter$val activity: SimpleActivity</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.Binding.WithNumber$override</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.Binding.WithNumber$return ItemAddFavoriteWithNumberBindingAdapter(ItemAddFavoriteWithNumberBinding.inflate(layoutInflater, viewGroup, attachToRoot))</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.Binding.WithoutNumber$override</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.Binding.WithoutNumber$return ItemAddFavoriteWithoutNumberBindingAdapter(ItemAddFavoriteWithoutNumberBinding.inflate(layoutInflater, viewGroup, attachToRoot))</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.ItemAddFavoriteWithNumberBindingAdapter$private</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.ItemAddFavoriteWithoutNumberBindingAdapter$private</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$contact.phoneNumbers.firstOrNull { it.value.contains(textToHighlight) } ?: contact.phoneNumbers.firstOrNull()</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$contactCheckbox.setColors(root.context.getProperTextColor(), root.context.getProperPrimaryColor(), root.context.getProperBackgroundColor())</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$text = if (textToHighlight.isEmpty()) numberText else numberText.highlightTextPart(textToHighlight, adjustedPrimaryColor, false, true)</ID>
+    <ID>MaxLineLength:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$val placeholderImage = BitmapDrawable(root.resources, SimpleContactsHelper(root.context).getContactLetterIcon(avatarName))</ID>
+    <ID>MaxLineLength:SelectContactsDialog.kt$SelectContactsDialog$selectContacts: ArrayList&lt;Contact&gt;? = null</ID>
+    <ID>MaxLineLength:SelectContactsDialog.kt$SelectContactsDialog$val activity: SimpleActivity</ID>
+    <ID>MaxLineLength:SelectGroupsDialog.kt$SelectGroupsDialog$class</ID>
+    <ID>MaxLineLength:SelectGroupsDialog.kt$SelectGroupsDialog$setColors(activity.getProperTextColor(), activity.getProperPrimaryColor(), activity.getProperBackgroundColor())</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$VcfExporter.ExportResult.EXPORT_PARTIAL -&gt; org.fossify.commons.R.string.exporting_some_entries_failed</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$binding.settingsUseEnglishHolder.beVisibleIf((config.wasUseEnglishToggled || Locale.getDefault().language != "en") &amp;&amp; !isTiramisuPlus())</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$updateMaterialActivityViews(binding.settingsCoordinator, binding.settingsHolder, useTransparentNavigation = true, useTopSearchMenu = false)</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$}</ID>
+    <ID>MaxLineLength:VcfExporter.kt$VcfExporter$val</ID>
+    <ID>MaxLineLength:VcfExporter.kt$VcfExporter$val photoByteArray = MediaStore.Images.Media.getBitmap(context.contentResolver, Uri.parse(contact.thumbnailUri)).getByteArray()</ID>
+    <ID>MaxLineLength:VcfImporter.kt$VcfImporter$0</ID>
+    <ID>MaxLineLength:VcfImporter.kt$VcfImporter$Event(formatPartialDateToDayCode(anniversary.partialDate), CommonDataKinds.Event.TYPE_ANNIVERSARY)</ID>
+    <ID>MaxLineLength:VcfImporter.kt$VcfImporter$if</ID>
+    <ID>MaxLineLength:VcfImporter.kt$VcfImporter$targetContactSource</ID>
+    <ID>MaxLineLength:VcfImporter.kt$VcfImporter$val type = getPhoneNumberTypeId(it.types.firstOrNull()?.value ?: MOBILE, it.types.getOrNull(1)?.value)</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$.</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$// a contact cannot have different emails per contact source. Such contacts are handled as separate ones, not duplicates of each other</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$binding.contactEventsImage</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$binding.contactNameImage</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$isViewIntent = intent.action == ContactsContract.QuickContact.ACTION_QUICK_CONTACT || intent.action == Intent.ACTION_VIEW</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$resources.getDrawable(if (on) org.fossify.commons.R.drawable.ic_star_vector else org.fossify.commons.R.drawable.ic_star_outline_vector)</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$sources = sources.toList().sortedBy { (key, value) -&gt; value.lowercase(Locale.getDefault()) }.toMap() as LinkedHashMap&lt;Contact, String&gt;</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$updateContactPhoto(contact!!.photoUri, binding.contactPhoto, binding.contactPhotoBottomShadow, contact!!.photo)</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$val</ID>
+    <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$val candidate = phoneNumbers.find { it.normalizedNumber == defaultNumber.normalizedNumber &amp;&amp; !it.isPrimary }</ID>
+    <ID>MaxLineLength:ViewPagerAdapter.kt$ViewPagerAdapter$class</ID>
+    <ID>NestedBlockDepth:ContactsAdapter.kt$ContactsAdapter$private fun setupView(view: View, contact: Contact, holder: ViewHolder)</ID>
+    <ID>NestedBlockDepth:EditContactActivity.kt$EditContactActivity$private fun initContact()</ID>
+    <ID>NestedBlockDepth:MainActivity.kt$MainActivity$private fun getDefaultTab(): Int</ID>
+    <ID>NestedBlockDepth:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$fun bindView(contact: Contact): View</ID>
+    <ID>NestedBlockDepth:VcfExporter.kt$VcfExporter$fun exportContacts( context: Context, outputStream: OutputStream?, contacts: ArrayList&lt;Contact&gt;, showExportingToast: Boolean, version: VCardVersion = VCardVersion.V4_0, callback: (result: ExportResult) -&gt; Unit )</ID>
+    <ID>NestedBlockDepth:VcfImporter.kt$VcfImporter$fun importContacts(path: String, targetContactSource: String): ImportResult</ID>
+    <ID>NestedBlockDepth:VcfImporter.kt$VcfImporter$private fun getContactGroups(ezContact: VCard): ArrayList&lt;Group&gt;</ID>
+    <ID>NestedBlockDepth:ViewContactActivity.kt$ViewContactActivity$private fun initContact()</ID>
+    <ID>NestedBlockDepth:ViewContactActivity.kt$ViewContactActivity$private fun setupContactSources()</ID>
+    <ID>NestedBlockDepth:ViewContactActivity.kt$ViewContactActivity$private fun setupPhoneNumbers()</ID>
+    <ID>ProtectedMemberInFinalClass:GroupContactsActivity.kt$GroupContactsActivity$protected val INTENT_SELECT_RINGTONE = 600</ID>
+    <ID>ProtectedMemberInFinalClass:GroupContactsActivity.kt$GroupContactsActivity$protected var contact: Contact? = null</ID>
+    <ID>ReturnCount:EditContactActivity.kt$EditContactActivity$private fun startCropPhotoIntent(primaryUri: Uri?, backupUri: Uri?)</ID>
+    <ID>ReturnCount:SimpleActivity.kt$SimpleActivity$protected fun getPhoneNumberFromIntent(intent: Intent): String?</ID>
+    <ID>SwallowedException:ContactsAdapter.kt$ContactsAdapter$e: Exception</ID>
+    <ID>SwallowedException:EditContactActivity.kt$EditContactActivity$e: ActivityNotFoundException</ID>
+    <ID>SwallowedException:EditContactActivity.kt$EditContactActivity$e: Exception</ID>
+    <ID>SwallowedException:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$e: ActivityNotFoundException</ID>
+    <ID>SwallowedException:MainActivity.kt$MainActivity$e: ActivityNotFoundException</ID>
+    <ID>SwallowedException:MyViewPagerFragment.kt$MyViewPagerFragment$e: Exception</ID>
+    <ID>SwallowedException:SelectContactsDialog.kt$SelectContactsDialog$e: Exception</ID>
+    <ID>SwallowedException:SettingsActivity.kt$SettingsActivity$e: ActivityNotFoundException</ID>
+    <ID>SwallowedException:ViewContactActivity.kt$ViewContactActivity$e: ActivityNotFoundException</ID>
+    <ID>SwallowedException:ViewContactActivity.kt$ViewContactActivity$e: Exception</ID>
+    <ID>SwallowedException:ViewContactActivity.kt$ViewContactActivity$e: SecurityException</ID>
+    <ID>TooGenericExceptionCaught:Activity.kt$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ContactActivity.kt$ContactActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ContactsAdapter.kt$ContactsAdapter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:Context.kt$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:EditContactActivity.kt$EditContactActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:GroupContactsActivity.kt$GroupContactsActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MainActivity.kt$MainActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MyViewPagerFragment.kt$MyViewPagerFragment$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SelectContactsDialog.kt$SelectContactsDialog$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SettingsActivity.kt$SettingsActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:VcfExporter.kt$VcfExporter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:VcfImporter.kt$VcfImporter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ViewContactActivity.kt$ViewContactActivity$e: Exception</ID>
+    <ID>TooManyFunctions:ContactActivity.kt$ContactActivity : SimpleActivity</ID>
+    <ID>TooManyFunctions:ContactsAdapter.kt$ContactsAdapter : MyRecyclerViewAdapterOnPopupTextUpdateItemTouchHelperContract</ID>
+    <ID>TooManyFunctions:EditContactActivity.kt$EditContactActivity : ContactActivity</ID>
+    <ID>TooManyFunctions:FavoritesFragment.kt$FavoritesFragment : MyViewPagerFragment</ID>
+    <ID>TooManyFunctions:GroupContactsActivity.kt$GroupContactsActivity : SimpleActivityRemoveFromGroupListenerRefreshContactsListener</ID>
+    <ID>TooManyFunctions:GroupsAdapter.kt$GroupsAdapter : MyRecyclerViewAdapterOnPopupTextUpdate</ID>
+    <ID>TooManyFunctions:InsertOrEditContactActivity.kt$InsertOrEditContactActivity : SimpleActivityRefreshContactsListener</ID>
+    <ID>TooManyFunctions:MainActivity.kt$MainActivity : SimpleActivityRefreshContactsListener</ID>
+    <ID>TooManyFunctions:MyViewPagerFragment.kt$MyViewPagerFragment&lt;Binding : MyViewPagerFragment.InnerBinding&gt; : CoordinatorLayout</ID>
+    <ID>TooManyFunctions:SettingsActivity.kt$SettingsActivity : SimpleActivity</ID>
+    <ID>TooManyFunctions:ViewContactActivity.kt$ViewContactActivity : ContactActivity</ID>
+    <ID>VariableNaming:ContactActivity.kt$ContactActivity$protected val INTENT_SELECT_RINGTONE = 600</ID>
+    <ID>VariableNaming:ContactActivity.kt$ContactActivity$protected val PICK_RINGTONE_INTENT_ID = 1500</ID>
+    <ID>VariableNaming:ContactsAdapter.kt$ContactsAdapter$private val NEW_GROUP_ID = -1</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IM = IMsHolder.contactIm.value</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMHolder = ItemEditImBinding.bind(binding.contactImsHolder.getChildAt(0))</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMHolder = ItemEditImBinding.inflate(layoutInflater, binding.contactImsHolder, false)</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMLabel = if (IMType == Im.PROTOCOL_CUSTOM) IMsHolder.contactImType.value else ""</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMType = getIMTypeId(IMsHolder.contactImType.value)</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMs = ArrayList&lt;IM&gt;()</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMsCount = binding.contactImsHolder.childCount</ID>
+    <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMsHolder = ItemEditImBinding.bind(binding.contactImsHolder.getChildAt(i))</ID>
+    <ID>VariableNaming:GroupContactsActivity.kt$GroupContactsActivity$protected val INTENT_SELECT_RINGTONE = 600</ID>
+    <ID>VariableNaming:VcfImporter.kt$VcfImporter$val IM = IM(value, type, label)</ID>
+    <ID>VariableNaming:VcfImporter.kt$VcfImporter$val IMs = ArrayList&lt;IM&gt;()</ID>
+    <ID>VariableNaming:ViewContactActivity.kt$ViewContactActivity$val IM = it</ID>
+    <ID>VariableNaming:ViewContactActivity.kt$ViewContactActivity$var IMs = contact!!.IMs.toMutableSet() as LinkedHashSet&lt;IM&gt;</ID>
+    <ID>WildcardImport:Activity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:Activity.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:ChangeSortingDialog.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:ContactActivity.kt$import android.provider.ContactsContract.CommonDataKinds.*</ID>
+    <ID>WildcardImport:ContactActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:ContactsAdapter.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:ContactsAdapter.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:ContactsAdapter.kt$import org.fossify.contacts.helpers.*</ID>
+    <ID>WildcardImport:Context.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:Context.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:CreateNewGroupDialog.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:CustomLabelDialog.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:EditContactActivity.kt$import android.provider.ContactsContract.CommonDataKinds.*</ID>
+    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.commons.models.contacts.*</ID>
+    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.contacts.databinding.*</ID>
+    <ID>WildcardImport:ExportContactsDialog.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:GroupContactsActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:InsertOrEditContactActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:InsertOrEditContactActivity.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:MainActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:MainActivity.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:ManageAutoBackupsDialog.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:ManageVisibleFieldsDialog.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:MyViewPagerFragment.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:MyViewPagerFragment.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:RenameGroupDialog.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:SelectContactsAdapter.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:SelectContactsDialog.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:SelectGroupsDialog.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:SettingsActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:SettingsActivity.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:SettingsActivity.kt$import org.fossify.contacts.extensions.*</ID>
+    <ID>WildcardImport:VcfExporter.kt$import ezvcard.property.*</ID>
+    <ID>WildcardImport:VcfImporter.kt$import org.fossify.commons.models.contacts.*</ID>
+    <ID>WildcardImport:ViewContactActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:ViewContactActivity.kt$import org.fossify.commons.helpers.*</ID>
+    <ID>WildcardImport:ViewContactActivity.kt$import org.fossify.commons.models.contacts.*</ID>
+    <ID>WildcardImport:ViewContactActivity.kt$import org.fossify.contacts.databinding.*</ID>
+    <ID>WildcardImport:ViewContactActivity.kt$import org.fossify.contacts.extensions.*</ID>
+    <ID>WildcardImport:ViewContactActivity.kt$import org.fossify.contacts.helpers.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
