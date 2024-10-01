@@ -28,7 +28,7 @@ class ExportContactsDialog(
     init {
         val binding = DialogExportContactsBinding.inflate(activity.layoutInflater).apply {
             exportContactsFolder.setText(activity.humanizePath(realPath))
-            exportContactsFilename.setText("contacts_${activity.getCurrentFormattedDateTime()}")
+            exportContactsFilename.setText("Contacts_${activity.getCurrentFormattedDateTime()}")
 
             if (hidePath) {
                 exportContactsFolderHint.beGone()
