@@ -25,12 +25,12 @@
     <string name="remove_from_group">グループから削除</string>
     <string name="no_group_participants">このグループは空です</string>
     <string name="add_contacts">連絡先を追加</string>
-    <string name="no_group_created">連絡先グループがありません</string>
+    <string name="no_group_created">連絡先のグループがありません</string>
     <string name="create_group">グループを作成</string>
     <string name="add_to_group">グループに追加</string>
     <string name="create_group_under_account">アカウントの下にグループを作成</string>
     <string name="remove_photo">写真を削除</string>
-    <string name="change_photo">写真の変更</string>
+    <string name="change_photo">写真を変更</string>
     <string name="show_phone_numbers">電話番号を表示</string>
     <string name="show_contact_thumbnails">連絡先のサムネイルを表示</string>
     <string name="show_dialpad_button">メイン画面にダイヤルパッドを表示</string>
@@ -49,11 +49,11 @@
     <string name="import_contacts">連絡先をインポート</string>
     <string name="export_contacts">連絡先をエクスポート</string>
     <string name="import_contacts_from_vcf">.vcfファイルから連絡先をインポート</string>
-    <string name="import_contacts_from_vcf_pro">.vcfファイルから連絡先をインポート (Pro)</string>
+    <string name="import_contacts_from_vcf_pro">.vcfファイルから連絡先をインポート（Pro）</string>
     <string name="export_contacts_to_vcf">連絡先を.vcfファイルにエクスポート</string>
     <string name="target_contact_source">対象となる連絡先のソース</string>
     <string name="include_contact_sources">連絡先のソースを含める</string>
-    <string name="filename_without_vcf">ファイル名 (.vcfを含めない)</string>
+    <string name="filename_without_vcf">ファイル名（.vcfを含めない）</string>
     <string name="dialpad">ダイヤルパッド</string>
     <string name="add_number_to_contact">連絡先に番号を追加</string>
     <string name="prefix">敬称（名前の前）</string>
@@ -61,20 +61,20 @@
     <string name="phone_numbers">電話番号</string>
     <string name="emails">メール</string>
     <string name="addresses">住所</string>
-    <string name="events">予定 (誕生日、記念日)</string>
+    <string name="events">予定（誕生日、記念日）</string>
     <string name="organization">所属</string>
     <string name="websites">ウェブサイト</string>
     <string name="groups">グループ</string>
     <string name="contact_source">インポート元</string>
-    <string name="instant_messaging">インスタントメッセージ(IM)</string>
+    <string name="instant_messaging">インスタントメッセージ（IM）</string>
     <string name="ringtone">着信音</string>
     <string name="delete_from_all_sources">全ての連絡先ソースから連絡先を消去します。</string>
     <plurals name="delete_groups">
         <item quantity="one">%d件のグループ</item>
         <item quantity="other">%d件のグループ</item>
     </plurals>
-    <string name="faq_1_title">連絡先に表示される項目(フィールド)を変更することはできますか？</string>
-    <string name="faq_1_text">可能です。[設定] -&gt; [連絡先に表示するフィールドを管理] から、表示されるフィールドを選択することができます。これらの中にはデフォルトで無効になっているものもあるので、あなたは新しいものを見つけるかもしれません。</string>
+    <string name="faq_1_title">連絡先に表示される項目を変更することはできますか？</string>
+    <string name="faq_1_text">可能です。「設定」の「連絡先に表示するフィールドを管理」から、表示する項目を選択できます。これらの中にはデフォルトで無効になっている項目もあるので、新しい項目が見つかるかもしれません。</string>
     <string name="format_phone_numbers">電話番号の形式</string>
     <string name="show_private_contacts">非公開の連絡先をFossify電話、Fossify SMSメッセンジャー、Fossifyカレンダーに表示</string>
 </resources>
