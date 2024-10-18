@@ -1,4 +1,4 @@
-Contactos Fossify - a evolución da xestión de contactos. Coa intención de redefinir o xeito en que xestionas os teus contactos, a nósa app combina a simplicidade con funcións avanzadas, axeitadas tanto para uso persoal como profesional.
+Fossify Contacts - a evolución da xestión de contactos. Coa intención de redefinir o xeito en que xestionas os teus contactos, a nósa app combina a simplicidade con funcións avanzadas, axeitadas tanto para uso persoal como profesional.
 
 🔍 BUSCA INTELIXENTE E PERSONALIZACIÓN DOS CAMPOS:
 Atopa rápidamente os contactos coa nósa ferramenta intelixente de busca. Personaliza os campos visibles, desfruta dunha interface amigable, atopando os contactos sen complicacións, aforrando tempo e aumentando a produtividade.
@@ -10,19 +10,19 @@ Xestiona facilmente os grupos de contactos para unha comunicación fluída. A n�
 Protexe sempre os teus contactos co nóso sistema de copias de apoio. Exporta e importa facilmente no formato vCard, facilitando a migración dos datos e as copias de apoio.
 
 🌐 TRANSPARENCIA DE CÓDIGO ABERTO:
-Construída sobre unha plataforma de código aberto, Contactos Fossify lidera en transparencia e confianza das usuarias. Le o noso código en GitHub e forma parte da comunidade que valora a privacidade, abrir o código e colaborar para mellorar.
+Construída sobre unha plataforma de código aberto, Fossify Contacts lidera en transparencia e confianza das usuarias. Le o noso código en GitHub e forma parte da comunidade que valora a privacidade, abrir o código e colaborar para mellorar.
 
 🖼️ EXPERIENCIA DE USUARIA PERSONALIZADA:
 Personaliza a xestión dos teus contactos sen dificultade. A nósa app ten axustes flexibles e opcións para o deseño, permitindo adaptar a interface ao teu gusto e necesidades. Ordena os contactos, elixe o decorado, personaliza o xeito en que utilizas a app.
 
 🔋 EFICIENTE E LIXEIRA:
-Rendemento optimizado, Contactos Fossify está deseñada para non consumir moitos recursos do sistema. Non só organiza os contactos de xeito eficiente se non que contribúe a que dure máis a batería asegurando un funcionamento fluído.
+Rendemento optimizado, Fossify Contacts está deseñada para non consumir moitos recursos do sistema. Non só organiza os contactos de xeito eficiente se non que contribúe a que dure máis a batería asegurando un funcionamento fluído.
 
 🚀 SINCRONIZACIÓN AVANZADA:
 Tanto se elixes gardar os contactos de xeito local como sincronizalos entre dispositivos a través de varios medios, a nósa app asegura unha experiencia fluída, eficiente e segura.
 
 🔐 PRIVACIDADE POR DIANTE:
-A información dos teus contactos é confidencial con Contactos Fossify. Dámoslle prioridade á túa privacidade, asegurándonos de que os datos nunca se comparten con outras apps alleas.
+A información dos teus contactos é confidencial con Fossify Contacts. Dámoslle prioridade á túa privacidade, asegurándonos de que os datos nunca se comparten con outras apps alleas.
 
 🌙 DESEÑO MODERNO E INTERFACE AMIGABLE:
 Unha interface amigable cun deseño limpo e moderno. A app usa Material Design e dispón dun decorado escuro, proporcionando unha experiencia de uso cómoda e fermosa.
