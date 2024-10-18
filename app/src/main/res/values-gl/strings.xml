@@ -75,6 +75,6 @@
     </plurals>
     <string name="faq_1_title">Quero cambialos campos visibles nos contactos. Podo facelo\?</string>
     <string name="faq_1_text">Si, chega con acceder a Axustes -&gt; Xestionar campos mostrados. Aquí, pode escoller os campos que serán mostrados. Algúns dos campos xa están agochados e así pode mostrar algúns destes.</string>
-    <string name="show_private_contacts">Mostrar os contactos privados en Teléfono Fossify, Mensaxeiro SMS Fossify e Calendario Fossify</string>
+    <string name="show_private_contacts">Mostrar os contactos privados en Fossify Phone, Fossify SMS Messenger e Fossify Calendar</string>
     <string name="format_phone_numbers">Formato dos números de teléfono</string>
 </resources>
