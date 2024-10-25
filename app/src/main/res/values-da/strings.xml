@@ -21,7 +21,7 @@
     <string name="select_contact">Vælg kontakt</string>
     <string name="nickname">Kaldenavn</string>
     <string name="no_groups">Ingen grupper</string>
-    <string name="create_new_group">Oret en ny gruppe</string>
+    <string name="create_new_group">Opret en ny gruppe</string>
     <string name="remove_from_group">Fjern fra gruppe</string>
     <string name="no_group_participants">Denne gruppe er tom</string>
     <string name="add_contacts">Tilføj kontakter</string>
