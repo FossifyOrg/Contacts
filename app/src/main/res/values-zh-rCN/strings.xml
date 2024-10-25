@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">通讯录</string>
+    <string name="app_launcher_name">联系人</string>
     <string name="address">地址</string>
     <string name="inserting">添加中…</string>
     <string name="updating">正在更新…</string>
@@ -56,7 +56,7 @@
     <string name="include_contact_sources">包含联系人来源</string>
     <string name="filename_without_vcf">文件名称 (不含.vcf)</string>
     <string name="dialpad">拨号界面</string>
-    <string name="add_number_to_contact">添加号码至通讯录</string>
+    <string name="add_number_to_contact">将号码添加到联系人</string>
     <string name="prefix">前缀</string>
     <string name="suffix">后缀</string>
     <string name="phone_numbers">电话号码</string>
@@ -74,7 +74,7 @@
         <item quantity="one">%d 群组</item>
         <item quantity="other">%d 群组</item>
     </plurals>
-    <string name="faq_1_title">我想要更改在通讯录会看到哪些字段。我能这么做吗?</string>
+    <string name="faq_1_title">我想要更改在联系人会看到哪些字段。我能这么做吗?</string>
     <string name="faq_1_text">可以，您要做的是到[设置] -&gt; [管理显示的联系人字段]。在那里，您可以选择应该看到什么字段。其中有些甚至默认是关闭的，所以您可能会在那里发现一些新的。</string>
     <string name="format_phone_numbers">调整电话号码格式</string>
 </resources>

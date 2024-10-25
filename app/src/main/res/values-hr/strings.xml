@@ -77,4 +77,5 @@
     <string name="faq_1_title">Želim promijeniti polja koja su vidljiva u kontaktima. Mogu li to napraviti\?</string>
     <string name="faq_1_text">Da, idi u Postavke -&gt; Upravljaj prikazanim poljima kontakta. Tamo možeš odabrati vidljiva polja. Neka od njih su čak standardno deaktivirana, tako da možeš pronaći neka nova.</string>
     <string name="show_private_contacts">Prikaži privatne kontakte u aplikacijama Fossify telefon, Fossify SMS Messenger i Fossify kalendar</string>
+    <string name="format_phone_numbers">Formatiraj telefonske brojeve</string>
 </resources>
