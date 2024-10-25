@@ -9,7 +9,7 @@ import org.fossify.contacts.R
 import org.fossify.contacts.databinding.DialogChangeSortingBinding
 import org.fossify.contacts.extensions.config
 
-class ChangeSortingDialog(val activity: BaseSimpleActivity, private val showCustomSorting: Boolean = false, private val callback: () -> Unit) {
+class ChangeSortingDialog(val activity: BaseSimpleActivity, private val showCustomSorting: Boolean = false, private val callback: () -> Unit = {}, private val getsort: (Int) -> Unit) {
     private var currSorting = 0
     private var config = activity.config
     private val binding = DialogChangeSortingBinding.inflate(activity.layoutInflater)
@@ -93,5 +93,10 @@ class ChangeSortingDialog(val activity: BaseSimpleActivity, private val showCust
         }
 
         callback()
+        getsort(currSorting)
+    }
+
+    fun getCurrSorting(): Int {
+        return currSorting
     }
 }
