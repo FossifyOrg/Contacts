@@ -2,10 +2,10 @@ package org.fossify.contacts.dialogs
 
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.extensions.getAlertDialogBuilder
+import org.fossify.commons.extensions.isDynamicTheme
 import org.fossify.commons.extensions.setupDialogStuff
 import org.fossify.commons.helpers.isSPlus
 import org.fossify.contacts.databinding.DialogDatePickerBinding
-import org.fossify.contacts.extensions.config
 import org.joda.time.DateTime
 import java.util.Calendar
 
@@ -37,7 +37,7 @@ class MyDatePickerDialog(val activity: BaseSimpleActivity, val defaultDate: Stri
                         }
                     }
 
-                    if (activity.config.isUsingSystemTheme && isSPlus()) {
+                    if (activity.isDynamicTheme() && isSPlus()) {
                         val dialogBackgroundColor = activity.getColor(org.fossify.commons.R.color.you_dialog_background_color)
                         binding.dialogHolder.setBackgroundColor(dialogBackgroundColor)
                         binding.datePicker.setBackgroundColor(dialogBackgroundColor)

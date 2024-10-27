@@ -42,13 +42,11 @@ import org.fossify.contacts.activities.ViewContactActivity
 import org.fossify.contacts.dialogs.CreateNewGroupDialog
 import org.fossify.contacts.extensions.config
 import org.fossify.contacts.extensions.editContact
-import org.fossify.contacts.extensions.formatPhoneNumber
 import org.fossify.contacts.extensions.shareContacts
 import org.fossify.contacts.helpers.*
 import org.fossify.contacts.interfaces.RefreshContactsListener
 import org.fossify.contacts.interfaces.RemoveFromGroupListener
 import java.util.Collections
-import java.util.Locale
 
 class ContactsAdapter(
     activity: SimpleActivity,
