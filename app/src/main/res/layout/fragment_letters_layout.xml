@@ -42,6 +42,7 @@
             android:clipToPadding="false"
             android:layoutAnimation="@anim/layout_animation"
             android:scrollbars="none"
+            android:paddingBottom="@dimen/secondary_fab_bottom_margin"
             app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager" />
 
         <com.reddit.indicatorfastscroll.FastScrollerView
