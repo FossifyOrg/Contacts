@@ -1,11 +1,11 @@
-* Arranxo do problema de non mostrar contactos en Android 14 e superior
-* Arranxo da perda de datos ao eliminar contactos co mesmo nome
-* Arranxo das copias de apoio automáticas defectuosas
-* Arranxo das fotos de mala calidade na exportación de vCards
-* Arranxo da superposición entre o botón flotante de acción e os elementos da lista
-* Engadida a opción para mostrar os números de teléfono con formato
-* Engadido o botón de favorito para os contactos nos grupos
-* Substitución de caixas de marca por interruptores
-* Retirada a compatibilidades para dispositivos con Android 7 e anteriores
-* Outros arranxos menores e melloras
-* Engadidas novas traducións
+* Problema de non mostrar contactos en Android >14
+* Perda de datos ao eliminar contactos co mesmo nome
+* Copias de apoio automáticas defectuosas
+* Fotos de mala calidade na exportación de vCards
+* Superposición entre o botón flotante de acción e os elementos da lista
+* Opción para mostrar os números de teléfono con formato
+* Botón de favorito para os contactos nos grupos
+* Usar interruptores e non caixas
+* Retirada a compatibilidade con Android <7
+* Outros arranxos e melloras
+* Novas traducións
