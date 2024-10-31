@@ -5,7 +5,7 @@
     <string name="inserting">A inserir…</string>
     <string name="updating">A atualizar…</string>
     <string name="phone_storage">Armazenamento do telefone</string>
-    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outras alicações)</string>
+    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outras aplicações)</string>
     <string name="company">Empresa</string>
     <string name="job_position">Cargo</string>
     <string name="send_sms_to_contacts">Enviar SMS aos contactos</string>
@@ -21,7 +21,7 @@
     <string name="select_contact">Selecionar contacto</string>
     <string name="nickname">Alcunha</string>
     <string name="no_groups">Não existem grupos</string>
-    <string name="create_new_group">Criar um novo grupo</string>
+    <string name="create_new_group">Novo grupo</string>
     <string name="remove_from_group">Remover do grupo</string>
     <string name="no_group_participants">Este grupo está vazio</string>
     <string name="add_contacts">Adicionar contactos</string>
