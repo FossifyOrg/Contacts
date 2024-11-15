@@ -20,7 +20,5 @@ jobs:
           # Number of days of inactivity before an issue is closed for lack of response.
           days-before-close: 14
           only-labels: 'waiting for author'
-          stale-issue-label: ''
-          stale-pr-label: ''
           close-issue-message: This issue has been automatically closed due to inactivity. We requested additional information but have not received a response from the original author. Without the requested details, we cannot proceed. If you have or find the information needed, please comment so we can reopen the issue.
           close-pr-message: This pull request has been automatically closed due to inactivity. We requested additional information but have not received a response from the original author. Without the requested details, we cannot proceed. If you have the needed information or updates, please reopen the PR or comment so we can continue the review.
