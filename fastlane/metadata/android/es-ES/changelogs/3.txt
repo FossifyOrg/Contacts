@@ -1,11 +1,11 @@
-* Se ha corregido un problema con los contactos que no se muestran en Android 14 y superior
-* Se ha corregido la pérdida de datos al eliminar contactos con nombres idénticos
+* Corregido error con contactos que no aparecen en Android 14 y superior
+* Corregido errores al eliminar contactos con nombres idénticos
 * Corregido copias de seguridad automáticas corruptas
-* Se han corregido las exportaciones de fotos de baja calidad en vCards
-* Se ha corregido el solapamiento entre el botón de acción flotante y los elementos de la lista
-* Se ha añadido una opción para mostrar números de teléfono formateados
-* Añadido un botón favorito para los contactos en grupos
-* Casillas de verificación sustituidas por interruptores
-* Se ha eliminado el soporte para Android 7 y versiones anteriores
+* Corregido exportaciones de fotos de baja calidad en vCards
+* Corregido solapamiento en el botón flotante y elementos de la lista
+* Añadida opción para ver números de teléfono formateados
+* Botón favorito para contactos grupales
+* Casillas de verificación cambiadas por interruptores
+* Eliminado soporte de Android 7 y versiones anteriores
 * Correcciones de errores menores y mejoras
-* Añadidas más traducciones
+* Añadidas traducciones
