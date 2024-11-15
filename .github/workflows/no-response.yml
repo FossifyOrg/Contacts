@@ -1,13 +1,8 @@
 name: no-response
 
-# Both `issue_comment` and `scheduled` event types are required for this Action
-# to work properly.
 on:
-  issue_comment:
-    types: [created]
   schedule:
-    # Run daily at midnight.
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *' # Runs daily at midnight
 
 permissions:
   issues: write
@@ -17,9 +12,14 @@ jobs:
   noResponse:
     runs-on: ubuntu-latest
     steps:
-      - uses: lee-dohm/no-response@v0.5.0
+      - uses: actions/stale@v9
         with:
-          token: ${{ github.token }}
+          repo-token: ${{ github.token }}
+          days-before-stale: -1
           # Number of days of inactivity before an issue is closed for lack of response.
-          daysUntilClose: 14
-          responseRequiredLabel: waiting for author
+          days-before-close: 14
+          only-labels: 'waiting for author'
+          stale-issue-label: ''
+          stale-pr-label: ''
+          close-issue-message: This issue has been automatically closed because there has been no response to our request for more information from the original author. With only the information that is currently in the issue, we don't have enough information to take action. Please reach out if you have or find the answers we need so that we can investigate further.
+          close-pr-message: This pull request has been automatically closed because there has been no response to our request from the original author.
