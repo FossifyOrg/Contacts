@@ -3,6 +3,7 @@ name: no-response
 on:
   schedule:
     - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch:
 
 permissions:
   issues: write
@@ -14,12 +15,12 @@ jobs:
     steps:
       - uses: actions/stale@v9
         with:
-          repo-token: ${{ github.token }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-stale: -1
           # Number of days of inactivity before an issue is closed for lack of response.
           days-before-close: 14
           only-labels: 'waiting for author'
           stale-issue-label: ''
           stale-pr-label: ''
-          close-issue-message: This issue has been automatically closed because there has been no response to our request for more information from the original author. With only the information that is currently in the issue, we don't have enough information to take action. Please reach out if you have or find the answers we need so that we can investigate further.
-          close-pr-message: This pull request has been automatically closed because there has been no response to our request from the original author.
+          close-issue-message: This issue has been automatically closed due to inactivity. We requested additional information but have not received a response from the original author. Without the requested details, we cannot proceed. If you have or find the information needed, please comment so we can reopen the issue.
+          close-pr-message: This pull request has been automatically closed due to inactivity. We requested additional information but have not received a response from the original author. Without the requested details, we cannot proceed. If you have the needed information or updates, please reopen the PR or comment so we can continue the review.
