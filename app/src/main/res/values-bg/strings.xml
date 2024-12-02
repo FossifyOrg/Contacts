@@ -12,12 +12,12 @@
     <string name="send_email_to_contacts">Изпращане на писмо до контактите</string>
     <string name="send_sms_to_group">Изпращане на SMS до групата</string>
     <string name="send_email_to_group">Изпращане на писмо до групата</string>
-    <string name="fields_empty">Поне едно поле трябва да бъде попълнено</string>
+    <string name="fields_empty">Трябва да попълните най-малко едно поле</string>
     <string name="must_be_at_edit">Трябва да сте в раздел Редакция, за да промените контакт</string>
     <string name="no_contacts_with_emails">Не са открити контакти с адрес на електронна поща</string>
     <string name="no_contacts_with_phone_numbers">Не са открити контакти с телефонен номер</string>
     <string name="new_contact">Нов контакт</string>
-    <string name="edit_contact">Редактиране на контакт</string>
+    <string name="edit_contact">Променяне на контакт</string>
     <string name="select_contact">Избиране на контакт</string>
     <string name="nickname">Прякор</string>
     <string name="no_groups">Няма групи</string>
@@ -36,7 +36,7 @@
     <string name="show_dialpad_button">Показване на бутон за набиране на главния екран</string>
     <string name="on_contact_click">При докосване на контакти</string>
     <string name="call_contact">Обаждане на контакта</string>
-    <string name="view_contact">Подробности за контакта</string>
+    <string name="view_contact">Преглед на контакта</string>
     <string name="manage_shown_contact_fields">Управление на полетата</string>
     <string name="contacts">Контакти</string>
     <string name="show_only_contacts_with_numbers">Показване само на контактите с телефонен номер</string>
@@ -44,7 +44,7 @@
     <string name="no_favorites">Все още не сте добавили контакти към избраните.</string>
     <string name="toggle_favorite">Превключване на избраните</string>
     <string name="search_contacts">Търсене на контакти</string>
-    <string name="search_favorites">Търсене в избраните</string>
+    <string name="search_favorites">Търсене на избрани</string>
     <string name="search_groups">Търсене на групи</string>
     <string name="import_contacts">Внасяне на контакти</string>
     <string name="export_contacts">Изнасяне на контакти</string>
