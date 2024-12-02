@@ -37,7 +37,7 @@
     <string name="on_contact_click">При докосване на контакти</string>
     <string name="call_contact">Обаждане на контакта</string>
     <string name="view_contact">Подробности за контакта</string>
-    <string name="manage_shown_contact_fields">Управление на показваните полета</string>
+    <string name="manage_shown_contact_fields">Управление на полетата</string>
     <string name="contacts">Контакти</string>
     <string name="show_only_contacts_with_numbers">Показване само на контактите с телефонен номер</string>
     <string name="merge_duplicate_contacts">Сливане на дублирани контакти</string>
@@ -74,7 +74,7 @@
         <item quantity="other">%d групи</item>
     </plurals>
     <string name="faq_1_title">Искам да променя видимите полета за контактите. Мога ли да го направя\?</string>
-    <string name="faq_1_text">Да, трябва да отворите Настройки → Управление на показваните полета. От там можете да изберете кои полета да бъдат видими. Някои от тях по подразбиране са скрити, така че може да откриете нови полета.</string>
+    <string name="faq_1_text">Да, трябва да отворите Настройки → Управление на полетата. От там можете да изберете кои полета да бъдат видими. Някои от тях по подразбиране са скрити, така че може да откриете нови полета.</string>
     <string name="show_private_contacts">Достъп до личните контакти на Fossify Phone, Fossify SMS Messenger and Fossify Calendar</string>
     <string name="format_phone_numbers">Форматиране на телефонните номера</string>
 </resources>
