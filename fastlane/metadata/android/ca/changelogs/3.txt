@@ -1,0 +1,8 @@
+* Corregeix un problema amb contactes que no es mostren a l'Android 14 i superiors
+* Corregeix la pèrdua de dades en suprimir contactes amb noms idèntics
+* Corregeix les còpies de seguretat automàtiques corruptes
+* Corregeix l'exportació de fotos de baixa qualitat en vCards
+* Corregeix la superposició entre el botó d'acció flotant i els elements de la llista
+* S'ha afegit una opció per a mostrar els números de telèfon amb format
+* S'ha afegit un botó preferit per als contactes en grups
+* [...]
