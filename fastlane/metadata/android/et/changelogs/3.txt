@@ -1,0 +1,11 @@
+* Parandasime kontaktide mittekuvamise Android 14's ja uuemates
+* Parandasime andmekao sama nimega kontaktide kustutamisel
+* Parandasime automaatsete varukoopiate vead
+* Parandasime kehvade fotode ekspordi vCardsis
+* Parandasime ujuvnupu ja loendi ülekatte
+* Vormindatud telefoninumbrite kuvamise võimalus
+* Grupi kontaktidele lemmikuks märkimise nupp
+* Asendasime märkeruudud liugurlülititega
+* Eemaldasime Androidi versiooni 7 ja vanemate toe
+* Muud veaparandused ja täiendused
+* Lisasime tõlkeid
