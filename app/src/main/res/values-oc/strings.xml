@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_launcher_name">Contactes</string>
+    <string name="address">Adreça</string>
+    <string name="inserting">Insercion…</string>
+    <string name="updating">Actualizacion…</string>
+    <string name="company">Entrepresa</string>
+    <string name="send_sms_to_group">Enviar un SMS a un grop</string>
+    <string name="nickname">Escais</string>
+    <string name="no_groups">Cap de grop</string>
+    <string name="create_new_group">Crear un grop novèl</string>
+    <string name="add_contacts">Ajustar de contactes</string>
+    <string name="remove_photo">Suprimir la fòto</string>
+    <string name="show_phone_numbers">Afichar los numèros de telefòn</string>
+    <string name="ringtone">Sonada</string>
+    <plurals name="delete_groups">
+        <item quantity="one">%d grop</item>
+        <item quantity="other">%d grops</item>
+    </plurals>
+    <string name="job_position">Plaça</string>
+    <string name="send_sms_to_contacts">Enviar un SMS als contactes</string>
+    <string name="remove_from_group">Tirar del grop</string>
+    <string name="no_group_participants">Aqueste grop es void</string>
+    <string name="edit_contact">Modificar lo contacte</string>
+    <string name="create_group">Crear un grop</string>
+    <string name="select_contact">Seleccionar un contacte</string>
+    <string name="add_to_group">Ajustar a un grop</string>
+    <string name="change_photo">Cambiar la fòto</string>
+    <string name="view_contact">Veire los detalhs del contacte</string>
+    <string name="call_contact">Sonar lo contacte</string>
+    <string name="contacts">Contactes</string>
+    <string name="merge_duplicate_contacts">Combinar los contactes duplicats</string>
+</resources>

@@ -1,0 +1,11 @@
+* Perbaikan: Kontak tdk tampil di Android 14+
+* Perbaikan: Kehilangan data saat hapus kontak sama
+* Perbaikan: Cadangan otomatis korup
+* Perbaikan: Ekspor foto vCard kualitas rendah
+* Perbaikan: Tumpang tindih tombol aksi & item daftar
+* Tambah: Opsi nomor telepon terformat
+* Tambah: Tombol favorit untuk kontak grup
+* Ganti: Kotak centang dgn saklar
+* Hapus: Dukungan Android 7 & versi lama
+* Perbaikan bug kecil & peningkatan
+* Tambah: Lebih banyak terjemahan
