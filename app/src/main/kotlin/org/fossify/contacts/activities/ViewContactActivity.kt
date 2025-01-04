@@ -2,14 +2,12 @@ package org.fossify.contacts.activities
 
 import android.content.ActivityNotFoundException
 import android.content.ContentUris
-import android.content.Context
 import android.content.Intent
 import android.media.AudioManager
 import android.media.RingtoneManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.ContactsContract
-import android.telephony.PhoneNumberUtils
 import android.view.View
 import android.view.WindowManager
 import android.widget.RelativeLayout
@@ -258,7 +256,7 @@ class ViewContactActivity : ContactActivity() {
             }
         }
 
-        getDuplicateContacts {
+        initializeDuplicateContacts {
             duplicateInitialized = true
             setupContactDetails()
         }
@@ -286,7 +284,7 @@ class ViewContactActivity : ContactActivity() {
     private fun launchEditContact(contact: Contact) {
         wasEditLaunched = true
         duplicateInitialized = false
-        editContact(contact)
+        editContact(contact, config.mergeDuplicateContacts)
     }
 
     private fun openWith() {
@@ -819,21 +817,11 @@ class ViewContactActivity : ContactActivity() {
         }
     }
 
-    private fun getDuplicateContacts(callback: () -> Unit) {
-        ContactsHelper(this).getDuplicatesOfContact(contact!!, false) { contacts ->
-            ensureBackgroundThread {
-                duplicateContacts.clear()
-                val displayContactSources = getVisibleContactSources()
-                contacts.filter { displayContactSources.contains(it.source) }.forEach {
-                    val duplicate = ContactsHelper(this).getContactWithId(it.id, it.isPrivate())
-                    if (duplicate != null) {
-                        duplicateContacts.add(duplicate)
-                    }
-                }
-
-                runOnUiThread {
-                    callback()
-                }
+    private fun initializeDuplicateContacts(callback: () -> Unit) {
+        getDuplicateContacts(contact!!) {
+            duplicateContacts = it
+            runOnUiThread {
+                callback()
             }
         }
     }
