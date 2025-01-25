@@ -15,5 +15,6 @@
     <string name="remove_photo">Forigi foton</string>
     <string name="show_phone_numbers">Montri telefonnumeroj</string>
     <string name="search_contacts">Serĉi kontaktojn</string>
-    <string name="phone_storage">Memoro de la telefono</string>
+    <string name="phone_storage">Telefonmemoro</string>
+    <string name="phone_storage_hidden">Telefonmemoro (nevidebla por aliaj aplikaĵoj)</string>
 </resources>
