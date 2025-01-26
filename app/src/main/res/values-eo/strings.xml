@@ -18,4 +18,5 @@
     <string name="phone_storage">Telefonmemoro</string>
     <string name="phone_storage_hidden">Telefonmemoro (nevidebla por aliaj aplikaĵoj)</string>
     <string name="search_favorites">Serĉi plej ŝatatajn</string>
+    <string name="search_groups">Serĉi grupojn</string>
 </resources>
