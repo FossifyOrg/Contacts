@@ -20,4 +20,5 @@
     <string name="search_favorites">Serĉi plej ŝatatajn</string>
     <string name="search_groups">Serĉi grupojn</string>
     <string name="add_number_to_contact">Aldoni telefonnumeron al kontakto</string>
+    <string name="format_phone_numbers">Aranĝi telefonnumerojn</string>
 </resources>
