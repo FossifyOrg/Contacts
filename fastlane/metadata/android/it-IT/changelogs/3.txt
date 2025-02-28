@@ -1,0 +1,10 @@
+* Corretto il problema di visualizzazione dei contatti su Android 14 e versioni successive
+* Corretta la perdita di dati durante l'eliminazione di contatti con nomi identici
+* Corretti i backup automatici corrotti
+* Corretta l'esportazione di foto di bassa qualità nelle vCard
+* Corretta la sovrapposizione tra il pulsante di azione e gli elementi dell'elenco
+* Aggiunta un'opzione per visualizzare i numeri di telefono formattati
+* Aggiunto un pulsante preferito per i contatti nei gruppi
+* Sostituite le caselle di controllo con interruttori
+* Rimosso il supporto per Android 7 e versioni precedenti
+* Altre correzioni di bug minori e miglioramenti e aggiunta di traduzioni

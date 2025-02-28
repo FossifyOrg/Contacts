@@ -1,0 +1,11 @@
+* Åtgärdade problem med kontakter inte visas på Android 14 och högre
+* Åtgärdade dataförlust vid radering av kontakter med identiska namn
+* Åtgärdade korrupta automatiska backupper
+* Åtgärdade lågkvalitéts foton exporter i vCards
+* Åtgärdade överlappning mellan flytande knappar och listobjekt
+* Lade till alternativ att visa formatterade telefonnummer
+* Lade till favoritkapp för kontakter i grupper
+* Ersatte kryssrutor med brytare
+* Tog bort stöd för Android 7 och äldre
+* Andra mindre buggficar och förbättringar 
+* Lade till fler översättningar
