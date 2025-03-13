@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Kontaktadministrilo</string>
+    <string name="app_launcher_name">Kontaktoj</string>
     <string name="address">Adreso</string>
     <string name="inserting">Enmetante…</string>
     <string name="updating">Ĝisdatigante…</string>
