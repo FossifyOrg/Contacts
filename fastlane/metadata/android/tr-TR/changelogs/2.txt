@@ -1,1 +1,0 @@
-* VCF içe aktarma sorunu düzeltildi

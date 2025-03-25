@@ -1,9 +1,0 @@
-* Problem mit nicht angezeigten Kontakten unter Android 14 und höher behoben
-* Datenverlust beim Löschen von Kontakten mit identischen Namen behoben
-* Beschädigte automatische Backups behoben
-* Fotoexporte mit schlechter Qualität in vCards behoben
-* Überlappung zwischen der schwebenden Aktionsschaltfläche und Listenelementen behoben
-* Option zur Anzeige von formatierten Telefonnummern hinzugefügt
-* Favoriten-Schaltfläche für Kontakte in Gruppen hinzugefügt
-* Checkboxen durch Schalter ersetzt
-…
