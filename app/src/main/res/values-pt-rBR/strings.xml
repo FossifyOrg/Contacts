@@ -71,6 +71,7 @@
     <string name="delete_from_all_sources">O contato será removido de todas removido de todas as fontes de contato.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d grupo</item>
+        <item quantity="many">%d grupos</item>
         <item quantity="other">%d grupos</item>
     </plurals>
     <string name="faq_1_title">Quero alterar os campos visíveis dos contatos. Posso fazer isso?</string>
