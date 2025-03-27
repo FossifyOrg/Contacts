@@ -72,6 +72,9 @@
     <plurals name="delete_groups">
         <item quantity="one">%d ryhmän</item>
         <item quantity="other">%d ryhmää</item>
-    </plurals>    <string name="faq_1_title">Voinko valita, mitkä täytettävät kentät näytetään yhteystiedon ominaisuuksissa?</string>
+    </plurals>
+    <string name="faq_1_title">Voinko valita, mitkä täytettävät kentät näytetään yhteystiedon ominaisuuksissa?</string>
     <string name="faq_1_text">Kyllä. Mene asetuksiin -&gt; Valitse täytettävät kentät. Voit valita, mitkä kentät näytetään. Osa kentistä on oletuksena piilotettuna, joten saatat löytää joitain uusia.</string>
+    <string name="show_private_contacts">Näytä yksityiset kontaktit Fossify Phone:lle, Fossify SMS Messenger:lle ja Fossify Calendar:lle</string>
+    <string name="format_phone_numbers">Muotoile puhelinnumerot</string>
 </resources>
