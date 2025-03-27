@@ -1,9 +1,9 @@
 Wir stellen vor: Fossify Contacts – die nächste Generation der Kontaktverwaltung. Unsere App ist bereit, die Art und Weise, wie du deine Kontakte verwaltest, neu zu definieren. Sie kombiniert Einfachheit mit fortschrittlichen Funktionen, die sowohl für die private als auch für die berufliche Nutzung geeignet sind.
 
-🔍 INTELLIGENTE SUCHE & FELDANPASSUNG:
+🔍 INTELLIGENTE SUCHE UND FELDANPASSUNG:
 Finde Kontakte schnell mit unserer intelligenten Suchfunktion. Passe die sichtbaren Felder an, genieße eine bedienfreundliche Oberfläche und finde Kontakte mühelos, um Zeit zu sparen und die Produktivität zu steigern.
 
-✉️ GRUPPENMANAGEMENT & KOMMUNIKATION:
+✉️ GRUPPENMANAGEMENT UND KOMMUNIKATION:
 Verwalte mühelos Kontaktgruppen für eine optimierte Kommunikation. Unsere App ermöglicht das einfache Gruppieren für Serien-E-Mails oder SMS und bietet Funktionen zum Erstellen von Favoritenlisten und Umbenennen von Gruppen, um deine organisatorischen Fähigkeiten zu verbessern.
 
 🔄 ZUVERLÄSSIGE SICHERUNGS- UND EXPORTOPTIONEN:
@@ -15,7 +15,7 @@ Fossify Contacts basiert auf einer Open-Source-Plattform und steht für Transpar
 🖼️ PERSONALISIERTES NUTZUNGSERLEBNIS:
 Passe deine Kontaktverwaltung ganz einfach an. Unsere App bietet flexible Einstellungen und Designoptionen, mit denen du die Oberfläche nach deinen Wünschen gestalten kannst. Sortiere deine Kontakte, wähle Farbschemas aus und passe sie an, um maximalen Komfort zu gewährleisten.
 
-🔋 EFFIZIENT & SCHLANK:
+🔋 EFFIZIENT UND SCHLANK:
 Fossify Contacts ist auf Leistung optimiert und so konzipiert, dass es die Ressourcen deines Geräts schont. Es organisiert nicht nur deine Kontakte effizient, sondern trägt auch zu einer längeren Akkulaufzeit bei und sorgt für einen reibungslosen Betrieb.
 
 🚀 ERWEITERTE SYNCHRONISIERUNG:
