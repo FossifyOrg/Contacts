@@ -192,7 +192,7 @@ class ContactsAdapter(
 
     private fun editContact() {
         val contact = getItemWithKey(selectedKeys.first()) ?: return
-        activity.editContact(contact)
+        activity.editContact(contact, config.mergeDuplicateContacts)
     }
 
     private fun askConfirmDelete() {
