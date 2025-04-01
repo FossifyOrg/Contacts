@@ -17,7 +17,7 @@
     <string name="no_contacts_with_emails">Ingen kontakter med e-mails fundet</string>
     <string name="no_contacts_with_phone_numbers">Ingen kontakter med telefonnumre fundet</string>
     <string name="new_contact">Ny kontakt</string>
-    <string name="edit_contact">Redigér kontakt</string>
+    <string name="edit_contact">Rediger kontakt</string>
     <string name="select_contact">Vælg kontakt</string>
     <string name="nickname">Kaldenavn</string>
     <string name="no_groups">Ingen grupper</string>
@@ -32,8 +32,8 @@
     <string name="remove_photo">Fjern foto</string>
     <string name="change_photo">Skift foto</string>
     <string name="show_phone_numbers">Vis telefonnumre</string>
-    <string name="show_contact_thumbnails">Vis kontakt miniature-billede</string>
-    <string name="show_dialpad_button">Vis en opkaldstasteknap på hovedskærmen</string>
+    <string name="show_contact_thumbnails">Vis miniaturebilleder af kontakter</string>
+    <string name="show_dialpad_button">Vis en tastaturknap på hovedskærmen</string>
     <string name="on_contact_click">Ved klik på kontakt</string>
     <string name="call_contact">Ring til kontakt</string>
     <string name="view_contact">Vis kontaktdetaljer</string>
@@ -43,8 +43,8 @@
     <string name="no_favorites">Det ser ud til, at du ikke har tilføjet nogen favoritkontakter endnu.</string>
     <string name="toggle_favorite">Slå favorit til/fra</string>
     <string name="search_contacts">Søg i kontakter</string>
-    <string name="search_favorites">Søg blandt favoritter</string>
-    <string name="search_groups">Søg blandt grupper</string>
+    <string name="search_favorites">Søg i favoritter</string>
+    <string name="search_groups">Søg i grupper</string>
     <string name="import_contacts">Importér kontakter</string>
     <string name="export_contacts">Eksportér kontakter</string>
     <string name="import_contacts_from_vcf">Importér kontakter fra en .vcf-fil</string>
@@ -54,7 +54,7 @@
     <string name="include_contact_sources">Medtag kontaktkilder</string>
     <string name="filename_without_vcf">Filnavn (uden .vcf)</string>
     <string name="dialpad">Tastatur</string>
-    <string name="add_number_to_contact">Tilføj nummer til kontakt</string>
+    <string name="add_number_to_contact">Føj nummer til kontakt</string>
     <string name="prefix">Præfiks</string>
     <string name="suffix">Suffiks</string>
     <string name="phone_numbers">Telefonnumre</string>
@@ -66,13 +66,13 @@
     <string name="groups">Grupper</string>
     <string name="contact_source">Kontaktkilde</string>
     <string name="ringtone">Ringteone</string>
-    <string name="delete_from_all_sources">Kontakten vil blive fjernet fra alle kontaktkilder.</string>
+    <string name="delete_from_all_sources">Kontakten fjernes fra alle kontaktkilder.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d gruppe</item>
         <item quantity="other">%d grupper</item>
     </plurals>
-    <string name="faq_1_title">Jeg vil ændre, hvilke felter der er synlige ved kontakter. Kan jeg gøre det?</string>
-    <string name="faq_1_text">Ja, alt hvad du skal gøre er at gå i Indstillinger -&gt; Administrer viste kontaktfelter. Der kan du vælge, hvilke felter der skal være synlige. Nogle af dem er endda deaktiveret som standard, så du kan muligvis finde nogle nye der.</string>
+    <string name="faq_1_title">Jeg vil gerne ændre, hvilke felter er synlige ved kontakter. Kan jeg gøre det?</string>
+    <string name="faq_1_text">Ja, du skal bare gå ind i Indstillinger -&gt; Administrer viste kontaktfelter. Der kan du vælge, hvilke felter skal være synlige. Nogle af dem er endda deaktiveret som standard, så du finder måske nogle nye.</string>
     <string name="merge_duplicate_contacts">Flet duplikerede kontakter</string>
     <string name="instant_messaging">Instant messaging (IM)</string>
     <string name="format_phone_numbers">Formatér telefonnumre</string>
