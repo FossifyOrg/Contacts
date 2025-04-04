@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="dialpad">Marcador</string>
-    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outras alicações)</string>
+    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outras aplicações)</string>
     <string name="no_favorites">Ainda não adicionou contactos aos favoritos.</string>
     <string name="app_launcher_name">Contactos</string>
     <string name="address">Endereço</string>
@@ -57,7 +57,7 @@
     <plurals name="delete_groups">
         <item quantity="one">%d grupo</item>
         <item quantity="many">%d grupos</item>
-        <item quantity="other"></item>
+        <item quantity="other"/>
     </plurals>
     <string name="organization">Organização</string>
     <string name="faq_1_title">Pretendo alterar os campos a mostrar nos contactos. É possível?</string>
