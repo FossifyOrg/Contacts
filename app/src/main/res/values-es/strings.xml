@@ -55,7 +55,7 @@
     <string name="include_contact_sources">Incluir orígenes de contactos</string>
     <string name="filename_without_vcf">Nombre de archivo (Sin .vcf)</string>
     <string name="dialpad">Teclado de marcación</string>
-    <string name="add_number_to_contact">Añadir número a contacto</string>
+    <string name="add_number_to_contact">Añadir número al contacto</string>
     <string name="prefix">Prefijo</string>
     <string name="suffix">Sufijo</string>
     <string name="phone_numbers">Números de teléfono</string>
