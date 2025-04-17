@@ -104,6 +104,42 @@ fun Activity.viewContact(contact: Contact) {
     }
 }
 
+fun Activity.editContact(contact: Contact, isMergedDuplicate: Boolean) {
+    if (!isMergedDuplicate) {
+        editContact(contact)
+    }
+    ContactsHelper(this).getContactSources { contactSources ->
+        if (!contact.isMessengerContact(contactSources)) {
+            editContact(contact)
+        } else {
+            getDuplicateContacts(contact) { duplicate ->
+                val nonMessengerDuplicate = duplicate.find {
+                    !it.isMessengerContact(contactSources)
+                }
+                runOnUiThread {
+                    editContact(nonMessengerDuplicate ?: contact)
+                }
+            }
+        }
+    }
+}
+
+fun Activity.getDuplicateContacts(contact: Contact, callback: (duplicateContacts: ArrayList<Contact>) -> Unit) {
+    val duplicateContacts = ArrayList<Contact>()
+    ContactsHelper(this).getDuplicatesOfContact(contact, false) { contacts ->
+        ensureBackgroundThread {
+            val displayContactSources = getVisibleContactSources()
+            contacts.filter { displayContactSources.contains(it.source) }.forEach {
+                val duplicate = ContactsHelper(this).getContactWithId(it.id, it.isPrivate())
+                if (duplicate != null) {
+                    duplicateContacts.add(duplicate)
+                }
+            }
+            callback(duplicateContacts)
+        }
+    }
+}
+
 fun Activity.editContact(contact: Contact) {
     hideKeyboard()
     Intent(applicationContext, EditContactActivity::class.java).apply {
