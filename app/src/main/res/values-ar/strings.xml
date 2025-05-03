@@ -55,7 +55,7 @@
     <string name="include_contact_sources">تضمين مصادر الاتصال</string>
     <string name="filename_without_vcf">اسم الملف (بدون .vcf)</string>
     <string name="dialpad">لوحة الاتصال</string>
-    <string name="add_number_to_contact">إضافة رقم الى جهة اتصال</string>
+    <string name="add_number_to_contact">أضف رقماً للاتصال</string>
     <string name="prefix">بادئة</string>
     <string name="suffix">لاحقة</string>
     <string name="phone_numbers">ارقام الهاتف</string>
@@ -76,6 +76,8 @@
         <item quantity="few">مجموعة %d</item>
         <item quantity="many">مجموعات %d</item>
         <item quantity="other">مجموعة %d</item>
-    </plurals>    <string name="faq_1_title">أريد تغيير الحقول المرئية في جهات الاتصال. هل يمكنني القيام بذلك؟</string>
+    </plurals>
+    <string name="faq_1_title">أريد تغيير الحقول المرئية في جهات الاتصال. هل يمكنني القيام بذلك؟</string>
     <string name="faq_1_text">نعم ، كل ما عليك فعله هو الانتقال إلى الإعدادات -&gt; إدارة حقول جهات الاتصال المعروضة. هناك يمكنك تحديد الحقول التي يجب أن تكون مرئية. يتم تعطيل بعضها بشكل افتراضي ، لذلك قد تجد بعض الأشياء الجديدة هناك.</string>
+    <string name="format_phone_numbers">تنسيق أرقام الهواتف</string>
 </resources>
