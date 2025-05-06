@@ -94,6 +94,13 @@ class VcfImporter(val activity: SimpleActivity) {
                     } else {
                         ""
                     }
+                    val country = it.country ?: ""
+                    val region = it.region ?: ""
+                    val city = it.locality ?: ""
+                    val postcode = it.postalCode ?: ""
+                    val pobox = it.poBox ?: ""
+                    val street = it.streetAddress ?: ""
+                    val neighborhood = it.extendedAddress ?: ""
 
                     if (it.locality?.isNotEmpty() == true) {
                         address += " ${it.locality} "
@@ -116,8 +123,9 @@ class VcfImporter(val activity: SimpleActivity) {
 
                     address = address.trim()
 
-                    if (address.isNotEmpty()) {
-                        addresses.add(Address(address, type, label))
+                    if (address?.isNotEmpty() == true) {
+                        addresses.add(Address(address, type, label, country, region, city, postcode, pobox, street,
+                            neighborhood))
                     }
                 }
 
