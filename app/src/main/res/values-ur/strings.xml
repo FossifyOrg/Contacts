@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="send_email_to_contacts">روابط کو برقی خط بھیجیں</string>
+    <string name="send_sms_to_group">گروہ کو ایس ایم ایس بھیجیں</string>
+    <string name="send_sms_to_contacts">روابط کو ایس ایم ایس بھیجیں</string>
+    <string name="app_launcher_name">روابط</string>
+    <string name="address">پتہ</string>
+    <string name="inserting">داخل کر رہا ہے…</string>
+    <string name="updating">تجدید کر رہا ہے…</string>
+    <string name="phone_storage">ہاتف ذخیرہ</string>
+    <string name="phone_storage_hidden">ہاتف ذخیرہ (دیگر اطلاقیات کیلئے مرئی نہیں)</string>
+    <string name="company">شرکت</string>
+    <string name="fields_empty">کم از کم ایک میدان پُر کرنا پڑے گا</string>
+    <string name="must_be_at_edit">رابطہ ترمیم کرنے کیلئے آپکو ترمیم صفحہ نمائش پر ہونا پڑے گا</string>
+    <string name="job_position">نوکری کی واقعیت</string>
+    <string name="send_email_to_group">گروہ کو برقی خط بھیجیں</string>
+    <string name="no_contacts_with_emails">کوئی برقی ڈاک والے روابط نہیں ملے</string>
+</resources>
