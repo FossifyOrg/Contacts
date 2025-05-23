@@ -110,7 +110,19 @@ class VcfExporter {
 
                 contact.addresses.forEach {
                     val address = Address()
-                    address.streetAddress = it.value
+                    if (listOf(it.country, it.region, it.city, it.postcode, it.pobox, it.street, it.neighborhood)
+                        .map{it.isNullOrEmpty()}
+                        .fold(false){a, b -> a || b}) {
+                        address.country = it.country
+                        address.region = it.region
+                        address.locality = it.city
+                        address.postalCode = it.postcode
+                        address.poBox = it.pobox
+                        address.streetAddress = it.street
+                        address.extendedAddress = it.neighborhood
+                    } else {
+                        address.streetAddress = it.value
+                    }
                     address.parameters.addType(getAddressTypeLabel(it.type, it.label))
                     card.addAddress(address)
                 }
