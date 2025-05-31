@@ -1,0 +1,8 @@
+Added:
+
+• Support for structured addresses
+• Dialog for choosing contact source when editing a merged contact
+
+Changed:
+
+• Updated translations
