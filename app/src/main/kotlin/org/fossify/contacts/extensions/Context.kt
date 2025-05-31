@@ -75,7 +75,6 @@ fun Context.checkAndBackupContactsOnBoot() {
 }
 
 fun Context.backupContacts() {
-    require(isRPlus())
     ensureBackgroundThread {
         val config = config
         ContactsHelper(this).getContactsToExport(selectedContactSources = config.autoBackupContactSources) { contactsToBackup ->

@@ -255,19 +255,31 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupEnableAutomaticBackups() {
-        binding.settingsBackupsLabel.beVisibleIf(isRPlus())
-        binding.settingsEnableAutomaticBackupsHolder.beVisibleIf(isRPlus())
         binding.settingsEnableAutomaticBackups.isChecked = config.autoBackup
         binding.settingsEnableAutomaticBackupsHolder.setOnClickListener {
             val wasBackupDisabled = !config.autoBackup
             if (wasBackupDisabled) {
-                ManageAutoBackupsDialog(
-                    activity = this,
-                    onSuccess = {
-                        enableOrDisableAutomaticBackups(true)
-                        scheduleNextAutomaticBackup()
+                if (isRPlus()) {
+                    ManageAutoBackupsDialog(
+                        activity = this,
+                        onSuccess = {
+                            enableOrDisableAutomaticBackups(true)
+                            scheduleNextAutomaticBackup()
+                        }
+                    )
+                } else {
+                    handlePermission(PERMISSION_WRITE_STORAGE) {
+                        if (it) {
+                            ManageAutoBackupsDialog(
+                                activity = this,
+                                onSuccess = {
+                                    enableOrDisableAutomaticBackups(true)
+                                    scheduleNextAutomaticBackup()
+                                }
+                            )
+                        }
                     }
-                )
+                }
             } else {
                 cancelScheduledAutomaticBackup()
                 enableOrDisableAutomaticBackups(false)
@@ -276,14 +288,27 @@ class SettingsActivity : SimpleActivity() {
     }
 
     private fun setupManageAutomaticBackups() {
-        binding.settingsManageAutomaticBackupsHolder.beVisibleIf(isRPlus() && config.autoBackup)
+        binding.settingsManageAutomaticBackupsHolder.beVisibleIf(config.autoBackup)
         binding.settingsManageAutomaticBackupsHolder.setOnClickListener {
-            ManageAutoBackupsDialog(
-                activity = this,
-                onSuccess = {
-                    scheduleNextAutomaticBackup()
+            if (isRPlus()) {
+                ManageAutoBackupsDialog(
+                    activity = this,
+                    onSuccess = {
+                        scheduleNextAutomaticBackup()
+                    }
+                )
+            } else {
+                handlePermission(PERMISSION_WRITE_STORAGE) {
+                    if (it) {
+                        ManageAutoBackupsDialog(
+                            activity = this,
+                            onSuccess = {
+                                scheduleNextAutomaticBackup()
+                            }
+                        )
+                    }
                 }
-            )
+            }
         }
     }
 
