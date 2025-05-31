@@ -2,7 +2,7 @@
 <resources>
     <string name="app_launcher_name">אנשי קשר</string>
     <string name="address">כתובת</string>
-    <string name="inserting">מכניס…</string>
+    <string name="inserting">מוסיף…</string>
     <string name="updating">מעדכן…</string>
     <string name="phone_storage">אחסון טלפון</string>
     <string name="phone_storage_hidden">אחסון טלפון (לא יוצג באפליקציות אחרות)</string>
@@ -78,4 +78,13 @@
     <string name="faq_1_text">כן, כל מה שאתה צריך לעשות הוא להיכנס להגדרות -&gt; נהל שדות אנשי קשר המוצגים. שם תוכל לבחור אילו שדות יהיו גלויים. חלקם אפילו מושבתים כברירת מחדל, אז אולי תמצא שם כמה חדשים.</string>
     <string name="format_phone_numbers">עיצוב מספרי טלפון</string>
     <string name="show_private_contacts">הצג אנשי קשר פרטיים ל- Fossify Phone, Fossify SMS Messenger ו- Fossify Calendar</string>
+    <string name="street">רחוב</string>
+    <string name="neighborhood">מספר דירה או סוויטה</string>
+    <string name="city">עיר</string>
+    <string name="postcode">מיקוד</string>
+    <string name="pobox">תיבת דואר</string>
+    <string name="region">מדינה</string>
+    <string name="country">ארץ</string>
+    <string name="structured_addresses">כתובות מובנות (מצב עריכה)</string>
+    <string name="select_account">בחר חשבון</string>
 </resources>
