@@ -1,0 +1,7 @@
+Added:
+
+- Support for structured addresses
+
+Changed:
+
+- Updated translations

@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-05-31
+
+### Added
+
+- Support for structured addresses ([#30])
+
+### Changed
+
+- Updated translations
+
 ## [1.1.0] - 2024-10-28
 
 ### Added
@@ -38,7 +48,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/FossifyOrg/Contacts/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/FossifyOrg/Contacts/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/FossifyOrg/Contacts/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/FossifyOrg/Contacts/releases/tag/1.0.0
+
+[#30]: https://github.com/FossifyOrg/Contacts/issues/30
