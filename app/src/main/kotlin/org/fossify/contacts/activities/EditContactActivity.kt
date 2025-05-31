@@ -50,6 +50,8 @@ import org.fossify.contacts.helpers.ADD_NEW_CONTACT_NUMBER
 import org.fossify.contacts.helpers.IS_FROM_SIMPLE_CONTACTS
 import org.fossify.contacts.helpers.KEY_EMAIL
 import org.fossify.contacts.helpers.KEY_NAME
+import java.util.LinkedList
+import java.util.Locale
 
 class EditContactActivity : ContactActivity() {
     companion object {
@@ -609,19 +611,46 @@ class EditContactActivity : ContactActivity() {
     }
 
     private fun setupAddresses() {
+        if (binding.contactAddressesHolder.childCount > 0 &&
+            (binding.contactAddressesHolder.getChildAt(0).id == R.id.contact_structured_address_holder) !=
+                (config.showContactFields and SHOW_STRUCTURED_ADDRESSES_FIELD != 0)) {
+            // Config was changed with edit view loaded
+            binding.contactAddressesHolder.removeAllViews()
+        }
         contact!!.addresses.forEachIndexed { index, address ->
-            val addressHolderView = binding.contactAddressesHolder.getChildAt(index)
-            val addressHolder = if (addressHolderView == null) {
-                ItemEditAddressBinding.inflate(layoutInflater, binding.contactAddressesHolder, false).apply {
-                    binding.contactAddressesHolder.addView(root)
+            var addressHolderView = binding.contactAddressesHolder.getChildAt(index)
+            if (config.showContactFields and SHOW_STRUCTURED_ADDRESSES_FIELD != 0) {
+                var structuredAddressHolder = if (addressHolderView == null) {
+                    ItemEditStructuredAddressBinding.inflate(layoutInflater, binding.contactAddressesHolder, false).apply {
+                        binding.contactAddressesHolder.addView(root)
+                    }
+                } else {
+                    ItemEditStructuredAddressBinding.bind(addressHolderView)
+                }
+
+                structuredAddressHolder.apply {
+                    contactStreet.setText(address.street)
+                    contactNeighborhood.setText(address.neighborhood)
+                    contactCity.setText(address.city)
+                    contactPostcode.setText(address.postcode)
+                    contactPobox.setText(address.pobox)
+                    contactRegion.setText(address.region)
+                    contactCountry.setText(address.country)
+                    setupAddressTypePicker(contactStructuredAddressType, address.type, address.label)
                 }
             } else {
-                ItemEditAddressBinding.bind(addressHolderView)
-            }
+                val addressHolder = if (addressHolderView == null) {
+                    ItemEditAddressBinding.inflate(layoutInflater, binding.contactAddressesHolder, false).apply {
+                        binding.contactAddressesHolder.addView(root)
+                    }
+                } else {
+                    ItemEditAddressBinding.bind(addressHolderView)
+                }
 
-            addressHolder.apply {
-                contactAddress.setText(address.value)
-                setupAddressTypePicker(contactAddressType, address.type, address.label)
+                addressHolder.apply {
+                    contactAddress.setText(address.value)
+                    setupAddressTypePicker(contactAddressType, address.type, address.label)
+                }
             }
         }
     }
@@ -828,10 +857,7 @@ class EditContactActivity : ContactActivity() {
         }
 
         if (contact!!.addresses.isEmpty()) {
-            val addressHolder = ItemEditAddressBinding.bind(binding.contactAddressesHolder.getChildAt(0))
-            addressHolder.contactAddressType.apply {
-                setupAddressTypePicker(this, DEFAULT_ADDRESS_TYPE, "")
-            }
+            addNewAddressField()
         }
 
         if (contact!!.IMs.isEmpty()) {
@@ -1188,13 +1214,44 @@ class EditContactActivity : ContactActivity() {
         val addresses = ArrayList<Address>()
         val addressesCount = binding.contactAddressesHolder.childCount
         for (i in 0 until addressesCount) {
-            val addressHolder = ItemEditAddressBinding.bind(binding.contactAddressesHolder.getChildAt(i))
-            val address = addressHolder.contactAddress.value
-            val addressType = getAddressTypeId(addressHolder.contactAddressType.value)
-            val addressLabel = if (addressType == StructuredPostal.TYPE_CUSTOM) addressHolder.contactAddressType.value else ""
+            val addressHolderView = binding.contactAddressesHolder.getChildAt(i)
+            // Don't rely on config.showContactFields since that might just have changed
+            if (addressHolderView.id == R.id.contact_structured_address_holder) {
+                val structuredAddressHolder = ItemEditStructuredAddressBinding.bind(addressHolderView)
+                val street = structuredAddressHolder.contactStreet.value
+                val neighborhood = structuredAddressHolder.contactNeighborhood.value
+                val city = structuredAddressHolder.contactCity.value
+                val postcode = structuredAddressHolder.contactPostcode.value
+                val pobox = structuredAddressHolder.contactPobox.value
+                val region = structuredAddressHolder.contactRegion.value
+                val country = structuredAddressHolder.contactCountry.value
 
-            if (address.isNotEmpty()) {
-                addresses.add(Address(address, addressType, addressLabel))
+                /* from DAVdroid */
+                val lineStreet = arrayOf(street, pobox, neighborhood).filter { it.isNotEmpty() }.joinToString(" ")
+                val lineLocality = arrayOf(postcode, city).filter { it.isNotEmpty() }.joinToString(" ")
+                val lines = LinkedList<String>()
+                if (lineStreet.isNotEmpty()) lines += lineStreet
+                if (lineLocality.isNotEmpty()) lines += lineLocality
+                if (region.isNotEmpty()) lines += region
+                if (country.isNotEmpty()) lines += country.uppercase(Locale.getDefault())
+                val address  = lines.joinToString("\n")
+                val addressType = getAddressTypeId(structuredAddressHolder.contactStructuredAddressType.value)
+                val addressLabel = if (addressType == StructuredPostal.TYPE_CUSTOM)
+                     structuredAddressHolder.contactStructuredAddressType.value else ""
+
+                if (address.isNotEmpty()) {
+                    addresses.add(Address(address, addressType, addressLabel, country, region, city, postcode, pobox,
+                            street, neighborhood))
+                }
+            } else {
+                val addressHolder = ItemEditAddressBinding.bind(addressHolderView)
+                val address = addressHolder.contactAddress.value
+                val addressType = getAddressTypeId(addressHolder.contactAddressType.value)
+                val addressLabel = if (addressType == StructuredPostal.TYPE_CUSTOM) addressHolder.contactAddressType.value else ""
+
+                if (address.isNotEmpty()) {
+                    addresses.add(Address(address, addressType, addressLabel, "", "", "", "", "", "", ""))
+                }
             }
         }
         return addresses
@@ -1375,13 +1432,25 @@ class EditContactActivity : ContactActivity() {
     }
 
     private fun addNewAddressField() {
-        val addressHolder = ItemEditAddressBinding.inflate(layoutInflater, binding.contactAddressesHolder, false)
-        updateTextColors(addressHolder.root)
-        setupAddressTypePicker(addressHolder.contactAddressType, DEFAULT_ADDRESS_TYPE, "")
-        binding.contactAddressesHolder.addView(addressHolder.root)
-        binding.contactAddressesHolder.onGlobalLayout {
-            addressHolder.contactAddress.requestFocus()
-            showKeyboard(addressHolder.contactAddress)
+        if (config.showContactFields and SHOW_STRUCTURED_ADDRESSES_FIELD != 0) {
+            val structutedAddressHolder = ItemEditStructuredAddressBinding.inflate(layoutInflater,
+                binding.contactAddressesHolder, false)
+            updateTextColors(structutedAddressHolder.root)
+            setupAddressTypePicker(structutedAddressHolder.contactStructuredAddressType, DEFAULT_ADDRESS_TYPE, "")
+            binding.contactAddressesHolder.addView(structutedAddressHolder.root)
+            binding.contactAddressesHolder.onGlobalLayout {
+                structutedAddressHolder.contactStreet.requestFocus()
+                showKeyboard(structutedAddressHolder.contactStreet)
+            }
+        } else {
+            val addressHolder = ItemEditAddressBinding.inflate(layoutInflater, binding.contactAddressesHolder, false)
+            updateTextColors(addressHolder.root)
+            setupAddressTypePicker(addressHolder.contactAddressType, DEFAULT_ADDRESS_TYPE, "")
+            binding.contactAddressesHolder.addView(addressHolder.root)
+            binding.contactAddressesHolder.onGlobalLayout {
+                addressHolder.contactAddress.requestFocus()
+                showKeyboard(addressHolder.contactAddress)
+            }
         }
     }
 
@@ -1473,8 +1542,15 @@ class EditContactActivity : ContactActivity() {
     private fun parseAddress(contentValues: ContentValues) {
         val type = contentValues.getAsInteger(StructuredPostal.DATA2) ?: DEFAULT_ADDRESS_TYPE
         val addressValue = contentValues.getAsString(StructuredPostal.DATA4)
-            ?: contentValues.getAsString(StructuredPostal.DATA1) ?: return
-        val address = Address(addressValue, type, "")
+                ?: contentValues.getAsString(StructuredPostal.DATA1) ?: return
+        val country = contentValues.getAsString(StructuredPostal.COUNTRY)
+        val region = contentValues.getAsString(StructuredPostal.REGION)
+        val city = contentValues.getAsString(StructuredPostal.CITY)
+        val postcode = contentValues.getAsString(StructuredPostal.POSTCODE)
+        val pobox = contentValues.getAsString(StructuredPostal.POBOX)
+        val street = contentValues.getAsString(StructuredPostal.STREET)
+        val neighborhood = contentValues.getAsString(StructuredPostal.NEIGHBORHOOD)
+        val address = Address(addressValue, type, "", country, region, city, postcode, pobox, street, neighborhood)
         contact!!.addresses.add(address)
     }
 
