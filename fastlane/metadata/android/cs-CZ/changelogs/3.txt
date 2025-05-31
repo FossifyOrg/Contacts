@@ -1,9 +1,0 @@
-* Opraven problém se zobrazováním kontaktů v systému Android 14 a novějších
-* Opravena ztráta dat při odstraňování kontaktů se stejnými jmény
-* Opraveno poškozené automatické zálohování
-* Opraven export fotografií v nízké kvalitě v aplikaci vCards
-* Opraveno překrývání plovoucího akčního tlačítka a položek seznamu
-* Přidána možnost zobrazovat formátovaná telefonní čísla
-* Přidáno tlačítko oblíbených kontaktů ve skupinách
-* Zaškrtávací políčka nahrazena přepínači
-* Další opravy chyb a vylepšení

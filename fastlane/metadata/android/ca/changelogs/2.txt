@@ -1,1 +1,0 @@
-* S'ha corregit l'importador de VCF

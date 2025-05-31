@@ -13,7 +13,7 @@
     <string name="send_email_to_group">Envoyer un courriel au groupe</string>
     <string name="fields_empty">Au moins un champ doit être rempli</string>
     <string name="must_be_at_edit">Vous devez être sur l\'écran « Modifier » pour modifier un contact</string>
-    <string name="no_contacts_with_emails">Aucun contact comportant un adresse électronique n\'a été trouvé</string>
+    <string name="no_contacts_with_emails">Aucun contact ayant una adresse électronique n\'a été trouvé</string>
     <string name="no_contacts_with_phone_numbers">Aucun contact comportant un numéro de téléphone n\'a été trouvé</string>
     <string name="new_contact">Nouveau contact</string>
     <string name="edit_contact">Modifier le contact</string>

@@ -54,7 +54,7 @@
     <string name="include_contact_sources">包含聯絡人來源</string>
     <string name="filename_without_vcf">檔案名稱 (不含.vcf)</string>
     <string name="dialpad">撥號鍵盤</string>
-    <string name="add_number_to_contact">添加號碼至通訊錄</string>
+    <string name="add_number_to_contact">將號碼加入聯絡人</string>
     <string name="prefix">前缀</string>
     <string name="suffix">後綴</string>
     <string name="phone_numbers">電話號碼</string>

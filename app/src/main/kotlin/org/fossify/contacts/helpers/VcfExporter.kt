@@ -1,7 +1,6 @@
 package org.fossify.contacts.helpers
 
 import android.content.Context
-import android.net.Uri
 import android.os.Build
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Event
@@ -9,6 +8,7 @@ import android.provider.ContactsContract.CommonDataKinds.Im
 import android.provider.ContactsContract.CommonDataKinds.Phone
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
 import androidx.annotation.RequiresApi
+import androidx.core.net.toUri
 import ezvcard.Ezvcard
 import ezvcard.VCard
 import ezvcard.VCardVersion
@@ -37,7 +37,7 @@ class VcfExporter {
         contacts: ArrayList<Contact>,
         showExportingToast: Boolean,
         version: VCardVersion = VCardVersion.V4_0,
-        callback: (result: ExportResult) -> Unit
+        callback: (result: ExportResult) -> Unit,
     ) {
         try {
             if (outputStream == null) {
@@ -53,7 +53,13 @@ class VcfExporter {
             for (contact in contacts) {
                 val card = VCard()
 
-                val formattedName = arrayOf(contact.prefix, contact.firstName, contact.middleName, contact.surname, contact.suffix)
+                val formattedName = arrayOf(
+                    contact.prefix,
+                    contact.firstName,
+                    contact.middleName,
+                    contact.surname,
+                    contact.suffix
+                )
                     .filter { it.isNotEmpty() }
                     .joinToString(separator = " ")
                 card.formattedName = FormattedName(formattedName)
@@ -110,7 +116,29 @@ class VcfExporter {
 
                 contact.addresses.forEach {
                     val address = Address()
-                    address.streetAddress = it.value
+                    if (
+                        listOf(
+                            it.country,
+                            it.region,
+                            it.city,
+                            it.postcode,
+                            it.pobox,
+                            it.street,
+                            it.neighborhood
+                        )
+                            .map { it.isEmpty() }
+                            .fold(false) { a, b -> a || b }
+                    ) {
+                        address.country = it.country
+                        address.region = it.region
+                        address.locality = it.city
+                        address.postalCode = it.postcode
+                        address.poBox = it.pobox
+                        address.streetAddress = it.street
+                        address.extendedAddress = it.neighborhood
+                    } else {
+                        address.streetAddress = it.value
+                    }
                     address.parameters.addType(getAddressTypeLabel(it.type, it.label))
                     card.addAddress(address)
                 }
@@ -147,7 +175,8 @@ class VcfExporter {
                 }
 
                 try {
-                    val inputStream = context.contentResolver.openInputStream(Uri.parse(contact.photoUri))
+                    val inputStream =
+                        context.contentResolver.openInputStream(contact.photoUri.toUri())
 
                     if (inputStream != null) {
                         val photoByteArray = inputStream.readBytes()

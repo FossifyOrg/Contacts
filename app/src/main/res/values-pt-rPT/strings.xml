@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="dialpad">Marcador</string>
-    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outras alicações)</string>
+    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outros aplicativos)</string>
     <string name="no_favorites">Ainda não adicionou contactos aos favoritos.</string>
     <string name="app_launcher_name">Contactos</string>
     <string name="address">Endereço</string>
@@ -11,7 +11,7 @@
     <string name="inserting">A inserir…</string>
     <string name="company">Empresa</string>
     <string name="send_sms_to_group">Enviar SMS para o grupo</string>
-    <string name="updating">A atualizar…</string>
+    <string name="updating">Atualizando…</string>
     <string name="job_position">Cargo</string>
     <string name="send_email_to_group">Enviar e-mail para o grupo</string>
     <string name="must_be_at_edit">Tem que estar no ecrã de edição para alterar um contacto</string>
@@ -41,7 +41,7 @@
     <string name="show_only_contacts_with_numbers">Mostrar apenas contactos com número de telefone</string>
     <string name="search_groups">Pesquisar grupos</string>
     <string name="export_contacts">Exportar contactos</string>
-    <string name="search_contacts">Pesquisar contactos</string>
+    <string name="search_contacts">Pesquisar contatos</string>
     <string name="search_favorites">Pesquisar favoritos</string>
     <string name="import_contacts">Importar contactos</string>
     <string name="import_contacts_from_vcf">Importar contactos de .vcf</string>
@@ -57,13 +57,13 @@
     <plurals name="delete_groups">
         <item quantity="one">%d grupo</item>
         <item quantity="many">%d grupos</item>
-        <item quantity="other"></item>
+        <item quantity="other"/>
     </plurals>
     <string name="organization">Organização</string>
     <string name="faq_1_title">Pretendo alterar os campos a mostrar nos contactos. É possível?</string>
     <string name="events">Eventos (data de nascimento, aniversário)</string>
     <string name="export_contacts_to_vcf">Exportar contactos para .vcf</string>
-    <string name="add_number_to_contact">Adicionar número a um contacto</string>
+    <string name="add_number_to_contact">Adicionar número ao contato</string>
     <string name="import_contacts_from_vcf_pro">Importar contactos de .vcf (Pro)</string>
     <string name="no_contacts_with_phone_numbers">Não existem contactos com número de telefone</string>
     <string name="websites">Site</string>
