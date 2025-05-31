@@ -87,4 +87,5 @@
     <string name="street">Ulica</string>
     <string name="region">Region</string>
     <string name="structured_addresses">Ustrukturyzowane adresy (tryb edycji)</string>
+    <string name="select_account">Wybierz konto</string>
 </resources>
