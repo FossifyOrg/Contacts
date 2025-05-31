@@ -77,4 +77,13 @@
     <string name="websites">Websites</string>
     <string name="show_private_contacts">Privécontacten tonen aan Fossify Telefoon, Fossify Berichten en Fossify Agenda</string>
     <string name="format_phone_numbers">Telefoonnummers automatisch opmaken</string>
+    <string name="city">Plaatsnaam</string>
+    <string name="region">Provincie/Staat</string>
+    <string name="structured_addresses">Gestructureerde adressen (bewerken)</string>
+    <string name="street">Straat</string>
+    <string name="select_account">Account kiezen</string>
+    <string name="neighborhood">Appartement of kamer</string>
+    <string name="postcode">Postcode</string>
+    <string name="pobox">Postbus</string>
+    <string name="country">Land</string>
 </resources>
