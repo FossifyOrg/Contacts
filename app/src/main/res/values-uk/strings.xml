@@ -87,4 +87,5 @@
     <string name="region">Штат</string>
     <string name="structured_addresses">Структуровані адреси (режим редагування)</string>
     <string name="neighborhood">Номер квартири або номеру люкса</string>
+    <string name="select_account">Вибрати обліковий запис</string>
 </resources>
