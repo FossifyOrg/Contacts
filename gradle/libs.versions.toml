@@ -1,8 +1,8 @@
 [versions]
 #jetbrains
-kotlin = "1.9.25"
+kotlin = "2.1.21"
 #KSP
-ksp = "1.9.25-1.0.20"
+ksp = "2.1.21-2.0.1"
 #Detekt
 detekt = "1.23.8"
 #AndroidX
@@ -14,9 +14,9 @@ ezvcard = "0.11.3"
 #IndicatorFastScroll
 indicatorfastscroll = "4524cd0b61"
 #Room
-room = "2.6.1"
+room = "2.7.1"
 #Fossify
-commons = "89147bc3d8"
+commons = "2.0.3"
 #Gradle
 gradlePlugins-agp = "8.10.1"
 #build
