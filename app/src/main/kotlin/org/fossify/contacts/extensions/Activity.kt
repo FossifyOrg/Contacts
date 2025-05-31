@@ -15,7 +15,6 @@ import org.fossify.contacts.R
 import org.fossify.contacts.activities.EditContactActivity
 import org.fossify.contacts.activities.SimpleActivity
 import org.fossify.contacts.activities.ViewContactActivity
-import org.fossify.contacts.dialogs.ChooseContactSourceDialog
 import org.fossify.contacts.dialogs.ImportContactsDialog
 import org.fossify.contacts.helpers.DEFAULT_FILE_NAME
 import org.fossify.contacts.helpers.VcfExporter
@@ -83,7 +82,7 @@ fun SimpleActivity.handleGenericContactClick(contact: Contact) {
     when (config.onContactClick) {
         ON_CLICK_CALL_CONTACT -> callContact(contact)
         ON_CLICK_VIEW_CONTACT -> viewContact(contact)
-        ON_CLICK_EDIT_CONTACT -> editContact(contact)
+        ON_CLICK_EDIT_CONTACT -> editContact(contact, config.mergeDuplicateContacts)
     }
 }
 
@@ -111,12 +110,22 @@ fun Activity.editContact(contact: Contact, isMergedDuplicate: Boolean) {
     } else {
         ContactsHelper(this).getContactSources { contactSources ->
             getDuplicateContacts(contact, true) { contacts ->
-                runOnUiThread {
-                    if (contacts.size == 1) {
+                if (contacts.size == 1) {
+                    runOnUiThread {
                         editContact(contacts.first())
-                    } else {
-                        ChooseContactSourceDialog(this, contacts, contactSources) {
-                            editContact(it)
+                    }
+                } else {
+                    val items = ArrayList(contacts.mapIndexed { index, contact ->
+                        var source = getPublicContactSourceSync(contact.source, contactSources)
+                        if (source == "") {
+                            source = getString(R.string.phone_storage)
+                        }
+                        RadioItem(index, source, contact)
+                    }.sortedBy { it.title })
+
+                    runOnUiThread {
+                        RadioGroupDialog(this, items) {
+                            editContact(it as Contact)
                         }
                     }
                 }

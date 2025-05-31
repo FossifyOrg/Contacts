@@ -101,7 +101,7 @@ class ViewContactActivity : ContactActivity() {
 
             findItem(R.id.edit).setOnMenuItemClickListener {
                 if (contact != null) {
-                    launchEditContact(contact!!)
+                    launchEditContact(contact!!, false)
                 }
                 true
             }
@@ -281,10 +281,14 @@ class ViewContactActivity : ContactActivity() {
         updateTextColors(binding.contactScrollview)
     }
 
-    private fun launchEditContact(contact: Contact) {
+    private fun launchEditContact(contact: Contact, editExactContact: Boolean) {
         wasEditLaunched = true
         duplicateInitialized = false
-        editContact(contact, config.mergeDuplicateContacts)
+        if (editExactContact) {
+            editContact(contact)
+        } else {
+            editContact(contact, config.mergeDuplicateContacts)
+        }
     }
 
     private fun openWith() {
@@ -624,7 +628,7 @@ class ViewContactActivity : ContactActivity() {
                     binding.contactSourcesHolder.addView(root)
 
                     contactSource.setOnClickListener {
-                        launchEditContact(key)
+                        launchEditContact(key, true)
                     }
 
                     if (value.lowercase(Locale.getDefault()) == WHATSAPP) {
