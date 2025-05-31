@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- Added automatic backup option in Android 10 and prior
+- Phone Storage option is now shown even when accounts list is empty
 
 ## [1.1.0] - 2024-10-28
 
