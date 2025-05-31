@@ -80,4 +80,13 @@
     <string name="add_contacts">Cuir teagmhálaithe leis</string>
     <string name="create_group_under_account">Cruthaigh grúpa faoi chuntas</string>
     <string name="websites">Láithreáin Ghréasáin</string>
+    <string name="street">Sráid</string>
+    <string name="neighborhood">Uimhir árasáin nó seomra</string>
+    <string name="city">Cathair</string>
+    <string name="pobox">Bosca oifig an phoist</string>
+    <string name="region">Stát</string>
+    <string name="select_account">Roghnaigh cuntas</string>
+    <string name="structured_addresses">Seoltaí struchtúrtha (mód eagarthóireachta)</string>
+    <string name="country">Tír</string>
+    <string name="postcode">Cód poist</string>
 </resources>
