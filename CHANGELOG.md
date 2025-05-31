@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added dialog for choosing contact source while editing a merged contact ([#201])
+
 ## [1.1.0] - 2024-10-28
 
 ### Added
@@ -42,3 +45,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.1.0]: https://github.com/FossifyOrg/Contacts/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/FossifyOrg/Contacts/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/FossifyOrg/Contacts/releases/tag/1.0.0
+
+[#201]: https://github.com/FossifyOrg/Contacts/issues/201

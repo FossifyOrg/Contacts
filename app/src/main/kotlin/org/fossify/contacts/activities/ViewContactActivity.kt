@@ -818,7 +818,7 @@ class ViewContactActivity : ContactActivity() {
     }
 
     private fun initializeDuplicateContacts(callback: () -> Unit) {
-        getDuplicateContacts(contact!!) {
+        getDuplicateContacts(contact!!, false) {
             duplicateContacts = it
             runOnUiThread {
                 callback()

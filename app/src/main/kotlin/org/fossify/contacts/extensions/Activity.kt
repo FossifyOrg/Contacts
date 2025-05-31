@@ -15,6 +15,7 @@ import org.fossify.contacts.R
 import org.fossify.contacts.activities.EditContactActivity
 import org.fossify.contacts.activities.SimpleActivity
 import org.fossify.contacts.activities.ViewContactActivity
+import org.fossify.contacts.dialogs.ChooseContactSourceDialog
 import org.fossify.contacts.dialogs.ImportContactsDialog
 import org.fossify.contacts.helpers.DEFAULT_FILE_NAME
 import org.fossify.contacts.helpers.VcfExporter
@@ -107,25 +108,28 @@ fun Activity.viewContact(contact: Contact) {
 fun Activity.editContact(contact: Contact, isMergedDuplicate: Boolean) {
     if (!isMergedDuplicate) {
         editContact(contact)
-    }
-    ContactsHelper(this).getContactSources { contactSources ->
-        if (!contact.isMessengerContact(contactSources)) {
-            editContact(contact)
-        } else {
-            getDuplicateContacts(contact) { duplicate ->
-                val nonMessengerDuplicate = duplicate.find {
-                    !it.isMessengerContact(contactSources)
-                }
+    } else {
+        ContactsHelper(this).getContactSources { contactSources ->
+            getDuplicateContacts(contact, true) { contacts ->
                 runOnUiThread {
-                    editContact(nonMessengerDuplicate ?: contact)
+                    if (contacts.size == 1) {
+                        editContact(contacts.first())
+                    } else {
+                        ChooseContactSourceDialog(this, contacts, contactSources) {
+                            editContact(it)
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-fun Activity.getDuplicateContacts(contact: Contact, callback: (duplicateContacts: ArrayList<Contact>) -> Unit) {
+fun Activity.getDuplicateContacts(contact: Contact, includeCurrent: Boolean, callback: (duplicateContacts: ArrayList<Contact>) -> Unit) {
     val duplicateContacts = ArrayList<Contact>()
+    if (includeCurrent) {
+        duplicateContacts.add(contact)
+    }
     ContactsHelper(this).getDuplicatesOfContact(contact, false) { contacts ->
         ensureBackgroundThread {
             val displayContactSources = getVisibleContactSources()
