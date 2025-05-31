@@ -124,7 +124,11 @@ fun Activity.editContact(contact: Contact, isMergedDuplicate: Boolean) {
                     }.sortedBy { it.title })
 
                     runOnUiThread {
-                        RadioGroupDialog(this, items) {
+                        RadioGroupDialog(
+                            activity = this,
+                            items = items,
+                            titleId = R.string.select_account,
+                        ) {
                             editContact(it as Contact)
                         }
                     }
