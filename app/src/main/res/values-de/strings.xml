@@ -77,4 +77,13 @@
     <string name="faq_1_title">Ich möchte die sichtbaren Kontaktfelder ändern. Kann ich das machen?</string>
     <string name="faq_1_text">Ja, alles, was du tun musst, ist folgendes: Gehe zu Einstellungen -&gt; Sichtbare Kontaktfelder bearbeiten. Dort kannst du auswählen, welche Felder sichtbar sein sollen. Einige sind standardmäßig deaktiviert, sodass du dort vielleicht neue Felder findest.</string>
     <string name="format_phone_numbers">Telefonnummern formatieren</string>
+    <string name="street">Straße</string>
+    <string name="neighborhood">Wohnungs- oder Zimmernummer</string>
+    <string name="postcode">Postleitzahl</string>
+    <string name="pobox">Postfach</string>
+    <string name="region">Bundesland</string>
+    <string name="country">Land</string>
+    <string name="select_account">Konto auswählen</string>
+    <string name="structured_addresses">Strukturierte Adressen (Bearbeitungsmodus)</string>
+    <string name="city">Stadt</string>
 </resources>
