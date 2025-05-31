@@ -30,6 +30,7 @@
     <string name="edit_contact">Edit contact</string>
     <string name="select_contact">Select contact</string>
     <string name="nickname">Nickname</string>
+    <string name="select_account">Select account</string>
 
     <!-- Groups -->
     <string name="no_groups">No groups</string>

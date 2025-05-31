@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Support for structured addresses ([#30])
+- Dialog for choosing contact source when editing a merged contact ([#201])
 
 ### Changed
 
@@ -55,3 +56,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.0.0]: https://github.com/FossifyOrg/Contacts/releases/tag/1.0.0
 
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
+[#201]: https://github.com/FossifyOrg/Contacts/issues/201

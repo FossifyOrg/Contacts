@@ -82,7 +82,7 @@ fun SimpleActivity.handleGenericContactClick(contact: Contact) {
     when (config.onContactClick) {
         ON_CLICK_CALL_CONTACT -> callContact(contact)
         ON_CLICK_VIEW_CONTACT -> viewContact(contact)
-        ON_CLICK_EDIT_CONTACT -> editContact(contact)
+        ON_CLICK_EDIT_CONTACT -> editContact(contact, config.mergeDuplicateContacts)
     }
 }
 
@@ -101,6 +101,59 @@ fun Activity.viewContact(contact: Contact) {
         putExtra(CONTACT_ID, contact.id)
         putExtra(IS_PRIVATE, contact.isPrivate())
         startActivity(this)
+    }
+}
+
+fun Activity.editContact(contact: Contact, isMergedDuplicate: Boolean) {
+    if (!isMergedDuplicate) {
+        editContact(contact)
+    } else {
+        ContactsHelper(this).getContactSources { contactSources ->
+            getDuplicateContacts(contact, true) { contacts ->
+                if (contacts.size == 1) {
+                    runOnUiThread {
+                        editContact(contacts.first())
+                    }
+                } else {
+                    val items = ArrayList(contacts.mapIndexed { index, contact ->
+                        var source = getPublicContactSourceSync(contact.source, contactSources)
+                        if (source == "") {
+                            source = getString(R.string.phone_storage)
+                        }
+                        RadioItem(index, source, contact)
+                    }.sortedBy { it.title })
+
+                    runOnUiThread {
+                        RadioGroupDialog(
+                            activity = this,
+                            items = items,
+                            titleId = R.string.select_account,
+                        ) {
+                            editContact(it as Contact)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+fun Activity.getDuplicateContacts(contact: Contact, includeCurrent: Boolean, callback: (duplicateContacts: ArrayList<Contact>) -> Unit) {
+    val duplicateContacts = ArrayList<Contact>()
+    if (includeCurrent) {
+        duplicateContacts.add(contact)
+    }
+    ContactsHelper(this).getDuplicatesOfContact(contact, false) { contacts ->
+        ensureBackgroundThread {
+            val displayContactSources = getVisibleContactSources()
+            contacts.filter { displayContactSources.contains(it.source) }.forEach {
+                val duplicate = ContactsHelper(this).getContactWithId(it.id, it.isPrivate())
+                if (duplicate != null) {
+                    duplicateContacts.add(duplicate)
+                }
+            }
+            callback(duplicateContacts)
+        }
     }
 }
 
