@@ -89,7 +89,7 @@
     <string name="phone_numbers">Phone numbers</string>
     <string name="emails">Emails</string>
     <string name="addresses">Addresses</string>
-    <string name="structured_addresses">Structured Addresses (edit mode)</string>
+    <string name="structured_addresses">Structured addresses (edit mode)</string>
     <string name="events">Events (birthdays, anniversaries)</string>
     <string name="organization">Organization</string>
     <string name="websites">Websites</string>
