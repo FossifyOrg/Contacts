@@ -78,4 +78,13 @@
     <string name="faq_1_text">Да, всё, что вам нужно сделать, это зайти в \"Настройки\" → \"Управление отображаемыми полями контактов\". Там вы сможете выбрать, какие поля должны быть видимы. Некоторые из них даже отключены по умолчанию, так что вы можете найти некоторые новые.</string>
     <string name="show_private_contacts">Разрешить Fossify Phone, Fossify SMS Messenger и Fossify Calendar доступ к приватным контактам</string>
     <string name="format_phone_numbers">Форматировать номера телефонов</string>
+    <string name="street">Улица</string>
+    <string name="neighborhood">Квартира</string>
+    <string name="city">Город</string>
+    <string name="postcode">Почтовый индекс</string>
+    <string name="pobox">Почтовый ящик</string>
+    <string name="region">Область</string>
+    <string name="structured_addresses">Структурированные адреса (режим редактирования)</string>
+    <string name="select_account">Выбрать учётную запись</string>
+    <string name="country">Страна</string>
 </resources>
