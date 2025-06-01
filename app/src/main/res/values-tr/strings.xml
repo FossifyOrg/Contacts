@@ -51,7 +51,7 @@
     <string name="export_contacts">Kişileri dışa aktar</string>
     <string name="import_contacts_from_vcf">Kişileri bir .vcf dosyasından içe aktar</string>
     <string name="import_contacts_from_vcf_pro">Kişileri bir .vcf dosyasından içe aktar (Pro)</string>
-    <string name="export_contacts_to_vcf">Kişileri bir .vcf dosyasına aktar</string>
+    <string name="export_contacts_to_vcf">Kişileri bir .vcf dosyasına dışa aktar</string>
     <string name="target_contact_source">Hedef kişi kaynağı</string>
     <string name="include_contact_sources">Kişi kaynaklarını dahil et</string>
     <string name="filename_without_vcf">Dosya adı (.vcf olmadan)</string>
