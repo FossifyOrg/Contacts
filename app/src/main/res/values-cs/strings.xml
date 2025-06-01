@@ -86,4 +86,5 @@
     <string name="structured_addresses">Strukturovaná adresa (režim úprav)</string>
     <string name="postcode">PSČ</string>
     <string name="street">Ulice</string>
+    <string name="select_account">Vybrat účet</string>
 </resources>
