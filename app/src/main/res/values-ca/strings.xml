@@ -78,4 +78,13 @@
     <string name="prefix">Prefix</string>
     <string name="show_private_contacts">Mostra els contactes privats en el Fossify Phone, Fossify SMS Messenger i Fossify Calendar</string>
     <string name="format_phone_numbers">Format de números de telèfon</string>
+    <string name="street">Carrer</string>
+    <string name="neighborhood">Apartament o número d\'habitació</string>
+    <string name="city">Ciutat</string>
+    <string name="country">País</string>
+    <string name="structured_addresses">Adreces estructurades (mode d\'edició)</string>
+    <string name="select_account">Seleccioneu un compte</string>
+    <string name="region">Estat</string>
+    <string name="pobox">Apartat de correus</string>
+    <string name="postcode">Codi postal</string>
 </resources>
