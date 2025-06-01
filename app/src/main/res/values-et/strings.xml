@@ -77,4 +77,13 @@
     <string name="faq_1_text">Jah ikka on võimalik. Ava Seadistused -&gt; Halda kuvatavaid kontaktkirje välju. Sealt saad valida välju, mida tahad näha. Kuna mõned neist on vaikimisi peidetud, siis saad vajadusel ka loendit laiendada.</string>
     <string name="show_private_contacts">Näita privaatseid kontakte Fossify Telefonis, Fossify SMS Sõnumites and Fossify Kalendris</string>
     <string name="format_phone_numbers">Vorminda telefoninumbreid</string>
+    <string name="street">Tänav</string>
+    <string name="neighborhood">Korter</string>
+    <string name="city">Linn</string>
+    <string name="structured_addresses">Struktureeritud aadressid (muutmisvaade)</string>
+    <string name="region">Osariik</string>
+    <string name="country">Riik</string>
+    <string name="select_account">Vali kasutajakonto</string>
+    <string name="pobox">Postkast</string>
+    <string name="postcode">Suunakood</string>
 </resources>
