@@ -13,7 +13,7 @@
     <string name="send_sms_to_group">发送短信给群组</string>
     <string name="send_email_to_group">发送电子邮件给群组</string>
     <string name="fields_empty">至少要填写 1 个字段</string>
-    <string name="must_be_at_edit">你必须在编辑页面去修改联系人</string>
+    <string name="must_be_at_edit">您必须在编辑页面才能修改联系人</string>
     <string name="no_contacts_with_emails">未发现含有电子邮箱的联系人</string>
     <string name="no_contacts_with_phone_numbers">未发现含有电话号码的联系人</string>
     <string name="new_contact">新联系人</string>
@@ -21,14 +21,14 @@
     <string name="select_contact">选择联系人</string>
     <string name="nickname">昵称</string>
     <string name="no_groups">没有群组</string>
-    <string name="create_new_group">建立一个新群组</string>
+    <string name="create_new_group">创建新群组</string>
     <string name="remove_from_group">从群组内移除</string>
     <string name="no_group_participants">这群组是空白的</string>
     <string name="add_contacts">添加联系人</string>
-    <string name="no_group_created">设备内没有联系人群组</string>
-    <string name="create_group">建立群组</string>
+    <string name="no_group_created">设备上没有联系人群组</string>
+    <string name="create_group">创建群组</string>
     <string name="add_to_group">添加到群组</string>
-    <string name="create_group_under_account">在帐号下建立群组</string>
+    <string name="create_group_under_account">在账号下创建群组</string>
     <string name="remove_photo">移除照片</string>
     <string name="change_photo">更换照片</string>
     <string name="show_phone_numbers">显示电话号码</string>
@@ -49,12 +49,12 @@
     <string name="search_groups">搜索组</string>
     <string name="import_contacts">导入联系人</string>
     <string name="export_contacts">导出联系人</string>
-    <string name="import_contacts_from_vcf">从.vcf文件导入联系人</string>
-    <string name="import_contacts_from_vcf_pro">从.vcf文件导入联系人 (Pro)</string>
-    <string name="export_contacts_to_vcf">导出联系人成.vcf文件</string>
+    <string name="import_contacts_from_vcf">从 .vcf 文件导入联系人</string>
+    <string name="import_contacts_from_vcf_pro">从 .vcf 文件导入联系人（专业版）</string>
+    <string name="export_contacts_to_vcf">将联系人导出到 .vcf 文件</string>
     <string name="target_contact_source">联系人来源</string>
     <string name="include_contact_sources">包含联系人来源</string>
-    <string name="filename_without_vcf">文件名称 (不含.vcf)</string>
+    <string name="filename_without_vcf">文件名（不含 .vcf）</string>
     <string name="dialpad">拨号界面</string>
     <string name="add_number_to_contact">将号码添加到联系人</string>
     <string name="prefix">前缀</string>
@@ -85,4 +85,5 @@
     <string name="structured_addresses">结构化地址（编辑模式）</string>
     <string name="pobox">邮政信箱</string>
     <string name="street">街道</string>
+    <string name="select_account">选择账号</string>
 </resources>
