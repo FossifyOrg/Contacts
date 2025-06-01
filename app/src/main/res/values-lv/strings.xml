@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="send_sms_to_contacts">Nosūtīt kontaktpersonām SMS</string>
+    <string name="send_email_to_contacts">Nosūtīt kontaktpersonām e-pasta ziņojumu</string>
+    <string name="no_groups">Nav kopu</string>
+    <string name="postcode">Pasta indekss</string>
+    <string name="city">Pilsēta</string>
+    <string name="neighborhood">Dzīvokļa numurs</string>
+    <string name="street">Iela</string>
+    <string name="country">Valsts</string>
+    <string name="create_new_group">Izveidot jaunu kopu</string>
+    <string name="region">Apgabals</string>
+    <string name="pobox">Pasta nodaļas kastīte</string>
+    <string name="updating">Atjaunina…</string>
+    <string name="phone_storage_hidden">Tālruņa krātuve (nav redzama citām lietotnēm)</string>
+    <string name="company">Uzņēmums</string>
+    <string name="job_position">Amats</string>
+    <string name="inserting">Ievieto…</string>
+    <string name="phone_storage">Tālruņa krātuve</string>
+    <string name="no_group_participants">Šī kopa ir tukša</string>
+    <string name="add_contacts">Pievienot kontaktpersonas</string>
+    <string name="remove_from_group">Noņemt no kopas</string>
+    <string name="select_account">Atlasīt kontu</string>
+</resources>
