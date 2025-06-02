@@ -39,9 +39,9 @@
     <string name="contacts">Kontakter</string>
     <string name="show_only_contacts_with_numbers">Kun vis kontakter med telefonnumre</string>
     <string name="no_favorites">Det ser ut til at du ikke har lagt til noen favorittkontakter enda.</string>
-    <string name="search_contacts">Søk etter kontakter</string>
-    <string name="search_favorites">Søk etter favoritter</string>
-    <string name="search_groups">Søk etter grupper</string>
+    <string name="search_contacts">Søk i kontakter</string>
+    <string name="search_favorites">Søk i favoritter</string>
+    <string name="search_groups">Søk i grupper</string>
     <string name="import_contacts">Importer kontakter</string>
     <string name="export_contacts">Eksporter kontakter</string>
     <string name="import_contacts_from_vcf">Importer kontakter fra en .vcf-fil</string>
@@ -67,5 +67,23 @@
     <plurals name="delete_groups">
         <item quantity="one">%d gruppe</item>
         <item quantity="other">%d grupper</item>
-    </plurals>    <string name="faq_1_title">Jeg vil endre hvilke felter som er synlige for kontakter. Kan jeg gjøre det\?</string>
+    </plurals>
+    <string name="faq_1_title">Jeg vil endre hvilke felter som er synlige for kontakter. Kan jeg gjøre det\?</string>
+    <string name="must_be_at_edit">Du må være på redigeringsskjermen for å endre en kontakt</string>
+    <string name="change_photo">Endre bilde</string>
+    <string name="target_contact_source">Mål for kontaktkilde</string>
+    <string name="show_private_contacts">Vis private kontakter i Fossify Phone, Fossify SMS Messenger og Fossify Calendar</string>
+    <string name="format_phone_numbers">Formatere telefonnumre</string>
+    <string name="street">Gate</string>
+    <string name="city">By</string>
+    <string name="neighborhood">Leilighet eller romnummer</string>
+    <string name="pobox">Postboks</string>
+    <string name="country">Land</string>
+    <string name="region">Fylke</string>
+    <string name="select_account">Velg konto</string>
+    <string name="merge_duplicate_contacts">Slå sammen dupliserte kontakter</string>
+    <string name="toggle_favorite">Slå av/på favoritt</string>
+    <string name="structured_addresses">Strukturerte adresser (redigeringsmodus)</string>
+    <string name="postcode">Postnummer</string>
+    <string name="faq_1_text">Ja, alt du trenger å gjøre er å gå til Innstillinger -&gt; Håndter viste kontaktfelt. Der kan du velge hvilke felt som skal være synlige. Noen av dem er til og med deaktivert som standard, så det kan hende du finner noen nye der.</string>
 </resources>
