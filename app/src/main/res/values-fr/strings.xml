@@ -60,7 +60,7 @@
     <string name="phone_numbers">Numéros de téléphone</string>
     <string name="emails">Adresses électroniques</string>
     <string name="addresses">Adresses</string>
-    <string name="events">Évènements (dates de naissance, dates anniversaires)</string>
+    <string name="events">Évènements (dates de naissance, anniversaires)</string>
     <string name="organization">Organisme</string>
     <string name="websites">Sites web</string>
     <string name="groups">Groupes</string>
@@ -80,11 +80,11 @@
     <string name="format_phone_numbers">Format des numéros de téléphone</string>
     <string name="street">Rue</string>
     <string name="pobox">Boite postale</string>
-    <string name="region">État</string>
-    <string name="country">Région</string>
+    <string name="region">Région</string>
+    <string name="country">Pays</string>
     <string name="neighborhood">Appartement ou numéro d\'entrée</string>
     <string name="city">Ville</string>
     <string name="postcode">Code postal</string>
-    <string name="select_account">Sélectionner le compte</string>
-    <string name="structured_addresses">Adresse structurée (modification)</string>
+    <string name="select_account">Sélectionner un compte</string>
+    <string name="structured_addresses">Adresses structurées (modification)</string>
 </resources>
