@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.1] - 2025-06-03
+
+### Changed
+
+- Updated translations
+
+### Fixed
+
+- Fixed crash on startup due to private contacts ([#281])
+- Fixed crash when creating new contacts
+
 ## [1.2.0] - 2025-05-31
 
 ### Added
@@ -49,7 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 
-[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.2.0...HEAD
+[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.2.1...HEAD
+[1.2.1]: https://github.com/FossifyOrg/Contacts/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/FossifyOrg/Contacts/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/FossifyOrg/Contacts/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/FossifyOrg/Contacts/compare/1.0.0...1.0.1
@@ -57,3 +69,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
+[#281]: https://github.com/FossifyOrg/Contacts/issues/281
