@@ -78,4 +78,13 @@
     <string name="faq_1_text">Sim, você só precisa modificar as definições em Configurações -&gt; Gerenciar os campos visíveis. Alguns campos estão desmarcados por padrão, então você encontrará alguns novos por lá.</string>
     <string name="show_private_contacts">Mostrar contatos privados para os apps Telefone, Mensagens e Calendário do Fossify</string>
     <string name="format_phone_numbers">Formatar números de telefone</string>
+    <string name="select_account">Selecionar conta</string>
+    <string name="country">País</string>
+    <string name="neighborhood">Número do apartamento ou suíte</string>
+    <string name="street">Rua</string>
+    <string name="city">Cidade</string>
+    <string name="postcode">Código postal</string>
+    <string name="pobox">Caixa postal</string>
+    <string name="structured_addresses">Endereços estruturados (modo de edição)</string>
+    <string name="region">Estado</string>
 </resources>
