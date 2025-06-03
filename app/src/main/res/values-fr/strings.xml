@@ -41,7 +41,7 @@
     <string name="show_private_contacts">Afficher les contacts privés pour Fossify Phone, Fossify SMS Messenger et Fossify Calendar</string>
     <string name="merge_duplicate_contacts">Fusionner les contacts en double</string>
     <string name="no_favorites">Il semble que vous n\'ayez pas encore ajouté de contacts favoris.</string>
-    <string name="toggle_favorite">Activer/désactiver le favori</string>
+    <string name="toggle_favorite">Ajouter/retirer des favoris</string>
     <string name="search_contacts">Rechercher des contacts</string>
     <string name="search_favorites">Rechercher des favoris</string>
     <string name="search_groups">Rechercher des groupes</string>
