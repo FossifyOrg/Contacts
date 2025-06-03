@@ -91,7 +91,7 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
 
         binding.insertEditMenu.onSearchClosedListener = {
             getAllFragments().forEach {
-                it.onSearchClosed()
+                it?.onSearchClosed()
             }
         }
 
@@ -139,7 +139,7 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
             override fun onPageSelected(position: Int) {
                 binding.insertEditTabsHolder.getTabAt(position)?.select()
                 getAllFragments().forEach {
-                    it.finishActMode()
+                    it?.finishActMode()
                 }
             }
         })
@@ -199,7 +199,12 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
         }
     }
 
-    private fun getAllFragments() = arrayListOf<MyViewPagerFragment<*>>(findViewById(R.id.contacts_fragment), findViewById(R.id.favorites_fragment))
+    private fun getAllFragments(): ArrayList<MyViewPagerFragment<*>?> {
+        return arrayListOf<MyViewPagerFragment<*>?>(
+            findViewById(R.id.contacts_fragment),
+            findViewById(R.id.favorites_fragment)
+        )
+    }
 
     private fun setupTabColors() {
         val activeView = binding.insertEditTabsHolder.getTabAt(binding.viewPager.currentItem)?.customView
