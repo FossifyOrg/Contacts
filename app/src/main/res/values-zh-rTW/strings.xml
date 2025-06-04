@@ -2,7 +2,7 @@
 <resources>
     <string name="app_launcher_name">簡易通訊錄</string>
     <string name="address">地址</string>
-    <string name="inserting">添加中…</string>
+    <string name="inserting">正在插入…</string>
     <string name="updating">正在更新…</string>
     <string name="phone_storage">手機儲存空間</string>
     <string name="phone_storage_hidden">手機儲存空間（其他應用程式無法檢視）</string>
@@ -77,4 +77,13 @@
     <string name="show_private_contacts">顯示私人聯絡人給 Fossify 電話、Fossify 簡訊與 Fossify 行事曆</string>
     <string name="format_phone_numbers">設定電話號碼格式</string>
     <string name="toggle_favorite">切換我的最愛</string>
+    <string name="street">街</string>
+    <string name="neighborhood">公寓或套房號碼</string>
+    <string name="city">城市</string>
+    <string name="pobox">郵政信箱</string>
+    <string name="region">州</string>
+    <string name="country">國家</string>
+    <string name="select_account">選取帳號</string>
+    <string name="postcode">郵遞區號</string>
+    <string name="structured_addresses">結構化地址（編輯模式）</string>
 </resources>
