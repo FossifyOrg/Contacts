@@ -42,7 +42,7 @@
     <string name="show_only_contacts_with_numbers">הצג רק אנשי קשר עם מספרי טלפון</string>
     <string name="merge_duplicate_contacts">מיזוג אנשי קשר כפולים</string>
     <string name="no_favorites">נראה שאין לך עדיין אנשי קשר מועדפים.</string>
-    <string name="toggle_favorite">החלף מועדף</string>
+    <string name="toggle_favorite">מתג מועדף</string>
     <string name="search_contacts">חיפוש אנשי קשר</string>
     <string name="search_favorites">חיפוש מועדפים</string>
     <string name="search_groups">חיפוש קבוצות</string>
