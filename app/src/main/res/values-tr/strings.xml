@@ -77,4 +77,13 @@
     <string name="faq_1_title">Rehberde görüntülenecek alanları değiştirmek istiyorum. Bunu yapabilir miyim?</string>
     <string name="faq_1_text">Evet, tek yapmanız gereken Ayarlar -&gt; Görüntülenecek kişi alanlarını yönet bölümüne gitmek. Orada hangi alanların görüntüleneceğini seçebilirsiniz. Bazıları öntanımlı olarak devre dışı bile olsa, orada bazı yenilerini bulabilirsiniz.</string>
     <string name="format_phone_numbers">Telefon numaralarını biçimlendir</string>
+    <string name="street">Sokak</string>
+    <string name="neighborhood">Apartman veya oda numarası</string>
+    <string name="city">Şehir</string>
+    <string name="pobox">Posta kutusu</string>
+    <string name="region">Eyalet</string>
+    <string name="country">Ülke</string>
+    <string name="select_account">Hesap seçin</string>
+    <string name="structured_addresses">Yapılanmış adres (düzenleme modu)</string>
+    <string name="postcode">Posta kodu</string>
 </resources>
