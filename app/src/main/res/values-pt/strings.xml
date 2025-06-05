@@ -3,9 +3,9 @@
     <string name="app_launcher_name">Contactos</string>
     <string name="address">Endereço</string>
     <string name="inserting">A inserir…</string>
-    <string name="updating">Atualizando…</string>
+    <string name="updating">A atualizar…</string>
     <string name="phone_storage">Armazenamento do telefone</string>
-    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outros aplicativos)</string>
+    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outras aplicações)</string>
     <string name="company">Empresa</string>
     <string name="job_position">Cargo</string>
     <string name="send_sms_to_contacts">Enviar SMS aos contactos</string>
@@ -78,4 +78,13 @@
     <string name="faq_1_text">Sim, basta aceder a Definições -&gt; Gerir campos a mostrar. Aqui, pode escolher os campos que serão mostrados. Alguns dos campos estão ocultos e, assim, pode mostrar alguns destes.</string>
     <string name="show_private_contacts">Partilhar contactos entre Fossify Phone, Fossify SMS Messenger e Fossify Calendar</string>
     <string name="format_phone_numbers">Formatar números de telefone</string>
+    <string name="street">Rua</string>
+    <string name="city">Cidade</string>
+    <string name="neighborhood">Número de apartamento ou lote</string>
+    <string name="postcode">Código postal</string>
+    <string name="pobox">Estação de correio</string>
+    <string name="country">País</string>
+    <string name="region">Distrito</string>
+    <string name="select_account">Seleção de conta</string>
+    <string name="structured_addresses">Endereços estruturados (edição)</string>
 </resources>
