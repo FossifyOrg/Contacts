@@ -77,4 +77,13 @@
         <item quantity="one">%d grupo</item>
         <item quantity="other">%d grupoj</item>
     </plurals>
+    <string name="street">Strato</string>
+    <string name="neighborhood">Apartamentnumero</string>
+    <string name="city">Urbo</string>
+    <string name="postcode">Poŝtkodo</string>
+    <string name="country">Lando</string>
+    <string name="region">Regiono</string>
+    <string name="pobox">Abonkesto</string>
+    <string name="select_account">Elekti konton</string>
+    <string name="structured_addresses">Strukturitaj adresoj (redaktado)</string>
 </resources>
