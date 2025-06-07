@@ -403,6 +403,10 @@ class ViewContactActivity : ContactActivity() {
                     }
 
                     defaultToggleIcon.isVisible = phoneNumber.isPrimary
+                    defaultToggleIcon.drawable?.apply {
+                        mutate()
+                        setTint(getProperTextColor())
+                    }
                 }
             }
             binding.contactNumbersImage.beVisible()
