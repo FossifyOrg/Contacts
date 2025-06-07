@@ -40,7 +40,7 @@
     <string name="manage_shown_contact_fields">Välj vilka kontaktfält som ska visas</string>
     <string name="contacts">Kontakter</string>
     <string name="show_only_contacts_with_numbers">Visa bara kontakter med telefonnummer</string>
-    <string name="merge_duplicate_contacts">Sammanfoga dubbla kontakter</string>
+    <string name="merge_duplicate_contacts">Sammanfoga dubblettkontakter</string>
     <string name="no_favorites">Det verkar som att du inte har lagt till några favoritkontakter ännu.</string>
     <string name="toggle_favorite">Växla favorit</string>
     <string name="search_contacts">Sök efter kontakter</string>
@@ -66,7 +66,7 @@
     <string name="groups">Grupper</string>
     <string name="contact_source">Kontaktkälla</string>
     <string name="instant_messaging">Snabbmeddelanden (IM)</string>
-    <string name="ringtone">Rington</string>
+    <string name="ringtone">Ringsignal</string>
     <string name="delete_from_all_sources">Kontakten kommer att tas bort från alla kontaktkällor.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d grupp</item>
@@ -77,4 +77,13 @@
     <string name="show_private_contacts">Visa privata kontakter för Fossify Phone, Fossify SMS Messenger och Fossify Calendar</string>
     <string name="prefix">Prefix</string>
     <string name="format_phone_numbers">Formatera telefonnummer</string>
+    <string name="street">Gata</string>
+    <string name="neighborhood">Lägenhets- eller svitnummer</string>
+    <string name="city">Stad</string>
+    <string name="postcode">Postnummer</string>
+    <string name="pobox">Postbox</string>
+    <string name="region">Delstat</string>
+    <string name="country">Land</string>
+    <string name="select_account">Välj konto</string>
+    <string name="structured_addresses">Strukturerade adresser (redigeringsläge)</string>
 </resources>
