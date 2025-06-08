@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed invisible preferred number indicator in light themes ([#289])
+
 ## [1.2.1] - 2025-06-03
 
 ### Changed
@@ -70,3 +74,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
 [#281]: https://github.com/FossifyOrg/Contacts/issues/281
+[#289]: https://github.com/FossifyOrg/Contacts/issues/289
