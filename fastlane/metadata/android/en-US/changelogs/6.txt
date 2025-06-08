@@ -1,0 +1,4 @@
+Fixed:
+
+• Fixed invisible preferred number indicator in light themes 
+
