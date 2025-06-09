@@ -78,4 +78,13 @@
     <string name="prefix">Prefix</string>
     <string name="format_phone_numbers">Formatează numerele de telefon</string>
     <string name="show_private_contacts">Afișează contacte private în Fossify Phone, Fossify SMS Messenger și Fossify Calendar</string>
+    <string name="pobox">Cutie poștală</string>
+    <string name="street">Stradă</string>
+    <string name="neighborhood">Apartament</string>
+    <string name="city">Oraș</string>
+    <string name="postcode">Cod poștal</string>
+    <string name="region">Regiune</string>
+    <string name="country">Țară</string>
+    <string name="select_account">Selectează contul</string>
+    <string name="structured_addresses">Adrese structurate (modul de editare)</string>
 </resources>
