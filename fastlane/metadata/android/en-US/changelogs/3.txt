@@ -7,5 +7,4 @@
 * Added a favorite button for contacts in groups
 * Replaced checkboxes with switches
 * Removed support for Android 7 and older versions
-* Other minor bug fixes and improvements
 * Added more translations
