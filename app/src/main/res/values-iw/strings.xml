@@ -54,7 +54,7 @@
     <string name="target_contact_source">מקור איש קשר יעד</string>
     <string name="include_contact_sources">כלול מקורות ליצירת קשר</string>
     <string name="filename_without_vcf">שם קובץ (ללא .vcf)</string>
-    <string name="dialpad">חייגן</string>
+    <string name="dialpad">לוח חיוג</string>
     <string name="add_number_to_contact">הוסף מספר לאיש קשר</string>
     <string name="prefix">קידומת</string>
     <string name="suffix">סיומת</string>
