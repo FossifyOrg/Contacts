@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Fossify - Contatos</string>
+    <string name="app_launcher_name">Contatos</string>
     <string name="address">Endereço</string>
     <string name="inserting">Inserindo…</string>
     <string name="updating">Atualizando…</string>
