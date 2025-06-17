@@ -1,0 +1,10 @@
+Changed:
+
+• Updated translations
+
+Fixed:
+
+• Fixed crash on startup due to private contacts
+• Fixed crash when creating new contacts
+• Fixed invisible preferred number indicator in light themes 
+
