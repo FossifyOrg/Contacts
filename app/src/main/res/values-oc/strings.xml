@@ -77,4 +77,13 @@
     <string name="delete_from_all_sources">Lo contacte serà suprimit de totas las originas del contacte.</string>
     <string name="faq_1_title">Vòli modificar los camps mostrats als contactes. O pòdi far ?</string>
     <string name="faq_1_text">Òc, tot çò que devètz far es anar als Paramètres -&gt; Gerir los camps del contacte mostrats. Aquí podètz seleccionar quines camps devon èsser visibles. Qualques-uns son quitament desactivats per defaut, doncas ne podriàtz trobar de novèls enlai.</string>
+    <string name="street">Carrièra</string>
+    <string name="neighborhood">Apartament o numèro de dintrada</string>
+    <string name="city">Vila</string>
+    <string name="postcode">Còdi postal</string>
+    <string name="pobox">Bóstia postala</string>
+    <string name="region">Region</string>
+    <string name="country">País</string>
+    <string name="select_account">Seleccionar un compte</string>
+    <string name="structured_addresses">Adreças estructuradas (mòde edicion)</string>
 </resources>
