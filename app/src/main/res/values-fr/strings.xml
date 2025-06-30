@@ -42,7 +42,7 @@
     <string name="merge_duplicate_contacts">Fusionner les contacts en double</string>
     <string name="no_favorites">Il semble que vous n\'ayez pas encore ajouté de contacts favoris.</string>
     <string name="toggle_favorite">Ajouter/retirer des favoris</string>
-    <string name="search_contacts">Rechercher des contacts</string>
+    <string name="search_contacts">Recherche de contacts</string>
     <string name="search_favorites">Rechercher des favoris</string>
     <string name="search_groups">Rechercher des groupes</string>
     <string name="import_contacts">Importer des contacts</string>
