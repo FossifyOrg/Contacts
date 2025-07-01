@@ -102,20 +102,9 @@
         errorLine1="app-build-targetSDK = &quot;34&quot;"
         errorLine2="                      ~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
             line="24"
             column="23"/>
-    </issue>
-
-    <issue
-        id="UnusedAttribute"
-        message="Attribute `localeConfig` is only used in API level 33 and higher (current min is 26)"
-        errorLine1="        android:localeConfig=&quot;@xml/locale_config&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="src/main/AndroidManifest.xml"
-            line="42"
-            column="9"/>
     </issue>
 
     <issue
@@ -125,7 +114,7 @@
         errorLine2="                ^">
         <location
             file="src/main/AndroidManifest.xml"
-            line="136"
+            line="135"
             column="17"/>
     </issue>
 
@@ -179,53 +168,20 @@
         errorLine1="distributionUrl=https\://services.gradle.org/distributions/gradle-8.11.1-bin.zip"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/wrapper/gradle-wrapper.properties"
+            file="$HOME/work/Contacts/Contacts/gradle/wrapper/gradle-wrapper.properties"
             line="3"
             column="17"/>
     </issue>
 
     <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-compiler than 2.7.1 is available: 2.7.2"
-        errorLine1="room = &quot;2.7.1&quot;"
-        errorLine2="       ~~~~~~~">
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.10.1 is available: 8.11.0"
+        errorLine1="gradlePlugins-agp = &quot;8.10.1&quot;"
+        errorLine2="                    ~~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
-            line="17"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-ktx than 2.7.1 is available: 2.7.2"
-        errorLine1="room = &quot;2.7.1&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
-            line="17"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-runtime than 2.7.1 is available: 2.7.2"
-        errorLine1="room = &quot;2.7.1&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
-            line="17"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of org.fossify:commons than 3.0.5 is available: 3.1.0"
-        errorLine1="commons = &quot;3.0.5&quot;"
-        errorLine2="          ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
-            line="19"
-            column="11"/>
+            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
+            line="21"
+            column="21"/>
     </issue>
 
     <issue
@@ -234,7 +190,7 @@
         errorLine1="app-build-compileSDKVersion = &quot;34&quot;"
         errorLine2="                              ~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
             line="23"
             column="31"/>
     </issue>
@@ -1329,7 +1285,7 @@
         errorLine2="         ~~~~~~~~">
         <location
             file="src/main/AndroidManifest.xml"
-            line="241"
+            line="240"
             column="10"/>
     </issue>
 
