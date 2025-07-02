@@ -77,4 +77,13 @@
     </plurals>
     <string name="faq_1_title">मैं बदलना चाहता हूं कि संपर्कों पर कौन से फ़ील्ड दिखाई दें। क्या मैं यह कर सकता हूं?</string>
     <string name="format_phone_numbers">फोन नंबर प्रारूपित करें</string>
+    <string name="street">मार्ग</string>
+    <string name="neighborhood">अपार्टमेंट या सुइट नंबर</string>
+    <string name="city">शहर</string>
+    <string name="postcode">डाक कोड</string>
+    <string name="pobox">डाक - बक्स</string>
+    <string name="region">राज्य</string>
+    <string name="country">देश</string>
+    <string name="select_account">खाता चुनें</string>
+    <string name="structured_addresses">संरचित पते (संपादन मोड)</string>
 </resources>
