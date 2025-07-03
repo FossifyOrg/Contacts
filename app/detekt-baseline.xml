@@ -27,16 +27,8 @@
     <ID>ImplicitDefaultLocale:VcfImporter.kt$VcfImporter$String.format("%02d", partialDate.month)</ID>
     <ID>LargeClass:EditContactActivity.kt$EditContactActivity : ContactActivity</ID>
     <ID>LargeClass:ViewContactActivity.kt$ViewContactActivity : ContactActivity</ID>
-    <ID>LongMethod:ContactsAdapter.kt$ContactsAdapter$private fun setupView(view: View, contact: Contact, holder: ViewHolder)</ID>
-    <ID>LongMethod:Context.kt$fun Context.backupContacts()</ID>
-    <ID>LongMethod:EditContactActivity.kt$EditContactActivity$private fun gotContact()</ID>
-    <ID>LongMethod:SelectContactsAdapter.kt$SelectContactsAdapter.ViewHolder$fun bindView(contact: Contact): View</ID>
     <ID>LongMethod:VcfExporter.kt$VcfExporter$@RequiresApi(Build.VERSION_CODES.P) fun exportContacts( context: Context, outputStream: OutputStream?, contacts: ArrayList&lt;Contact&gt;, showExportingToast: Boolean, version: VCardVersion = VCardVersion.V4_0, callback: (result: ExportResult) -&gt; Unit, )</ID>
     <ID>LongMethod:VcfImporter.kt$VcfImporter$fun importContacts(path: String, targetContactSource: String): ImportResult</ID>
-    <ID>LongMethod:ViewContactActivity.kt$ViewContactActivity$private fun setupContactSources()</ID>
-    <ID>LongMethod:ViewContactActivity.kt$ViewContactActivity$private fun setupPhoneNumbers()</ID>
-    <ID>LongParameterList:ContactsAdapter.kt$ContactsAdapter$( activity: SimpleActivity, var contactItems: MutableList&lt;Contact&gt;, recyclerView: MyRecyclerView, highlightText: String = "", var viewType: Int = VIEW_TYPE_LIST, private val refreshListener: RefreshContactsListener?, private val location: Int, private val removeListener: RemoveFromGroupListener?, private val enableDrag: Boolean = false, itemClick: (Any) -&gt; Unit )</ID>
-    <ID>LongParameterList:VcfExporter.kt$VcfExporter$( context: Context, outputStream: OutputStream?, contacts: ArrayList&lt;Contact&gt;, showExportingToast: Boolean, version: VCardVersion = VCardVersion.V4_0, callback: (result: ExportResult) -&gt; Unit, )</ID>
     <ID>MagicNumber:AutomaticBackupReceiver.kt$AutomaticBackupReceiver$3000</ID>
     <ID>MagicNumber:Constants.kt$6</ID>
     <ID>MagicNumber:ContactActivity.kt$ContactActivity$1500</ID>
