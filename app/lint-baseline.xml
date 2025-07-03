@@ -102,8 +102,8 @@
         errorLine1="app-build-targetSDK = &quot;34&quot;"
         errorLine2="                      ~~~~">
         <location
-            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
-            line="24"
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="25"
             column="23"/>
     </issue>
 
@@ -168,7 +168,7 @@
         errorLine1="distributionUrl=https\://services.gradle.org/distributions/gradle-8.11.1-bin.zip"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="$HOME/work/Contacts/Contacts/gradle/wrapper/gradle-wrapper.properties"
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/wrapper/gradle-wrapper.properties"
             line="3"
             column="17"/>
     </issue>
@@ -179,9 +179,20 @@
         errorLine1="gradlePlugins-agp = &quot;8.10.1&quot;"
         errorLine2="                    ~~~~~~~~">
         <location
-            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
-            line="21"
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="22"
             column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin.android than 2.1.21 is available: 2.2.0"
+        errorLine1="kotlin = &quot;2.1.21&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
     </issue>
 
     <issue
@@ -190,8 +201,8 @@
         errorLine1="app-build-compileSDKVersion = &quot;34&quot;"
         errorLine2="                              ~~~~">
         <location
-            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
-            line="23"
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="24"
             column="31"/>
     </issue>
 
