@@ -78,4 +78,10 @@
     <string name="show_private_contacts">Erakutsi kontaktu pribatuak Fossify Phone, Fossify SMS Messenger eta Fossify Calendar-en</string>
     <string name="format_phone_numbers">Eman formatu telefono-zenbakiei</string>
     <string name="street">Kalea</string>
+    <string name="neighborhood">Apartamentu edo suite zenbakia</string>
+    <string name="city">Hiria</string>
+    <string name="postcode">Posta kodea</string>
+    <string name="pobox">Posta bulegoko kutxa</string>
+    <string name="region">Egoera</string>
+    <string name="country">Herrialdea</string>
 </resources>
