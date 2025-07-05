@@ -78,4 +78,13 @@
     <string name="faq_1_text">Da, idi u Postavke -&gt; Upravljaj prikazanim poljima kontakta. Tamo možeš odabrati vidljiva polja. Neka od njih su čak standardno deaktivirana, tako da možeš pronaći neka nova.</string>
     <string name="show_private_contacts">Prikaži privatne kontakte u aplikacijama Fossify telefon, Fossify SMS Messenger i Fossify kalendar</string>
     <string name="format_phone_numbers">Formatiraj telefonske brojeve</string>
+    <string name="street">Ulica</string>
+    <string name="neighborhood">Broj apartmana ili stana</string>
+    <string name="city">Grad</string>
+    <string name="postcode">Poštanski broj</string>
+    <string name="pobox">Poštanski pretinac</string>
+    <string name="region">Savezna država</string>
+    <string name="country">Zemlja</string>
+    <string name="select_account">Odaberi račun</string>
+    <string name="structured_addresses">Strukturirane adrese (modus uređivanja)</string>
 </resources>
