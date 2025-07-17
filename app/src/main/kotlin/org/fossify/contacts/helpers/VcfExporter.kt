@@ -1,13 +1,11 @@
 package org.fossify.contacts.helpers
 
 import android.content.Context
-import android.os.Build
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Event
 import android.provider.ContactsContract.CommonDataKinds.Im
 import android.provider.ContactsContract.CommonDataKinds.Phone
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
-import androidx.annotation.RequiresApi
 import androidx.core.net.toUri
 import ezvcard.Ezvcard
 import ezvcard.VCard
@@ -31,7 +29,6 @@ class VcfExporter {
     private var contactsExported = 0
     private var contactsFailed = 0
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun exportContacts(
         context: Context,
         outputStream: OutputStream?,
