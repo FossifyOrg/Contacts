@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- All contact exports now use the vCard 4.0 format
+
 ## [1.2.2] - 2025-06-17
 
 ### Changed
