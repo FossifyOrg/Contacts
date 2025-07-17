@@ -139,7 +139,7 @@ class VcfImporter(val activity: SimpleActivity) {
                     }
 
                     address = address.trim()
-                    if (address.isNotEmpty() == true) {
+                    if (address.isNotEmpty()) {
                         addresses.add(
                             Address(
                                 value = address,
@@ -229,44 +229,50 @@ class VcfImporter(val activity: SimpleActivity) {
                         else -> Im.PROTOCOL_CUSTOM
                     }
 
-                    val label = if (type == Im.PROTOCOL_CUSTOM) URLDecoder.decode(
-                        typeString,
-                        "UTF-8"
-                    ) else ""
+                    val label = if (type == Im.PROTOCOL_CUSTOM) {
+                        URLDecoder.decode(
+                            typeString,
+                            "UTF-8"
+                        )
+                    } else {
+                        ""
+                    }
                     val IM = IM(value, type, label)
                     IMs.add(IM)
                 }
 
                 val contact = Contact(
-                    0,
-                    prefix,
-                    firstName,
-                    middleName,
-                    surname,
-                    suffix,
-                    nickname,
-                    photoUri,
-                    phoneNumbers,
-                    emails,
-                    addresses,
-                    events,
-                    targetContactSource,
-                    starred,
-                    contactId,
-                    thumbnailUri,
-                    photo,
-                    notes,
-                    groups,
-                    organization,
-                    websites,
-                    IMs,
-                    DEFAULT_MIMETYPE,
-                    ringtone
+                    id = 0,
+                    prefix = prefix,
+                    firstName = firstName,
+                    middleName = middleName,
+                    surname = surname,
+                    suffix = suffix,
+                    nickname = nickname,
+                    photoUri = photoUri,
+                    phoneNumbers = phoneNumbers,
+                    emails = emails,
+                    addresses = addresses,
+                    events = events,
+                    source = targetContactSource,
+                    starred = starred,
+                    contactId = contactId,
+                    thumbnailUri = thumbnailUri,
+                    photo = photo,
+                    notes = notes,
+                    groups = groups,
+                    organization = organization,
+                    websites = websites,
+                    IMs = IMs,
+                    mimetype = DEFAULT_MIMETYPE,
+                    ringtone = ringtone
                 )
 
                 // if there is no N and ORG fields at the given contact, only FN, treat it as an organization
-                if (contact.getNameToDisplay()
-                        .isEmpty() && contact.organization.isEmpty() && ezContact.formattedName?.value?.isNotEmpty() == true
+                if (
+                    contact.getNameToDisplay().isEmpty()
+                    && contact.organization.isEmpty()
+                    && ezContact.formattedName?.value?.isNotEmpty() == true
                 ) {
                     contact.organization.company = ezContact.formattedName.value
                     contact.mimetype = CommonDataKinds.Organization.CONTENT_ITEM_TYPE
