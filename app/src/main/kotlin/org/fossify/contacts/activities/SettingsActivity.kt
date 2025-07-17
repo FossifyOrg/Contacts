@@ -371,7 +371,12 @@ class SettingsActivity : SimpleActivity() {
             if (contacts.isEmpty()) {
                 toast(org.fossify.commons.R.string.no_entries_for_exporting)
             } else {
-                VcfExporter().exportContacts(this, outputStream, contacts, true) { result ->
+                VcfExporter().exportContacts(
+                    context = this,
+                    outputStream = outputStream,
+                    contacts = contacts,
+                    showExportingToast = true
+                ) { result ->
                     toast(
                         when (result) {
                             VcfExporter.ExportResult.EXPORT_OK -> org.fossify.commons.R.string.exporting_successful

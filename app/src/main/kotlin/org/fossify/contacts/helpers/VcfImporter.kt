@@ -32,7 +32,7 @@ import org.fossify.contacts.helpers.VcfImporter.ImportResult.IMPORT_PARTIAL
 import java.io.File
 import java.io.FileOutputStream
 import java.net.URLDecoder
-import java.util.Date
+import java.time.LocalDate
 import java.util.Locale
 
 class VcfImporter(val activity: SimpleActivity) {
@@ -139,7 +139,7 @@ class VcfImporter(val activity: SimpleActivity) {
                     }
 
                     address = address.trim()
-                    if (address.isNotEmpty() == true) {
+                    if (address.isNotEmpty()) {
                         addresses.add(
                             Address(
                                 value = address,
@@ -161,7 +161,7 @@ class VcfImporter(val activity: SimpleActivity) {
                 ezContact.anniversaries.forEach { anniversary ->
                     val event = if (anniversary.date != null) {
                         Event(
-                            formatDateToDayCode(anniversary.date),
+                            formatDateToDayCode(LocalDate.from(anniversary.date)),
                             CommonDataKinds.Event.TYPE_ANNIVERSARY
                         )
                     } else {
@@ -176,7 +176,7 @@ class VcfImporter(val activity: SimpleActivity) {
                 ezContact.birthdays.forEach { birthday ->
                     val event = if (birthday.date != null) {
                         Event(
-                            formatDateToDayCode(birthday.date),
+                            formatDateToDayCode(LocalDate.from(birthday.date)),
                             CommonDataKinds.Event.TYPE_BIRTHDAY
                         )
                     } else {
@@ -229,44 +229,50 @@ class VcfImporter(val activity: SimpleActivity) {
                         else -> Im.PROTOCOL_CUSTOM
                     }
 
-                    val label = if (type == Im.PROTOCOL_CUSTOM) URLDecoder.decode(
-                        typeString,
-                        "UTF-8"
-                    ) else ""
+                    val label = if (type == Im.PROTOCOL_CUSTOM) {
+                        URLDecoder.decode(
+                            typeString,
+                            "UTF-8"
+                        )
+                    } else {
+                        ""
+                    }
                     val IM = IM(value, type, label)
                     IMs.add(IM)
                 }
 
                 val contact = Contact(
-                    0,
-                    prefix,
-                    firstName,
-                    middleName,
-                    surname,
-                    suffix,
-                    nickname,
-                    photoUri,
-                    phoneNumbers,
-                    emails,
-                    addresses,
-                    events,
-                    targetContactSource,
-                    starred,
-                    contactId,
-                    thumbnailUri,
-                    photo,
-                    notes,
-                    groups,
-                    organization,
-                    websites,
-                    IMs,
-                    DEFAULT_MIMETYPE,
-                    ringtone
+                    id = 0,
+                    prefix = prefix,
+                    firstName = firstName,
+                    middleName = middleName,
+                    surname = surname,
+                    suffix = suffix,
+                    nickname = nickname,
+                    photoUri = photoUri,
+                    phoneNumbers = phoneNumbers,
+                    emails = emails,
+                    addresses = addresses,
+                    events = events,
+                    source = targetContactSource,
+                    starred = starred,
+                    contactId = contactId,
+                    thumbnailUri = thumbnailUri,
+                    photo = photo,
+                    notes = notes,
+                    groups = groups,
+                    organization = organization,
+                    websites = websites,
+                    IMs = IMs,
+                    mimetype = DEFAULT_MIMETYPE,
+                    ringtone = ringtone
                 )
 
                 // if there is no N and ORG fields at the given contact, only FN, treat it as an organization
-                if (contact.getNameToDisplay()
-                        .isEmpty() && contact.organization.isEmpty() && ezContact.formattedName?.value?.isNotEmpty() == true
+                if (
+                    contact.getNameToDisplay().isEmpty()
+                    && contact.organization.isEmpty()
+                    && ezContact.formattedName?.value?.isNotEmpty() == true
                 ) {
                     contact.organization.company = ezContact.formattedName.value
                     contact.mimetype = CommonDataKinds.Organization.CONTENT_ITEM_TYPE
@@ -292,17 +298,21 @@ class VcfImporter(val activity: SimpleActivity) {
         }
     }
 
-    private fun formatDateToDayCode(date: Date): String {
-        val year = if (date.year == 0) "-" else "${1900 + date.year}"
-        val month = String.format("%02d", date.month + 1)
-        val day = String.format("%02d", date.date)
-        return "$year-$month-$day"
+    private fun formatDateToDayCode(date: LocalDate): String {
+        if (date.year == 1900) {
+            // for backward compatibility with old exports
+            return "--%02d-%02d".format(date.monthValue, date.dayOfMonth)
+        }
+
+        return "%04d-%02d-%02d".format(
+            date.year, date.monthValue, date.dayOfMonth
+        )
     }
 
     private fun formatPartialDateToDayCode(partialDate: PartialDate): String {
-        val month = String.format("%02d", partialDate.month)
-        val day = String.format("%02d", partialDate.date)
-        return "--$month-$day"
+        return "--%02d-%02d".format(
+            partialDate.month, partialDate.date
+        )
     }
 
     private fun getContactGroups(ezContact: VCard): ArrayList<Group> {

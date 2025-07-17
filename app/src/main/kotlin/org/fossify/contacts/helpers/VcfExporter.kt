@@ -1,26 +1,25 @@
 package org.fossify.contacts.helpers
 
 import android.content.Context
-import android.os.Build
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Event
 import android.provider.ContactsContract.CommonDataKinds.Im
 import android.provider.ContactsContract.CommonDataKinds.Phone
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
-import androidx.annotation.RequiresApi
 import androidx.core.net.toUri
 import ezvcard.Ezvcard
 import ezvcard.VCard
 import ezvcard.VCardVersion
 import ezvcard.parameter.ImageType
 import ezvcard.property.*
+import ezvcard.util.PartialDate
 import org.fossify.commons.extensions.getDateTimeFromDateString
 import org.fossify.commons.extensions.showErrorToast
 import org.fossify.commons.extensions.toast
 import org.fossify.commons.models.contacts.Contact
 import org.fossify.contacts.helpers.VcfExporter.ExportResult.EXPORT_FAIL
 import java.io.OutputStream
-import java.util.Calendar
+import java.time.LocalDate
 
 class VcfExporter {
     enum class ExportResult {
@@ -30,7 +29,6 @@ class VcfExporter {
     private var contactsExported = 0
     private var contactsFailed = 0
 
-    @RequiresApi(Build.VERSION_CODES.P)
     fun exportContacts(
         context: Context,
         outputStream: OutputStream?,
@@ -95,20 +93,25 @@ class VcfExporter {
                 contact.events.forEach { event ->
                     if (event.type == Event.TYPE_ANNIVERSARY || event.type == Event.TYPE_BIRTHDAY) {
                         val dateTime = event.value.getDateTimeFromDateString(false)
-                        Calendar.getInstance().apply {
-                            clear()
-                            if (event.value.startsWith("--")) {
-                                set(Calendar.YEAR, 1900)
-                            } else {
-                                set(Calendar.YEAR, dateTime.year)
+                        if (event.value.startsWith("--")) {
+                            val partial = PartialDate.builder()
+                                .month(dateTime.monthOfYear)
+                                .date(dateTime.dayOfMonth)
+                                .build()
 
-                            }
-                            set(Calendar.MONTH, dateTime.monthOfYear - 1)
-                            set(Calendar.DAY_OF_MONTH, dateTime.dayOfMonth)
                             if (event.type == Event.TYPE_BIRTHDAY) {
-                                card.birthdays.add(Birthday(time))
+                                card.birthdays.add(Birthday(partial))
                             } else {
-                                card.anniversaries.add(Anniversary(time))
+                                card.anniversaries.add(Anniversary(partial))
+                            }
+                        } else {
+                            val date = LocalDate
+                                .of(dateTime.year, dateTime.monthOfYear, dateTime.dayOfMonth)
+
+                            if (event.type == Event.TYPE_BIRTHDAY) {
+                                card.birthdays.add(Birthday(date))
+                            } else {
+                                card.anniversaries.add(Anniversary(date))
                             }
                         }
                     }
