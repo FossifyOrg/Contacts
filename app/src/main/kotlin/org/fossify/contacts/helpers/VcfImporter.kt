@@ -32,7 +32,7 @@ import org.fossify.contacts.helpers.VcfImporter.ImportResult.IMPORT_PARTIAL
 import java.io.File
 import java.io.FileOutputStream
 import java.net.URLDecoder
-import java.util.Date
+import java.time.LocalDate
 import java.util.Locale
 
 class VcfImporter(val activity: SimpleActivity) {
@@ -161,7 +161,7 @@ class VcfImporter(val activity: SimpleActivity) {
                 ezContact.anniversaries.forEach { anniversary ->
                     val event = if (anniversary.date != null) {
                         Event(
-                            formatDateToDayCode(anniversary.date),
+                            formatDateToDayCode(LocalDate.from(anniversary.date)),
                             CommonDataKinds.Event.TYPE_ANNIVERSARY
                         )
                     } else {
@@ -176,7 +176,7 @@ class VcfImporter(val activity: SimpleActivity) {
                 ezContact.birthdays.forEach { birthday ->
                     val event = if (birthday.date != null) {
                         Event(
-                            formatDateToDayCode(birthday.date),
+                            formatDateToDayCode(LocalDate.from(birthday.date)),
                             CommonDataKinds.Event.TYPE_BIRTHDAY
                         )
                     } else {
@@ -292,17 +292,21 @@ class VcfImporter(val activity: SimpleActivity) {
         }
     }
 
-    private fun formatDateToDayCode(date: Date): String {
-        val year = if (date.year == 0) "-" else "${1900 + date.year}"
-        val month = String.format("%02d", date.month + 1)
-        val day = String.format("%02d", date.date)
-        return "$year-$month-$day"
+    private fun formatDateToDayCode(date: LocalDate): String {
+        if (date.year == 1900) {
+            // for backward compatibility with old exports
+            return "--%02d-%02d".format(date.monthValue, date.dayOfMonth)
+        }
+
+        return "%04d-%02d-%02d".format(
+            date.year, date.monthValue, date.dayOfMonth
+        )
     }
 
     private fun formatPartialDateToDayCode(partialDate: PartialDate): String {
-        val month = String.format("%02d", partialDate.month)
-        val day = String.format("%02d", partialDate.date)
-        return "--$month-$day"
+        return "--%02d-%02d".format(
+            partialDate.month, partialDate.date
+        )
     }
 
     private fun getContactGroups(ezContact: VCard): ArrayList<Group> {
