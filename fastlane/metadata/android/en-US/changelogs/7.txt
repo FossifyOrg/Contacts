@@ -1,0 +1,5 @@
+Changed:
+
+• All contact exports now use the vCard 4.0 format
+• Updated translations
+
