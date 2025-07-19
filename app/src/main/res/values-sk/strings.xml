@@ -73,6 +73,14 @@
         <item quantity="one">%d skupinu</item>
         <item quantity="few">%d skupiny</item>
         <item quantity="other">%d skupín</item>
-    </plurals>    <string name="faq_1_title">Chcem upraviť viditeľné polia kontaktov. Dá sa to?</string>
+    </plurals>
+    <string name="faq_1_title">Chcem upraviť viditeľné polia kontaktov. Dá sa to?</string>
     <string name="faq_1_text">Áno, stačí ísť do Nastavenia -&gt; Spravovať zobrazené polia kontaktov. Tam si viete zvoliť, ktoré polia majú byť viditeľné. Niektoré sú v predvolenom stave vypnuté, čiže tam môžete objaviť aj nové.</string>
+    <string name="street">Ulica</string>
+    <string name="neighborhood">Číslo kancelárie alebo bytu</string>
+    <string name="city">Mesto</string>
+    <string name="postcode">PSČ</string>
+    <string name="pobox">P.O. Box</string>
+    <string name="region">Štát</string>
+    <string name="country">Krajina</string>
 </resources>
