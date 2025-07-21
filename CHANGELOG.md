@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - All contact exports now use the vCard 4.0 format
+- Preference category labels now use sentence case
 
 ## [1.2.2] - 2025-06-17
 
