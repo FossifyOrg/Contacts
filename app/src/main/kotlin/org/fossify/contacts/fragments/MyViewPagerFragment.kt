@@ -129,7 +129,9 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
         val filtered = when (this) {
             is GroupsFragment -> contacts
             is FavoritesFragment -> {
-                val favouriteContacts = contacts.filter { it.starred == 1 }
+                val contactSources = activity!!.getVisibleContactSources()
+                val favouriteContacts = contacts
+                    .filter { it.starred == 1 && contactSources.contains(it.source) }
 
                 if (activity!!.config.isCustomOrderSelected) {
                     sortFavourites(favouriteContacts)
