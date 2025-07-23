@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - All contact exports now use the vCard 4.0 format
 - Preference category labels now use sentence case
 
+### Fixed
+
+- Filtering now works correctly on the favorites tab ([#78])
+
 ## [1.2.2] - 2025-06-17
 
 ### Changed
@@ -84,6 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.0.0]: https://github.com/FossifyOrg/Contacts/releases/tag/1.0.0
 
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
+[#78]: https://github.com/FossifyOrg/Contacts/issues/78
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
 [#281]: https://github.com/FossifyOrg/Contacts/issues/281
 [#289]: https://github.com/FossifyOrg/Contacts/issues/289
