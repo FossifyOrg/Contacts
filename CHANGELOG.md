@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Filtering now works correctly on the favorites tab ([#78])
+- Filtering contacts now works correctly on the favorites tab ([#78])
 
 ## [1.2.2] - 2025-06-17
 
