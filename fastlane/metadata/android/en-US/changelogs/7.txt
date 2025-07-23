@@ -1,0 +1,10 @@
+Changed:
+
+• All contact exports now use the vCard 4.0 format
+• Preference category labels now use sentence case
+• Updated translations
+
+Fixed:
+
+• Filtering contacts now works correctly on the favorites tab 
+
