@@ -84,4 +84,6 @@
     <string name="pobox">Posta bulegoko kutxa</string>
     <string name="region">Egoera</string>
     <string name="country">Herrialdea</string>
+    <string name="select_account">Hautatu kontua</string>
+    <string name="structured_addresses">Helbide egituratuak (edizio modua)</string>
 </resources>
