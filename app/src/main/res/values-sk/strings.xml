@@ -83,4 +83,8 @@
     <string name="pobox">P.O. Box</string>
     <string name="region">Štát</string>
     <string name="country">Krajina</string>
+    <string name="select_account">Vybrať účet</string>
+    <string name="format_phone_numbers">Formátovať telefónne čísla</string>
+    <string name="show_private_contacts">Zobraziť súkromné kontakty vo Fossify Phone, Fossify SMS Messenger a Fossify Calendar</string>
+    <string name="structured_addresses">Štruktúrovaná adresa (režim úprav)</string>
 </resources>
