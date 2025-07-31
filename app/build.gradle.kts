@@ -137,7 +137,7 @@ detekt {
 }
 
 dependencies {
-    implementation(libs.fossify.commons)
+	implementation("org.fossify:commons:naveensingh~quick-fix-syncable-contacts-SNAPSHOT")
     implementation(libs.androidx.swiperefreshlayout)
     implementation(libs.autofittextview)
     implementation(libs.ezvcard)
