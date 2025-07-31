@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Fixed issue with contacts not displaying when syncing via DAVx⁵ ([#339])
 
 ## [1.2.3] - 2025-07-23
 ### Changed
@@ -71,6 +73,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
 [#281]: https://github.com/FossifyOrg/Contacts/issues/281
 [#289]: https://github.com/FossifyOrg/Contacts/issues/289
+[#339]: https://github.com/FossifyOrg/Contacts/issues/339
 
 [Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.2.3...HEAD
 [1.2.3]: https://github.com/FossifyOrg/Contacts/compare/1.2.2...1.2.3
