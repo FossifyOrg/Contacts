@@ -78,4 +78,13 @@
     <string name="faq_1_text">Si può farlo andando in Impostazioni -&gt; Gestisci i campi mostrati. Qui si possono selezionare i campi che saranno visibili, alcuni sono disabilitati in maniera predefinita, quindi si possono trovare campi aggiuntivi.</string>
     <string name="show_private_contacts">Mostra i contatti privati a Telefono Fossify, Messaggi Fossify e Calendario Fossify</string>
     <string name="format_phone_numbers">Formatta i numeri di telefono</string>
+    <string name="street">Via</string>
+    <string name="neighborhood">Numero dell\'appartamento o della suite</string>
+    <string name="city">Città</string>
+    <string name="postcode">Codice postale</string>
+    <string name="pobox">Casella postale</string>
+    <string name="country">Nazione</string>
+    <string name="region">Stato</string>
+    <string name="select_account">Seleziona profilo</string>
+    <string name="structured_addresses">Indirizzi strutturati (modalità di modifica)</string>
 </resources>
