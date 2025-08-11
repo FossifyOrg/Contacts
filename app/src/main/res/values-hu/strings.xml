@@ -77,4 +77,12 @@
     <string name="faq_1_text">Igen, csak menjen a Beállítások -&gt; Megjelenítendő névjegymezők kezelése menüponthoz. Itt kiválaszthatja a megjelenítendő mezőket. Néhány már alapértelmezés szerint sem jelenik meg, így más, új mezőket is találhat itt.</string>
     <string name="show_private_contacts">Privát névjegyek megjelenítése a Fossify Telefon, a Fossify Üzenetek és a Fossify Naptár számára</string>
     <string name="format_phone_numbers">Telefonszámok formázása</string>
+    <string name="street">Utca</string>
+    <string name="neighborhood">Apartman vagy lakosztály száma</string>
+    <string name="city">Város</string>
+    <string name="postcode">Irányítószám</string>
+    <string name="pobox">Postafiók</string>
+    <string name="region">Állam</string>
+    <string name="country">Ország</string>
+    <string name="select_account">Fiók kiválasztása</string>
 </resources>
