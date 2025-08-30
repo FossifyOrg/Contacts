@@ -77,4 +77,13 @@
     <string name="faq_1_text">Si, chega con acceder a Axustes -&gt; Xestionar campos mostrados. Aquí, pode escoller os campos que serán mostrados. Algúns dos campos xa están agochados e así pode mostrar algúns destes.</string>
     <string name="show_private_contacts">Mostrar os contactos privados en Fossify Phone, Fossify SMS Messenger e Fossify Calendar</string>
     <string name="format_phone_numbers">Formato dos números de teléfono</string>
+    <string name="street">Rúa</string>
+    <string name="neighborhood">Número de apartamento ou habitación</string>
+    <string name="city">Cidade</string>
+    <string name="postcode">Código postal</string>
+    <string name="pobox">Apartado de Correos</string>
+    <string name="region">Estado</string>
+    <string name="country">País</string>
+    <string name="select_account">Escolle a conta</string>
+    <string name="structured_addresses">Enderezos estruturados (modo edición)</string>
 </resources>
