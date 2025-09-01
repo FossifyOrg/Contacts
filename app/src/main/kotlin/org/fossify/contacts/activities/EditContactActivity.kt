@@ -297,23 +297,29 @@ class EditContactActivity : ContactActivity() {
     }
 
     override fun onBackPressed() {
+        maybeShowUnsavedChangesDialog {
+            super.onBackPressed()
+        }
+    }
+
+    private fun maybeShowUnsavedChangesDialog(discard: () -> Unit) {
         if (System.currentTimeMillis() - mLastSavePromptTS > SAVE_DISCARD_PROMPT_INTERVAL && hasContactChanged()) {
             mLastSavePromptTS = System.currentTimeMillis()
             ConfirmationAdvancedDialog(
-                this,
-                "",
-                org.fossify.commons.R.string.save_before_closing,
-                org.fossify.commons.R.string.save,
-                org.fossify.commons.R.string.discard
+                activity = this,
+                message = "",
+                messageId = org.fossify.commons.R.string.save_before_closing,
+                positive = org.fossify.commons.R.string.save,
+                negative = org.fossify.commons.R.string.discard
             ) {
                 if (it) {
                     saveContact()
                 } else {
-                    super.onBackPressed()
+                    discard()
                 }
             }
         } else {
-            super.onBackPressed()
+            discard()
         }
     }
 
@@ -360,8 +366,9 @@ class EditContactActivity : ContactActivity() {
         }
 
         binding.contactToolbar.setNavigationOnClickListener {
-            hideKeyboard()
-            finish()
+            maybeShowUnsavedChangesDialog {
+                finish()
+            }
         }
     }
 
