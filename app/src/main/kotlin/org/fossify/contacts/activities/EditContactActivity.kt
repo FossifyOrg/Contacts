@@ -367,6 +367,7 @@ class EditContactActivity : ContactActivity() {
 
         binding.contactToolbar.setNavigationOnClickListener {
             maybeShowUnsavedChangesDialog {
+                hideKeyboard()
                 finish()
             }
         }
