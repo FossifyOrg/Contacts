@@ -71,6 +71,14 @@
     <plurals name="delete_groups">
         <item quantity="one">%d ομάδα</item>
         <item quantity="other">%d ομάδες</item>
-    </plurals>    <string name="faq_1_title">Θέλω να αλλάξω τα πεδία που θα είναι ορατά στις επαφές. Μπορώ να το κάνω?</string>
+    </plurals>
+    <string name="faq_1_title">Θέλω να αλλάξω τα πεδία που θα είναι ορατά στις επαφές. Μπορώ να το κάνω?</string>
     <string name="faq_1_text">Ναι, το μόνο που έχετε να κάνετε είναι να μεταβείτε στις Ρυθμίσεις -&gt; Διαχείριση εμφανιζόμενων πεδίων επαφής. Εκεί μπορείτε να επιλέξετε ποια πεδία θα πρέπει να είναι ορατά. Κάποια από αυτά είναι ακόμη και απενεργοποιημένα από προεπιλογή, επομένως ίσως βρείτε κάποια νέα εκεί.</string>
+    <string name="street">Οδός</string>
+    <string name="city">Πόλη</string>
+    <string name="postcode">Ταχυδρομικός κώδικας</string>
+    <string name="pobox">Ταχυδρομική θυρίδα</string>
+    <string name="country">Χώρα</string>
+    <string name="select_account">Επέλεξε λογαριασμό</string>
+    <string name="format_phone_numbers">Μορφοποίηση αριθμών τηλεφώνου</string>
 </resources>
