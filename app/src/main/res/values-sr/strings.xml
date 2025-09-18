@@ -73,6 +73,14 @@
         <item quantity="one">%d група</item>
         <item quantity="few">%d група</item>
         <item quantity="other">%d групe</item>
-    </plurals>    <string name="faq_1_title">Желим да променим која су поља видљива у контактима. Могу то учинити\?</string>
+    </plurals>
+    <string name="faq_1_title">Желим да променим која су поља видљива у контактима. Могу то учинити\?</string>
     <string name="faq_1_text">Да, све што треба да урадите је да одете у Подешавања -&gt; Управљање приказаним пољима за контакт. Тамо можете изабрати која поља треба да буду видљива. Неки од њих су чак и подразумевано онемогућени, тако да ћете можда тамо пронаћи неке нове.</string>
+    <string name="street">Улица</string>
+    <string name="neighborhood">Број стана или апартмана</string>
+    <string name="city">Град</string>
+    <string name="postcode">Поштански број</string>
+    <string name="pobox">Поштанска кутија</string>
+    <string name="region">Савезна држава</string>
+    <string name="country">Држава</string>
 </resources>
