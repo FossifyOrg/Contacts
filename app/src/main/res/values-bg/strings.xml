@@ -56,7 +56,7 @@
     <string name="filename_without_vcf">Име на файла (без .vcf)</string>
     <string name="dialpad">Набиране на телефонни номера</string>
     <string name="add_number_to_contact">Добавяне на номера към контакт</string>
-    <string name="prefix">Представка</string>
+    <string name="prefix">Титла</string>
     <string name="suffix">Наставка</string>
     <string name="phone_numbers">Телефонни номера</string>
     <string name="emails">Електронна поща</string>
