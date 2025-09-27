@@ -27,7 +27,7 @@
     <string name="add_contacts">添加聯絡人</string>
     <string name="no_group_created">裝置內沒有聯絡人群組</string>
     <string name="create_group">建立群組</string>
-    <string name="add_to_group">添加到群組</string>
+    <string name="add_to_group">加入到群組</string>
     <string name="create_group_under_account">在帳號下建立群組</string>
     <string name="remove_photo">移除相片</string>
     <string name="change_photo">變更照片</string>
