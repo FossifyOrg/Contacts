@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">簡易通訊錄</string>
+    <string name="app_launcher_name">通訊錄</string>
     <string name="address">地址</string>
     <string name="inserting">正在插入…</string>
     <string name="updating">正在更新…</string>
