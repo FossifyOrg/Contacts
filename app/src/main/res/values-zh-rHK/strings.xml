@@ -2,7 +2,7 @@
 <resources>
     <string name="phone_storage_hidden">手機儲存空間（其他應用程式無法檢視）</string>
     <string name="dialpad">撥號鍵盤</string>
-    <string name="app_launcher_name">簡易通訊錄</string>
+    <string name="app_launcher_name">通訊錄</string>
     <string name="address">地址</string>
     <string name="street">街道</string>
     <string name="neighborhood">單位或套房號碼</string>
