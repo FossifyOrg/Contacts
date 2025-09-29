@@ -315,7 +315,7 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
             val filtered = contactsIgnoringSearch.filter {
                 getProperText(it.getNameToDisplay(), shouldNormalize).contains(fixedText, true) ||
                     getProperText(it.nickname, shouldNormalize).contains(fixedText, true) ||
-                    (fixedText.toIntOrNull() != null && it.phoneNumbers.any {
+                    (fixedText.toLongOrNull() != null && it.phoneNumbers.any {
                         fixedText.normalizePhoneNumber().isNotEmpty() && it.normalizedNumber.contains(fixedText.normalizePhoneNumber(), true)
                     }) ||
                     it.emails.any { it.value.contains(fixedText, true) } ||
@@ -339,7 +339,7 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
             }
 
             innerBinding.fragmentPlaceholder.beVisibleIf(filtered.isEmpty())
-            (adapter as? ContactsAdapter)?.updateItems(filtered, fixedText.normalizeString())
+            adapter.updateItems(filtered, fixedText.normalizeString())
             setupLetterFastscroller(filtered)
         } else if (adapter is GroupsAdapter) {
             val filtered = groupsIgnoringSearch.filter {
@@ -351,7 +351,7 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
             }
 
             innerBinding.fragmentPlaceholder.beVisibleIf(filtered.isEmpty())
-            (adapter as? GroupsAdapter)?.updateItems(filtered, text)
+            adapter.updateItems(filtered, text)
         }
     }
 
