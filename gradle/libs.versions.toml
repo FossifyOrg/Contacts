@@ -15,7 +15,7 @@ ezvcard = "0.12.1"
 #IndicatorFastScroll
 indicatorfastscroll = "4524cd0b61"
 #Room
-room = "2.8.0"
+room = "2.8.1"
 #Fossify
 commons = "5.0.2"
 #Gradle
