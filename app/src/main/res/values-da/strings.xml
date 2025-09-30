@@ -81,7 +81,7 @@
     <string name="neighborhood">Lejligheds- eller værelsesnummer</string>
     <string name="city">By</string>
     <string name="postcode">Postnummer</string>
-    <string name="pobox">Postbox</string>
+    <string name="pobox">Postboks</string>
     <string name="region">Region</string>
     <string name="country">Land</string>
     <string name="select_account">Vælg konto</string>
