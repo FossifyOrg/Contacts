@@ -13,7 +13,7 @@
     <string name="send_sms_to_group">Send SMS til gruppe</string>
     <string name="send_email_to_group">Send e-mail til gruppe</string>
     <string name="fields_empty">Mindst 1 felt skal udfyldes</string>
-    <string name="must_be_at_edit">Du skal være på skærmen Rediger for at ændre en kontakt</string>
+    <string name="must_be_at_edit">Du skal være på Rediger-skærmen for at ændre en kontakt</string>
     <string name="no_contacts_with_emails">Ingen kontakter med e-mails fundet</string>
     <string name="no_contacts_with_phone_numbers">Ingen kontakter med telefonnumre fundet</string>
     <string name="new_contact">Ny kontakt</string>
@@ -27,7 +27,7 @@
     <string name="add_contacts">Tilføj kontakter</string>
     <string name="no_group_created">Der er ingen kontaktgrupper på enheden</string>
     <string name="create_group">Opret gruppe</string>
-    <string name="add_to_group">Tilføj til gruppe</string>
+    <string name="add_to_group">Føj til gruppe</string>
     <string name="create_group_under_account">Opret gruppe under konto</string>
     <string name="remove_photo">Fjern foto</string>
     <string name="change_photo">Skift foto</string>
