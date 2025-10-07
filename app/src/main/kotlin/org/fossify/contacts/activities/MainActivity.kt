@@ -7,6 +7,8 @@ import android.content.pm.ShortcutInfo
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Icon
 import android.graphics.drawable.LayerDrawable
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import me.grantland.widget.AutofitHelper
@@ -366,19 +368,90 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
             refreshMenuItems()
         }
 
-        if (intent?.action == Intent.ACTION_VIEW && intent.data != null) {
-            tryImportContactsFromFile(intent.data!!) {
-                if (it) {
-                    runOnUiThread {
-                        refreshContacts(ALL_TABS_MASK)
-                    }
-                }
-            }
-            intent.data = null
-        }
+        handleContactImportIntent(intent)
 
         binding.mainDialpadButton.setOnClickListener {
             launchDialpad()
+        }
+    }
+
+    /**
+     * Handles incoming intents to import contacts. This function processes intents with actions
+     * ACTION_VIEW, ACTION_SEND, and ACTION_SEND_MULTIPLE for vCard MIME types. It extracts the
+     * relevant URIs and passes them to the contact import handler.
+     *
+     * @param intent The incoming intent to process.
+     */
+    private fun handleContactImportIntent(intent: Intent?) {
+        if (intent?.action == null) {
+            return
+        }
+
+        val contactUris = getUrisFromIntent(intent)
+
+        if (contactUris.isNotEmpty()) {
+            for (uri in contactUris) {
+                tryImportContactsFromFile(uri) { isSuccess ->
+                    if (isSuccess) {
+                        runOnUiThread {
+                            refreshContacts(ALL_TABS_MASK)
+                        }
+                    }
+                }
+            }
+            // Prevents the intent from being processed again on activity recreation (e.g., orientation change).
+            intent.action = null
+        }
+    }
+
+    /**
+     * Extracts a list of URIs from an intent, supporting various actions and data types.
+     *
+     * @param intent The intent to parse.
+     * @return A list of URIs found in the intent, or an empty list if none are found.
+     */
+    private fun getUrisFromIntent(intent: Intent): List<Uri> {
+        val supportedMimeTypes = listOf("text/x-vcard", "text/vcard")
+
+        return when (intent.action) {
+            Intent.ACTION_VIEW -> {
+                intent.data?.let { listOf(it) } ?: emptyList()
+            }
+
+            Intent.ACTION_SEND, Intent.ACTION_SEND_MULTIPLE -> {
+                // Ensure the MIME type is supported before proceeding.
+                if (!supportedMimeTypes.contains(intent.type)) {
+                    return emptyList()
+                }
+
+                if (intent.action == Intent.ACTION_SEND) {
+                    getParcelableUri(intent, Intent.EXTRA_STREAM)?.let { listOf(it) } ?: emptyList()
+                } else {
+                    getParcelableUriList(intent, Intent.EXTRA_STREAM) ?: emptyList()
+                }
+            }
+
+            else -> emptyList()
+        }
+    }
+
+    // Helper function to abstract away the version check for a single Parcelable.
+    private fun getParcelableUri(intent: Intent, key: String): Uri? {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            intent.getParcelableExtra(key, Uri::class.java)
+        } else {
+            @Suppress("DEPRECATION")
+            intent.getParcelableExtra(key)
+        }
+    }
+
+    // Helper function to abstract away the version check for a list of Parcelables.
+    private fun getParcelableUriList(intent: Intent, key: String): List<Uri>? {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            intent.getParcelableArrayListExtra(key, Uri::class.java)
+        } else {
+            @Suppress("DEPRECATION")
+            intent.getParcelableArrayListExtra(key)
         }
     }
 

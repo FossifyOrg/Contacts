@@ -48,10 +48,18 @@
             android:exported="false"
             android:theme="@style/SplashTheme" />
 
+        <!--
+            Allows this activity to receive temporary access grants for URIs passed in an Intent.
+            When an external app (like the default Contacts app) shares a file, it does so
+            via a secure content:// URI and adds FLAG_GRANT_READ_URI_PERMISSION to the Intent.
+            This attribute is required to prevent a SecurityException, ensuring we can
+            read the content (e.g., a vCard file) shared by another application.
+        -->
         <activity
             android:name=".activities.MainActivity"
             android:configChanges="orientation"
-            android:exported="true">
+            android:exported="true"
+            android:grantUriPermissions="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -59,6 +67,15 @@
                 <data android:mimeType="text/directory" />
                 <data android:mimeType="text/vcard" />
                 <data android:mimeType="text/x-vcard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <data android:mimeType="text/x-vcard" />
+                <data android:mimeType="text/vcard" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

@@ -3,6 +3,10 @@ package org.fossify.contacts.extensions
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import org.fossify.commons.activities.BaseSimpleActivity
 import org.fossify.commons.dialogs.RadioGroupDialog
 import org.fossify.commons.extensions.getFileOutputStream
@@ -187,26 +191,42 @@ fun Activity.editContact(contact: Contact) {
 }
 
 fun SimpleActivity.tryImportContactsFromFile(uri: Uri, callback: (Boolean) -> Unit) {
-    when (uri.scheme) {
-        "file" -> showImportContactsDialog(uri.path!!, callback)
-        "content" -> {
-            val tempFile = getTempFile()
-            if (tempFile == null) {
-                toast(org.fossify.commons.R.string.unknown_error_occurred)
-                return
+    lifecycleScope.launch {
+        try {
+            val contactFilePath = when (uri.scheme) {
+                "file" -> uri.path
+                "content" -> saveContentUriToTempFile(uri) // Process content URI in the background
+                else -> null // Unsupported scheme
             }
 
-            try {
-                val inputStream = contentResolver.openInputStream(uri)
-                val out = FileOutputStream(tempFile)
-                inputStream!!.copyTo(out)
-                showImportContactsDialog(tempFile.absolutePath, callback)
-            } catch (e: Exception) {
-                showErrorToast(e)
+            if (contactFilePath != null) {
+                // Switch back to the Main thread to show a dialog
+                showImportContactsDialog(contactFilePath, callback)
+            } else {
+                toast(org.fossify.commons.R.string.invalid_file_format)
             }
+        } catch (e: Exception) {
+            showErrorToast(e)
         }
+    }
+}
 
-        else -> toast(org.fossify.commons.R.string.invalid_file_format)
+private suspend fun SimpleActivity.saveContentUriToTempFile(uri: Uri): String? {
+    // Perform I/O operations on a background thread (Dispatchers.IO)
+    return withContext(Dispatchers.IO) {
+        val tempFile = getTempFile() ?: return@withContext null
+
+        try {
+            // 'use' automatically closes the streams, even if an exception occurs
+            contentResolver.openInputStream(uri)?.use { inputStream ->
+                FileOutputStream(tempFile).use { outputStream ->
+                    inputStream.copyTo(outputStream)
+                }
+            }
+            tempFile.absolutePath
+        } catch (_: Exception) {
+            null // Return null on failure
+        }
     }
 }
 
