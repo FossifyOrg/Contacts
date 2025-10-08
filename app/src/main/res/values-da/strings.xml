@@ -65,7 +65,7 @@
     <string name="websites">Hjemmesider</string>
     <string name="groups">Grupper</string>
     <string name="contact_source">Kontaktkilde</string>
-    <string name="ringtone">Ringteone</string>
+    <string name="ringtone">Ringetone</string>
     <string name="delete_from_all_sources">Kontakten fjernes fra alle kontaktkilder.</string>
     <plurals name="delete_groups">
         <item quantity="one">%d gruppe</item>
