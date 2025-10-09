@@ -366,19 +366,28 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
             refreshMenuItems()
         }
 
-        if (intent?.action == Intent.ACTION_VIEW && intent.data != null) {
-            tryImportContactsFromFile(intent.data!!) {
-                if (it) {
+        handleExternalIntent()
+        binding.mainDialpadButton.setOnClickListener {
+            launchDialpad()
+        }
+    }
+
+    private fun handleExternalIntent() {
+        val uri = when (intent?.action) {
+            Intent.ACTION_VIEW -> intent.data
+            Intent.ACTION_SEND -> intent.getParcelableExtra(Intent.EXTRA_STREAM)
+            else -> null
+        }
+
+        if (uri != null) {
+            tryImportContactsFromFile(uri) { success ->
+                if (success) {
                     runOnUiThread {
                         refreshContacts(ALL_TABS_MASK)
                     }
                 }
             }
-            intent.data = null
-        }
-
-        binding.mainDialpadButton.setOnClickListener {
-            launchDialpad()
+            intent.action = null
         }
     }
 

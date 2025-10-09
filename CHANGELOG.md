@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Support for importing contacts from vCards shared by other apps ([#321])
+
 ### Fixed
 - Fixed search not matching full phone numbers
 
@@ -87,6 +90,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
 [#281]: https://github.com/FossifyOrg/Contacts/issues/281
 [#289]: https://github.com/FossifyOrg/Contacts/issues/289
+[#321]: https://github.com/FossifyOrg/Contacts/issues/321
 [#339]: https://github.com/FossifyOrg/Contacts/issues/339
 [#360]: https://github.com/FossifyOrg/Contacts/issues/360
 
