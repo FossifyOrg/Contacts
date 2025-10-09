@@ -35,7 +35,6 @@ import org.fossify.contacts.activities.ViewContactActivity
 import org.fossify.contacts.dialogs.ImportContactsDialog
 import org.fossify.contacts.helpers.DEFAULT_FILE_NAME
 import org.fossify.contacts.helpers.VcfExporter
-import java.io.FileOutputStream
 
 fun SimpleActivity.startCallIntent(recipient: String) {
     handlePermission(PERMISSION_CALL_PHONE) {
