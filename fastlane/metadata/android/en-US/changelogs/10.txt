@@ -1,0 +1,12 @@
+Added:
+
+• Support for importing contacts from vCards shared by other apps 
+
+Changed:
+
+• Updated translations
+
+Fixed:
+
+• Fixed search not matching full phone numbers
+
