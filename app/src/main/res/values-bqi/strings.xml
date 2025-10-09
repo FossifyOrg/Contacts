@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_launcher_name">هومدنگووݩ</string>
+    <string name="address">نشۊوی</string>
+    <string name="street">خیابووݩ</string>
 </resources>
