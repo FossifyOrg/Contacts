@@ -35,7 +35,6 @@ import org.fossify.contacts.activities.ViewContactActivity
 import org.fossify.contacts.dialogs.ImportContactsDialog
 import org.fossify.contacts.helpers.DEFAULT_FILE_NAME
 import org.fossify.contacts.helpers.VcfExporter
-import java.io.FileOutputStream
 
 fun SimpleActivity.startCallIntent(recipient: String) {
     handlePermission(PERMISSION_CALL_PHONE) {
@@ -190,16 +189,13 @@ fun SimpleActivity.tryImportContactsFromFile(uri: Uri, callback: (Boolean) -> Un
     when (uri.scheme) {
         "file" -> showImportContactsDialog(uri.path!!, callback)
         "content" -> {
-            val tempFile = getTempFile()
-            if (tempFile == null) {
-                toast(org.fossify.commons.R.string.unknown_error_occurred)
-                return
-            }
-
             try {
-                val inputStream = contentResolver.openInputStream(uri)
-                val out = FileOutputStream(tempFile)
-                inputStream!!.copyTo(out)
+                val tempFile = copyUriToTempFile(uri, "import-${System.currentTimeMillis()}-$DEFAULT_FILE_NAME")
+                if (tempFile == null) {
+                    toast(org.fossify.commons.R.string.unknown_error_occurred)
+                    return
+                }
+
                 showImportContactsDialog(tempFile.absolutePath, callback)
             } catch (e: Exception) {
                 showErrorToast(e)

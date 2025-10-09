@@ -6,6 +6,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.FileProvider
 import org.fossify.commons.extensions.*
@@ -148,3 +149,13 @@ fun Context.backupContacts() {
     }
 }
 
+fun Context.copyUriToTempFile(uri: Uri, name: String): File? {
+    val tempFile = getTempFile(name)
+    contentResolver.openInputStream(uri)?.use { input ->
+        FileOutputStream(tempFile).use { output ->
+            input.copyTo(output)
+        }
+    }
+
+    return tempFile
+}
