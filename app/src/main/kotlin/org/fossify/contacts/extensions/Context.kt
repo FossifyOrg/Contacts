@@ -6,6 +6,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import androidx.core.app.AlarmManagerCompat
 import androidx.core.content.FileProvider
 import org.fossify.commons.extensions.*
@@ -15,6 +16,7 @@ import org.fossify.contacts.BuildConfig
 import org.fossify.contacts.R
 import org.fossify.contacts.helpers.AUTOMATIC_BACKUP_REQUEST_CODE
 import org.fossify.contacts.helpers.Config
+import org.fossify.contacts.helpers.DEFAULT_FILE_NAME
 import org.fossify.contacts.helpers.VcfExporter
 import org.fossify.contacts.helpers.getNextAutoBackupTime
 import org.fossify.contacts.helpers.getPreviousAutoBackupTime
@@ -148,3 +150,13 @@ fun Context.backupContacts() {
     }
 }
 
+fun Context.copyUriToTempFile(uri: Uri, name: String): File? {
+    val tempFile = getTempFile(name)
+    contentResolver.openInputStream(uri)?.use { input ->
+        FileOutputStream(tempFile).use { output ->
+            input.copyTo(output)
+        }
+    }
+
+    return tempFile
+}
