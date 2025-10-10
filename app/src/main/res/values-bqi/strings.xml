@@ -3,4 +3,9 @@
     <string name="app_launcher_name">هومدنگووݩ</string>
     <string name="address">نشۊوی</string>
     <string name="street">خیابووݩ</string>
+    <string name="postcode">کود پوستی</string>
+    <string name="pobox">سندوق پوستی</string>
+    <string name="region">ایالت</string>
+    <string name="country">کشور</string>
+    <string name="city">شئر</string>
 </resources>
