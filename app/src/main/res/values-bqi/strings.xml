@@ -19,4 +19,5 @@
     <string name="send_sms_to_group">فشناڌن پیوم و بونکۊ</string>
     <string name="send_email_to_group">فشناڌن ایمیل و بونکۊ</string>
     <string name="company">شرکت</string>
+    <string name="neighborhood">شوماره آپارتمان یا سۊییت</string>
 </resources>
