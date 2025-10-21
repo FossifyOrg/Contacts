@@ -34,13 +34,15 @@ class GroupContactsActivity : SimpleActivity(), RemoveFromGroupListener, Refresh
     protected var contact: Contact? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         updateTextColors(binding.groupContactsCoordinator)
         setupOptionsMenu()
 
-        updateMaterialActivityViews(binding.groupContactsCoordinator, binding.groupContactsList, useTransparentNavigation = true, useTopSearchMenu = false)
+        updateEdgeToEdge(
+            topAppBar = binding.groupContactsToolbar,
+            scrollingView = binding.groupContactsList,
+        )
         setupMaterialScrollListener(binding.groupContactsList, binding.groupContactsToolbar)
 
         group = intent.extras?.getSerializable(GROUP) as Group

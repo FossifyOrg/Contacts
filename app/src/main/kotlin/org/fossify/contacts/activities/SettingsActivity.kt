@@ -33,10 +33,12 @@ class SettingsActivity : SimpleActivity() {
     private var ignoredExportContactSources = HashSet<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        updateMaterialActivityViews(binding.settingsCoordinator, binding.settingsHolder, useTransparentNavigation = true, useTopSearchMenu = false)
+        updateEdgeToEdge(
+            topAppBar = binding.settingsToolbar,
+            scrollingView = binding.settingsNestedScrollview,
+        )
         setupMaterialScrollListener(binding.settingsNestedScrollview, binding.settingsToolbar)
     }
 

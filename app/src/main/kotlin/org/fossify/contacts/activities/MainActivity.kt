@@ -46,6 +46,9 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
     private var storedStartNameWithSurname = false
     private var storedFontSize = 0
     private var storedShowTabs = 0
+
+    override var isSearchBarEnabled = true
+
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,7 +57,11 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
         appLaunched(BuildConfig.APPLICATION_ID)
         setupOptionsMenu()
         refreshMenuItems()
-        updateMaterialActivityViews(binding.mainCoordinator, binding.mainHolder, useTransparentNavigation = false, useTopSearchMenu = true)
+        updateEdgeToEdge(
+            topAppBar = binding.mainMenu.getToolbar(),
+            scrollingView = binding.viewPager,
+            bottomBar = binding.mainTabsHolder
+        )
         storeStateVariables()
         setupTabs()
         checkContactPermissions()

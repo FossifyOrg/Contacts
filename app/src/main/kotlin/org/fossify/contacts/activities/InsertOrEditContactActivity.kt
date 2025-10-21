@@ -33,6 +33,9 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
 
     private var isSelectContactIntent = false
     private var specialMimeType: String? = null
+
+    override var isSearchBarEnabled = true
+
     private val binding by viewBinding(ActivityInsertEditContactBinding::inflate)
 
     private val contactsFavoritesList = arrayListOf(
@@ -45,7 +48,10 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
         setContentView(binding.root)
         setupOptionsMenu()
         isSelectContactIntent = intent.action == Intent.ACTION_PICK
-        updateMaterialActivityViews(binding.insertEditCoordinator, binding.insertEditContactHolder, useTransparentNavigation = false, useTopSearchMenu = true)
+        updateEdgeToEdge(
+            topAppBar = binding.insertEditMenu.getToolbar(),
+            scrollingView = binding.viewPager
+        )
 
         if (isSelectContactIntent) {
             specialMimeType = when (intent.data) {
