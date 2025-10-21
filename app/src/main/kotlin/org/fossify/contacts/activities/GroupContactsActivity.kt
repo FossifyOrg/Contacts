@@ -67,7 +67,7 @@ class GroupContactsActivity : SimpleActivity(), RemoveFromGroupListener, Refresh
     override fun onResume() {
         super.onResume()
         refreshContacts()
-        setupToolbar(binding.groupContactsToolbar, NavigationIcon.Arrow)
+        setupTopAppBar(binding.groupContactsToolbar, NavigationIcon.Arrow)
         (binding.groupContactsFab.layoutParams as CoordinatorLayout.LayoutParams).bottomMargin =
             navigationBarHeight + resources.getDimension(org.fossify.commons.R.dimen.activity_margin).toInt()
     }
