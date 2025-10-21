@@ -48,9 +48,8 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
         setContentView(binding.root)
         setupOptionsMenu()
         isSelectContactIntent = intent.action == Intent.ACTION_PICK
-        updateEdgeToEdge(
-            topAppBar = binding.insertEditMenu.getToolbar(),
-            scrollingView = binding.viewPager
+        setupEdgeToEdge(
+            padBottomImeAndSystem = listOf(binding.insertEditTabsHolder),
         )
 
         if (isSelectContactIntent) {
@@ -91,7 +90,7 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
     }
 
     private fun setupOptionsMenu() {
-        binding.insertEditMenu.getToolbar().inflateMenu(R.menu.menu_insert_or_edit)
+        binding.insertEditMenu.requireToolbar().inflateMenu(R.menu.menu_insert_or_edit)
         binding.insertEditMenu.toggleHideOnScroll(false)
         binding.insertEditMenu.setupMenu()
 
@@ -105,7 +104,7 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
             getCurrentFragment()?.onSearchQueryChanged(text)
         }
 
-        binding.insertEditMenu.getToolbar().setOnMenuItemClickListener { menuItem ->
+        binding.insertEditMenu.requireToolbar().setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.sort -> showSortingDialog()
                 R.id.filter -> showFilterDialog()
@@ -116,7 +115,6 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
     }
 
     private fun updateMenuColors() {
-        updateStatusbarColor(getProperBackgroundColor())
         binding.insertEditMenu.updateColors()
     }
 
@@ -223,7 +221,6 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
 
         val bottomBarColor = getBottomNavigationBackgroundColor()
         binding.insertEditTabsHolder.setBackgroundColor(bottomBarColor)
-        updateNavigationBarColor(bottomBarColor)
     }
 
     private fun getInactiveTabIndexes(activeIndex: Int) = (0 until binding.insertEditTabsHolder.tabCount).filter { it != activeIndex }

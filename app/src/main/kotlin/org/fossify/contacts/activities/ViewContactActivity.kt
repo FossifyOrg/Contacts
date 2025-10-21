@@ -47,7 +47,6 @@ class ViewContactActivity : ContactActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        showTransparentTop = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -55,8 +54,9 @@ class ViewContactActivity : ContactActivity() {
             return
         }
 
+        setupEdgeToEdge(padBottomSystem = listOf(binding.contactScrollview))
+
         showFields = config.showContactFields
-        binding.contactWrapper.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         setupMenu()
     }
 
@@ -90,7 +90,6 @@ class ViewContactActivity : ContactActivity() {
     }
 
     private fun setupMenu() {
-        (binding.contactAppbar.layoutParams as RelativeLayout.LayoutParams).topMargin = statusBarHeight
         binding.contactToolbar.menu.apply {
             findItem(R.id.share).setOnMenuItemClickListener {
                 if (fullContact != null) {

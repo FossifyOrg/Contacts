@@ -57,10 +57,8 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
         appLaunched(BuildConfig.APPLICATION_ID)
         setupOptionsMenu()
         refreshMenuItems()
-        updateEdgeToEdge(
-            topAppBar = binding.mainMenu.getToolbar(),
-            scrollingView = binding.viewPager,
-            bottomBar = binding.mainTabsHolder
+        setupEdgeToEdge(
+            padBottomImeAndSystem = listOf(binding.mainTabsHolder),
         )
         storeStateVariables()
         setupTabs()
@@ -170,7 +168,7 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
 
     private fun refreshMenuItems() {
         val currentFragment = getCurrentFragment()
-        binding.mainMenu.getToolbar().menu.apply {
+        binding.mainMenu.requireToolbar().menu.apply {
             findItem(R.id.sort).isVisible = currentFragment != findViewById(R.id.groups_fragment)
             findItem(R.id.filter).isVisible = currentFragment != findViewById(R.id.groups_fragment)
             findItem(R.id.dialpad).isVisible = !config.showDialpadButton
@@ -181,7 +179,7 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
     }
 
     private fun setupOptionsMenu() {
-        binding.mainMenu.getToolbar().inflateMenu(R.menu.menu)
+        binding.mainMenu.requireToolbar().inflateMenu(R.menu.menu)
         binding.mainMenu.toggleHideOnScroll(false)
         binding.mainMenu.setupMenu()
 
@@ -195,7 +193,7 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
             getCurrentFragment()?.onSearchQueryChanged(text)
         }
 
-        binding.mainMenu.getToolbar().setOnMenuItemClickListener { menuItem ->
+        binding.mainMenu.requireToolbar().setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.sort -> showSortingDialog(showCustomSorting = getCurrentFragment() is FavoritesFragment)
                 R.id.filter -> showFilterDialog()
@@ -235,7 +233,6 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
     }
 
     private fun updateMenuColors() {
-        updateStatusbarColor(getProperBackgroundColor())
         binding.mainMenu.updateColors()
     }
 
@@ -309,7 +306,6 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
 
         val bottomBarColor = getBottomNavigationBackgroundColor()
         binding.mainTabsHolder.setBackgroundColor(bottomBarColor)
-        updateNavigationBarColor(bottomBarColor)
     }
 
     private fun getInactiveTabIndexes(activeIndex: Int) = (0 until binding.mainTabsHolder.tabCount).filter { it != activeIndex }

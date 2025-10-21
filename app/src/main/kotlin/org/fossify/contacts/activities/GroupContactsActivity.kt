@@ -39,11 +39,10 @@ class GroupContactsActivity : SimpleActivity(), RemoveFromGroupListener, Refresh
         updateTextColors(binding.groupContactsCoordinator)
         setupOptionsMenu()
 
-        updateEdgeToEdge(
-            topAppBar = binding.groupContactsToolbar,
-            scrollingView = binding.groupContactsList,
+        setupEdgeToEdge(
+            padBottomImeAndSystem = listOf(binding.groupContactsList)
         )
-        setupMaterialScrollListener(binding.groupContactsList, binding.groupContactsToolbar)
+        setupMaterialScrollListener(binding.groupContactsList, binding.groupContactsAppbar)
 
         group = intent.extras?.getSerializable(GROUP) as Group
         binding.groupContactsToolbar.title = group.title
@@ -67,9 +66,7 @@ class GroupContactsActivity : SimpleActivity(), RemoveFromGroupListener, Refresh
     override fun onResume() {
         super.onResume()
         refreshContacts()
-        setupTopAppBar(binding.groupContactsToolbar, NavigationIcon.Arrow)
-        (binding.groupContactsFab.layoutParams as CoordinatorLayout.LayoutParams).bottomMargin =
-            navigationBarHeight + resources.getDimension(org.fossify.commons.R.dimen.activity_margin).toInt()
+        setupTopAppBar(binding.groupContactsAppbar, NavigationIcon.Arrow)
     }
 
     private fun setupOptionsMenu() {
