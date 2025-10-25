@@ -126,11 +126,12 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
         }
     }
 
-    override fun onBackPressed() {
-        if (binding.insertEditMenu.isSearchOpen) {
+    override fun onBackPressedCompat(): Boolean {
+        return if (binding.insertEditMenu.isSearchOpen) {
             binding.insertEditMenu.closeSearch()
+            true
         } else {
-            super.onBackPressed()
+            false
         }
     }
 

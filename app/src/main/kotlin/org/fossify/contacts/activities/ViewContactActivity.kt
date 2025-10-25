@@ -81,11 +81,12 @@ class ViewContactActivity : ContactActivity() {
         }
     }
 
-    override fun onBackPressed() {
-        if (binding.contactPhotoBig.alpha == 1f) {
+    override fun onBackPressedCompat(): Boolean {
+        return if (binding.contactPhotoBig.alpha == 1f) {
             hideBigContactPhoto()
+            true
         } else {
-            super.onBackPressed()
+            false
         }
     }
 
