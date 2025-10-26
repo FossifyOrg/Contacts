@@ -83,7 +83,6 @@ class EditContactActivity : ContactActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        showTransparentTop = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -91,8 +90,9 @@ class EditContactActivity : ContactActivity() {
             return
         }
 
-        binding.contactWrapper.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-        setupInsets()
+        setupEdgeToEdge(
+            padBottomImeAndSystem = listOf(binding.contactScrollview)
+        )
         setupMenu()
 
         val action = intent.action
@@ -296,10 +296,11 @@ class EditContactActivity : ContactActivity() {
         }
     }
 
-    override fun onBackPressed() {
+    override fun onBackPressedCompat(): Boolean {
         maybeShowUnsavedChangesDialog {
-            super.onBackPressed()
+            performDefaultBack()
         }
+        return true
     }
 
     private fun maybeShowUnsavedChangesDialog(discard: () -> Unit) {
@@ -323,19 +324,7 @@ class EditContactActivity : ContactActivity() {
         }
     }
 
-    private fun setupInsets() {
-        binding.contactWrapper.setOnApplyWindowInsetsListener { _, insets ->
-            val windowInsets = WindowInsetsCompat.toWindowInsetsCompat(insets)
-            val imeInsets = windowInsets.getInsets(WindowInsetsCompat.Type.ime())
-            binding.contactScrollview.run {
-                setPadding(paddingLeft, paddingTop, paddingRight, imeInsets.bottom)
-            }
-            insets
-        }
-    }
-
     private fun setupMenu() {
-        (binding.contactAppbar.layoutParams as RelativeLayout.LayoutParams).topMargin = statusBarHeight
         binding.contactToolbar.menu.apply {
             findItem(R.id.save).setOnMenuItemClickListener {
                 saveContact()

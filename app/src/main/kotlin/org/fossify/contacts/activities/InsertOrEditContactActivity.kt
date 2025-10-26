@@ -33,6 +33,9 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
 
     private var isSelectContactIntent = false
     private var specialMimeType: String? = null
+
+    override var isSearchBarEnabled = true
+
     private val binding by viewBinding(ActivityInsertEditContactBinding::inflate)
 
     private val contactsFavoritesList = arrayListOf(
@@ -45,7 +48,9 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
         setContentView(binding.root)
         setupOptionsMenu()
         isSelectContactIntent = intent.action == Intent.ACTION_PICK
-        updateMaterialActivityViews(binding.insertEditCoordinator, binding.insertEditContactHolder, useTransparentNavigation = false, useTopSearchMenu = true)
+        setupEdgeToEdge(
+            padBottomImeAndSystem = listOf(binding.insertEditTabsHolder),
+        )
 
         if (isSelectContactIntent) {
             specialMimeType = when (intent.data) {
@@ -85,7 +90,7 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
     }
 
     private fun setupOptionsMenu() {
-        binding.insertEditMenu.getToolbar().inflateMenu(R.menu.menu_insert_or_edit)
+        binding.insertEditMenu.requireToolbar().inflateMenu(R.menu.menu_insert_or_edit)
         binding.insertEditMenu.toggleHideOnScroll(false)
         binding.insertEditMenu.setupMenu()
 
@@ -99,7 +104,7 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
             getCurrentFragment()?.onSearchQueryChanged(text)
         }
 
-        binding.insertEditMenu.getToolbar().setOnMenuItemClickListener { menuItem ->
+        binding.insertEditMenu.requireToolbar().setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.sort -> showSortingDialog()
                 R.id.filter -> showFilterDialog()
@@ -110,7 +115,6 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
     }
 
     private fun updateMenuColors() {
-        updateStatusbarColor(getProperBackgroundColor())
         binding.insertEditMenu.updateColors()
     }
 
@@ -122,11 +126,12 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
         }
     }
 
-    override fun onBackPressed() {
-        if (binding.insertEditMenu.isSearchOpen) {
+    override fun onBackPressedCompat(): Boolean {
+        return if (binding.insertEditMenu.isSearchOpen) {
             binding.insertEditMenu.closeSearch()
+            true
         } else {
-            super.onBackPressed()
+            false
         }
     }
 
@@ -217,7 +222,6 @@ class InsertOrEditContactActivity : SimpleActivity(), RefreshContactsListener {
 
         val bottomBarColor = getBottomNavigationBackgroundColor()
         binding.insertEditTabsHolder.setBackgroundColor(bottomBarColor)
-        updateNavigationBarColor(bottomBarColor)
     }
 
     private fun getInactiveTabIndexes(activeIndex: Int) = (0 until binding.insertEditTabsHolder.tabCount).filter { it != activeIndex }

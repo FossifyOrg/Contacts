@@ -8,7 +8,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/SettingsActivity.kt"
-            line="157"
+            line="156"
             column="13"/>
     </issue>
 
@@ -20,24 +20,13 @@
     </issue>
 
     <issue
-        id="OldTargetApi"
-        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
-        errorLine1="app-build-targetSDK = &quot;34&quot;"
-        errorLine2="                      ~~~~">
-        <location
-            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
-            line="25"
-            column="23"/>
-    </issue>
-
-    <issue
         id="AppLinkUrlError"
         message="At least one `scheme` must be specified"
         errorLine1="                &lt;data"
         errorLine2="                ^">
         <location
             file="src/main/AndroidManifest.xml"
-            line="135"
+            line="145"
             column="17"/>
     </issue>
 
@@ -91,7 +80,7 @@
         errorLine1="distributionUrl=https\://services.gradle.org/distributions/gradle-8.13-bin.zip"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="$HOME/work/Contacts/Contacts/gradle/wrapper/gradle-wrapper.properties"
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/wrapper/gradle-wrapper.properties"
             line="3"
             column="17"/>
     </issue>
@@ -102,20 +91,53 @@
         errorLine1="gradlePlugins-agp = &quot;8.11.1&quot;"
         errorLine2="                    ~~~~~~~~">
         <location
-            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
             line="22"
             column="21"/>
     </issue>
 
     <issue
         id="GradleDependency"
-        message="A newer version of `compileSdkVersion` than 34 is available: 36"
-        errorLine1="app-build-compileSDKVersion = &quot;34&quot;"
-        errorLine2="                              ~~~~">
+        message="A newer version of androidx.room:room-compiler than 2.8.2 is available: 2.8.3"
+        errorLine1="room = &quot;2.8.2&quot;"
+        errorLine2="       ~~~~~~~">
         <location
-            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
-            line="24"
-            column="31"/>
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="18"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-ktx than 2.8.2 is available: 2.8.3"
+        errorLine1="room = &quot;2.8.2&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="18"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-runtime than 2.8.2 is available: 2.8.3"
+        errorLine1="room = &quot;2.8.2&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="18"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of org.jetbrains.kotlin.android than 2.2.20 is available: 2.2.21"
+        errorLine1="kotlin = &quot;2.2.20&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="$HOME/Projects/Fossify/FossifyOrg/Contacts/gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
     </issue>
 
     <issue
@@ -136,7 +158,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
-            line="1506"
+            line="1495"
             column="9"/>
     </issue>
 
@@ -147,7 +169,7 @@
         errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
-            line="262"
+            line="267"
             column="24"/>
     </issue>
 
@@ -230,7 +252,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;street&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;street&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;street&quot;>Street&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~">
         <location
@@ -241,7 +263,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;neighborhood&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;neighborhood&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;neighborhood&quot;>Appartment or suite number&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~">
         <location
@@ -252,7 +274,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;city&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;city&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;city&quot;>City&lt;/string>"
         errorLine2="            ~~~~~~~~~~~">
         <location
@@ -263,7 +285,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;postcode&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;postcode&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;postcode&quot;>Postal code&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~">
         <location
@@ -274,7 +296,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;pobox&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;pobox&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;pobox&quot;>Post office box&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~">
         <location
@@ -285,7 +307,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;region&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;region&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;region&quot;>State&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~">
         <location
@@ -296,7 +318,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;country&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;country&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;country&quot;>Country&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~">
         <location
@@ -505,7 +527,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;select_account&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;select_account&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;in&quot; (Indonesian), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;select_account&quot;>Select account&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -659,7 +681,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;format_phone_numbers&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;vi&quot; (Vietnamese), &quot;ne&quot; (Nepali), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;format_phone_numbers&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;vi&quot; (Vietnamese), &quot;ne&quot; (Nepali), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;format_phone_numbers&quot;>Format phone numbers&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -1181,11 +1203,11 @@
         errorLine2="                          ~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
-            line="89"
+            line="94"
             column="27"/>
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
-            line="89"
+            line="94"
             column="13"
             message="The unsafe intent is launched here."/>
     </issue>
@@ -1208,7 +1230,7 @@
         errorLine2="         ~~~~~~~~">
         <location
             file="src/main/AndroidManifest.xml"
-            line="240"
+            line="250"
             column="10"/>
     </issue>
 
@@ -1673,7 +1695,7 @@
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
-            line="252"
+            line="257"
             column="17"/>
     </issue>
 
@@ -1794,7 +1816,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
-            line="622"
+            line="611"
             column="13"/>
     </issue>
 
@@ -1805,7 +1827,7 @@
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
-            line="712"
+            line="701"
             column="40"/>
     </issue>
 
@@ -1816,7 +1838,7 @@
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
-            line="101"
+            line="106"
             column="45"/>
     </issue>
 
@@ -1827,7 +1849,7 @@
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/MainActivity.kt"
-            line="101"
+            line="106"
             column="45"/>
     </issue>
 
