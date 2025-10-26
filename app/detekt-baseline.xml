@@ -105,14 +105,12 @@
     <ID>MaxLineLength:FilterContactSourcesDialog.kt$FilterContactSourcesDialog$binding.filterContactSourcesList.adapter = FilterContactSourcesAdapter(activity, contactSourcesWithCount, selectedSources)</ID>
     <ID>MaxLineLength:FilterContactSourcesDialog.kt$FilterContactSourcesDialog$val selectedContactSources = (binding.filterContactSourcesList.adapter as FilterContactSourcesAdapter).getSelectedContactSources()</ID>
     <ID>MaxLineLength:GroupContactsActivity.kt$GroupContactsActivity$private fun getDefaultRingtoneUri()</ID>
-    <ID>MaxLineLength:GroupContactsActivity.kt$GroupContactsActivity$updateMaterialActivityViews(binding.groupContactsCoordinator, binding.groupContactsList, useTransparentNavigation = true, useTopSearchMenu = false)</ID>
     <ID>MaxLineLength:GroupsAdapter.kt$GroupsAdapter$activity: SimpleActivity</ID>
     <ID>MaxLineLength:GroupsFragment.kt$GroupsFragment$class</ID>
     <ID>MaxLineLength:ImportContactsDialog.kt$ImportContactsDialog$class</ID>
     <ID>MaxLineLength:ImportContactsDialog.kt$ImportContactsDialog$targetContactSource = if (it == activity.getString(R.string.phone_storage_hidden)) SMT_PRIVATE else it</ID>
     <ID>MaxLineLength:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$binding.insertEditTabsHolder.newTab().setCustomView(org.fossify.commons.R.layout.bottom_tablayout_item)</ID>
     <ID>MaxLineLength:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$private fun getInactiveTabIndexes(activeIndex: Int)</ID>
-    <ID>MaxLineLength:InsertOrEditContactActivity.kt$InsertOrEditContactActivity$updateMaterialActivityViews(binding.insertEditCoordinator, binding.insertEditContactHolder, useTransparentNavigation = false, useTopSearchMenu = true)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$(drawable as LayerDrawable).findDrawableByLayerId(org.fossify.commons.R.id.shortcut_plus_background).applyColorFilter(appIconColor)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$binding.mainTabsHolder.newTab().setCustomView(org.fossify.commons.R.layout.bottom_tablayout_item)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$faqItems.add(FAQItem(org.fossify.commons.R.string.faq_2_title_commons, org.fossify.commons.R.string.faq_2_text_commons))</ID>
@@ -124,7 +122,6 @@
     <ID>MaxLineLength:MainActivity.kt$MainActivity$findViewById&lt;MyViewPagerFragment&lt;*&gt;&gt;(R.id.favorites_fragment)?.startNameWithSurnameChanged(configStartNameWithSurname)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$private fun getInactiveTabIndexes(activeIndex: Int)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$resources.getColoredDrawableWithColor(org.fossify.commons.R.drawable.ic_dialpad_vector, properPrimaryColor.getContrastColor())</ID>
-    <ID>MaxLineLength:MainActivity.kt$MainActivity$updateMaterialActivityViews(binding.mainCoordinator, binding.mainHolder, useTransparentNavigation = false, useTopSearchMenu = true)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$val licenses = LICENSE_JODA or LICENSE_GLIDE or LICENSE_GSON or LICENSE_INDICATOR_FAST_SCROLL or LICENSE_AUTOFITTEXTVIEW</ID>
     <ID>MaxLineLength:ManageAutoBackupsDialog.kt$ManageAutoBackupsDialog$activity</ID>
     <ID>MaxLineLength:ManageAutoBackupsDialog.kt$ManageAutoBackupsDialog$binding.backupContactSourcesList.adapter = FilterContactSourcesAdapter(activity, contactSourcesWithCount, selectedContactSources.toList())</ID>
@@ -162,7 +159,6 @@
     <ID>MaxLineLength:SelectGroupsDialog.kt$SelectGroupsDialog$setColors(activity.getProperTextColor(), activity.getProperPrimaryColor(), activity.getProperBackgroundColor())</ID>
     <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$VcfExporter.ExportResult.EXPORT_PARTIAL -&gt; org.fossify.commons.R.string.exporting_some_entries_failed</ID>
     <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$binding.settingsUseEnglishHolder.beVisibleIf((config.wasUseEnglishToggled || Locale.getDefault().language != "en") &amp;&amp; !isTiramisuPlus())</ID>
-    <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$updateMaterialActivityViews(binding.settingsCoordinator, binding.settingsHolder, useTransparentNavigation = true, useTopSearchMenu = false)</ID>
     <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$}</ID>
     <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$.</ID>
     <ID>MaxLineLength:ViewContactActivity.kt$ViewContactActivity$// a contact cannot have different emails per contact source. Such contacts are handled as separate ones, not duplicates of each other</ID>
@@ -188,8 +184,6 @@
     <ID>PrintStackTrace:VcfExporter.kt$VcfExporter$e</ID>
     <ID>ProtectedMemberInFinalClass:GroupContactsActivity.kt$GroupContactsActivity$protected val INTENT_SELECT_RINGTONE = 600</ID>
     <ID>ProtectedMemberInFinalClass:GroupContactsActivity.kt$GroupContactsActivity$protected var contact: Contact? = null</ID>
-    <ID>ReturnCount:EditContactActivity.kt$EditContactActivity$private fun startCropPhotoIntent(primaryUri: Uri?, backupUri: Uri?)</ID>
-    <ID>ReturnCount:SimpleActivity.kt$SimpleActivity$protected fun getPhoneNumberFromIntent(intent: Intent): String?</ID>
     <ID>SwallowedException:ContactsAdapter.kt$ContactsAdapter$e: Exception</ID>
     <ID>SwallowedException:EditContactActivity.kt$EditContactActivity$e: ActivityNotFoundException</ID>
     <ID>SwallowedException:EditContactActivity.kt$EditContactActivity$e: Exception</ID>
