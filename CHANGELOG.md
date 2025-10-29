@@ -6,9 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2025-10-29
 ### Changed
 - Compatibility updates for Android 15 & 16
 - Search query is now preserved when switching tabs
+- Updated translations
 
 ## [1.3.0] - 2025-10-09
 ### Added
@@ -103,7 +105,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#339]: https://github.com/FossifyOrg/Contacts/issues/339
 [#360]: https://github.com/FossifyOrg/Contacts/issues/360
 
-[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.3.0...HEAD
+[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.4.0...HEAD
+[1.4.0]: https://github.com/FossifyOrg/Contacts/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/FossifyOrg/Contacts/compare/1.2.5...1.3.0
 [1.2.5]: https://github.com/FossifyOrg/Contacts/compare/1.2.4...1.2.5
 [1.2.4]: https://github.com/FossifyOrg/Contacts/compare/1.2.3...1.2.4

@@ -1,0 +1,6 @@
+Changed:
+
+• Compatibility updates for Android 15 & 16
+• Search query is now preserved when switching tabs
+• Updated translations
+
