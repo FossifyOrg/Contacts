@@ -78,4 +78,11 @@
     <string name="suffix">Sufixo</string>
     <string name="faq_1_text">Sim, basta aceder a Definições -&gt; Gerir campos a mostrar. Aqui, pode escolher os campos que serão mostrados. Alguns dos campos estão ocultos e, assim, pode mostrar alguns destes.</string>
     <string name="format_phone_numbers">Formatar números de telefone</string>
+    <string name="street">Rua</string>
+    <string name="city">Cidade</string>
+    <string name="region">Distrito</string>
+    <string name="country">País</string>
+    <string name="neighborhood">Apartamento ou número da porta</string>
+    <string name="postcode">Código postal</string>
+    <string name="pobox">Caixa de Correio</string>
 </resources>
