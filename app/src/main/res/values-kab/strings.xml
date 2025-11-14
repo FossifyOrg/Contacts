@@ -19,4 +19,11 @@
     <string name="add_to_group">Rnu-t ɣer ugraw</string>
     <string name="postcode">Tangalt n lbuṣṭa</string>
     <string name="pobox">Tanaka n lbuṣṭa</string>
+    <string name="inserting">Tugra…</string>
+    <string name="updating">Aleqqem…</string>
+    <string name="phone_storage">Takatut n tiliɣri</string>
+    <string name="dialpad">Anasiw n yimḍanen</string>
+    <string name="job_position">Axeddim-is</string>
+    <string name="send_sms_to_group">Azen SMS i ugraw</string>
+    <string name="send_email_to_group">Azen imayl i ugraw</string>
 </resources>
