@@ -26,4 +26,6 @@
     <string name="job_position">Axeddim-is</string>
     <string name="send_sms_to_group">Azen SMS i ugraw</string>
     <string name="send_email_to_group">Azen imayl i ugraw</string>
+    <string name="no_contacts_with_emails">Ulac inermisen s yimaylen yettwafen</string>
+    <string name="no_contacts_with_phone_numbers">Ulac inermisen s wuṭṭunen n tilifun</string>
 </resources>
