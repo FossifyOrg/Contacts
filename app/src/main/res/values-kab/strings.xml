@@ -28,4 +28,6 @@
     <string name="send_email_to_group">Azen imayl i ugraw</string>
     <string name="no_contacts_with_emails">Ulac inermisen s yimaylen yettwafen</string>
     <string name="no_contacts_with_phone_numbers">Ulac inermisen s wuṭṭunen n tilifun</string>
+    <string name="remove_from_group">Kkes seg ugraw</string>
+    <string name="no_group_participants">Agraw-agi d ilem</string>
 </resources>
