@@ -30,4 +30,10 @@
     <string name="no_contacts_with_phone_numbers">Ulac inermisen s wuṭṭunen n tilifun</string>
     <string name="remove_from_group">Kkes seg ugraw</string>
     <string name="no_group_participants">Agraw-agi d ilem</string>
+    <string name="create_group_under_account">Rnu agraw daw n umiḍan</string>
+    <string name="show_phone_numbers">Iɣewwaṛen</string>
+    <string name="show_contact_thumbnails">Sken-d tinfulin n unermis</string>
+    <string name="manage_shown_contact_fields">Sefrek urti n unermis yettwaseknen</string>
+    <string name="contacts">Inermisen</string>
+    <string name="show_only_contacts_with_numbers">Sken kan inermisen s wuṭṭunen n tiliɣri</string>
 </resources>
