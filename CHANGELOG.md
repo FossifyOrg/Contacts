@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Fixed invisible navigation bars in contact viewer ([#415])
 
 ## [1.4.0] - 2025-10-29
 ### Changed
@@ -104,6 +106,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#321]: https://github.com/FossifyOrg/Contacts/issues/321
 [#339]: https://github.com/FossifyOrg/Contacts/issues/339
 [#360]: https://github.com/FossifyOrg/Contacts/issues/360
+[#415]: https://github.com/FossifyOrg/Contacts/issues/415
 
 [Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.4.0...HEAD
 [1.4.0]: https://github.com/FossifyOrg/Contacts/compare/1.3.0...1.4.0
