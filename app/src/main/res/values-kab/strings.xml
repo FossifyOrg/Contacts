@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_launcher_name">Inermisen</string>
+    <string name="address">Tansa</string>
+    <string name="street">Azniq</string>
+    <string name="city">Tiɣremt</string>
+    <string name="region">Aɣrem</string>
+    <string name="country">Tamurt</string>
+    <string name="new_contact">Anermis amaynut</string>
+    <string name="edit_contact">Ẓreg anermis</string>
+    <string name="select_contact">Fren anermis</string>
+    <string name="select_account">Fren amiḍan</string>
+    <string name="add_contacts">Rnu inermisen</string>
+    <string name="create_group">Snulfu-d agraw</string>
+    <string name="remove_photo">Kkes tawlaft</string>
+    <string name="change_photo">Snifel tawlaft</string>
+    <string name="call_contact">Siwel-as i unermis</string>
+    <string name="search_contacts">Nadi inermisen</string>
+    <string name="add_to_group">Rnu-t ɣer ugraw</string>
+    <string name="postcode">Tangalt n lbuṣṭa</string>
+    <string name="pobox">Tanaka n lbuṣṭa</string>
+    <string name="inserting">Tugra…</string>
+    <string name="updating">Aleqqem…</string>
+    <string name="phone_storage">Takatut n tiliɣri</string>
+    <string name="dialpad">Anasiw n yimḍanen</string>
+    <string name="job_position">Axeddim-is</string>
+    <string name="send_sms_to_group">Azen SMS i ugraw</string>
+    <string name="send_email_to_group">Azen imayl i ugraw</string>
+    <string name="no_contacts_with_emails">Ulac inermisen s yimaylen yettwafen</string>
+    <string name="no_contacts_with_phone_numbers">Ulac inermisen s wuṭṭunen n tilifun</string>
+    <string name="remove_from_group">Kkes seg ugraw</string>
+    <string name="no_group_participants">Agraw-agi d ilem</string>
+    <string name="create_group_under_account">Rnu agraw daw n umiḍan</string>
+    <string name="show_phone_numbers">Iɣewwaṛen</string>
+    <string name="show_contact_thumbnails">Sken-d tinfulin n unermis</string>
+    <string name="manage_shown_contact_fields">Sefrek urti n unermis yettwaseknen</string>
+    <string name="contacts">Inermisen</string>
+    <string name="show_only_contacts_with_numbers">Sken kan inermisen s wuṭṭunen n tiliɣri</string>
+    <string name="show_private_contacts">Sken inermisen usligen i tiliɣri Fossify, Amazan SMS Fossify d uwitay Fossify</string>
+    <string name="toggle_favorite">Beddel amenyaf</string>
+</resources>
