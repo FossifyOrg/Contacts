@@ -10,7 +10,11 @@ import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
 import android.media.RingtoneManager
 import android.net.Uri
-import android.provider.ContactsContract.CommonDataKinds.*
+import android.provider.ContactsContract.CommonDataKinds.BaseTypes
+import android.provider.ContactsContract.CommonDataKinds.Email
+import android.provider.ContactsContract.CommonDataKinds.Event
+import android.provider.ContactsContract.CommonDataKinds.Im
+import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
@@ -23,7 +27,17 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
 import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.RadioGroupDialog
-import org.fossify.commons.extensions.*
+import org.fossify.commons.extensions.beGone
+import org.fossify.commons.extensions.beVisible
+import org.fossify.commons.extensions.getContrastColor
+import org.fossify.commons.extensions.getNameLetter
+import org.fossify.commons.extensions.getProperBackgroundColor
+import org.fossify.commons.extensions.insetsController
+import org.fossify.commons.extensions.launchSendSMSIntent
+import org.fossify.commons.extensions.realScreenSize
+import org.fossify.commons.extensions.sendEmailIntent
+import org.fossify.commons.extensions.setNavigationBarAppearance
+import org.fossify.commons.extensions.showErrorToast
 import org.fossify.commons.helpers.ContactsHelper
 import org.fossify.commons.helpers.letterBackgroundColors
 import org.fossify.commons.models.RadioItem
@@ -32,12 +46,20 @@ import org.fossify.contacts.R
 import org.fossify.contacts.extensions.shareContacts
 
 abstract class ContactActivity : SimpleActivity() {
-    protected val PICK_RINGTONE_INTENT_ID = 1500
-    protected val INTENT_SELECT_RINGTONE = 600
+    companion object {
+        protected const val PICK_RINGTONE_INTENT_ID = 1500
+        protected const val INTENT_SELECT_RINGTONE = 600
+    }
 
     protected var contact: Contact? = null
     protected var originalRingtone: String? = null
     protected var currentContactPhotoPath = ""
+
+    override fun onResume() {
+        super.onResume()
+        window.insetsController().isAppearanceLightStatusBars = false
+        window.setNavigationBarAppearance(getProperBackgroundColor())
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, resultData: Intent?) {
         super.onActivityResult(requestCode, resultCode, resultData)
