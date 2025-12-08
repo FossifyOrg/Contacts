@@ -7,7 +7,7 @@ ksp = "2.3.3"
 detekt = "1.23.8"
 detektCompose = "0.4.28"
 #AndroidX
-androidx-swiperefreshlayout = "1.1.0"
+androidx-swiperefreshlayout = "1.2.0"
 #AutoFitTextView
 autofittextview = "0.2.1"
 #EzVCard
