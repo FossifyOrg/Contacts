@@ -76,4 +76,5 @@
     <string name="show_only_contacts_with_numbers">Yalnız telefon nömrəsi olan kontaktları göstər</string>
     <string name="dialpad">Zəng paneli</string>
     <string name="show_private_contacts">Şəxsi kontaktları Fossify Telefon, Fossify SMS Messencer və Fossify Təqvimdə göstər</string>
+    <string name="street">Küçə</string>
 </resources>
