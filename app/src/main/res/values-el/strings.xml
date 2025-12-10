@@ -5,7 +5,7 @@
     <string name="inserting">Εισαγωγή…</string>
     <string name="updating">Ενημέρωση…</string>
     <string name="phone_storage">Αποθ. Τηλεφώνου</string>
-    <string name="phone_storage_hidden">Μνήμη τηλεφώνου (κρυφές από άλλες εφαρμογές)</string>
+    <string name="phone_storage_hidden">Μνήμη τηλεφώνου (κρυφή από άλλες εφαρμογές)</string>
     <string name="company">Εταιρεία</string>
     <string name="job_position">Θέση Εργασίας</string>
     <string name="send_sms_to_contacts">Αποστολή SMS σε επαφές</string>
@@ -72,7 +72,7 @@
         <item quantity="one">%d ομάδα</item>
         <item quantity="other">%d ομάδες</item>
     </plurals>
-    <string name="faq_1_title">Θέλω να αλλάξω τα πεδία που θα είναι ορατά στις επαφές. Μπορώ να το κάνω?</string>
+    <string name="faq_1_title">Θέλω να αλλάξω τα πεδία που θα είναι ορατά στις επαφές. Μπορώ να το κάνω;</string>
     <string name="faq_1_text">Ναι, το μόνο που έχετε να κάνετε είναι να μεταβείτε στις Ρυθμίσεις -&gt; Διαχείριση εμφανιζόμενων πεδίων επαφής. Εκεί μπορείτε να επιλέξετε ποια πεδία θα πρέπει να είναι ορατά. Κάποια από αυτά είναι ακόμη και απενεργοποιημένα από προεπιλογή, επομένως ίσως βρείτε κάποια νέα εκεί.</string>
     <string name="street">Οδός</string>
     <string name="city">Πόλη</string>
