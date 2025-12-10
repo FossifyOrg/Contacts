@@ -27,8 +27,6 @@
     <ID>LongMethod:VcfImporter.kt$VcfImporter$fun importContacts(path: String, targetContactSource: String): ImportResult</ID>
     <ID>MagicNumber:AutomaticBackupReceiver.kt$AutomaticBackupReceiver$3000</ID>
     <ID>MagicNumber:Constants.kt$6</ID>
-    <ID>MagicNumber:ContactActivity.kt$ContactActivity$1500</ID>
-    <ID>MagicNumber:ContactActivity.kt$ContactActivity$600</ID>
     <ID>MagicNumber:EditContactActivity.kt$EditContactActivity$0.5f</ID>
     <ID>MagicNumber:EditContactActivity.kt$EditContactActivity$100</ID>
     <ID>MagicNumber:EditContactActivity.kt$EditContactActivity$512</ID>
@@ -221,8 +219,6 @@
     <ID>TooManyFunctions:MyViewPagerFragment.kt$MyViewPagerFragment&lt;Binding : MyViewPagerFragment.InnerBinding&gt; : CoordinatorLayout</ID>
     <ID>TooManyFunctions:SettingsActivity.kt$SettingsActivity : SimpleActivity</ID>
     <ID>TooManyFunctions:ViewContactActivity.kt$ViewContactActivity : ContactActivity</ID>
-    <ID>VariableNaming:ContactActivity.kt$ContactActivity$protected val INTENT_SELECT_RINGTONE = 600</ID>
-    <ID>VariableNaming:ContactActivity.kt$ContactActivity$protected val PICK_RINGTONE_INTENT_ID = 1500</ID>
     <ID>VariableNaming:ContactsAdapter.kt$ContactsAdapter$private val NEW_GROUP_ID = -1</ID>
     <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IM = IMsHolder.contactIm.value</ID>
     <ID>VariableNaming:EditContactActivity.kt$EditContactActivity$val IMHolder = ItemEditImBinding.bind(binding.contactImsHolder.getChildAt(0))</ID>
@@ -238,8 +234,6 @@
     <ID>VariableNaming:ViewContactActivity.kt$ViewContactActivity$val IM = it</ID>
     <ID>VariableNaming:ViewContactActivity.kt$ViewContactActivity$var IMs = contact!!.IMs.toMutableSet() as LinkedHashSet&lt;IM&gt;</ID>
     <ID>WildcardImport:ChangeSortingDialog.kt$import org.fossify.commons.helpers.*</ID>
-    <ID>WildcardImport:ContactActivity.kt$import android.provider.ContactsContract.CommonDataKinds.*</ID>
-    <ID>WildcardImport:ContactActivity.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:ContactsAdapter.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:ContactsAdapter.kt$import org.fossify.commons.helpers.*</ID>
     <ID>WildcardImport:ContactsAdapter.kt$import org.fossify.contacts.helpers.*</ID>
@@ -247,11 +241,6 @@
     <ID>WildcardImport:Context.kt$import org.fossify.commons.helpers.*</ID>
     <ID>WildcardImport:CreateNewGroupDialog.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:CustomLabelDialog.kt$import org.fossify.commons.extensions.*</ID>
-    <ID>WildcardImport:EditContactActivity.kt$import android.provider.ContactsContract.CommonDataKinds.*</ID>
-    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.commons.extensions.*</ID>
-    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.commons.helpers.*</ID>
-    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.commons.models.contacts.*</ID>
-    <ID>WildcardImport:EditContactActivity.kt$import org.fossify.contacts.databinding.*</ID>
     <ID>WildcardImport:ExportContactsDialog.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:GroupContactsActivity.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:InsertOrEditContactActivity.kt$import org.fossify.commons.extensions.*</ID>
