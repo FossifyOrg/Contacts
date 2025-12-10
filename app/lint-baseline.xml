@@ -97,6 +97,17 @@
     </issue>
 
     <issue
+        id="NewerVersionAvailable"
+        message="A newer version of io.nlopez.compose.rules:detekt than 0.4.28 is available: 0.5.1"
+        errorLine1="detektCompose = &quot;0.4.28&quot;"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="$HOME/work/Contacts/Contacts/gradle/libs.versions.toml"
+            line="8"
+            column="17"/>
+    </issue>
+
+    <issue
         id="UseCompatLoadingForDrawables"
         message="Use `ResourcesCompat.getDrawable()`"
         errorLine1="            val drawable = resources.getDrawable(R.drawable.shortcut_contact).mutate()"
@@ -114,7 +125,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
-            line="1495"
+            line="1574"
             column="9"/>
     </issue>
 
@@ -1695,7 +1706,7 @@
         errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
-            line="64"
+            line="86"
             column="27"/>
     </issue>
 
@@ -1706,7 +1717,7 @@
         errorLine2="                                           ~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
-            line="97"
+            line="119"
             column="44"/>
     </issue>
 
@@ -1717,7 +1728,7 @@
         errorLine2="                                           ~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
-            line="97"
+            line="119"
             column="44"/>
     </issue>
 
@@ -1728,7 +1739,7 @@
         errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
-            line="218"
+            line="240"
             column="22"/>
     </issue>
 
@@ -1739,7 +1750,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/ContactActivity.kt"
-            line="252"
+            line="274"
             column="13"/>
     </issue>
 
@@ -1772,7 +1783,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
-            line="611"
+            line="690"
             column="13"/>
     </issue>
 
@@ -1783,7 +1794,7 @@
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/contacts/activities/EditContactActivity.kt"
-            line="701"
+            line="780"
             column="40"/>
     </issue>
 
