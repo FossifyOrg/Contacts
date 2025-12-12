@@ -77,4 +77,11 @@
     <string name="faq_1_text">可能です。「設定」の「連絡先に表示するフィールドを管理」から、表示する項目を選択できます。これらの中にはデフォルトで無効になっている項目もあるので、新しい項目が見つかるかもしれません。</string>
     <string name="format_phone_numbers">電話番号の形式</string>
     <string name="show_private_contacts">非公開の連絡先をFossify電話、Fossify SMSメッセンジャー、Fossifyカレンダーに表示</string>
+    <string name="street">通り</string>
+    <string name="neighborhood">部屋番号</string>
+    <string name="city">市</string>
+    <string name="postcode">住所</string>
+    <string name="region">州</string>
+    <string name="country">国</string>
+    <string name="select_account">アカウント選択</string>
 </resources>
