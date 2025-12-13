@@ -390,9 +390,9 @@ class ContactsAdapter(
             setupViewBackground(activity)
             findViewById<ConstraintLayout>(org.fossify.commons.R.id.item_contact_frame)?.isSelected = selectedKeys.contains(contact.id)
             val fullName = contact.getNameToDisplay()
-            val normalizedFullName = fullName.normalizeString()
-            val normalizedSearchText = textToHighlight.normalizeString()
             findViewById<TextView>(org.fossify.commons.R.id.item_contact_name).text = if (textToHighlight.isEmpty()) fullName else {
+                val normalizedFullName = fullName.normalizeString()
+                val normalizedSearchText = textToHighlight.normalizeString()
                 if (normalizedFullName.contains(normalizedSearchText, true)) {
                     fullName.highlightTextPart(textToHighlight, properPrimaryColor)
                 } else {
