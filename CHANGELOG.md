@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Fixed invisible navigation bars in contact viewer ([#415])
+- Fixed search highlighting for characters with accents and diacritics ([#12])
 
 ## [1.4.0] - 2025-10-29
 ### Changed
@@ -98,6 +99,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial release
 
+[#12]: https://github.com/FossifyOrg/Contacts/issues/12
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
 [#78]: https://github.com/FossifyOrg/Contacts/issues/78
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
