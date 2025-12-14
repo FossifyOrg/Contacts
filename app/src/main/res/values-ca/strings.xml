@@ -74,7 +74,7 @@
         <item quantity="other">%d grups</item>
     </plurals>
     <string name="faq_1_title">Vull canviar quins camps són visibles als contactes. Puc fer-ho\?</string>
-    <string name="faq_1_text">Sí, tot el que has de fer és anar a Configuració -&gt; Gestionar els camps mostrats de contacte. Allà es pot seleccionar quins camps han de ser visibles. Alguns d\'ells fins i tot estan desactivats de manera predeterminada, de manera que és possible que en trobeu de nous.</string>
+    <string name="faq_1_text">Sí, tot el que has de fer és anar a Configuració -&gt; Gestiona els camps mostrats de contacte. Allà es pot seleccionar quins camps han de ser visibles. Alguns d\'ells fins i tot estan desactivats de manera predeterminada, de manera que és possible que en trobeu de nous.</string>
     <string name="prefix">Prefix</string>
     <string name="show_private_contacts">Mostra els contactes privats en el Fossify Phone, Fossify SMS Messenger i Fossify Calendar</string>
     <string name="format_phone_numbers">Format dels números de telèfon</string>
