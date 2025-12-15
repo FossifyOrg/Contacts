@@ -34,7 +34,6 @@ class VcfExporter {
         outputStream: OutputStream?,
         contacts: ArrayList<Contact>,
         showExportingToast: Boolean,
-        version: VCardVersion = VCardVersion.V4_0,
         callback: (result: ExportResult) -> Unit,
     ) {
         try {
@@ -47,158 +46,25 @@ class VcfExporter {
                 context.toast(org.fossify.commons.R.string.exporting)
             }
 
+            val version = getVCardVersion(context)
+
             val cards = ArrayList<VCard>()
             for (contact in contacts) {
                 val card = VCard()
 
-                val formattedName = arrayOf(
-                    contact.prefix,
-                    contact.firstName,
-                    contact.middleName,
-                    contact.surname,
-                    contact.suffix
-                )
-                    .filter { it.isNotEmpty() }
-                    .joinToString(separator = " ")
+                val formattedName = getFormattedName(contact)
                 card.formattedName = FormattedName(formattedName)
 
-                StructuredName().apply {
-                    prefixes.add(contact.prefix)
-                    given = contact.firstName
-                    additionalNames.add(contact.middleName)
-                    family = contact.surname
-                    suffixes.add(contact.suffix)
-                    card.structuredName = this
-                }
-
-                if (contact.nickname.isNotEmpty()) {
-                    card.setNickname(contact.nickname)
-                }
-
-                contact.phoneNumbers.forEach {
-                    val phoneNumber = Telephone(it.value)
-                    phoneNumber.parameters.addType(getPhoneNumberTypeLabel(it.type, it.label))
-                    if (it.isPrimary) {
-                        phoneNumber.parameters.addType(getPreferredType(1))
-                    }
-                    card.addTelephoneNumber(phoneNumber)
-                }
-
-                contact.emails.forEach {
-                    val email = Email(it.value)
-                    email.parameters.addType(getEmailTypeLabel(it.type, it.label))
-                    card.addEmail(email)
-                }
-
-                contact.events.forEach { event ->
-                    if (event.type == Event.TYPE_ANNIVERSARY || event.type == Event.TYPE_BIRTHDAY) {
-                        val dateTime = event.value.getDateTimeFromDateString(false)
-                        if (event.value.startsWith("--")) {
-                            val partial = PartialDate.builder()
-                                .month(dateTime.monthOfYear)
-                                .date(dateTime.dayOfMonth)
-                                .build()
-
-                            if (event.type == Event.TYPE_BIRTHDAY) {
-                                card.birthdays.add(Birthday(partial))
-                            } else {
-                                card.anniversaries.add(Anniversary(partial))
-                            }
-                        } else {
-                            val date = LocalDate
-                                .of(dateTime.year, dateTime.monthOfYear, dateTime.dayOfMonth)
-
-                            if (event.type == Event.TYPE_BIRTHDAY) {
-                                card.birthdays.add(Birthday(date))
-                            } else {
-                                card.anniversaries.add(Anniversary(date))
-                            }
-                        }
-                    }
-                }
-
-                contact.addresses.forEach {
-                    val address = Address()
-                    if (
-                        listOf(
-                            it.country,
-                            it.region,
-                            it.city,
-                            it.postcode,
-                            it.pobox,
-                            it.street,
-                            it.neighborhood
-                        )
-                            .map { it.isEmpty() }
-                            .fold(false) { a, b -> a || b }
-                    ) {
-                        address.country = it.country
-                        address.region = it.region
-                        address.locality = it.city
-                        address.postalCode = it.postcode
-                        address.poBox = it.pobox
-                        address.streetAddress = it.street
-                        address.extendedAddress = it.neighborhood
-                    } else {
-                        address.streetAddress = it.value
-                    }
-                    address.parameters.addType(getAddressTypeLabel(it.type, it.label))
-                    card.addAddress(address)
-                }
-
-                contact.IMs.forEach {
-                    val impp = when (it.type) {
-                        Im.PROTOCOL_AIM -> Impp.aim(it.value)
-                        Im.PROTOCOL_YAHOO -> Impp.yahoo(it.value)
-                        Im.PROTOCOL_MSN -> Impp.msn(it.value)
-                        Im.PROTOCOL_ICQ -> Impp.icq(it.value)
-                        Im.PROTOCOL_SKYPE -> Impp.skype(it.value)
-                        Im.PROTOCOL_GOOGLE_TALK -> Impp(HANGOUTS, it.value)
-                        Im.PROTOCOL_QQ -> Impp(QQ, it.value)
-                        Im.PROTOCOL_JABBER -> Impp(JABBER, it.value)
-                        else -> Impp(it.label, it.value)
-                    }
-
-                    card.addImpp(impp)
-                }
-
-                if (contact.notes.isNotEmpty()) {
-                    card.addNote(contact.notes)
-                }
-
-                if (contact.organization.isNotEmpty()) {
-                    val organization = Organization()
-                    organization.values.add(contact.organization.company)
-                    card.organization = organization
-                    card.titles.add(Title(contact.organization.jobPosition))
-                }
-
-                contact.websites.forEach {
-                    card.addUrl(it)
-                }
-
-                try {
-                    val inputStream =
-                        context.contentResolver.openInputStream(contact.photoUri.toUri())
-
-                    if (inputStream != null) {
-                        val photoByteArray = inputStream.readBytes()
-                        val photo = Photo(photoByteArray, ImageType.JPEG)
-                        card.addPhoto(photo)
-                        inputStream.close()
-                    }
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                }
-
-                if (contact.groups.isNotEmpty()) {
-                    val groupList = Categories()
-                    contact.groups.forEach {
-                        groupList.values.add(it.title)
-                    }
-
-                    card.categories = groupList
-                }
+                addPhoneNumbers(card, contact)
+                addEmails(card, contact)
+                addEvents(card, contact)
+                addAdress(card, contact)
+                addIMs(card, contact)
+                addNotes(card, contact)
+                addOrganization(card, contact)
+                addWebsites(card, contact)
+                addPhoto(context, card, contact)
+                addGroups(card, contact)
 
                 cards.add(card)
                 contactsExported++
@@ -243,6 +109,170 @@ class VcfExporter {
         StructuredPostal.TYPE_WORK -> WORK
         StructuredPostal.TYPE_OTHER -> OTHER
         else -> label
+        }
+
+    private fun getVCardVersion(context: Context): VCardVersion {
+        val config = Config.newInstance(context)
+        val versionString = config.vCardVersion
+
+        return when (versionString) {
+            "2.1" -> VCardVersion.V2_1
+            "3" -> VCardVersion.V3_0
+            "4" -> VCardVersion.V4_0
+            else -> VCardVersion.V4_0
+        }
+    }
+
+    private fun getFormattedName(contact: Contact): String {
+        return arrayOf(
+            contact.prefix,
+            contact.firstName,
+            contact.middleName,
+            contact.surname,
+            contact.suffix
+        )
+            .filter { it.isNotEmpty() }
+            .joinToString(separator = " ")
+    }
+
+    private fun addPhoneNumbers(card: VCard, contact: Contact) {
+        contact.phoneNumbers.forEach {
+            val phoneNumber = Telephone(it.value)
+            phoneNumber.parameters.addType(getPhoneNumberTypeLabel(it.type, it.label))
+            if (it.isPrimary) {
+                phoneNumber.parameters.addType(getPreferredType(1))
+            }
+            card.addTelephoneNumber(phoneNumber)
+        }
+    }
+
+    private fun addEmails(card: VCard, contact: Contact) {
+        contact.emails.forEach {
+            val email = Email(it.value)
+            email.parameters.addType(getEmailTypeLabel(it.type, it.label))
+            card.addEmail(email)
+        }
+    }
+
+    private fun addEvents(card: VCard, contact: Contact) {
+        contact.events.forEach { event ->
+            if (event.type == Event.TYPE_ANNIVERSARY || event.type == Event.TYPE_BIRTHDAY) {
+                val dateTime = event.value.getDateTimeFromDateString(false)
+                if (event.value.startsWith("--")) {
+                    val partial = PartialDate.builder()
+                        .month(dateTime.monthOfYear)
+                        .date(dateTime.dayOfMonth)
+                        .build()
+
+                    if (event.type == Event.TYPE_BIRTHDAY) {
+                        card.birthdays.add(Birthday(partial))
+                    } else {
+                        card.anniversaries.add(Anniversary(partial))
+                    }
+                } else {
+                    val date = LocalDate.of(dateTime.year, dateTime.monthOfYear, dateTime.dayOfMonth)
+
+                    if (event.type == Event.TYPE_BIRTHDAY) {
+                        card.birthdays.add(Birthday(date))
+                    } else {
+                        card.anniversaries.add(Anniversary(date))
+                    }
+                }
+            }
+        }
+    }
+
+    private fun addPhoto(context: Context, card: VCard, contact: Contact) {
+        try {
+            val inputStream = context.contentResolver.openInputStream(contact.photoUri.toUri())
+            inputStream?.use { stream ->
+                val photoByteArray = stream.readBytes()
+                val photo = Photo(photoByteArray, ImageType.JPEG)
+                card.addPhoto(photo)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    private fun addIMs(card: VCard, contact: Contact) {
+        contact.IMs.forEach {
+            val impp = when (it.type) {
+                Im.PROTOCOL_AIM -> Impp.aim(it.value)
+                Im.PROTOCOL_YAHOO -> Impp.yahoo(it.value)
+                Im.PROTOCOL_MSN -> Impp.msn(it.value)
+                Im.PROTOCOL_ICQ -> Impp.icq(it.value)
+                Im.PROTOCOL_SKYPE -> Impp.skype(it.value)
+                Im.PROTOCOL_GOOGLE_TALK -> Impp(HANGOUTS, it.value)
+                Im.PROTOCOL_QQ -> Impp(QQ, it.value)
+                Im.PROTOCOL_JABBER -> Impp(JABBER, it.value)
+                else -> Impp(it.label, it.value)
+            }
+
+            card.addImpp(impp)
+        }
+    }
+
+    private fun addNotes(card: VCard, contact: Contact) {
+        if (contact.notes.isNotEmpty()) {
+            card.addNote(contact.notes)
+        }
+    }
+
+    private fun addOrganization(card: VCard, contact: Contact) {
+        if (contact.organization.isNotEmpty()) {
+            val organization = Organization()
+            organization.values.add(contact.organization.company)
+            card.organization = organization
+            card.titles.add(Title(contact.organization.jobPosition))
+        }
+    }
+
+    private fun addWebsites(card: VCard, contact: Contact) {
+        contact.websites.forEach {
+            card.addUrl(it)
+        }
+    }
+
+    private fun addAdress(card: VCard, contact: Contact) {
+        contact.addresses.forEach {
+            val address = Address()
+            if (
+                listOf(
+                    it.country,
+                    it.region,
+                    it.city,
+                    it.postcode,
+                    it.pobox,
+                    it.street,
+                    it.neighborhood
+                )
+                    .map { it.isEmpty() }
+                    .fold(false) { a, b -> a || b }
+            ) {
+                address.country = it.country
+                address.region = it.region
+                address.locality = it.city
+                address.postalCode = it.postcode
+                address.poBox = it.pobox
+                address.streetAddress = it.street
+                address.extendedAddress = it.neighborhood
+            } else {
+                address.streetAddress = it.value
+            }
+            address.parameters.addType(getAddressTypeLabel(it.type, it.label))
+            card.addAddress(address)
+        }
+    }
+
+    private fun addGroups(card: VCard, contact: Contact) {
+        if (contact.groups.isNotEmpty()) {
+            val groupList = Categories()
+            contact.groups.forEach {
+                groupList.values.add(it.title)
+            }
+            card.categories = groupList
+        }
     }
 
     private fun getPreferredType(value: Int) = "$PREF=$value"
