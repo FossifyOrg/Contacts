@@ -34,7 +34,6 @@ class VcfExporter {
         outputStream: OutputStream?,
         contacts: ArrayList<Contact>,
         showExportingToast: Boolean,
-        version: VCardVersion = VCardVersion.V4_0,
         callback: (result: ExportResult) -> Unit,
     ) {
         try {
@@ -45,6 +44,15 @@ class VcfExporter {
 
             if (showExportingToast) {
                 context.toast(org.fossify.commons.R.string.exporting)
+            }
+
+            val config = Config.newInstance(context)
+            val versionString = config.VCardVersion
+            val version = when (versionString) {
+                "2.1" -> VCardVersion.V2_1
+                "3" -> VCardVersion.V3_0
+                "4" -> VCardVersion.V4_0
+                else -> VCardVersion.V4_0
             }
 
             val cards = ArrayList<VCard>()

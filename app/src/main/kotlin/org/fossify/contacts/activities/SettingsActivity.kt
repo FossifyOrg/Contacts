@@ -14,6 +14,7 @@ import org.fossify.contacts.R
 import org.fossify.contacts.databinding.ActivitySettingsBinding
 import org.fossify.contacts.dialogs.ExportContactsDialog
 import org.fossify.contacts.dialogs.ManageAutoBackupsDialog
+import org.fossify.contacts.dialogs.ManageVCardVersionDialog
 import org.fossify.contacts.dialogs.ManageVisibleFieldsDialog
 import org.fossify.contacts.dialogs.ManageVisibleTabsDialog
 import org.fossify.contacts.extensions.*
@@ -64,6 +65,7 @@ class SettingsActivity : SimpleActivity() {
         setupManageAutomaticBackups()
         setupExportContacts()
         setupImportContacts()
+        setupVCardVersion()
         updateTextColors(binding.settingsHolder)
 
         arrayOf(
@@ -301,6 +303,12 @@ class SettingsActivity : SimpleActivity() {
     private fun setupImportContacts() {
         binding.contactsImportHolder.setOnClickListener {
             tryImportContacts()
+        }
+    }
+
+    private fun setupVCardVersion() {
+        binding.vcardVersionHolder.setOnClickListener {
+            ManageVCardVersionDialog(this)
         }
     }
 
