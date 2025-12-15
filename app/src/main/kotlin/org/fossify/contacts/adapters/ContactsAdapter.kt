@@ -389,7 +389,7 @@ class ContactsAdapter(
         view.apply {
             setupViewBackground(activity)
             findViewById<ConstraintLayout>(org.fossify.commons.R.id.item_contact_frame)?.isSelected = selectedKeys.contains(contact.id)
-            val fullName = contact.getNameToDisplay()
+            val fullName = contact.getNameToDisplay().replace(Regex("\\s+"), " ")
             findViewById<TextView>(org.fossify.commons.R.id.item_contact_name).text = if (textToHighlight.isEmpty()) fullName else {
                 val normalizedFullName = fullName.normalizeString()
                 val normalizedSearchText = textToHighlight.normalizeString()
