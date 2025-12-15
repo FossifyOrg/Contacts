@@ -5,7 +5,7 @@ import org.fossify.commons.extensions.getAlertDialogBuilder
 import org.fossify.commons.extensions.setupDialogStuff
 import org.fossify.contacts.R
 import org.fossify.contacts.extensions.config
-import org.fossify.contacts.helpers.*
+import org.fossify.contacts.helpers.DEFAULT_VCARD_VERSION
 
 class ManageVCardVersionDialog(val activity: BaseSimpleActivity) {
     private var view = activity.layoutInflater.inflate(R.layout.dialog_vcard_version, null)
@@ -18,7 +18,7 @@ class ManageVCardVersionDialog(val activity: BaseSimpleActivity) {
             put("4", R.id.manage_vcard_version_4)
         }
 
-        val currentVersion = activity.config.VCardVersion
+        val currentVersion = activity.config.vCardVersion
         versionRadioButtons[currentVersion]?.let { radioButtonId ->
             view.findViewById<android.widget.RadioButton>(radioButtonId).isChecked = true
         }
@@ -36,6 +36,6 @@ class ManageVCardVersionDialog(val activity: BaseSimpleActivity) {
             view.findViewById<android.widget.RadioButton>(entry.value).isChecked
         }?.key ?: DEFAULT_VCARD_VERSION
 
-        activity.config.VCardVersion = selectedVersion
+        activity.config.vCardVersion = selectedVersion
     }
 }

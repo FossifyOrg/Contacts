@@ -18,7 +18,7 @@ class Config(context: Context) : BaseConfig(context) {
         set(autoBackupContactSources) = prefs.edit().remove(AUTO_BACKUP_CONTACT_SOURCES).putStringSet(AUTO_BACKUP_CONTACT_SOURCES, autoBackupContactSources)
             .apply()
 
-    var VCardVersion: String
+    var vCardVersion: String
         get() = prefs.getString(VCARD_VERSION, DEFAULT_VCARD_VERSION) ?: DEFAULT_VCARD_VERSION
         set(vcardVersion) = prefs.edit().putString(VCARD_VERSION, vcardVersion).apply()
 }
