@@ -5,6 +5,7 @@ import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Event
 import android.provider.ContactsContract.CommonDataKinds.Im
 import android.provider.ContactsContract.CommonDataKinds.Phone
+import android.provider.ContactsContract.CommonDataKinds.StructuredPostal
 import androidx.core.net.toUri
 import ezvcard.Ezvcard
 import ezvcard.VCard
@@ -102,6 +103,13 @@ class VcfExporter {
         Email.TYPE_OTHER -> OTHER
         else -> label
     }
+
+    private fun getAddressTypeLabel(type: Int, label: String) = when (type) {
+        StructuredPostal.TYPE_HOME -> HOME
+        StructuredPostal.TYPE_WORK -> WORK
+        StructuredPostal.TYPE_OTHER -> OTHER
+        else -> label
+        }
 
     private fun getVCardVersion(context: Context): VCardVersion {
         val config = Config.newInstance(context)
@@ -227,8 +235,33 @@ class VcfExporter {
     }
 
     private fun addAdress(card: VCard, contact: Contact) {
-        contact.websites.forEach {
-            card.addUrl(it)
+        contact.addresses.forEach {
+            val address = Address()
+            if (
+                listOf(
+                    it.country,
+                    it.region,
+                    it.city,
+                    it.postcode,
+                    it.pobox,
+                    it.street,
+                    it.neighborhood
+                )
+                    .map { it.isEmpty() }
+                    .fold(false) { a, b -> a || b }
+            ) {
+                address.country = it.country
+                address.region = it.region
+                address.locality = it.city
+                address.postalCode = it.postcode
+                address.poBox = it.pobox
+                address.streetAddress = it.street
+                address.extendedAddress = it.neighborhood
+            } else {
+                address.streetAddress = it.value
+            }
+            address.parameters.addType(getAddressTypeLabel(it.type, it.label))
+            card.addAddress(address)
         }
     }
 
