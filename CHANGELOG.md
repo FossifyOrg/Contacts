@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fixed incorrect spacing between prefix and last name ([#157])
+
 ## [1.5.0] - 2025-12-16
 ### Changed
 - Updated translations
@@ -107,6 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#12]: https://github.com/FossifyOrg/Contacts/issues/12
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
 [#78]: https://github.com/FossifyOrg/Contacts/issues/78
+[#157]: https://github.com/FossifyOrg/Contacts/issues/157
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
 [#281]: https://github.com/FossifyOrg/Contacts/issues/281
 [#289]: https://github.com/FossifyOrg/Contacts/issues/289
