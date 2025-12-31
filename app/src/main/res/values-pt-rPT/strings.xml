@@ -36,7 +36,7 @@
     <string name="remove_photo">Remover foto</string>
     <string name="show_dialpad_button">Mostrar botão Marcador no ecrã principal</string>
     <string name="view_contact">Ver detalhes</string>
-    <string name="show_private_contacts">Partilhar contactos entre Fossify Phone, Fossify SMS Messenger e Fossify Calendar</string>
+    <string name="show_private_contacts">Partilhar contactos entre Fossify Phone, Fossify Messages e Fossify Calendar</string>
     <string name="call_contact">Ligar</string>
     <string name="show_only_contacts_with_numbers">Mostrar apenas contactos com número de telefone</string>
     <string name="search_groups">Pesquisar grupos</string>
@@ -85,4 +85,6 @@
     <string name="neighborhood">Apartamento ou número da porta</string>
     <string name="postcode">Código postal</string>
     <string name="pobox">Caixa de Correio</string>
+    <string name="select_account">Selecionar conta</string>
+    <string name="structured_addresses">Endereços estruturados (modo de edição)</string>
 </resources>
