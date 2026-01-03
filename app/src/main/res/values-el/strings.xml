@@ -82,5 +82,5 @@
     <string name="select_account">Επέλεξε λογαριασμό</string>
     <string name="format_phone_numbers">Μορφοποίηση αριθμών τηλεφώνου</string>
     <string name="neighborhood">Αριθμός οικείας</string>
-    <string name="region">Περιοχή</string>
+    <string name="region">Γεωγραφικό Διαμέρισμα</string>
 </resources>
