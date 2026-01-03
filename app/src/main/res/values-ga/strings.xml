@@ -76,7 +76,7 @@
     <string name="contacts">Teagmhálaithe</string>
     <string name="import_contacts_from_vcf">Iompórtáil teagmhálaithe ó chomhad .vcf</string>
     <string name="show_only_contacts_with_numbers">Ná taispeáin ach teagmhálaithe le huimhreacha gutháin</string>
-    <string name="show_private_contacts">Taispeáin teagmhálacha príobháideacha le Fossify Phone, Fossify SMS Messenger agus Fossify Calendar</string>
+    <string name="show_private_contacts">Taispeáin teagmhálacha príobháideacha do Fossify Phone, Teachtaireachtaí, agus Féilire</string>
     <string name="add_contacts">Cuir teagmhálaithe leis</string>
     <string name="create_group_under_account">Cruthaigh grúpa faoi chuntas</string>
     <string name="websites">Láithreáin Ghréasáin</string>
