@@ -76,7 +76,7 @@
     <string name="merge_duplicate_contacts">Flet duplikerede kontakter</string>
     <string name="instant_messaging">Instant messaging (IM)</string>
     <string name="format_phone_numbers">Formatér telefonnumre</string>
-    <string name="show_private_contacts">Vis private kontakter for Fossify Telefon, Fossify Beskeder og Fossify Kalender</string>
+    <string name="show_private_contacts">Vis private kontakter for Fossify Telefon, Beskeder og Kalender</string>
     <string name="street">Vej</string>
     <string name="neighborhood">Lejligheds- eller værelsesnummer</string>
     <string name="city">By</string>
