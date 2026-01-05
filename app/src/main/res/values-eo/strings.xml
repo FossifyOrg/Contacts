@@ -26,7 +26,7 @@
     <string name="job_position">Posteno</string>
     <string name="remove_from_group">Forigi el grupo</string>
     <string name="add_contacts">Aldoni kontaktojn</string>
-    <string name="show_private_contacts">Montri privatan kontaktojn al Fossify Telefono, Fossify Mesaĝoj kaj Fossify Kalendaro</string>
+    <string name="show_private_contacts">Montri privatajn kontaktojn al Fossify Telefono, Mesaĝoj kaj Kalendaro</string>
     <string name="toggle_favorite">Baskuligi plej ŝatatan</string>
     <string name="import_contacts_from_vcf">Importi kontaktojn el .vcf-dosiero</string>
     <string name="export_contacts">Eksporti kontaktojn</string>
