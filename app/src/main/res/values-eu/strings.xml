@@ -75,7 +75,7 @@
     <string name="faq_1_title">Aldatu ditzaket kontaktuetan ikusgarri dauden eremuak?</string>
     <string name="faq_1_text">Bai, joan hona: Ezarpenak -&gt; Kudeatu erakutsitako kontaktu eremuan. Hor hautatu dezakezu zein eremu nahi duzun ikusgarri izatea. Batzuk desaktibatuta daude era lehenetsian, berri batzuk aurkitu ditzakezu.</string>
     <string name="add_number_to_contact">Gehitu zenbakia kontaktuari</string>
-    <string name="show_private_contacts">Erakutsi kontaktu pribatuak Fossify Phone, Fossify SMS Messenger eta Fossify Calendar-en</string>
+    <string name="show_private_contacts">Erakutsi kontaktu pribatuak Fossify Phone, Mezuetan eta Fossify Calendar-en</string>
     <string name="format_phone_numbers">Eman formatu telefono-zenbakiei</string>
     <string name="street">Kalea</string>
     <string name="neighborhood">Apartamentu edo suite zenbakia</string>
