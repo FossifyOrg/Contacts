@@ -8,8 +8,8 @@
     <string name="phone_storage_hidden">Bộ nhớ điện thoại (không hiển thị bởi các ứng dụng khác)</string>
     <string name="company">Công ty</string>
     <string name="job_position">Vị trí công việc</string>
-    <string name="send_sms_to_contacts">Gửi tin nhắn SMS đến danh bạ</string>
-    <string name="send_email_to_contacts">Gửi email đến danh bạ</string>
+    <string name="send_sms_to_contacts">Gửi tin nhắn SMS đến liên hệ</string>
+    <string name="send_email_to_contacts">Gửi email đến liên hệ</string>
     <string name="send_sms_to_group">Gửi tin nhắn SMS đến nhóm</string>
     <string name="send_email_to_group">Gửi email đến nhóm</string>
     <string name="fields_empty">Phải điền ít nhất một trường</string>
@@ -39,13 +39,13 @@
     <string name="view_contact">Xem chi tiết liên hệ</string>
     <string name="manage_shown_contact_fields">Quản lý các trường liên hệ được hiển thị</string>
     <string name="contacts">Liên hệ</string>
-    <string name="show_only_contacts_with_numbers">Chỉ hiện danh bạ với số điện thoại</string>
+    <string name="show_only_contacts_with_numbers">Chỉ hiện liên hệ có số điện thoại</string>
     <string name="merge_duplicate_contacts">Hợp nhất các liên hệ trùng lặp</string>
     <string name="no_favorites">Có vẻ như bạn chưa thêm bất kỳ liên hệ yêu thích nào.</string>
     <string name="toggle_favorite">Thích/Bỏ thích</string>
     <string name="search_contacts">Tìm liên hệ</string>
     <string name="search_favorites">Tìm kiếm yêu thích</string>
-    <string name="search_groups">Tìm nhóm</string>
+    <string name="search_groups">Tìm kiếm nhóm</string>
     <string name="import_contacts">Nhập liên hệ</string>
     <string name="export_contacts">Xuất liên hệ</string>
     <string name="import_contacts_from_vcf">Nhập liên hệ từ một tệp .vcf</string>
@@ -54,8 +54,8 @@
     <string name="target_contact_source">Nguồn liên hệ mục tiêu</string>
     <string name="include_contact_sources">Bao gồm các nguồn liên hệ</string>
     <string name="filename_without_vcf">Tên tệp (không có .vcf)</string>
-    <string name="dialpad">Bàn phím quay số</string>
-    <string name="add_number_to_contact">Thêm số để liên hệ</string>
+    <string name="dialpad">Gọi điện thoại</string>
+    <string name="add_number_to_contact">Thêm số cho liên hệ</string>
     <string name="prefix">Tiền tố</string>
     <string name="suffix">Hậu tố</string>
     <string name="phone_numbers">Số điện thoại</string>
@@ -74,5 +74,15 @@
     </plurals>
     <string name="faq_1_title">Tôi muốn thay đổi những trường hiển thị tại danh bạ. Tôi có thể làm được không\?</string>
     <string name="faq_1_text">Có, tất cả những gì bạn phải làm là vào Cài đặt → Quản lý các trường liên hệ được hiển thị. Ở đó bạn có thể chọn những trường nào sẽ hiển thị. Một số trong số chúng thậm chí còn bị tắt theo mặc định, vì vậy bạn có thể tìm thấy một số cái mới ở đó.</string>
-    <string name="show_private_contacts">Cho phép Điện thoại Fossify, Tin nhắn Fossify và Lịch Fossify đọc danh bạ riêng</string>
+    <string name="show_private_contacts">Cho phép Fossify Phone, Messages, và Calendar đọc danh bạ</string>
+    <string name="street">Đường</string>
+    <string name="neighborhood">Số căn hộ hoặc phòng</string>
+    <string name="city">Thành phố</string>
+    <string name="postcode">Mã bưu chính</string>
+    <string name="pobox">Hộp thư bưu điện</string>
+    <string name="region">Tiểu bang</string>
+    <string name="country">Quốc gia</string>
+    <string name="select_account">Chọn tài khoản</string>
+    <string name="format_phone_numbers">Định dạng số điện thoại</string>
+    <string name="structured_addresses">Địa chỉ có cấu trúc (chế độ chỉnh sửa)</string>
 </resources>
