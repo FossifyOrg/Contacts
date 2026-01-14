@@ -77,7 +77,7 @@
     <string name="faq_1_title">אני רוצה לשנות אילו שדות גלויים באנשי קשר. האם אני יכול לעשות זאת\?</string>
     <string name="faq_1_text">כן, כל מה שאתה צריך לעשות הוא להיכנס להגדרות -&gt; נהל שדות אנשי קשר המוצגים. שם תוכל לבחור אילו שדות יהיו גלויים. חלקם אפילו מושבתים כברירת מחדל, אז אולי תמצא שם כמה חדשים.</string>
     <string name="format_phone_numbers">עיצוב מספרי טלפון</string>
-    <string name="show_private_contacts">הצג אנשי קשר פרטיים ל- Fossify Phone, Fossify SMS Messenger ו- Fossify Calendar</string>
+    <string name="show_private_contacts">הצג אנשי קשר פרטיים לטלפון, הודעות ויומן של Fossify</string>
     <string name="street">רחוב</string>
     <string name="neighborhood">מספר דירה או סוויטה</string>
     <string name="city">עיר</string>
