@@ -55,7 +55,7 @@
     <string name="include_contact_sources">Bao gồm các nguồn liên hệ</string>
     <string name="filename_without_vcf">Tên tệp (không có .vcf)</string>
     <string name="dialpad">Gọi điện thoại</string>
-    <string name="add_number_to_contact">Thêm số cho liên hệ</string>
+    <string name="add_number_to_contact">Thêm số vào liên hệ</string>
     <string name="prefix">Tiền tố</string>
     <string name="suffix">Hậu tố</string>
     <string name="phone_numbers">Số điện thoại</string>
