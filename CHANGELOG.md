@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Tapping contact photo in lists now launches the contact details page ([#452])
 
 ### Fixed
 - Fixed incorrect spacing between prefix and last name ([#157])
@@ -118,6 +120,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#339]: https://github.com/FossifyOrg/Contacts/issues/339
 [#360]: https://github.com/FossifyOrg/Contacts/issues/360
 [#415]: https://github.com/FossifyOrg/Contacts/issues/415
+[#452]: https://github.com/FossifyOrg/Contacts/issues/452
 
 [Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.5.0...HEAD
 [1.5.0]: https://github.com/FossifyOrg/Contacts/compare/1.4.0...1.5.0
