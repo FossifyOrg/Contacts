@@ -21,6 +21,7 @@ import org.fossify.contacts.databinding.FragmentFavoritesBinding
 import org.fossify.contacts.databinding.FragmentLettersLayoutBinding
 import org.fossify.contacts.dialogs.SelectContactsDialog
 import org.fossify.contacts.extensions.config
+import org.fossify.contacts.extensions.viewContact
 import org.fossify.contacts.helpers.LOCATION_FAVORITES_TAB
 import org.fossify.contacts.interfaces.RefreshContactsListener
 
@@ -79,9 +80,13 @@ class FavoritesFragment(context: Context, attributeSet: AttributeSet) : MyViewPa
                 removeListener = null,
                 recyclerView = innerBinding.fragmentList,
                 enableDrag = true,
-            ) {
-                (activity as RefreshContactsListener).contactClicked(it as Contact)
-            }.apply {
+                itemClick = {
+                    (activity as RefreshContactsListener).contactClicked(it as Contact)
+                },
+                profileIconClick = {
+                    activity?.viewContact(it as Contact)
+                }
+            ).apply {
                 innerBinding.fragmentList.adapter = this
                 setupZoomListener(zoomListener)
                 onDragEndListener = {
