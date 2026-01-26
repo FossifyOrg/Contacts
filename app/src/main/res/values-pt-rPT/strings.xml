@@ -17,7 +17,6 @@
     <string name="must_be_at_edit">Tem que estar no ecrã de edição para alterar um contacto</string>
     <string name="send_email_to_contacts">Enviar e-mail aos contactos</string>
     <string name="no_contacts_with_emails">Não existem contactos com endereço de e-mail</string>
-    <string name="edit_contact">Editar contacto</string>
     <string name="select_contact">Selecionar contacto</string>
     <string name="create_new_group">Criar um novo grupo</string>
     <string name="no_groups">Não existem grupos</string>
@@ -35,9 +34,7 @@
     <string name="create_group">Criar um grupo</string>
     <string name="remove_photo">Remover foto</string>
     <string name="show_dialpad_button">Mostrar botão Marcador no ecrã principal</string>
-    <string name="view_contact">Ver detalhes</string>
     <string name="show_private_contacts">Partilhar contactos entre Fossify Phone, Fossify Messages e Fossify Calendar</string>
-    <string name="call_contact">Ligar</string>
     <string name="show_only_contacts_with_numbers">Mostrar apenas contactos com número de telefone</string>
     <string name="search_groups">Pesquisar grupos</string>
     <string name="export_contacts">Exportar contactos</string>
@@ -70,7 +67,6 @@
     <string name="groups">Grupos</string>
     <string name="fields_empty">Deve preencher, pelo menos, um campo</string>
     <string name="show_contact_thumbnails">Mostrar miniatura do contacto</string>
-    <string name="on_contact_click">Ao tocar no contacto</string>
     <string name="merge_duplicate_contacts">Unir contactos duplicados</string>
     <string name="toggle_favorite">Alternar favorito</string>
     <string name="target_contact_source">Destino da origem do contacto</string>

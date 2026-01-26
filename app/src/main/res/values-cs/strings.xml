@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Nenalezeny žádné kontakty s e-maily</string>
     <string name="no_contacts_with_phone_numbers">Nenalezeny žádné kontakty s telefonními čísly</string>
     <string name="new_contact">Nový kontakt</string>
-    <string name="edit_contact">Upravit kontakt</string>
     <string name="select_contact">Zvolte kontakt</string>
     <string name="nickname">Přezdívka</string>
     <string name="no_groups">Žádné skupiny</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Zobrazit telefonní čísla</string>
     <string name="show_contact_thumbnails">Zobrazit obrázky kontaktů</string>
     <string name="show_dialpad_button">Zobrazit tlačítko číselníku na hlavní obrazovce</string>
-    <string name="on_contact_click">Po klepnutí na kontakt</string>
-    <string name="call_contact">Zavolat kontakt</string>
-    <string name="view_contact">Zobrazit údaje kontaktu</string>
     <string name="manage_shown_contact_fields">Spravovat zobrazená pole kontaktů</string>
     <string name="contacts">Kontakty</string>
     <string name="show_only_contacts_with_numbers">Zobrazit jen kontakty s telefonními čísly</string>

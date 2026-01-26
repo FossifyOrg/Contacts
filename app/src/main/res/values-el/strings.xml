@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Δεν βρέθηκαν Επαφές με emails</string>
     <string name="no_contacts_with_phone_numbers">Δεν βρέθηκαν Επαφές με αριθμό τηλεφώνου</string>
     <string name="new_contact">Νέα επαφή</string>
-    <string name="edit_contact">Επεξεργασία επαφής</string>
     <string name="select_contact">Επιλογή επαφής</string>
     <string name="nickname">Ψευδώνυμο</string>
     <string name="no_groups">Δεν υπάρχουν ομάδες</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Εμφάνιση αριθμών τηλεφώνων</string>
     <string name="show_contact_thumbnails">Εμφάνιση μικρογραφιών επαφής</string>
     <string name="show_dialpad_button">Προβολή ενός κουμπίου πληκτρολογίου στην κύρια οθόνη</string>
-    <string name="on_contact_click">Στην επιλογή επαφής</string>
-    <string name="call_contact">Κλήση επαφής</string>
-    <string name="view_contact">Εμφάνιση λεπτομερειών επαφής</string>
     <string name="manage_shown_contact_fields">Διαχείριση πεδίων επαφής</string>
     <string name="contacts">Επαφές</string>
     <string name="show_only_contacts_with_numbers">Προβολή όλων των Επαφών με αριθμούς τηλεφώνου</string>

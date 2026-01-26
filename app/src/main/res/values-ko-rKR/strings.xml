@@ -5,7 +5,6 @@
     <string name="inserting">등록중…</string>
     <string name="updating">수정중…</string>
     <string name="new_contact">새로운 연락처</string>
-    <string name="edit_contact">연락처 수정</string>
     <string name="select_contact">단건 연락처 선택</string>
     <string name="remove_photo">사진 삭제</string>
     <string name="show_phone_numbers">메인 스크린에 전화번호 표시</string>
@@ -44,11 +43,8 @@
     <string name="remove_from_group">그룹에서 제거</string>
     <string name="no_group_participants">그룹이 비어있습니다</string>
     <string name="show_contact_thumbnails">연락처 섬네일 표시하기</string>
-    <string name="on_contact_click">연락처 클릭 시</string>
     <string name="show_dialpad_button">메인 화면에 키패드 버튼 표시하기</string>
-    <string name="call_contact">연락처로 전화 걸기</string>
     <string name="emails">이메일</string>
-    <string name="view_contact">연락처 세부 정보 보기</string>
     <string name="toggle_favorite">즐겨찾기 토글</string>
     <string name="add_number_to_contact">연락처에 번호 추가</string>
     <string name="suffix">접미사</string>

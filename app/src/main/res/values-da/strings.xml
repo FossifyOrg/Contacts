@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Ingen kontakter med e-mails fundet</string>
     <string name="no_contacts_with_phone_numbers">Ingen kontakter med telefonnumre fundet</string>
     <string name="new_contact">Ny kontakt</string>
-    <string name="edit_contact">Rediger kontakt</string>
     <string name="select_contact">Vælg kontakt</string>
     <string name="nickname">Kaldenavn</string>
     <string name="no_groups">Ingen grupper</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Vis telefonnumre</string>
     <string name="show_contact_thumbnails">Vis miniaturebilleder af kontakter</string>
     <string name="show_dialpad_button">Vis en tastaturknap på hovedskærmen</string>
-    <string name="on_contact_click">Ved klik på kontakt</string>
-    <string name="call_contact">Ring til kontakt</string>
-    <string name="view_contact">Vis kontaktdetaljer</string>
     <string name="manage_shown_contact_fields">Administrer viste kontaktfelter</string>
     <string name="contacts">Kontakter</string>
     <string name="show_only_contacts_with_numbers">Vis kun kontakter med telefonnumre</string>

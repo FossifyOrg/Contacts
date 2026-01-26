@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Кантакты з адрасамі электроннай пошты не знойдзены</string>
     <string name="no_contacts_with_phone_numbers">Кантакты з нумарамі тэлефонаў не знойдзены</string>
     <string name="new_contact">Стварыць кантакт</string>
-    <string name="edit_contact">Рэдагаваць кантакт</string>
     <string name="select_contact">Выбраць кантакт</string>
     <string name="nickname">Мянушка</string>
     <string name="no_groups">Няма груп</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Паказваць нумары тэлефонаў</string>
     <string name="show_contact_thumbnails">Паказваць фота кантакту</string>
     <string name="show_dialpad_button">Паказваць панэль набору нумароў на галоўным экране</string>
-    <string name="on_contact_click">Пры націсканні на кантакт</string>
-    <string name="call_contact">Тэлефанаваць кантакту</string>
-    <string name="view_contact">Паказваць звесткі аб кантакце</string>
     <string name="manage_shown_contact_fields">Кіраванне палямі кантактаў, якія адлюстроўваюцца</string>
     <string name="contacts">Кантакты</string>
     <string name="show_only_contacts_with_numbers">Паказваць толькі кантакты з нумарамі тэлефонаў</string>

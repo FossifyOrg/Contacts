@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">لا توجد جهات اتصال بهذا البريد الإلكتروني</string>
     <string name="no_contacts_with_phone_numbers">لا توجد جهات اتصال بهذا الرقم</string>
     <string name="new_contact">جهة اتصال جديدة</string>
-    <string name="edit_contact">تعديل جهة اتصالل</string>
     <string name="select_contact">اختيار جهة اتصال</string>
     <string name="nickname">اللقب</string>
     <string name="no_groups">لا توجد مجموعات</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">إظهار أرقام الهواتف</string>
     <string name="show_contact_thumbnails">عرض صور مصغرة لجهات الإتصال</string>
     <string name="show_dialpad_button">عرض زر لوحة الإتصال على الشاشةالرئيسية</string>
-    <string name="on_contact_click">عند النقر فوق جهة اتصال</string>
-    <string name="call_contact">اتصال بجهة</string>
-    <string name="view_contact">عرض تفاصيل جهة الاتصال</string>
     <string name="manage_shown_contact_fields">إدارة حقول جهات الاتصال المعروضة</string>
     <string name="contacts">جهات الاتصال</string>
     <string name="show_only_contacts_with_numbers">إظهار جهات الاتصال التي لديها أرقام هواتف فقط</string>

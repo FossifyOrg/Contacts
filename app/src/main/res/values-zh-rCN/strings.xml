@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">未找到有电子邮件地址的联系人</string>
     <string name="no_contacts_with_phone_numbers">未找到有电话号码的联系人</string>
     <string name="new_contact">新联系人</string>
-    <string name="edit_contact">编辑联系人</string>
     <string name="select_contact">选择联系人</string>
     <string name="nickname">昵称</string>
     <string name="no_groups">没有群组</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">显示电话号码</string>
     <string name="show_contact_thumbnails">显示联系人缩略图</string>
     <string name="show_dialpad_button">在主页面显示拨号键盘按钮</string>
-    <string name="on_contact_click">点击联系人</string>
-    <string name="call_contact">打电话给联系人</string>
-    <string name="view_contact">查看联系人详情</string>
     <string name="manage_shown_contact_fields">管理显示的联系人字段</string>
     <string name="contacts">联系人</string>
     <string name="show_only_contacts_with_numbers">仅显示有电话号码的联系人</string>

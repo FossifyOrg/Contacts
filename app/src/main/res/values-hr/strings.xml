@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Nije pronađen nijedan kontakt s e-poštom</string>
     <string name="no_contacts_with_phone_numbers">Nisu pronađeni kontakti s telefonskim brojevima</string>
     <string name="new_contact">Novi kontakt</string>
-    <string name="edit_contact">Uredi kontakt</string>
     <string name="select_contact">Odaberi kontakt</string>
     <string name="nickname">Nadimak</string>
     <string name="no_groups">Nema grupa</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Prikaži telefonske brojeve</string>
     <string name="show_contact_thumbnails">Prikaži sličice kontakata</string>
     <string name="show_dialpad_button">Prikaži gumb telefonske tipkovnice na glavnom ekranu</string>
-    <string name="on_contact_click">Prilikom dodira kontakta</string>
-    <string name="call_contact">Nazovi kontakt</string>
-    <string name="view_contact">Prikaži pojedinosti o kontaktu</string>
     <string name="manage_shown_contact_fields">Upravljaj prikazanim poljima kontakta</string>
     <string name="contacts">Kontakti</string>
     <string name="show_only_contacts_with_numbers">Prikaži samo kontakte s telefonskim brojevima</string>

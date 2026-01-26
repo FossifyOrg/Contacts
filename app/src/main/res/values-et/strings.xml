@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Ei leidunud ühtegi kontakti, kus oleks kirjas e-posti aadress</string>
     <string name="no_contacts_with_phone_numbers">Ei leidunud ühtegi kontakti, kus oleks olemas telefoninumber</string>
     <string name="new_contact">Uus kontakt</string>
-    <string name="edit_contact">Muuda kontakti</string>
     <string name="select_contact">Vali kontakt</string>
     <string name="nickname">Hüüdnimi</string>
     <string name="no_groups">Rühmad puuduvad</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Näita telefoninumbreid</string>
     <string name="show_contact_thumbnails">Näita kontaktide pisipilte</string>
     <string name="show_dialpad_button">Näita põhivaates telefoniklahvistikku</string>
-    <string name="on_contact_click">Kontaktil klõpsamisel</string>
-    <string name="call_contact">Helista</string>
-    <string name="view_contact">Vaata kontaktandmeid</string>
     <string name="manage_shown_contact_fields">Halda kuvatavaid kontaktkirje välju</string>
     <string name="contacts">Kontaktid</string>
     <string name="show_only_contacts_with_numbers">Näita vaid kontakte, kellel on telefoninumber</string>

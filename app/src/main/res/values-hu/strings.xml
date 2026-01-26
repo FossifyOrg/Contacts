@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Nem található e-mailt tartalmazó névjegy</string>
     <string name="no_contacts_with_phone_numbers">Nem található telefonszámot tartalmazó névjegy</string>
     <string name="new_contact">Új névjegy</string>
-    <string name="edit_contact">Névjegy módosítása</string>
     <string name="select_contact">Névjegy kiválasztása</string>
     <string name="nickname">Becenév</string>
     <string name="no_groups">Nincsenek csoportok</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Telefonszámok megjelenítése</string>
     <string name="show_contact_thumbnails">Névjegyek bélyegképének megjelenítése</string>
     <string name="show_dialpad_button">Tárcsázó gomb megjelenítése a főképernyőn</string>
-    <string name="on_contact_click">Névjegyre kattintásra</string>
-    <string name="call_contact">Telefonhívás indítása</string>
-    <string name="view_contact">Névjegy részleteinek megjelenítése</string>
     <string name="manage_shown_contact_fields">Megjelenítendő névjegymezők kezelése</string>
     <string name="contacts">Névjegyek</string>
     <string name="show_only_contacts_with_numbers">Csak a telefonszámot tartalmazó névjegyek megjelenítése</string>

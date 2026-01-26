@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">メールアドレスが登録された連絡先が見つかりません</string>
     <string name="no_contacts_with_phone_numbers">電話番号が登録された連絡先が見つかりません</string>
     <string name="new_contact">新しい連絡先</string>
-    <string name="edit_contact">連絡先を編集</string>
     <string name="select_contact">連絡先を選択</string>
     <string name="nickname">ニックネーム</string>
     <string name="no_groups">グループがありません</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">電話番号を表示</string>
     <string name="show_contact_thumbnails">連絡先のサムネイルを表示</string>
     <string name="show_dialpad_button">メイン画面にダイヤルパッドを表示</string>
-    <string name="on_contact_click">連絡先をタップ</string>
-    <string name="call_contact">連絡先に発信</string>
-    <string name="view_contact">連絡先の詳細を表示</string>
     <string name="manage_shown_contact_fields">表示する連絡先の入力欄を管理</string>
     <string name="contacts">連絡先</string>
     <string name="show_only_contacts_with_numbers">電話番号が登録された連絡先のみ表示</string>

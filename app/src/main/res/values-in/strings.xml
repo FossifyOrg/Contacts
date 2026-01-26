@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Tidak ada kontak dengan alamat surel yang ditemukan</string>
     <string name="no_contacts_with_phone_numbers">Tidak ada kontak dengan nomor telepon yang ditemukan</string>
     <string name="new_contact">Kontak baru</string>
-    <string name="edit_contact">Sunting kontak</string>
     <string name="select_contact">Pilih kontak</string>
     <string name="nickname">Nama panggilan</string>
     <string name="no_groups">Tidak ada grup</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Tampilkan nomor telepon</string>
     <string name="show_contact_thumbnails">Tampilkan foto kontak</string>
     <string name="show_dialpad_button">Tampilkan tombol dial pada layar utama</string>
-    <string name="on_contact_click">Saat kontak diklik</string>
-    <string name="call_contact">Panggil kontak</string>
-    <string name="view_contact">Lihat detail kontak</string>
     <string name="manage_shown_contact_fields">Kelola ruas kontak yang ditampilkan</string>
     <string name="contacts">Kontak</string>
     <string name="show_only_contacts_with_numbers">Hanya tampilkan kontak dengan nomor telepon</string>

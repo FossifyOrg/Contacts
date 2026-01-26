@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Không tìm thấy liên hệ với e-mail</string>
     <string name="no_contacts_with_phone_numbers">Không tìm thấy liên hệ với số điện thoại</string>
     <string name="new_contact">Liên hệ mới</string>
-    <string name="edit_contact">Chỉnh sửa liên hệ</string>
     <string name="select_contact">Chọn liên hệ</string>
     <string name="nickname">Tên riêng</string>
     <string name="no_groups">Không có nhóm</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Hiển thị số điện thoại</string>
     <string name="show_contact_thumbnails">Hiển thị hình thu nhỏ của liên hệ</string>
     <string name="show_dialpad_button">Hiển thị nút quay số trên màn hình chính</string>
-    <string name="on_contact_click">Khi nhấp vào liên hệ</string>
-    <string name="call_contact">Gọi liên hệ</string>
-    <string name="view_contact">Xem chi tiết liên hệ</string>
     <string name="manage_shown_contact_fields">Quản lý các trường liên hệ được hiển thị</string>
     <string name="contacts">Liên hệ</string>
     <string name="show_only_contacts_with_numbers">Chỉ hiện liên hệ có số điện thoại</string>

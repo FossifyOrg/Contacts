@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Keine Kontakte mit E-Mail-Adressen gefunden</string>
     <string name="no_contacts_with_phone_numbers">Keine Kontakte mit Telefonnummern gefunden</string>
     <string name="new_contact">Neuer Kontakt</string>
-    <string name="edit_contact">Kontakt bearbeiten</string>
     <string name="select_contact">Kontakt auswählen</string>
     <string name="nickname">Spitzname</string>
     <string name="no_groups">Keine Gruppen</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Telefonnummern anzeigen</string>
     <string name="show_contact_thumbnails">Vorschaubilder der Kontakte zeigen</string>
     <string name="show_dialpad_button">Eine Wähltastenfeld-Schaltfläche auf dem Hauptbildschirm anzeigen</string>
-    <string name="on_contact_click">Beim Klicken auf den Kontakt</string>
-    <string name="call_contact">Kontakt anrufen</string>
-    <string name="view_contact">Kontaktdetails anzeigen</string>
     <string name="manage_shown_contact_fields">Sichtbare Kontaktfelder bearbeiten</string>
     <string name="contacts">Kontakte</string>
     <string name="show_only_contacts_with_numbers">Nur Kontakte mit Telefonnummern anzeigen</string>

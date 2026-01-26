@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">לא נמצאו אנשי קשר עם דוא\"ל</string>
     <string name="no_contacts_with_phone_numbers">לא נמצאו אנשי קשר עם מספרי טלפון</string>
     <string name="new_contact">איש קשר חדש</string>
-    <string name="edit_contact">ערוך איש קשר</string>
     <string name="select_contact">בחר איש קשר</string>
     <string name="nickname">כינוי</string>
     <string name="no_groups">אין קבוצות</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">הצג מספרי טלפון</string>
     <string name="show_contact_thumbnails">הצג תמונות ממוזערות של אנשי קשר</string>
     <string name="show_dialpad_button">הצג כפתור לוח חיוג במסך הראשי</string>
-    <string name="on_contact_click">כפתור יצירת קשר</string>
-    <string name="call_contact">חייג לאיש קשר</string>
-    <string name="view_contact">צפה בפרטי התקשרות</string>
     <string name="manage_shown_contact_fields">נהל שדות אנשי הקשר להצגה</string>
     <string name="contacts">אנשי קשר</string>
     <string name="show_only_contacts_with_numbers">הצג רק אנשי קשר עם מספרי טלפון</string>

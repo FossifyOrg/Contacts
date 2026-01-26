@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Нису пронађени контакти са имејловима</string>
     <string name="no_contacts_with_phone_numbers">Нису пронађени контакти са бројевима телефона</string>
     <string name="new_contact">Нови контакт</string>
-    <string name="edit_contact">Уредите контакт</string>
     <string name="select_contact">Изаберите контакт</string>
     <string name="nickname">Надимак</string>
     <string name="no_groups">Нема група</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Прикажи бројеве телефона</string>
     <string name="show_contact_thumbnails">Прикажи сличице контаката</string>
     <string name="show_dialpad_button">Прикажите дугме са тастатуре на главном екрану</string>
-    <string name="on_contact_click">Кликните на контакт</string>
-    <string name="call_contact">Позовите контакт</string>
-    <string name="view_contact">Погледајте детаље о контакту</string>
     <string name="manage_shown_contact_fields">Управљајте приказаним пољима за контакт</string>
     <string name="contacts">Контакти</string>
     <string name="show_only_contacts_with_numbers">Прикажи само контакте са бројевима телефона</string>

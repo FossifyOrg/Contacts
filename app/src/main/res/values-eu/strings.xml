@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Ez da aurkitu posta elektronikoa duen kontakturik</string>
     <string name="no_contacts_with_phone_numbers">Ez da telefono zenbakia duen kontakturik aurkitu</string>
     <string name="new_contact">Kontaktu berria</string>
-    <string name="edit_contact">Editatu kontaktua</string>
     <string name="select_contact">Hautatu kontaktua</string>
     <string name="nickname">Ezizena</string>
     <string name="no_groups">Talderik ez</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Erakutsi telefono zenbakiak</string>
     <string name="show_contact_thumbnails">Kontaktuen miniaturak erakutsi</string>
     <string name="show_dialpad_button">Erakutsi teklatuaren botoia pantaila nagusian</string>
-    <string name="on_contact_click">Kontaktua sakatzean</string>
-    <string name="call_contact">Kontaktuari deitu</string>
-    <string name="view_contact">Ikusi kontaktuaren xehetasunak</string>
     <string name="manage_shown_contact_fields">Kudeatu erakutsitako kontaktu eremuak</string>
     <string name="contacts">Kontaktuak</string>
     <string name="show_only_contacts_with_numbers">Erakutsi telefono zenbakia duten kontaktuak soilik</string>

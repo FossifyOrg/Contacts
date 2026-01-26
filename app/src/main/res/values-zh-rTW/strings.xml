@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">未發現含有電子信箱的聯絡人</string>
     <string name="no_contacts_with_phone_numbers">未發現含有電話號碼的聯絡人</string>
     <string name="new_contact">新聯絡人</string>
-    <string name="edit_contact">編輯聯絡人</string>
     <string name="select_contact">選擇聯絡人</string>
     <string name="nickname">暱稱</string>
     <string name="no_groups">沒有群組</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">顯示電話號碼</string>
     <string name="show_contact_thumbnails">顯示聯絡人縮圖</string>
     <string name="show_dialpad_button">在主畫面顯示撥號按鈕</string>
-    <string name="on_contact_click">點擊聯絡人</string>
-    <string name="call_contact">打電話給聯絡人</string>
-    <string name="view_contact">顯示聯絡人資料</string>
     <string name="manage_shown_contact_fields">管理顯示的聯絡人欄位</string>
     <string name="contacts">聯絡人</string>
     <string name="show_only_contacts_with_numbers">只顯示含有電話話碼的聯絡人</string>
