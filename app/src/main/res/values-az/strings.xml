@@ -14,7 +14,6 @@
     <string name="send_email_to_group">Grupa e-poçt göndər</string>
     <string name="must_be_at_edit">Kontaktı dəyişmək üçün İdarə et ekranında olmalısınız</string>
     <string name="new_contact">Yeni kontakt</string>
-    <string name="edit_contact">Redaktə et</string>
     <string name="select_contact">Kontakt seç</string>
     <string name="no_groups">Qruplar yoxdur</string>
     <string name="create_new_group">Yeni qrup yarat</string>
@@ -28,9 +27,6 @@
     <string name="remove_photo">Şəkli sil</string>
     <string name="show_phone_numbers">Telefon nömrələrini əsas ekranda göstər</string>
     <string name="show_contact_thumbnails">Kontakt görüntülərini göstər</string>
-    <string name="on_contact_click">Kontakta toxunduqda</string>
-    <string name="call_contact">Kontakta zəng et</string>
-    <string name="view_contact">Kontakt detallarına bax</string>
     <string name="manage_shown_contact_fields">Göstərilən kontakt sahəsini idarə et</string>
     <string name="contacts">Kontaktlar</string>
     <string name="no_favorites">Görünür, hələlik heçbir sevimli kontakt əlavə etməmisiniz.</string>

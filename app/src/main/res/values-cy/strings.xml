@@ -16,7 +16,6 @@
     <string name="no_contacts_with_emails">Ni chanfuwyd unrhyw gysylltiadau gydag ebost</string>
     <string name="no_contacts_with_phone_numbers">Ni chanfuwyd unrhyw gysylltiadau gyda rhifau ffôn</string>
     <string name="new_contact">Cyswllt newydd</string>
-    <string name="edit_contact">Golygu\'r cyswllt</string>
     <string name="select_contact">Dewis cyswllt</string>
     <string name="nickname">Llys enw</string>
     <string name="no_groups">Dim grwpiau</string>
@@ -32,9 +31,6 @@
     <string name="show_phone_numbers">Dangos rhifau ffôn ar y brif sgrin</string>
     <string name="show_contact_thumbnails">Dangos mân luniau cysylltiadau</string>
     <string name="show_dialpad_button">Dangos botwm pad deialu ar y brif sgrin</string>
-    <string name="on_contact_click">Wrth glicio ar gyswllt</string>
-    <string name="call_contact">Galw cyswllt</string>
-    <string name="view_contact">Gweld manylion cyswllt</string>
     <string name="manage_shown_contact_fields">Rheoli pa feysydd cyswllt i\'w dangos</string>
     <string name="contacts">Cysylltiadau</string>
     <string name="show_only_contacts_with_numbers">Dangos dim ond cysylltiadau gyda rhifau ffôn</string>

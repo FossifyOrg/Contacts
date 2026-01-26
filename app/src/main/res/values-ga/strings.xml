@@ -4,7 +4,6 @@
     <string name="search_favorites">Cuardaigh ceanáin</string>
     <string name="search_groups">Cuardaigh grúpaí</string>
     <string name="import_contacts_from_vcf_pro">Iompórtáil teagmhálaithe ó chomhad .vcf (Pro)</string>
-    <string name="on_contact_click">Ar cliceáil teagmhála</string>
     <string name="export_contacts">Easpórtáil teagmhálaithe</string>
     <string name="instant_messaging">Teachtaireachtaí Meandaracha (IM)</string>
     <plurals name="delete_groups">
@@ -27,8 +26,6 @@
     <string name="create_new_group">Cruthaigh grúpa nua</string>
     <string name="remove_from_group">Bain den ghrúpa</string>
     <string name="create_group">Cruthaigh grúpa</string>
-    <string name="call_contact">Déan teagmháil le glaoch</string>
-    <string name="view_contact">Féach ar shonraí teagmhála</string>
     <string name="manage_shown_contact_fields">Bainistigh na réimsí teagmhála a thaispeántar</string>
     <string name="search_contacts">Cuardaigh teagmhálaithe</string>
     <string name="import_contacts">Teagmhálaithe a allmhairiú</string>
@@ -62,7 +59,6 @@
     <string name="format_phone_numbers">Formáid uimhreacha gutháin</string>
     <string name="no_contacts_with_phone_numbers">Ní bhfuarthas aon teagmháil le huimhreacha gutháin</string>
     <string name="new_contact">Teagmháil nua</string>
-    <string name="edit_contact">Cuir teagmhálaí in eagar</string>
     <string name="no_groups">Gan grúpaí</string>
     <string name="nickname">Leasainm</string>
     <string name="no_group_created">Níl aon ghrúpaí teagmhála ar an ngléas</string>

@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Inga kontakter med e-postadresser hittades</string>
     <string name="no_contacts_with_phone_numbers">Inga kontakter med telefonnummer hittades</string>
     <string name="new_contact">Ny kontakt</string>
-    <string name="edit_contact">Redigera kontakt</string>
     <string name="select_contact">Välj kontakt</string>
     <string name="nickname">Smeknamn</string>
     <string name="no_groups">Inga grupper</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Visa telefonnummer</string>
     <string name="show_contact_thumbnails">Visa kontaktminiatyrer</string>
     <string name="show_dialpad_button">Visa en knappsatsknapp i huvudvyn</string>
-    <string name="on_contact_click">Vid kontakttryckning</string>
-    <string name="call_contact">Ring kontakt</string>
-    <string name="view_contact">Visa kontaktuppgifter</string>
     <string name="manage_shown_contact_fields">Välj vilka kontaktfält som ska visas</string>
     <string name="contacts">Kontakter</string>
     <string name="show_only_contacts_with_numbers">Visa bara kontakter med telefonnummer</string>

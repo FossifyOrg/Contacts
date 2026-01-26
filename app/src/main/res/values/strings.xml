@@ -27,7 +27,6 @@
     <string name="no_contacts_with_phone_numbers">No contacts with phone numbers have been found</string>
 
     <string name="new_contact">New contact</string>
-    <string name="edit_contact">Edit contact</string>
     <string name="select_contact">Select contact</string>
     <string name="nickname">Nickname</string>
     <string name="select_account">Select account</string>
@@ -52,9 +51,6 @@
     <string name="show_contact_thumbnails">Show contact thumbnails</string>
     <string name="format_phone_numbers">Format phone numbers</string>
     <string name="show_dialpad_button">Show a dialpad button on the main screen</string>
-    <string name="on_contact_click">On contact click</string>
-    <string name="call_contact">Call contact</string>
-    <string name="view_contact">View contact details</string>
     <string name="manage_shown_contact_fields">Manage shown contact fields</string>
     <string name="contacts">Contacts</string>
     <string name="show_only_contacts_with_numbers">Show only contacts with phone numbers</string>

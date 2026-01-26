@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">No se encontraron contactos con correo electrónico</string>
     <string name="no_contacts_with_phone_numbers">No se encontraron contactos con número de teléfono</string>
     <string name="new_contact">Contacto nuevo</string>
-    <string name="edit_contact">Editar contacto</string>
     <string name="select_contact">Seleccionar contacto</string>
     <string name="nickname">Apodo</string>
     <string name="no_groups">No hay grupos</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Mostrar números telefónicos</string>
     <string name="show_contact_thumbnails">Mostrar minaturas de contactos</string>
     <string name="show_dialpad_button">Mostrar botón de marcación en la pantalla principal</string>
-    <string name="on_contact_click">Al tocar contacto</string>
-    <string name="call_contact">Llamar contacto</string>
-    <string name="view_contact">Ver detalles del contacto</string>
     <string name="manage_shown_contact_fields">Gestionar campos del contacto mostrados</string>
     <string name="contacts">Contactos</string>
     <string name="show_only_contacts_with_numbers">Solo mostrar contactos con números telefónicos</string>

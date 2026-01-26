@@ -6,7 +6,6 @@
     <string name="updating">Ĝisdatigante…</string>
     <string name="company">Firmao</string>
     <string name="new_contact">Nova kontakto</string>
-    <string name="edit_contact">Modifi kontakton</string>
     <string name="select_contact">Elekti kontakton</string>
     <string name="nickname">Alnomo</string>
     <string name="no_groups">Neniu grupo</string>
@@ -36,11 +35,8 @@
     <string name="no_group_created">Estas neniu kontakta grupo sur la aparato</string>
     <string name="change_photo">Ŝanĝi foton</string>
     <string name="show_contact_thumbnails">Montri bildetojn de kontaktoj</string>
-    <string name="view_contact">Vidi kontaktajn detalojn</string>
     <string name="contacts">Kontaktoj</string>
     <string name="no_favorites">Ŝajnas, ke vi ankoraŭ ne aldonis iun ajn plej ŝatatan kontakton.</string>
-    <string name="on_contact_click">Kiam kontakto estas frapetita</string>
-    <string name="call_contact">Alvoki kontakton</string>
     <string name="manage_shown_contact_fields">Administri videblajn kampojn de kontakto</string>
     <string name="show_only_contacts_with_numbers">Nur montri kontaktojn kun telefonnumeroj</string>
     <string name="merge_duplicate_contacts">Kunfandi duobligitajn kontaktojn</string>

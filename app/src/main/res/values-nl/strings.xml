@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Geen contacten met e-mail gevonden</string>
     <string name="no_contacts_with_phone_numbers">Geen contacten met telefoonnummer gevonden</string>
     <string name="new_contact">Nieuw contact</string>
-    <string name="edit_contact">Contact bewerken</string>
     <string name="select_contact">Contact kiezen</string>
     <string name="nickname">Bijnaam</string>
     <string name="no_groups">Geen groepen</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Telefoonnummers tonen</string>
     <string name="show_contact_thumbnails">Miniaturen van contacten weergeven</string>
     <string name="show_dialpad_button">Knop voor toetsenblok tonen in hoofdscherm</string>
-    <string name="on_contact_click">Bij klikken op een contact</string>
-    <string name="call_contact">Contact bellen</string>
-    <string name="view_contact">Contactgegevens bekijken</string>
     <string name="manage_shown_contact_fields">Contactvelden tonen/verbergen</string>
     <string name="contacts">Contacten</string>
     <string name="show_only_contacts_with_numbers">Alleen contacten met telefoonnummer tonen</string>

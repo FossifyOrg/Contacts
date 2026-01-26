@@ -237,7 +237,7 @@ class ViewContactActivity : ContactActivity() {
         binding.contactSendEmail.setOnClickListener { trySendEmail() }
 
         binding.contactSendSms.setOnLongClickListener { toast(org.fossify.commons.R.string.send_sms); true; }
-        binding.contactStartCall.setOnLongClickListener { toast(R.string.call_contact); true; }
+        binding.contactStartCall.setOnLongClickListener { toast(org.fossify.commons.R.string.call_contact); true; }
         binding.contactSendEmail.setOnLongClickListener { toast(org.fossify.commons.R.string.send_email); true; }
 
         updateTextColors(binding.contactScrollview)

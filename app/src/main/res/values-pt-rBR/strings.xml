@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Não foram encontrados contatos com e-mails</string>
     <string name="no_contacts_with_phone_numbers">Não foram encontrados contatos com números de telefone</string>
     <string name="new_contact">Novo contato</string>
-    <string name="edit_contact">Editar contato</string>
     <string name="select_contact">Selecionar contato</string>
     <string name="nickname">Apelido</string>
     <string name="no_groups">Nenhum grupo</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Mostrar números de telefone</string>
     <string name="show_contact_thumbnails">Mostrar miniatura do contato</string>
     <string name="show_dialpad_button">Mostrar o botão do discador na tela principal</string>
-    <string name="on_contact_click">Ao tocar no contato</string>
-    <string name="call_contact">Ligar para o contato</string>
-    <string name="view_contact">Exibir detalhes do contato</string>
     <string name="manage_shown_contact_fields">Gerenciar os campos visíveis</string>
     <string name="contacts">Contatos</string>
     <string name="show_only_contacts_with_numbers">Mostar apenas os contatos com número de telefone</string>

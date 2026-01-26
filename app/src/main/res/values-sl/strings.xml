@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Najdenih ni bilo nobenih stikov z e-pošto</string>
     <string name="no_contacts_with_phone_numbers">Najdenih ni bilo nobenih stikov s telefonsko številko</string>
     <string name="new_contact">Nov stik</string>
-    <string name="edit_contact">Uredi stik</string>
     <string name="select_contact">Izberi stik</string>
     <string name="nickname">Vzdevek</string>
     <string name="no_groups">Ni skupin</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Prikaži telefonske številke</string>
     <string name="show_contact_thumbnails">Prikaži sličice stikov</string>
     <string name="show_dialpad_button">Prikaži gumb za številčnico na glavnem zaslonu</string>
-    <string name="on_contact_click">Ob kliku na stik</string>
-    <string name="call_contact">Pokliči stik</string>
-    <string name="view_contact">Poglej podrobnosti stika</string>
     <string name="manage_shown_contact_fields">Upravljaj prikazana polja stika</string>
     <string name="contacts">Stiki</string>
     <string name="show_only_contacts_with_numbers">Prikaži le stike s telefonskimi številkami</string>

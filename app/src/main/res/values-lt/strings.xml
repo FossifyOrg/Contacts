@@ -16,7 +16,6 @@
     <string name="no_contacts_with_emails">Nerasta adresatų su el. pašto adresais</string>
     <string name="no_contacts_with_phone_numbers">Nerasta adresatų su telefono numeriais</string>
     <string name="new_contact">Naujas adresatas</string>
-    <string name="edit_contact">Taisyti adresatą</string>
     <string name="select_contact">Pasirinkite kontaktą</string>
     <string name="nickname">Slapyvardis</string>
     <string name="no_groups">Nėra grupių</string>
@@ -32,9 +31,6 @@
     <string name="show_phone_numbers">Rodyti telefono numerius</string>
     <string name="show_contact_thumbnails">Rodyti adresatų miniatiūras</string>
     <string name="show_dialpad_button">Rodyti pagrindiniame ekrane numerio rinkiklį</string>
-    <string name="on_contact_click">Spustelėjus ant adresato</string>
-    <string name="call_contact">Skambinti adresatui</string>
-    <string name="view_contact">Rodyti išsamiau apie adresatą</string>
     <string name="manage_shown_contact_fields">Taisyti adresatą</string>
     <string name="contacts">Adresatai</string>
     <string name="show_only_contacts_with_numbers">Rodyti tik adresatus su telefono numeriu</string>

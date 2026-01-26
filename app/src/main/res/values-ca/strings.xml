@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">No s\'ha trobat cap contacte amb correu electrònic</string>
     <string name="no_contacts_with_phone_numbers">No s\'ha trobat cap contacte amb número de telèfon</string>
     <string name="new_contact">Contacte nou</string>
-    <string name="edit_contact">Edita el contacte</string>
     <string name="select_contact">Selecciona el contacte</string>
     <string name="nickname">Sobrenom</string>
     <string name="no_groups">No hi ha cap grup</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Mostra els números de telèfon</string>
     <string name="show_contact_thumbnails">Mostra les miniatures dels contactes</string>
     <string name="show_dialpad_button">Mostra un botó de teclat de marcatge a la pantalla principal</string>
-    <string name="on_contact_click">En fer clic al contacte</string>
-    <string name="call_contact">Truca al contacte</string>
-    <string name="view_contact">Mostra les dades del contacte</string>
     <string name="manage_shown_contact_fields">Gestiona els camps mostrats de contacte</string>
     <string name="contacts">Contactes</string>
     <string name="show_only_contacts_with_numbers">Mostra només els contactes amb números de telèfon</string>

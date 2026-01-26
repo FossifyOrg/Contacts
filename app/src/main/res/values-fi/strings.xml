@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Sähköpostillisia yhteystietoja ei löytynyt</string>
     <string name="no_contacts_with_phone_numbers">Puhelinnumerollisia yhteystietoja ei löytynyt</string>
     <string name="new_contact">Uusi yhteystieto</string>
-    <string name="edit_contact">Muokkaa yhteystietoa</string>
     <string name="select_contact">Valitse yhteystieto</string>
     <string name="nickname">Kutsumanimi</string>
     <string name="no_groups">Ei ryhmiä</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Näytä puhelinnumerot</string>
     <string name="show_contact_thumbnails">Näytä yhteystietojen kuvakkeet</string>
     <string name="show_dialpad_button">Näytä numeronvalitsin-painike päänäytöllä</string>
-    <string name="on_contact_click">Yhteystietoa painaessa</string>
-    <string name="call_contact">Soita</string>
-    <string name="view_contact">Näytä yhteystieto</string>
     <string name="manage_shown_contact_fields">Valitse, mitkä yhteystietojen kentät näytetään</string>
     <string name="contacts">Yhteystiedot</string>
     <string name="show_only_contacts_with_numbers">Näytä ainoastaan numerolliset yhteystiedot</string>
