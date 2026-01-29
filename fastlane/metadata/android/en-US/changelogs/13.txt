@@ -1,0 +1,13 @@
+Added:
+
+• Added support for custom fonts
+
+Changed:
+
+• Tapping contact photo in lists now launches the contact details page 
+• Updated translations
+
+Fixed:
+
+• Fixed incorrect spacing between prefix and last name 
+
