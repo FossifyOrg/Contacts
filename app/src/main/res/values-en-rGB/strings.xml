@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="updating">Updating…</string>
+    <string name="phone_storage">Phone storage</string>
+    <string name="phone_storage_hidden">Phone storage (not visible by other apps)</string>
+    <string name="search_contacts">Search contacts</string>
+    <string name="search_favorites">Search favourites</string>
+</resources>
