@@ -67,7 +67,6 @@
     <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$location == LOCATION_CONTACTS_TAB || location == LOCATION_FAVORITES_TAB || location == LOCATION_GROUP_CONTACTS</ID>
     <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$text = if (textToHighlight.isEmpty()) numberText else numberText.highlightTextPart(textToHighlight, properPrimaryColor, false, true)</ID>
     <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$val placeholderImage = BitmapDrawable(resources, SimpleContactsHelper(activity).getContactLetterIcon(contact.getNameToDisplay()))</ID>
-    <ID>MaxLineLength:ContactsAdapter.kt$ContactsAdapter$val placeholderImage = BitmapDrawable(resources, SimpleContactsHelper(context).getContactLetterIcon(fullName))</ID>
     <ID>MaxLineLength:ContactsFragment.kt$ContactsFragment$class</ID>
     <ID>MaxLineLength:Context.kt$AlarmManagerCompat.setAndAllowWhileIdle(alarmManager, AlarmManager.RTC_WAKEUP, backupAtMillis, pendingIntent)</ID>
     <ID>MaxLineLength:Context.kt$ContactsHelper(this)</ID>
