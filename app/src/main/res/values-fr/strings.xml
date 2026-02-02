@@ -34,7 +34,7 @@
     <string name="show_dialpad_button">Afficher un bouton de pavé numérique sur l\'écran principal</string>
     <string name="manage_shown_contact_fields">Gérer les champs de contact affichés</string>
     <string name="show_only_contacts_with_numbers">Afficher uniquement les contacts qui ont un numéro de téléphone</string>
-    <string name="show_private_contacts">Afficher les contacts privés pour Fossify Phone, Fossify SMS Messenger et Fossify Calendar</string>
+    <string name="show_private_contacts">Afficher les contacts privés pour Fossify Phone, Messages, et Calendar</string>
     <string name="merge_duplicate_contacts">Fusionner les contacts en double</string>
     <string name="no_favorites">Il semble que vous n\'ayez pas encore ajouté de contacts favoris.</string>
     <string name="toggle_favorite">Ajouter/retirer des favoris</string>
