@@ -55,9 +55,18 @@ class VcfImporter(val activity: SimpleActivity) {
             for (ezContact in ezContacts) {
                 val structuredName = ezContact.structuredName
                 val prefix = structuredName?.prefixes?.firstOrNull() ?: ""
-                val firstName = structuredName?.given ?: ""
-                val middleName = structuredName?.additionalNames?.firstOrNull() ?: ""
-                val surname = structuredName?.family ?: ""
+                var firstName = structuredName?.given ?: ""
+                var middleName = structuredName?.additionalNames?.firstOrNull() ?: ""
+                var surname = structuredName?.family ?: ""
+
+                if (structuredName == null && ezContact.formattedName?.value?.isNotBlank() == true) {
+                    val fn = ezContact.formattedName.value.trim()
+                    val parts = fn.split("\\s+".toRegex(), limit = 2)
+
+                    firstName = parts.getOrNull(0) ?: ""
+                    surname = parts.getOrNull(1) ?: ""
+                }
+
                 val suffix = structuredName?.suffixes?.firstOrNull() ?: ""
                 val nickname = ezContact.nickname?.values?.firstOrNull() ?: ""
                 var photoUri = ""
@@ -267,16 +276,6 @@ class VcfImporter(val activity: SimpleActivity) {
                     mimetype = DEFAULT_MIMETYPE,
                     ringtone = ringtone
                 )
-
-                // if there is no N and ORG fields at the given contact, only FN, treat it as an organization
-                if (
-                    contact.getNameToDisplay().isEmpty()
-                    && contact.organization.isEmpty()
-                    && ezContact.formattedName?.value?.isNotEmpty() == true
-                ) {
-                    contact.organization.company = ezContact.formattedName.value
-                    contact.mimetype = CommonDataKinds.Organization.CONTENT_ITEM_TYPE
-                }
 
                 if (contact.isABusinessContact()) {
                     contact.mimetype = CommonDataKinds.Organization.CONTENT_ITEM_TYPE
