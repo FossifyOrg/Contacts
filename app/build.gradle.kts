@@ -5,7 +5,6 @@ import java.io.FileInputStream
 
 plugins {
     alias(libs.plugins.android)
-    alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.ksp)
     alias(libs.plugins.detekt)
 }
@@ -75,7 +74,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
-                getDefaultProguardFile("proguard-android.txt"),
+                getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
             if (keystorePropertiesFile.exists() || hasSigningVars()) {
@@ -92,7 +91,7 @@ android {
     }
 
     sourceSets {
-        getByName("main").java.srcDirs("src/main/kotlin")
+        getByName("main").java.directories.add("src/main/kotlin")
     }
 
     compileOptions {
