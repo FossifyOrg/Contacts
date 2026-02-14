@@ -5,7 +5,7 @@
     <string name="inserting">Đang chèn…</string>
     <string name="updating">Đang cập nhật…</string>
     <string name="phone_storage">Bộ nhớ điện thoại</string>
-    <string name="phone_storage_hidden">Bộ nhớ điện thoại (các app khác không hiển thị)</string>
+    <string name="phone_storage_hidden">Bộ nhớ điện thoại (các ứng dụng khác không hiển thị)</string>
     <string name="company">Công ty</string>
     <string name="job_position">Vị trí công việc</string>
     <string name="send_sms_to_contacts">Gửi tin nhắn SMS đến liên hệ</string>
