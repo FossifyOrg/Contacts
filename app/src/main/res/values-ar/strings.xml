@@ -84,4 +84,6 @@
     <string name="region">الولاية</string>
     <string name="country">الدولة</string>
     <string name="select_account">اختيار حساب</string>
+    <string name="show_private_contacts">إظهار جهات الاتصال الخاصة لتطبيقات Fossify (الهاتف، والرسائل، والتقويم)</string>
+    <string name="structured_addresses">عناوين منظمة (وضع التحرير)</string>
 </resources>
