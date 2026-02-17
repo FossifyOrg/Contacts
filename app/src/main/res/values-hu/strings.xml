@@ -81,4 +81,5 @@
     <string name="region">Állam</string>
     <string name="country">Ország</string>
     <string name="select_account">Fiók kiválasztása</string>
+    <string name="structured_addresses">Szerkezetes címek (szerkesztési mód)</string>
 </resources>
