@@ -68,4 +68,6 @@
     <string name="show_private_contacts">Fossify 전화, Fossify SMS 메신저및 Fossify 캘린더에 비공개 연락처 표시하기</string>
     <string name="job_position">직위</string>
     <string name="fields_empty">하나 이상의 세부 항목을 작성해야 합니다</string>
+    <string name="country">국가</string>
+    <string name="select_account">계정 선택</string>
 </resources>
