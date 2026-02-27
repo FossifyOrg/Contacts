@@ -5,4 +5,8 @@
     <string name="phone_storage_hidden">Phone storage (not visible by other apps)</string>
     <string name="search_contacts">Search contacts</string>
     <string name="search_favorites">Search favourites</string>
+    <plurals name="delete_groups">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
 </resources>
