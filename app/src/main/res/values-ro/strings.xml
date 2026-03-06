@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Nu au fost găsite contacte cu e-mailuri</string>
     <string name="no_contacts_with_phone_numbers">Nu au fost găsite contacte cu numere de telefon</string>
     <string name="new_contact">Contact nou</string>
-    <string name="edit_contact">Editați contactul</string>
     <string name="select_contact">Selectați contactul</string>
     <string name="nickname">Poreclă</string>
     <string name="no_groups">Niciun grup</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Afișați numerele de telefon</string>
     <string name="show_contact_thumbnails">Afișați miniaturi de contact</string>
     <string name="show_dialpad_button">Afișează unui buton de tastatură telefonică pe ecranul principal</string>
-    <string name="on_contact_click">La apăsarea pe contact</string>
-    <string name="call_contact">Apelați contactul</string>
-    <string name="view_contact">Vedeţi detaliile de contact</string>
     <string name="manage_shown_contact_fields">Gestionați câmpurile de contact afișate</string>
     <string name="contacts">Contacte</string>
     <string name="show_only_contacts_with_numbers">Afișați numai contactele cu numere de telefon</string>

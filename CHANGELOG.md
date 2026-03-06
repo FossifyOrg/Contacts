@@ -8,6 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Setting for vCard Export Version ([#344])
 
+## [1.6.0] - 2026-01-30
+### Added
+- Added support for custom fonts
+
+### Changed
+- Tapping contact photo in lists now launches the contact details page ([#452])
+- Updated translations
+
+### Fixed
+- Fixed incorrect spacing between prefix and last name ([#157])
+
+## [1.5.0] - 2025-12-16
+### Changed
+- Updated translations
+
 ### Fixed
 - Fixed invisible navigation bars in contact viewer ([#415])
 - Fixed search highlighting for characters with accents and diacritics ([#12])
@@ -105,6 +120,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#12]: https://github.com/FossifyOrg/Contacts/issues/12
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
 [#78]: https://github.com/FossifyOrg/Contacts/issues/78
+[#157]: https://github.com/FossifyOrg/Contacts/issues/157
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
 [#281]: https://github.com/FossifyOrg/Contacts/issues/281
 [#289]: https://github.com/FossifyOrg/Contacts/issues/289
@@ -113,8 +129,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#344]: https://github.com/FossifyOrg/Contacts/issues/344
 [#360]: https://github.com/FossifyOrg/Contacts/issues/360
 [#415]: https://github.com/FossifyOrg/Contacts/issues/415
+[#452]: https://github.com/FossifyOrg/Contacts/issues/452
 
-[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.4.0...HEAD
+[Unreleased]: https://github.com/FossifyOrg/Contacts/compare/1.6.0...HEAD
+[1.6.0]: https://github.com/FossifyOrg/Contacts/compare/1.5.0...1.6.0
+[1.5.0]: https://github.com/FossifyOrg/Contacts/compare/1.4.0...1.5.0
 [1.4.0]: https://github.com/FossifyOrg/Contacts/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/FossifyOrg/Contacts/compare/1.2.5...1.3.0
 [1.2.5]: https://github.com/FossifyOrg/Contacts/compare/1.2.4...1.2.5

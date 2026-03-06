@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Nije pronađen nijedan kontakt s e-poštom</string>
     <string name="no_contacts_with_phone_numbers">Nisu pronađeni kontakti s telefonskim brojevima</string>
     <string name="new_contact">Novi kontakt</string>
-    <string name="edit_contact">Uredi kontakt</string>
     <string name="select_contact">Odaberi kontakt</string>
     <string name="nickname">Nadimak</string>
     <string name="no_groups">Nema grupa</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Prikaži telefonske brojeve</string>
     <string name="show_contact_thumbnails">Prikaži sličice kontakata</string>
     <string name="show_dialpad_button">Prikaži gumb telefonske tipkovnice na glavnom ekranu</string>
-    <string name="on_contact_click">Prilikom dodira kontakta</string>
-    <string name="call_contact">Nazovi kontakt</string>
-    <string name="view_contact">Prikaži pojedinosti o kontaktu</string>
     <string name="manage_shown_contact_fields">Upravljaj prikazanim poljima kontakta</string>
     <string name="contacts">Kontakti</string>
     <string name="show_only_contacts_with_numbers">Prikaži samo kontakte s telefonskim brojevima</string>
@@ -76,7 +72,7 @@
     </plurals>
     <string name="faq_1_title">Želim promijeniti polja koja su vidljiva u kontaktima. Mogu li to napraviti\?</string>
     <string name="faq_1_text">Da, idi u Postavke -&gt; Upravljaj prikazanim poljima kontakta. Tamo možeš odabrati vidljiva polja. Neka od njih su čak standardno deaktivirana, tako da možeš pronaći neka nova.</string>
-    <string name="show_private_contacts">Prikaži privatne kontakte u aplikacijama Fossify telefon, Fossify SMS Messenger i Fossify kalendar</string>
+    <string name="show_private_contacts">Prikaži privatne kontakte u Fossify aplikacijama Telefon, Poruke i Kalendar</string>
     <string name="format_phone_numbers">Formatiraj telefonske brojeve</string>
     <string name="street">Ulica</string>
     <string name="neighborhood">Broj apartmana ili stana</string>

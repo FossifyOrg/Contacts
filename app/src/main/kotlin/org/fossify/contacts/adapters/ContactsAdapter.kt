@@ -47,6 +47,7 @@ import org.fossify.contacts.helpers.*
 import org.fossify.contacts.interfaces.RefreshContactsListener
 import org.fossify.contacts.interfaces.RemoveFromGroupListener
 import java.util.Collections
+import androidx.core.graphics.drawable.toDrawable
 
 class ContactsAdapter(
     activity: SimpleActivity,
@@ -58,7 +59,8 @@ class ContactsAdapter(
     private val location: Int,
     private val removeListener: RemoveFromGroupListener?,
     private val enableDrag: Boolean = false,
-    itemClick: (Any) -> Unit
+    itemClick: (Any) -> Unit,
+    private val profileIconClick: ((Any) -> Unit)? = null
 ) : MyRecyclerViewAdapter(activity, recyclerView, itemClick), RecyclerViewFastScroller.OnPopupTextUpdate, ItemTouchHelperContract {
 
     private val NEW_GROUP_ID = -1
@@ -350,11 +352,7 @@ class ContactsAdapter(
                     .error(placeholderImage)
 
                 val size = activity.resources.getDimension(org.fossify.commons.R.dimen.shortcut_size).toInt()
-                val itemToLoad: Any? = if (contact.photoUri.isNotEmpty()) {
-                    contact.photoUri
-                } else {
-                    contact.photo
-                }
+                val itemToLoad: Any? = contact.photoUri.ifEmpty { contact.photo }
 
                 val builder = Glide.with(activity)
                     .asDrawable()
@@ -424,10 +422,27 @@ class ContactsAdapter(
                 }
             }
 
-            findViewById<TextView>(org.fossify.commons.R.id.item_contact_image).beVisibleIf(showContactThumbnails)
+            findViewById<ImageView>(org.fossify.commons.R.id.item_contact_image).apply {
+                beVisibleIf(showContactThumbnails)
+                if (profileIconClick != null && viewType != VIEW_TYPE_GRID) {
+                    setBackgroundResource(R.drawable.selector_clickable_circle)
+                    setOnClickListener {
+                        if (!actModeCallback.isSelectable) {
+                            profileIconClick.invoke(contact)
+                        } else {
+                            holder.viewClicked(contact)
+                        }
+                    }
+                    setOnLongClickListener {
+                        holder.viewLongClicked()
+                        true
+                    }
+                }
+            }
 
             if (showContactThumbnails) {
-                val placeholderImage = BitmapDrawable(resources, SimpleContactsHelper(context).getContactLetterIcon(fullName))
+                val placeholderImage =
+                    SimpleContactsHelper(context).getContactLetterIcon(fullName).toDrawable(resources)
                 if (contact.photoUri.isEmpty() && contact.photo == null) {
                     findViewById<ImageView>(org.fossify.commons.R.id.item_contact_image).setImageDrawable(placeholderImage)
                 } else {
@@ -437,11 +452,7 @@ class ContactsAdapter(
                         .error(placeholderImage)
                         .centerCrop()
 
-                    val itemToLoad: Any? = if (contact.photoUri.isNotEmpty()) {
-                        contact.photoUri
-                    } else {
-                        contact.photo
-                    }
+                    val itemToLoad: Any? = contact.photoUri.ifEmpty { contact.photo }
 
                     Glide.with(activity)
                         .load(itemToLoad)

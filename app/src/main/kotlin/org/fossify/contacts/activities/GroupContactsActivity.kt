@@ -17,6 +17,7 @@ import org.fossify.contacts.adapters.ContactsAdapter
 import org.fossify.contacts.databinding.ActivityGroupContactsBinding
 import org.fossify.contacts.dialogs.SelectContactsDialog
 import org.fossify.contacts.extensions.handleGenericContactClick
+import org.fossify.contacts.extensions.viewContact
 import org.fossify.contacts.helpers.GROUP
 import org.fossify.contacts.helpers.LOCATION_GROUP_CONTACTS
 import org.fossify.contacts.interfaces.RefreshContactsListener
@@ -153,10 +154,14 @@ class GroupContactsActivity : SimpleActivity(), RemoveFromGroupListener, Refresh
                 recyclerView = binding.groupContactsList,
                 location = LOCATION_GROUP_CONTACTS,
                 removeListener = this,
-                refreshListener = this
-            ) {
-                contactClicked(it as Contact)
-            }.apply {
+                refreshListener = this,
+                itemClick = {
+                    contactClicked(it as Contact)
+                },
+                profileIconClick = {
+                    viewContact(it as Contact)
+                }
+            ).apply {
                 binding.groupContactsList.adapter = this
             }
 

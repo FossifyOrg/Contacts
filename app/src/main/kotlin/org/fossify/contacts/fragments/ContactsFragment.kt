@@ -14,6 +14,7 @@ import org.fossify.contacts.adapters.ContactsAdapter
 import org.fossify.contacts.databinding.FragmentContactsBinding
 import org.fossify.contacts.databinding.FragmentLettersLayoutBinding
 import org.fossify.contacts.extensions.config
+import org.fossify.contacts.extensions.viewContact
 import org.fossify.contacts.helpers.LOCATION_CONTACTS_TAB
 import org.fossify.contacts.interfaces.RefreshContactsListener
 
@@ -58,9 +59,13 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
                 removeListener = null,
                 recyclerView = innerBinding.fragmentList,
                 enableDrag = false,
-            ) {
-                (activity as RefreshContactsListener).contactClicked(it as Contact)
-            }.apply {
+                itemClick = {
+                    (activity as RefreshContactsListener).contactClicked(it as Contact)
+                },
+                profileIconClick = {
+                    activity?.viewContact(it as Contact)
+                }
+            ).apply {
                 innerBinding.fragmentList.adapter = this
             }
 

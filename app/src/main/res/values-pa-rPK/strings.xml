@@ -13,7 +13,6 @@
     <string name="send_email_to_group">سموہ نوں ای‌میل بھیجو</string>
     <string name="fields_empty">گٹھو گھٹ اِکّ تھاں وچ کجھ لکھت پایو</string>
     <string name="new_contact">نواں رابطہ</string>
-    <string name="edit_contact">رابطے دے ویروے سودھو</string>
     <string name="select_contact">رابطہ چݨو</string>
     <string name="no_groups">کوئی سمُدے نہیں اے</string>
     <string name="create_new_group">نواں سموہ بݨاؤ</string>
@@ -26,8 +25,6 @@
     <string name="change_photo">تصویر بدلو</string>
     <string name="show_phone_numbers">فون نمبر ویکھو</string>
     <string name="show_contact_thumbnails">رابطیاں لئی چھوٹیاں تصویراں ویکھو</string>
-    <string name="call_contact">رابطہ کال کرو</string>
-    <string name="view_contact">رابطے دے ویروے ویکھو</string>
     <string name="contacts">رابطے</string>    
     <string name="search_contacts">رابطیاں وچ کھوجو</string>
     <string name="search_groups">سموہاں وچ کھوجو</string>

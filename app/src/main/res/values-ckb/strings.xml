@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_launcher_name">بەردەنگ</string>
+    <string name="address">ناونیشان</string>
+    <string name="street">شەقام</string>
+    <string name="city">شار</string>
+</resources>

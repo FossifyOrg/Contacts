@@ -4,7 +4,6 @@
     <string name="send_email_to_contacts">संपर्कों को ईमेल भेजें</string>
     <string name="select_contact">संपर्क चुनें</string>
     <string name="remove_from_group">समूह से हटा दें</string>
-    <string name="call_contact">संपर्क कॉल करें</string>
     <string name="show_only_contacts_with_numbers">केवल फ़ोन नंबर वाले संपर्क दिखाएं</string>
     <string name="no_favorites">ऐसा लगता है जैसे आपने अभी तक कोई पसंदीदा संपर्क नहीं जोड़ा है।</string>
     <string name="faq_1_text">हां, आपको बस सेटिंग्स में जाना है -&gt; दिखाए गए संपर्क फ़ील्ड प्रबंधित करें। वहां आप चुन सकते हैं कि कौन से फ़ील्ड दिखाई देने चाहिए. उनमें से कुछ डिफ़ॉल्ट रूप से अक्षम भी हैं, इसलिए आपको वहां कुछ नए मिल सकते हैं।</string>
@@ -14,8 +13,6 @@
     <string name="no_contacts_with_emails">ईमेल वाला कोई संपर्क नहीं मिला</string>
     <string name="new_contact">नया संपर्क</string>
     <string name="change_photo">छवि बदलो</string>
-    <string name="on_contact_click">संपर्क क्लिक पर</string>
-    <string name="view_contact">संपर्क विवरण देखें</string>
     <string name="manage_shown_contact_fields">दिखाए गए संपर्क फ़ील्ड प्रबंधित करें</string>
     <string name="contacts">संपर्क</string>
     <string name="address">पता</string>
@@ -29,7 +26,6 @@
     <string name="fields_empty">कम से कम 1 फ़ील्ड भरना होगा</string>
     <string name="must_be_at_edit">किसी संपर्क को संशोधित करने के लिए आपको संपादन स्क्रीन पर होना चाहिए</string>
     <string name="no_contacts_with_phone_numbers">फ़ोन नंबर वाला कोई संपर्क नहीं मिला</string>
-    <string name="edit_contact">संपादित संपर्क</string>
     <string name="nickname">उपनाम</string>
     <string name="no_groups">कोई समूह नहीं</string>
     <string name="create_new_group">एक नया समूह बनाएं</string>

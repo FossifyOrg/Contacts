@@ -1,0 +1,9 @@
+Changed:
+
+• Updated translations
+
+Fixed:
+
+• Fixed invisible navigation bars in contact viewer 
+• Fixed search highlighting for characters with accents and diacritics 
+

@@ -5,7 +5,7 @@
     <string name="inserting">Εισαγωγή…</string>
     <string name="updating">Ενημέρωση…</string>
     <string name="phone_storage">Αποθ. Τηλεφώνου</string>
-    <string name="phone_storage_hidden">Μνήμη τηλεφώνου (κρυφές από άλλες εφαρμογές)</string>
+    <string name="phone_storage_hidden">Μνήμη τηλεφώνου (κρυφή από άλλες εφαρμογές)</string>
     <string name="company">Εταιρεία</string>
     <string name="job_position">Θέση Εργασίας</string>
     <string name="send_sms_to_contacts">Αποστολή SMS σε επαφές</string>
@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">Δεν βρέθηκαν Επαφές με emails</string>
     <string name="no_contacts_with_phone_numbers">Δεν βρέθηκαν Επαφές με αριθμό τηλεφώνου</string>
     <string name="new_contact">Νέα επαφή</string>
-    <string name="edit_contact">Επεξεργασία επαφής</string>
     <string name="select_contact">Επιλογή επαφής</string>
     <string name="nickname">Ψευδώνυμο</string>
     <string name="no_groups">Δεν υπάρχουν ομάδες</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">Εμφάνιση αριθμών τηλεφώνων</string>
     <string name="show_contact_thumbnails">Εμφάνιση μικρογραφιών επαφής</string>
     <string name="show_dialpad_button">Προβολή ενός κουμπίου πληκτρολογίου στην κύρια οθόνη</string>
-    <string name="on_contact_click">Στην επιλογή επαφής</string>
-    <string name="call_contact">Κλήση επαφής</string>
-    <string name="view_contact">Εμφάνιση λεπτομερειών επαφής</string>
     <string name="manage_shown_contact_fields">Διαχείριση πεδίων επαφής</string>
     <string name="contacts">Επαφές</string>
     <string name="show_only_contacts_with_numbers">Προβολή όλων των Επαφών με αριθμούς τηλεφώνου</string>
@@ -72,7 +68,7 @@
         <item quantity="one">%d ομάδα</item>
         <item quantity="other">%d ομάδες</item>
     </plurals>
-    <string name="faq_1_title">Θέλω να αλλάξω τα πεδία που θα είναι ορατά στις επαφές. Μπορώ να το κάνω?</string>
+    <string name="faq_1_title">Θέλω να αλλάξω τα πεδία που θα είναι ορατά στις επαφές. Μπορώ να το κάνω;</string>
     <string name="faq_1_text">Ναι, το μόνο που έχετε να κάνετε είναι να μεταβείτε στις Ρυθμίσεις -&gt; Διαχείριση εμφανιζόμενων πεδίων επαφής. Εκεί μπορείτε να επιλέξετε ποια πεδία θα πρέπει να είναι ορατά. Κάποια από αυτά είναι ακόμη και απενεργοποιημένα από προεπιλογή, επομένως ίσως βρείτε κάποια νέα εκεί.</string>
     <string name="street">Οδός</string>
     <string name="city">Πόλη</string>
@@ -81,4 +77,6 @@
     <string name="country">Χώρα</string>
     <string name="select_account">Επέλεξε λογαριασμό</string>
     <string name="format_phone_numbers">Μορφοποίηση αριθμών τηλεφώνου</string>
+    <string name="neighborhood">Αριθμός οικείας</string>
+    <string name="region">Γεωγραφικό Διαμέρισμα</string>
 </resources>

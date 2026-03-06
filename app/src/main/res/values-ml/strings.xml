@@ -17,7 +17,6 @@
     <string name="no_contacts_with_emails">ഇമെയിലുകളില്ലാത്ത കോൺടാക്റ്റുകൾ കണ്ടെത്തിയില്ല</string>
     <string name="no_contacts_with_phone_numbers">ഫോൺ നമ്പറുകളില്ലാത്ത കോൺടാക്റ്റുകൾ കണ്ടെത്തിയില്ല</string>
     <string name="new_contact">പുതിയ കോൺ‌ടാക്റ്റ്</string>
-    <string name="edit_contact">കോൺ‌ടാക്റ്റ് എഡിറ്റുചെയ്യുക</string>
     <string name="select_contact">കോൺടാക്റ്റ് തിരഞ്ഞെടുക്കുക</string>
     <string name="nickname">വിളിപ്പേര്</string>
     <string name="no_groups">ഗ്രൂപ്പുകളൊന്നുമില്ല</string>
@@ -34,9 +33,6 @@
     <string name="show_phone_numbers">ഫോൺ നമ്പറുകൾ കാണിക്കുക</string>
     <string name="show_contact_thumbnails">കോണ്ടാക്ടിന്റെ ലഘുചിത്രങ്ങൾ കാണിക്കുക</string>
     <string name="show_dialpad_button">മുഖ്യ സ്ക്രീനിൽ ഡയൽപാഡ് ബട്ടൺ കാണിക്കുക</string>
-    <string name="on_contact_click">കോൺടാക്റ്റിൽ ക്ലിക്ക് ചെയ്യുക</string>
-    <string name="call_contact">കോണ്ടാക്ടിനെ വിളിക്കുക </string>
-    <string name="view_contact">കോൺ‌ടാക്റ്റ് വിശദാംശങ്ങൾ‌ കാണുക</string>
     <string name="manage_shown_contact_fields">കോൺടാക്റ്റ് ഫീൽഡുകൾ കാണിക്കുന്നത്‌ നിയന്ത്രിക്കുക</string>
     <string name="contacts">കോണ്ടാക്ടുകൾ </string>
     <string name="show_only_contacts_with_numbers">ഫോൺ നമ്പറുകളുള്ള കോൺടാക്റ്റുകൾ മാത്രം കാണിക്കുക</string>
