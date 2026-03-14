@@ -43,7 +43,7 @@
     <string name="show_dialpad_button">Mostrar un boton de pavat numeric a l\'ecran principal</string>
     <string name="manage_shown_contact_fields">Gerir los camps del contacte mostrats</string>
     <string name="show_only_contacts_with_numbers">Mostrar sonque los contactes amb numèro de telefòn</string>
-    <string name="show_private_contacts">Mostrar los contactes privats per Fossify Phone, Fossify SMS Messenger e Fossify Calendar</string>
+    <string name="show_private_contacts">Mostrar los contactes privats per Fossify Phone, Messenger e Calendar</string>
     <string name="no_favorites">Sembla qu\'avètz pas encara apondut cap de contacte favorit.</string>
     <string name="toggle_favorite">Bascular coma favorit</string>
     <string name="search_contacts">Cercar de contactes</string>
