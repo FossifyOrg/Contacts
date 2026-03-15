@@ -72,7 +72,7 @@
     </plurals>
     <string name="faq_1_title">Voglio cambiare i campi visibili ai contatti. Come posso fare?</string>
     <string name="faq_1_text">Si può farlo andando in Impostazioni -&gt; Gestisci i campi mostrati. Qui si possono selezionare i campi che saranno visibili, alcuni sono disabilitati in maniera predefinita, quindi si possono trovare campi aggiuntivi.</string>
-    <string name="show_private_contacts">Mostra i contatti privati a Telefono Fossify, Messaggi Fossify e Calendario Fossify</string>
+    <string name="show_private_contacts">Mostra i contatti privati al telefono Fossify, Messaggi e Calendario</string>
     <string name="format_phone_numbers">Formatta i numeri di telefono</string>
     <string name="street">Via</string>
     <string name="neighborhood">Numero dell\'appartamento o della suite</string>
