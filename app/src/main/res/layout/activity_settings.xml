@@ -422,6 +422,21 @@
                 android:text="@string/migrating" />
 
             <RelativeLayout
+                android:id="@+id/vcard_version_holder"
+                style="@style/SettingsHolderTextViewOneLinerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <org.fossify.commons.views.MyTextView
+                android:id="@+id/vcard_version"
+                style="@style/SettingsTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vcard_version" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/contacts_export_holder"
                 style="@style/SettingsHolderTextViewOneLinerStyle"
                 android:layout_width="match_parent"
