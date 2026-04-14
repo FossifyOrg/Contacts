@@ -13,7 +13,7 @@
     <string name="send_sms_to_group">ارسال رسالة الى مجموعة</string>
     <string name="send_email_to_group">ارسال بريد الكتروني الى مجموعة</string>
     <string name="fields_empty">يجب ملء حقل 1 على الأقل</string>
-    <string name="must_be_at_edit">يجب أن تكون في شاشة التعديل لتعديل جهة اتصال</string>
+    <string name="must_be_at_edit">يجب أن تكون في شاشة التحرير لتعديل جهة اتصال</string>
     <string name="no_contacts_with_emails">لا توجد جهات اتصال بهذا البريد الإلكتروني</string>
     <string name="no_contacts_with_phone_numbers">لا توجد جهات اتصال بهذا الرقم</string>
     <string name="new_contact">جهة اتصال جديدة</string>
@@ -51,7 +51,7 @@
     <string name="include_contact_sources">تضمين مصادر الاتصال</string>
     <string name="filename_without_vcf">اسم الملف (بدون .vcf)</string>
     <string name="dialpad">لوحة الاتصال</string>
-    <string name="add_number_to_contact">أضف رقماً للاتصال</string>
+    <string name="add_number_to_contact">أضف رقمًا لجهة الاتصال</string>
     <string name="prefix">بادئة</string>
     <string name="suffix">لاحقة</string>
     <string name="phone_numbers">ارقام الهاتف</string>
