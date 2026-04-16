@@ -70,6 +70,18 @@
         <item quantity="few">%d групы</item>
         <item quantity="many">%d груп</item>
         <item quantity="other">%d груп</item>
-    </plurals>    <string name="faq_1_title">Я хачу змяніць, якія поля бачныя ў кантактах. Ці магу я гэта зрабіць\?</string>
+    </plurals>
+    <string name="faq_1_title">Я хачу змяніць, якія поля бачныя ў кантактах. Ці магу я гэта зрабіць\?</string>
     <string name="faq_1_text">Так, усё, што вам трэба зрабіць, гэта зайсці ў Налады - &gt; Упраўленне адлюстроўваецца палямі кантактаў. Там вы можаце выбраць, якія поля павінны быць бачныя. Некаторыя з іх нават адключаныя па змаўчанні, так што вы можаце знайсці там некалькі новых.</string>
+    <string name="street">Вуліца</string>
+    <string name="neighborhood">Кватэра</string>
+    <string name="city">Горад</string>
+    <string name="postcode">Паштовы індэкс</string>
+    <string name="pobox">Паштовая скрынка</string>
+    <string name="region">Вобласць</string>
+    <string name="country">Краіна</string>
+    <string name="select_account">Выбраць уліковы запіс</string>
+    <string name="format_phone_numbers">Фармаціраваць нумары тэлефонаў</string>
+    <string name="show_private_contacts">Паказаць прыватныя кантакты іншым праграмам Fossify</string>
+    <string name="structured_addresses">Структураваныя адрасы (рэжым рэдагавання)</string>
 </resources>
