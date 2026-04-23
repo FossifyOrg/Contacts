@@ -156,7 +156,17 @@ class VcfExporter {
                         Im.PROTOCOL_GOOGLE_TALK -> Impp(HANGOUTS, it.value)
                         Im.PROTOCOL_QQ -> Impp(QQ, it.value)
                         Im.PROTOCOL_JABBER -> Impp(JABBER, it.value)
-                        else -> Impp(it.label, it.value)
+                        else -> {
+                            // IMPP URIs use the label as the URI scheme, which only allows
+                            // [a-zA-Z][a-zA-Z0-9+-.]*. Replace any character outside that
+                            // set with a hyphen so labels containing spaces (or other symbols)
+                            // don't throw an IllegalArgumentException and corrupt the export.
+                            val scheme = it.label
+                                .replace(Regex("[^a-zA-Z0-9+\\-.]"), "-")
+                                .let { s -> if (s.firstOrNull()?.isLetter() != true) "x-$s" else s }
+                                .ifEmpty { "x-custom" }
+                            Impp(scheme, it.value)
+                        }
                     }
 
                     card.addImpp(impp)
