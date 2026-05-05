@@ -3,7 +3,7 @@
     <string name="app_launcher_name">Névjegyek</string>
     <string name="address">Cím</string>
     <string name="inserting">Hozzáadás…</string>
-    <string name="updating">Módosítás…</string>
+    <string name="updating">Aktualizálás…</string>
     <string name="phone_storage">Telefon tárhelye</string>
     <string name="phone_storage_hidden">Telefon tárhelye (többi alkalmazás számára nem látható)</string>
     <string name="company">Cégnév</string>
