@@ -163,8 +163,13 @@ class VcfExporter {
                             // don't throw an IllegalArgumentException and corrupt the export.
                             val scheme = it.label
                                 .replace(Regex("[^a-zA-Z0-9+\\-.]"), "-")
-                                .let { s -> if (s.firstOrNull()?.isLetter() != true) "x-$s" else s }
-                                .ifEmpty { "x-custom" }
+                                .let { s ->
+                                    when {
+                                        s.isEmpty() -> "x-custom"
+                                        s.firstOrNull()?.isLetter() != true -> "x-$s"
+                                        else -> s
+                                    }
+                                }
                             Impp(scheme, it.value)
                         }
                     }
