@@ -73,7 +73,7 @@
     <string name="faq_1_text">Da, tot ce trebuie să faceți este să accesați Setări -&gt; Gestionați câmpurile de contact afișate. Acolo puteți selecta ce câmpuri ar trebui să fie vizibile. Unele dintre ele sunt chiar dezactivate în mod implicit, așa că s-ar putea să găsiți unele noi acolo.</string>
     <string name="prefix">Prefix</string>
     <string name="format_phone_numbers">Formatează numerele de telefon</string>
-    <string name="show_private_contacts">Afișează contacte private în Fossify Phone, Fossify SMS Messenger și Fossify Calendar</string>
+    <string name="show_private_contacts">Afișează contactele private în Fossify Telefon, Mesaje și Calendar</string>
     <string name="pobox">Cutie poștală</string>
     <string name="street">Stradă</string>
     <string name="neighborhood">Apartament</string>
