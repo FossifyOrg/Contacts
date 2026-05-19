@@ -67,10 +67,11 @@ class VcfImporter(val activity: SimpleActivity) {
                 // firstName instead of guessing a given/family split, which
                 // would silently corrupt names like "von Neumann" or non-Western
                 // name orders.
+                val hasStructuredName = firstName.isNotBlank()
+                    || middleName.isNotBlank()
+                    || surname.isNotBlank()
                 val formattedName = ezContact.formattedName?.value?.trim().orEmpty()
-                if (firstName.isBlank() && middleName.isBlank() && surname.isBlank()
-                    && formattedName.isNotBlank()
-                ) {
+                if (!hasStructuredName && formattedName.isNotBlank()) {
                     firstName = formattedName
                 }
 
