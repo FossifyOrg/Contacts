@@ -43,9 +43,9 @@
     <string name="search_groups">Rechercher des groupes</string>
     <string name="import_contacts">Importer des contacts</string>
     <string name="export_contacts">Exporter des contacts</string>
-    <string name="import_contacts_from_vcf">Importer des contacts depuis un fichier «VCF »</string>
-    <string name="import_contacts_from_vcf_pro">Importer des contacts depuis un fichier « VCF » (version « Pro »)</string>
-    <string name="export_contacts_to_vcf">Exporter les contacts vers un fichier « VCF »</string>
+    <string name="import_contacts_from_vcf">Importer des contacts depuis un fichier .vcf</string>
+    <string name="import_contacts_from_vcf_pro">Importer des contacts depuis un fichier .vcf (version « Pro »)</string>
+    <string name="export_contacts_to_vcf">Exporter les contacts vers un fichier .vcf</string>
     <string name="target_contact_source">Source de contact cible</string>
     <string name="include_contact_sources">Inclure les sources de contact</string>
     <string name="filename_without_vcf">Nom du fichier (sans extension « .vcf »)</string>
