@@ -56,18 +56,24 @@ class VcfImporter(val activity: SimpleActivity) {
                 val structuredName = ezContact.structuredName
                 val prefix = structuredName?.prefixes?.firstOrNull() ?: ""
                 var firstName = structuredName?.given ?: ""
-                var middleName = structuredName?.additionalNames?.firstOrNull() ?: ""
-                var surname = structuredName?.family ?: ""
+                val middleName = structuredName?.additionalNames?.firstOrNull() ?: ""
+                val surname = structuredName?.family ?: ""
+                val suffix = structuredName?.suffixes?.firstOrNull() ?: ""
 
-                if (structuredName == null && ezContact.formattedName?.value?.isNotBlank() == true) {
-                    val fn = ezContact.formattedName.value.trim()
-                    val parts = fn.split("\\s+".toRegex(), limit = 2)
-
-                    firstName = parts.getOrNull(0) ?: ""
-                    surname = parts.getOrNull(1) ?: ""
+                // vCard 4.0 makes the structured name (N) optional while the
+                // formatted name (FN) is mandatory. When N is missing or yields
+                // no usable parts, fall back to FN. FN is a free-form display
+                // string with no guaranteed word order, so we keep it intact in
+                // firstName instead of guessing a given/family split, which
+                // would silently corrupt names like "von Neumann" or non-Western
+                // name orders.
+                val formattedName = ezContact.formattedName?.value?.trim().orEmpty()
+                if (firstName.isBlank() && middleName.isBlank() && surname.isBlank()
+                    && formattedName.isNotBlank()
+                ) {
+                    firstName = formattedName
                 }
 
-                val suffix = structuredName?.suffixes?.firstOrNull() ?: ""
                 val nickname = ezContact.nickname?.values?.firstOrNull() ?: ""
                 var photoUri = ""
 
