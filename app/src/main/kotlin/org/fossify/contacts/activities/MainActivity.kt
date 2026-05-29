@@ -41,6 +41,10 @@ import org.fossify.contacts.interfaces.RefreshContactsListener
 import java.util.Arrays
 
 class MainActivity : SimpleActivity(), RefreshContactsListener {
+    companion object {
+        private const val CONTACT_REFRESH_DEBOUNCE_MS = 500L
+    }
+
     private var werePermissionsHandled = false
     private var isFirstResume = true
     private var isGettingContacts = false
@@ -177,7 +181,7 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
         val observer = object : ContentObserver(contactObserverHandler) {
             override fun onChange(selfChange: Boolean) {
                 contactObserverHandler.removeCallbacks(contactReloadRunnable)
-                contactObserverHandler.postDelayed(contactReloadRunnable, 500)
+                contactObserverHandler.postDelayed(contactReloadRunnable, CONTACT_REFRESH_DEBOUNCE_MS)
             }
         }
         runCatching {
