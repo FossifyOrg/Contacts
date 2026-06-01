@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="dialpad">Marcador</string>
-    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outros aplicativos)</string>
+    <string name="phone_storage_hidden">Armazenamento do telefone (não visível por outras aplicações)</string>
     <string name="no_favorites">Ainda não adicionou contactos aos favoritos.</string>
     <string name="app_launcher_name">Contactos</string>
     <string name="address">Endereço</string>
