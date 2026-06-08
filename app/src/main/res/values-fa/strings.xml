@@ -73,4 +73,13 @@
     <string name="faq_1_title">می‌خواهم کادرهای نمایان برای مخاطبان را تغییر دهم. می‌توانم این کار را انجام دهم؟</string>
     <string name="faq_1_text">بله؛ باید به قسمت تنظیمات رفته و مدیریت کادرهای نمایان را انتخاب کنید. آنجا می‌توانید انتخاب کنید چه کادرهایی نشان داده شوند. برخی از آنها به طور پیش‌فرض غیرفعال شده اند، پس شاید آنجا کادرهای تازه‌ای پیدا کنید.</string>
     <string name="format_phone_numbers">قالب شماره تلفن‌ها</string>
+    <string name="street">خیابان</string>
+    <string name="neighborhood">شماره ی آپارتمان یا واحد</string>
+    <string name="city">شهر</string>
+    <string name="postcode">کُد پستی</string>
+    <string name="pobox">صندوق پستی در دفتر پست</string>
+    <string name="region">ایالت</string>
+    <string name="country">کشور</string>
+    <string name="select_account">انتخاب اکانت</string>
+    <string name="structured_addresses">نشانی های ساختارمند (حالت ویرایش)</string>
 </resources>
