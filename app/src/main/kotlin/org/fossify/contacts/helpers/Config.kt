@@ -18,4 +18,7 @@ class Config(context: Context) : BaseConfig(context) {
         set(autoBackupContactSources) = prefs.edit().remove(AUTO_BACKUP_CONTACT_SOURCES).putStringSet(AUTO_BACKUP_CONTACT_SOURCES, autoBackupContactSources)
             .apply()
 
+    var sidebarYOffset: Float
+        get() = prefs.getFloat(SIDEBAR_Y_OFFSET, 0f)
+        set(sidebarYOffset) = prefs.edit().putFloat(SIDEBAR_Y_OFFSET, sidebarYOffset).apply()
 }
