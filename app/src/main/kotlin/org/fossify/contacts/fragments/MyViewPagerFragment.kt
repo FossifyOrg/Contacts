@@ -426,24 +426,33 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
          * the dot down), we listen for layout changes and adjust the Y position if the height changes.
          */
         container.addOnLayoutChangeListener { _, _, top, _, bottom, _, oldTop, _, oldBottom ->
-            if (!isPositionRestored) return@addOnLayoutChangeListener
-            val oldHeight = oldBottom - oldTop
-            val newHeight = bottom - top
-            if (oldHeight > 0 && newHeight != oldHeight) {
-                val heightDiff = newHeight - oldHeight
-                var newY = container.y - heightDiff
+            handleOnLayoutChange(container, parent, top, bottom, oldTop, oldBottom)
+        }
+    }
 
-                val fab = innerBinding.fragmentFab
-                val parentHeight = parent.height.toFloat()
-                val fabY = if (fab.isVisible()) fab.y else parentHeight
-                val maxY = (fabY - newHeight).coerceAtLeast(0f)
+    private fun handleOnLayoutChange(
+        container: ViewGroup,
+        parent: View,
+        top: Int,
+        bottom: Int,
+        oldTop: Int,
+        oldBottom: Int
+    ) {
+        if (!isPositionRestored) return
+        val oldHeight = oldBottom - oldTop
+        val newHeight = bottom - top
+        if (oldHeight > 0 && newHeight != oldHeight) {
+            val heightDiff = newHeight - oldHeight
+            val fab = innerBinding.fragmentFab
+            val parentHeight = parent.height.toFloat()
+            val fabY = if (fab.isVisible()) fab.y else parentHeight
+            val maxY = (fabY - newHeight).coerceAtLeast(0f)
 
-                newY = newY.coerceIn(0f, maxY)
-                if (container.y != newY) {
-                    container.y = newY
-                }
-                config.sidebarYOffset = container.y + newHeight
+            val newY = (container.y - heightDiff).coerceIn(0f, maxY)
+            if (container.y != newY) {
+                container.y = newY
             }
+            config.sidebarYOffset = container.y + newHeight
         }
     }
 
