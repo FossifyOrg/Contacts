@@ -58,7 +58,8 @@ const val SIGNAL = "signal"
 const val VIBER = "viber"
 const val TELEGRAM = "telegram"
 const val THREEMA = "threema"
-
+const val VCARD_VERSION = "4"
+const val DEFAULT_VCARD_VERSION = "4"
 
 // 6 am is the hardcoded automatic backup time, intervals shorter than 1 day are not yet supported.
 fun getNextAutoBackupTime(): DateTime {
