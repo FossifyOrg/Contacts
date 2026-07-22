@@ -7,7 +7,7 @@
     <string name="search_favorites">Buscar favoritos</string>
     <string name="search_groups">Buscar grupos</string>
     <string name="app_launcher_name">Contactos</string>
-    <string name="address">Ubicación</string>
+    <string name="address">Dirección</string>
     <string name="street">Calle</string>
     <string name="neighborhood">Apartamento o número de suite</string>
     <string name="city">Ciudad</string>
@@ -22,7 +22,7 @@
     <string name="send_email_to_contacts">Enviar correo electrónico a contactos</string>
     <string name="send_sms_to_group">Enviar SMS a grupo</string>
     <string name="send_email_to_group">Enviar correo electrónico a grupo</string>
-    <string name="fields_empty">Por al menos 1 campo debe estar completado</string>
+    <string name="fields_empty">Al menos 1 campo debe estar completado</string>
     <string name="must_be_at_edit">Debes estar en el apartado de Editar para modificar un contacto</string>
     <string name="no_contacts_with_emails">No se encontraron contactos con correos electrónicos</string>
     <string name="no_contacts_with_phone_numbers">No se encontraron contactos con números telefónicos</string>
