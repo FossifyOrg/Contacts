@@ -44,5 +44,5 @@
     <string name="show_phone_numbers">Mostrar números telefónicos</string>
     <string name="show_contact_thumbnails">Mostrar miniaturas de contactos</string>
     <string name="format_phone_numbers">Dar formato a números telefónicos</string>
-    <string name="add_number_to_contact">Añadir número a contactar</string>
+    <string name="add_number_to_contact">Añadir número al contacto</string>
 </resources>
