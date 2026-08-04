@@ -4,10 +4,14 @@ import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.ShortcutInfo
+import android.database.ContentObserver
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Icon
 import android.graphics.drawable.LayerDrawable
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.provider.ContactsContract
 import androidx.viewpager.widget.ViewPager
 import me.grantland.widget.AutofitHelper
 import org.fossify.commons.databases.ContactsDatabase
@@ -37,6 +41,10 @@ import org.fossify.contacts.interfaces.RefreshContactsListener
 import java.util.Arrays
 
 class MainActivity : SimpleActivity(), RefreshContactsListener {
+    companion object {
+        private const val CONTACT_REFRESH_DEBOUNCE_MS = 500L
+    }
+
     private var werePermissionsHandled = false
     private var isFirstResume = true
     private var isGettingContacts = false
@@ -143,12 +151,14 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
 
         isFirstResume = false
         checkShortcuts()
+        registerContactObserver()
     }
 
     override fun onPause() {
         super.onPause()
         storeStateVariables()
         config.lastUsedViewPagerPage = binding.viewPager.currentItem
+        unregisterContactObserver()
     }
 
     override fun onDestroy() {
@@ -156,6 +166,38 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
         if (!isChangingConfigurations) {
             ContactsDatabase.destroyInstance()
         }
+    }
+
+    private val contactObserverHandler = Handler(Looper.getMainLooper())
+    private val contactReloadRunnable = Runnable {
+        if (werePermissionsHandled) {
+            refreshContacts(ALL_TABS_MASK)
+        }
+    }
+    private var contactObserver: ContentObserver? = null
+
+    private fun registerContactObserver() {
+        unregisterContactObserver()
+        val observer = object : ContentObserver(contactObserverHandler) {
+            override fun onChange(selfChange: Boolean) {
+                contactObserverHandler.removeCallbacks(contactReloadRunnable)
+                contactObserverHandler.postDelayed(contactReloadRunnable, CONTACT_REFRESH_DEBOUNCE_MS)
+            }
+        }
+        runCatching {
+            contentResolver.registerContentObserver(
+                ContactsContract.Contacts.CONTENT_URI, true, observer
+            )
+            contactObserver = observer
+        }
+    }
+
+    private fun unregisterContactObserver() {
+        contactObserverHandler.removeCallbacks(contactReloadRunnable)
+        contactObserver?.let { observer ->
+            runCatching { contentResolver.unregisterContentObserver(observer) }
+        }
+        contactObserver = null
     }
 
     override fun onBackPressedCompat(): Boolean {
