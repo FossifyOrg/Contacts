@@ -21,7 +21,6 @@ import org.fossify.commons.views.MyTextView
 import org.fossify.contacts.R
 import org.fossify.contacts.activities.GroupContactsActivity
 import org.fossify.contacts.activities.InsertOrEditContactActivity
-import org.fossify.contacts.activities.MainActivity
 import org.fossify.contacts.activities.SimpleActivity
 import org.fossify.contacts.adapters.ContactsAdapter
 import org.fossify.contacts.adapters.GroupsAdapter
@@ -106,8 +105,8 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
     fun startNameWithSurnameChanged(startNameWithSurname: Boolean) {
         if (this !is GroupsFragment) {
             (innerBinding.fragmentList.adapter as? ContactsAdapter)?.apply {
-                config.sorting = if (startNameWithSurname) SORT_BY_SURNAME else SORT_BY_FIRST_NAME
-                (this@MyViewPagerFragment.activity!! as MainActivity).refreshContacts(TAB_CONTACTS or TAB_FAVORITES)
+                this.startNameWithSurname = startNameWithSurname
+                notifyDataSetChanged()
             }
         }
     }
