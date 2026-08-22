@@ -2,5 +2,5 @@
 <resources>
     <string name="updating">Oppdaterer…</string>
     <string name="phone_storage">Telefonlagring</string>
-    <string name="phone_storage_hidden">Telefonlagring (ikkje synleg for andre appar</string>
+    <string name="phone_storage_hidden">Telefonlagring (ikkje synleg for andre appar)</string>
 </resources>
