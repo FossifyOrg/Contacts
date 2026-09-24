@@ -73,7 +73,7 @@
     </plurals>
     <string name="faq_1_title">Spremeniti želim katera polja so vidna pri stikih. Lahko to storim\?</string>
     <string name="faq_1_text">Da, vse kar morate storiti je, da greste v Nastavitve -&gt; Upravljanje prikazanih polj stika. Tam lahko izberete katera polja naj bodo vidna. Nekatera od njih so celo privzeto onemogočena, zato boste tam morda našli nekaj novih.</string>
-    <string name="show_private_contacts">Prikaži zasebne stike v aplikaciji Fossify Phone, Messages in Calendar</string>
+    <string name="show_private_contacts">Prikaži zasebne stike v aplikacijah Fossify Phone, Messages in Calendar</string>
     <string name="street">Ulica</string>
     <string name="neighborhood">Številka stanovanja ali apartmaja</string>
     <string name="city">Mesto</string>
