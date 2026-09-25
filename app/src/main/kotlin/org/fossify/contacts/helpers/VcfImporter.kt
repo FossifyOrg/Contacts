@@ -54,12 +54,12 @@ class VcfImporter(val activity: SimpleActivity) {
             val ezContacts = Ezvcard.parse(inputStream).all()
             for (ezContact in ezContacts) {
                 val structuredName = ezContact.structuredName
-                val prefix = structuredName?.prefixes?.firstOrNull() ?: ""
-                val firstName = structuredName?.given ?: ""
-                val middleName = structuredName?.additionalNames?.firstOrNull() ?: ""
-                val surname = structuredName?.family ?: ""
-                val suffix = structuredName?.suffixes?.firstOrNull() ?: ""
-                val nickname = ezContact.nickname?.values?.firstOrNull() ?: ""
+                val prefix = structuredName?.prefixes?.firstOrNull()?.trim() ?: ""
+                val firstName = structuredName?.given?.trim() ?: ""
+                val middleName = structuredName?.additionalNames?.firstOrNull()?.trim() ?: ""
+                val surname = structuredName?.family?.trim() ?: ""
+                val suffix = structuredName?.suffixes?.firstOrNull()?.trim() ?: ""
+                val nickname = ezContact.nickname?.values?.firstOrNull()?.trim() ?: ""
                 var photoUri = ""
 
                 val phoneNumbers = ArrayList<PhoneNumber>()
