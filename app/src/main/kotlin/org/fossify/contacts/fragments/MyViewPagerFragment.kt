@@ -3,6 +3,8 @@ package org.fossify.contacts.fragments
 import android.content.Context
 import android.content.Intent
 import android.util.AttributeSet
+import android.view.MotionEvent
+import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -49,6 +51,10 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
     var skipHashComparing = false
     var forceListRedraw = false
 
+    private var initialY = 0f
+    private var dY = 0f
+    private var isPositionRestored = false
+
     fun setupFragment(activity: SimpleActivity) {
         config = activity.config
         if (this.activity == null) {
@@ -63,6 +69,8 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
             }
 
             innerBinding.fragmentPlaceholder2.underlineText()
+            setupDragHandle()
+            restoreSidebarPosition()
 
             when (this) {
                 is ContactsFragment -> {
@@ -379,6 +387,96 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
         innerBinding.fragmentList.beVisibleIf(hasItemsToShow)
     }
 
+    private fun setupDragHandle() {
+        val container = innerBinding.letterFastscrollerContainer ?: return
+        val dragHandle = innerBinding.letterFastscrollerDragHandle ?: return
+        val parent = container.parent as? View ?: return
+
+        dragHandle.setOnTouchListener { v, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    isPositionRestored = true
+                    initialY = container.y
+                    dY = event.rawY - initialY
+                    v.performClick()
+                }
+
+                MotionEvent.ACTION_MOVE -> {
+                    isPositionRestored = true
+                    var newY = event.rawY - dY
+                    val fab = innerBinding.fragmentFab
+                    val parentHeight = parent.height.toFloat()
+                    val fabY = if (fab.isVisible()) fab.y else parentHeight
+                    val maxY = (fabY - container.height).coerceAtLeast(0f)
+                    newY = newY.coerceIn(0f, maxY)
+                    container.y = newY
+                }
+
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    if (isPositionRestored && container.y != initialY) {
+                        config.sidebarYOffset = container.y + container.height
+                    }
+                }
+            }
+            true
+        }
+
+        /*
+         * To ensure the sidebar expands upwards when new characters are added (instead of pushing
+         * the dot down), we listen for layout changes and adjust the Y position if the height changes.
+         */
+        container.addOnLayoutChangeListener { _, _, top, _, bottom, _, oldTop, _, oldBottom ->
+            handleOnLayoutChange(container, parent, top, bottom, oldTop, oldBottom)
+        }
+    }
+
+    private fun handleOnLayoutChange(
+        container: ViewGroup,
+        parent: View,
+        top: Int,
+        bottom: Int,
+        oldTop: Int,
+        oldBottom: Int
+    ) {
+        if (!isPositionRestored) return
+        val oldHeight = oldBottom - oldTop
+        val newHeight = bottom - top
+        if (oldHeight > 0 && newHeight != oldHeight) {
+            val heightDiff = newHeight - oldHeight
+            val fab = innerBinding.fragmentFab
+            val parentHeight = parent.height.toFloat()
+            val fabY = if (fab.isVisible()) fab.y else parentHeight
+            val maxY = (fabY - newHeight).coerceAtLeast(0f)
+
+            val newY = (container.y - heightDiff).coerceIn(0f, maxY)
+            if (container.y != newY) {
+                container.y = newY
+            }
+            config.sidebarYOffset = container.y + newHeight
+        }
+    }
+
+    private fun restoreSidebarPosition() {
+        val container = innerBinding.letterFastscrollerContainer ?: return
+        val parent = container.parent as? View ?: return
+        container.onGlobalLayout {
+            val fab = innerBinding.fragmentFab
+            val parentHeight = parent.height.toFloat()
+            val fabY = if (fab.isVisible()) fab.y else parentHeight
+            val maxY = (fabY - container.height).coerceAtLeast(0f)
+            
+            val savedBottomY = config.sidebarYOffset
+            val targetY = if (savedBottomY == 0f) {
+                0f
+            } else {
+                (savedBottomY - container.height).coerceIn(0f, maxY)
+            }
+            
+            container.y = targetY
+            isPositionRestored = true
+        }
+    }
+
     abstract fun fabClicked()
 
     abstract fun placeholderClicked()
@@ -391,6 +489,8 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
         val fragmentWrapper: RelativeLayout
         val letterFastscroller: FastScrollerView?
         val letterFastscrollerThumb: FastScrollerThumbView?
+        val letterFastscrollerContainer: ViewGroup?
+        val letterFastscrollerDragHandle: View?
         val fragmentFastscroller: RecyclerViewFastScroller?
     }
 
@@ -402,6 +502,8 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
         override val fragmentWrapper: RelativeLayout = binding.fragmentWrapper
         override val letterFastscroller: FastScrollerView = binding.letterFastscroller
         override val letterFastscrollerThumb: FastScrollerThumbView = binding.letterFastscrollerThumb
+        override val letterFastscrollerContainer: ViewGroup = binding.letterFastscrollerContainer
+        override val letterFastscrollerDragHandle: View = binding.letterFastscrollerDragHandle
         override val fragmentFastscroller: RecyclerViewFastScroller? = null
     }
 
@@ -413,6 +515,8 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
         override val fragmentWrapper: RelativeLayout = binding.fragmentWrapper
         override val letterFastscroller: FastScrollerView? = null
         override val letterFastscrollerThumb: FastScrollerThumbView? = null
+        override val letterFastscrollerContainer: ViewGroup? = null
+        override val letterFastscrollerDragHandle: View? = null
         override val fragmentFastscroller: RecyclerViewFastScroller = binding.fragmentFastscroller
     }
 }
