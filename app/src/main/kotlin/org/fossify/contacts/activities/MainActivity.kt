@@ -175,7 +175,8 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
             findItem(R.id.dialpad).isVisible = !config.showDialpadButton
             findItem(R.id.change_view_type).isVisible = currentFragment == findViewById(R.id.favorites_fragment)
             findItem(R.id.column_count).isVisible = currentFragment == findViewById(R.id.favorites_fragment) && config.viewType == VIEW_TYPE_GRID
-            findItem(R.id.more_apps_from_us).isVisible = resources.getBoolean(org.fossify.commons.R.bool.is_google_play_build)
+            findItem(R.id.more_apps_from_us).isVisible =
+                resources.getBoolean(org.fossify.commons.R.bool.is_google_play_build)
         }
     }
 
