@@ -81,7 +81,7 @@
     <string name="region">Вобласць</string>
     <string name="country">Краіна</string>
     <string name="select_account">Выбраць уліковы запіс</string>
-    <string name="format_phone_numbers">Фармаціраваць нумары тэлефонаў</string>
+    <string name="format_phone_numbers">Фарматаваць нумары тэлефонаў</string>
     <string name="show_private_contacts">Паказаць прыватныя кантакты іншым праграмам Fossify</string>
     <string name="structured_addresses">Структураваныя адрасы (рэжым рэдагавання)</string>
 </resources>
