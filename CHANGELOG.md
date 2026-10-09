@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Setting for vCard Export Version ([#344])
 
 ## [1.6.0] - 2026-01-30
 ### Added
@@ -124,6 +126,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#289]: https://github.com/FossifyOrg/Contacts/issues/289
 [#321]: https://github.com/FossifyOrg/Contacts/issues/321
 [#339]: https://github.com/FossifyOrg/Contacts/issues/339
+[#344]: https://github.com/FossifyOrg/Contacts/issues/344
 [#360]: https://github.com/FossifyOrg/Contacts/issues/360
 [#415]: https://github.com/FossifyOrg/Contacts/issues/415
 [#452]: https://github.com/FossifyOrg/Contacts/issues/452
