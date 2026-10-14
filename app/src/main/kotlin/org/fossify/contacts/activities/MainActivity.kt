@@ -92,7 +92,11 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
     override fun onResume() {
         super.onResume()
         if (storedShowPhoneNumbers != config.showPhoneNumbers) {
-            System.exit(0)
+            // Was System.exit(0). That kills the process — which Android treats
+            // as a crash, drops any in-flight intents, and produces a jarring
+            // re-launch. recreate() rebuilds the Activity using the new setting
+            // without tearing down the process or losing the task stack.
+            recreate()
             return
         }
 
