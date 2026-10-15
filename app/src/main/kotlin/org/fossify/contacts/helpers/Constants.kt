@@ -17,6 +17,7 @@ const val AUTOMATIC_BACKUP_REQUEST_CODE = 10001
 const val AUTO_BACKUP_INTERVAL_IN_DAYS = 1
 
 const val AUTO_BACKUP_CONTACT_SOURCES = "auto_backup_contact_sources"
+const val SIDEBAR_Y_OFFSET = "sidebar_y_offset"
 
 // extras used at third party intents
 const val KEY_NAME = "name"
