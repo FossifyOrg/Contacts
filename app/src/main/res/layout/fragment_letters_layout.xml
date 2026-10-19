@@ -45,22 +45,41 @@
             android:paddingBottom="@dimen/secondary_fab_bottom_margin"
             app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager" />
 
-        <com.reddit.indicatorfastscroll.FastScrollerView
-            android:id="@+id/letter_fastscroller"
-            android:layout_width="32dp"
+        <LinearLayout
+            android:id="@+id/letter_fastscroller_container"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:paddingTop="@dimen/big_margin"
-            android:paddingBottom="@dimen/big_margin" />
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.reddit.indicatorfastscroll.FastScrollerView
+                android:id="@+id/letter_fastscroller"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/normal_margin"
+                android:paddingBottom="@dimen/normal_margin" />
+
+            <ImageView
+                android:id="@+id/letter_fastscroller_drag_handle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@null"
+                android:padding="4dp"
+                android:src="@drawable/ic_dot" />
+
+        </LinearLayout>
 
         <com.reddit.indicatorfastscroll.FastScrollerThumbView
             android:id="@+id/letter_fastscroller_thumb"
             android:layout_width="@dimen/fab_size"
-            android:layout_height="match_parent"
-            android:layout_alignTop="@+id/letter_fastscroller"
-            android:layout_alignBottom="@+id/letter_fastscroller"
+            android:layout_height="@dimen/fab_size"
+            android:layout_alignTop="@+id/letter_fastscroller_container"
+            android:layout_alignBottom="@+id/letter_fastscroller_container"
+            android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/activity_margin"
-            android:layout_toStartOf="@+id/letter_fastscroller" />
+            android:layout_toStartOf="@+id/letter_fastscroller_container"
+            android:padding="@dimen/small_margin" />
 
     </RelativeLayout>
 
