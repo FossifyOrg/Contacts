@@ -61,6 +61,7 @@ class ImportContactsDialog(val activity: SimpleActivity, val path: String, priva
 
                         ignoreClicks = true
                         activity.toast(org.fossify.commons.R.string.importing)
+                        activity.config.lastUsedContactSource = targetContactSource
                         ensureBackgroundThread {
                             val result = VcfImporter(activity).importContacts(path, targetContactSource)
                             handleParseResult(result)
