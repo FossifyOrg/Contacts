@@ -59,8 +59,13 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
                 removeListener = null,
                 recyclerView = innerBinding.fragmentList,
                 enableDrag = false,
-                itemClick = {
-                    (activity as RefreshContactsListener).contactClicked(it as Contact)
+                itemClick = { clicked ->
+                    val clickedContact = clicked as Contact
+                    val adapter = innerBinding.fragmentList.adapter as? ContactsAdapter
+                    val fresh = adapter?.contactItems?.firstOrNull { candidate ->
+                        candidate.id == clickedContact.id
+                    } ?: clickedContact
+                    (activity as RefreshContactsListener).contactClicked(fresh)
                 },
                 profileIconClick = {
                     activity?.viewContact(it as Contact)
