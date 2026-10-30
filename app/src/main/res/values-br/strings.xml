@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="dialpad">Klavier niverenniñ</string>
+    <string name="updating">Oc\'h hizivaat…</string>
+    <string name="phone_storage">Stokañ ar pellgomzer</string>
+    <string name="phone_storage_hidden">Stokañ ar pellgomzer (diwelus gant arloadoù all)</string>
+    <string name="search_contacts">Klask darempredoù</string>
+    <string name="search_favorites">Klask em re garetañ</string>
+    <string name="search_groups">Klask strolladoù</string>
 </resources>
