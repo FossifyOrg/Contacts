@@ -3,7 +3,7 @@
     <string name="app_launcher_name">Kontakte</string>
     <string name="address">Adresse</string>
     <string name="inserting">Einfügen …</string>
-    <string name="updating">Aktualisieren …</string>
+    <string name="updating">Wird aktualisiert …</string>
     <string name="phone_storage">Gerätespeicher</string>
     <string name="phone_storage_hidden">Gerätespeicher (nicht sichtbar für andere Apps)</string>
     <string name="company">Unternehmen</string>
