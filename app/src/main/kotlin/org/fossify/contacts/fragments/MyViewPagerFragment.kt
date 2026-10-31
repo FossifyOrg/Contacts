@@ -324,6 +324,7 @@ abstract class MyViewPagerFragment<Binding : MyViewPagerFragment.InnerBinding>(c
                     getProperText(it.notes, shouldNormalize).contains(fixedText, true) ||
                     getProperText(it.organization.company, shouldNormalize).contains(fixedText, true) ||
                     getProperText(it.organization.jobPosition, shouldNormalize).contains(fixedText, true) ||
+                    it.groups.any { group -> getProperText(group.title, shouldNormalize).contains(fixedText, true) } ||
                     it.websites.any { it.contains(fixedText, true) }
             } as ArrayList
 

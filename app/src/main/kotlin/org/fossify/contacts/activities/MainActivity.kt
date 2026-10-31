@@ -43,6 +43,8 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
 
     private var storedShowContactThumbnails = false
     private var storedShowPhoneNumbers = false
+    private var storedShowCompanyInList = false
+    private var storedShowGroupsInList = false
     private var storedStartNameWithSurname = false
     private var storedFontSize = 0
     private var storedShowTabs = 0
@@ -90,6 +92,12 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
 
         if (storedShowTabs != config.showTabs) {
             config.lastUsedViewPagerPage = 0
+            finish()
+            startActivity(intent)
+            return
+        }
+
+        if (storedShowCompanyInList != config.showCompanyInList || storedShowGroupsInList != config.showGroupsInList) {
             finish()
             startActivity(intent)
             return
@@ -242,6 +250,8 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
         config.apply {
             storedShowContactThumbnails = showContactThumbnails
             storedShowPhoneNumbers = showPhoneNumbers
+            storedShowCompanyInList = showCompanyInList
+            storedShowGroupsInList = showGroupsInList
             storedStartNameWithSurname = startNameWithSurname
             storedShowTabs = showTabs
             storedFontSize = fontSize

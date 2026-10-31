@@ -355,6 +355,36 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/settings_show_company_in_list_holder"
+                style="@style/SettingsHolderSwitchStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <org.fossify.commons.views.MyMaterialSwitch
+                    android:id="@+id/settings_show_company_in_list"
+                    style="@style/SettingsSwitchStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_company_in_list" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/settings_show_groups_in_list_holder"
+                style="@style/SettingsHolderSwitchStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <org.fossify.commons.views.MyMaterialSwitch
+                    android:id="@+id/settings_show_groups_in_list"
+                    style="@style/SettingsSwitchStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_groups_in_list" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/settings_start_name_with_surname_holder"
                 style="@style/SettingsHolderSwitchStyle"
                 android:layout_width="match_parent"

@@ -71,6 +71,8 @@ class ContactsAdapter(
     var startNameWithSurname = config.startNameWithSurname
     var showContactThumbnails = config.showContactThumbnails
     var showPhoneNumbers = config.showPhoneNumbers
+    var showCompanyInList = config.showCompanyInList
+    var showGroupsInList = config.showGroupsInList
     var fontSize = activity.getTextSize()
     var onDragEndListener: (() -> Unit)? = null
 
@@ -156,7 +158,11 @@ class ContactsAdapter(
             }
 
             else -> {
-                if (showPhoneNumbers) org.fossify.commons.R.layout.item_contact_with_number else org.fossify.commons.R.layout.item_contact_without_number
+                when {
+                    showCompanyInList || showGroupsInList -> R.layout.item_contact_with_details
+                    showPhoneNumbers -> org.fossify.commons.R.layout.item_contact_with_number
+                    else -> org.fossify.commons.R.layout.item_contact_without_number
+                }
             }
         }
 
@@ -403,7 +409,12 @@ class ContactsAdapter(
                 setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize)
             }
 
-            if (findViewById<TextView>(org.fossify.commons.R.id.item_contact_number) != null) {
+            val numberView = findViewById<TextView>(org.fossify.commons.R.id.item_contact_number)
+            if (numberView != null && !showPhoneNumbers) {
+                // only possible with item_contact_with_details, which always contains the number view
+                numberView.beGone()
+            } else if (numberView != null) {
+                numberView.beVisible()
                 val phoneNumberToUse = if (textToHighlight.isEmpty()) {
                     contact.phoneNumbers.firstOrNull()
                 } else {
@@ -415,11 +426,19 @@ class ContactsAdapter(
                 } else {
                     phoneNumberToUse?.value ?: ""
                 }
-                findViewById<TextView>(org.fossify.commons.R.id.item_contact_number).apply {
+                numberView.apply {
                     text = if (textToHighlight.isEmpty()) numberText else numberText.highlightTextPart(textToHighlight, properPrimaryColor, false, true)
                     setTextColor(textColor)
                     setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize)
                 }
+            }
+
+            findViewById<TextView>(R.id.item_contact_details)?.apply {
+                val details = getContactDetails(contact)
+                beVisibleIf(details.isNotEmpty())
+                text = if (textToHighlight.isEmpty()) details else details.highlightTextPart(textToHighlight, properPrimaryColor)
+                setTextColor(textColor)
+                setTextSize(TypedValue.COMPLEX_UNIT_PX, fontSize)
             }
 
             findViewById<ImageView>(org.fossify.commons.R.id.item_contact_image).apply {
@@ -481,6 +500,31 @@ class ContactsAdapter(
                 }
             }
         }
+    }
+
+    // "Company · Group A, Group B", depending on the enabled settings
+    private fun getContactDetails(contact: Contact): String {
+        val parts = ArrayList<String>(2)
+        if (showCompanyInList) {
+            val company = contact.organization.company.trim()
+            if (company.isNotEmpty()) {
+                parts.add(company)
+            }
+        }
+
+        if (showGroupsInList) {
+            val groupTitles = contact.groups
+                .map { it.title.trim() }
+                .filter { it.isNotEmpty() }
+                .distinct()
+                .sortedWith(String.CASE_INSENSITIVE_ORDER)
+
+            if (groupTitles.isNotEmpty()) {
+                parts.add(groupTitles.joinToString(", "))
+            }
+        }
+
+        return parts.joinToString(" · ")
     }
 
     override fun onChange(position: Int) = contactItems.getOrNull(position)?.getBubbleText() ?: ""

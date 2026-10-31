@@ -15,6 +15,8 @@
     <string name="phone_storage_hidden">Phone storage (not visible by other apps)</string>
     <string name="company">Company</string>
     <string name="job_position">Job position</string>
+    <string name="show_company_in_list">Show company in the contact list</string>
+    <string name="show_groups_in_list">Show groups in the contact list</string>
     <string name="send_sms_to_contacts">Send SMS to contacts</string>
     <string name="send_email_to_contacts">Send email to contacts</string>
     <string name="send_sms_to_group">Send SMS to group</string>

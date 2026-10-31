@@ -52,6 +52,8 @@ class SettingsActivity : SimpleActivity() {
         setupShowContactThumbnails()
         setupShowPhoneNumbers()
         setupEnableNumberFormatting()
+        setupShowCompanyInList()
+        setupShowGroupsInList()
         setupShowContactsWithNumbers()
         setupStartNameWithSurname()
         setupMergeDuplicateContacts()
@@ -178,6 +180,22 @@ class SettingsActivity : SimpleActivity() {
         binding.settingsShowPhoneNumbersHolder.setOnClickListener {
             binding.settingsShowPhoneNumbers.toggle()
             config.showPhoneNumbers = binding.settingsShowPhoneNumbers.isChecked
+        }
+    }
+
+    private fun setupShowCompanyInList() {
+        binding.settingsShowCompanyInList.isChecked = config.showCompanyInList
+        binding.settingsShowCompanyInListHolder.setOnClickListener {
+            binding.settingsShowCompanyInList.toggle()
+            config.showCompanyInList = binding.settingsShowCompanyInList.isChecked
+        }
+    }
+
+    private fun setupShowGroupsInList() {
+        binding.settingsShowGroupsInList.isChecked = config.showGroupsInList
+        binding.settingsShowGroupsInListHolder.setOnClickListener {
+            binding.settingsShowGroupsInList.toggle()
+            config.showGroupsInList = binding.settingsShowGroupsInList.isChecked
         }
     }
 

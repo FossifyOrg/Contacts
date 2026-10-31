@@ -18,4 +18,11 @@ class Config(context: Context) : BaseConfig(context) {
         set(autoBackupContactSources) = prefs.edit().remove(AUTO_BACKUP_CONTACT_SOURCES).putStringSet(AUTO_BACKUP_CONTACT_SOURCES, autoBackupContactSources)
             .apply()
 
+    var showCompanyInList: Boolean
+        get() = prefs.getBoolean(SHOW_COMPANY_IN_LIST, false)
+        set(showCompanyInList) = prefs.edit().putBoolean(SHOW_COMPANY_IN_LIST, showCompanyInList).apply()
+
+    var showGroupsInList: Boolean
+        get() = prefs.getBoolean(SHOW_GROUPS_IN_LIST, false)
+        set(showGroupsInList) = prefs.edit().putBoolean(SHOW_GROUPS_IN_LIST, showGroupsInList).apply()
 }

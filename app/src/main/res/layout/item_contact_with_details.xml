@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    List item used when "Show company/groups in the contact list" is enabled.
+    Same IDs as the Commons item_contact_with_number layout, plus item_contact_details.
+    The number and details lines are hidden at bind time when not needed.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_contact_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/tiny_margin"
+    android:background="@drawable/selector_clickable"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="@dimen/two_line_list_item_min_height"
+    android:paddingHorizontal="@dimen/list_item_padding_horizontal"
+    android:paddingVertical="@dimen/list_item_padding_vertical">
+
+    <ImageView
+        android:id="@+id/item_contact_image"
+        android:layout_width="@dimen/list_icon_size_medium"
+        android:layout_height="@dimen/list_icon_size_medium"
+        android:padding="@dimen/tiny_margin"
+        android:src="@drawable/ic_person_vector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_contact_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/list_item_padding_horizontal"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textDirection="locale"
+        android:textSize="@dimen/list_primary_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/item_contact_number"
+        app:layout_constraintEnd_toStartOf="@+id/drag_handle_icon"
+        app:layout_constraintStart_toEndOf="@+id/item_contact_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="John Doe" />
+
+    <TextView
+        android:id="@+id/item_contact_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/list_item_padding_horizontal"
+        android:alpha="0.6"
+        android:maxLines="1"
+        android:textSize="@dimen/list_secondary_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/item_contact_details"
+        app:layout_constraintEnd_toStartOf="@+id/drag_handle_icon"
+        app:layout_constraintStart_toEndOf="@+id/item_contact_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_contact_name"
+        tools:text="0123 456 789" />
+
+    <TextView
+        android:id="@+id/item_contact_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/list_item_padding_horizontal"
+        android:alpha="0.6"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textDirection="locale"
+        android:textSize="@dimen/list_secondary_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/drag_handle_icon"
+        app:layout_constraintStart_toEndOf="@+id/item_contact_image"
+        app:layout_constraintTop_toBottomOf="@+id/item_contact_number"
+        tools:text="Acme S.L. · Clientes, Proveedores" />
+
+    <ImageView
+        android:id="@+id/drag_handle_icon"
+        android:layout_width="@dimen/list_touch_target_min"
+        android:layout_height="@dimen/list_touch_target_min"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingBottom="@dimen/normal_margin"
+        android:src="@drawable/ic_drag_handle_vector"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
