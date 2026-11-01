@@ -60,7 +60,7 @@
     <string name="contacts">연락처</string>
     <string name="show_only_contacts_with_numbers">전화번호가 있는 연락처만 표시하기</string>
     <string name="merge_duplicate_contacts">중복된 연락처 합치기</string>
-    <string name="events">일정 (생일, 기념일)</string>
+    <string name="events">일정(생일, 기념일)</string>
     <string name="organization">조직</string>
     <string name="websites">웹사이트</string>
     <string name="faq_1_text">네, 설정 -&gt; 표시되는 연락처 세부 항목 관리로 이동하면 됩니다. 이 메뉴에서 표시할 세부 항목을 선택할 수 있습니다. 일부 항목은 기본적으로 비활성화되어 있으니, 새로운 항목을 찾으실 수 있습니다.</string>
