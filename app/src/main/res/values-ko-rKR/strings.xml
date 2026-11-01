@@ -16,8 +16,8 @@
     <string name="import_contacts_from_vcf">.vcf file에서 가져오기</string>
     <string name="import_contacts_from_vcf_pro">.vcf file에서 가져오기 (Pro)</string>
     <string name="export_contacts_to_vcf">.vcf file로 내보내기</string>
-    <string name="target_contact_source">내보내기 대상</string>
-    <string name="include_contact_sources">가져오기 대상</string>
+    <string name="target_contact_source">가져올 위치</string>
+    <string name="include_contact_sources">포함할 저장 위치</string>
     <string name="filename_without_vcf">파일이름 (.vcf 확장자 생략)</string>
     <string name="dialpad">키패드</string>
     <string name="phone_storage">휴대폰 저장공간</string>
@@ -65,10 +65,20 @@
     <string name="websites">웹사이트</string>
     <string name="faq_1_text">네, 설정 -&gt; 표시되는 연락처 세부 항목 관리로 이동하면 됩니다. 이 메뉴에서 표시할 세부 항목을 선택할 수 있습니다. 일부 항목은 기본적으로 비활성화되어 있으니, 새로운 항목을 찾으실 수 있습니다.</string>
     <string name="phone_storage_hidden">휴대폰 저장공간 (다른 앱에서 확인 불가)</string>
-    <string name="show_private_contacts">Fossify 전화, Fossify SMS 메신저및 Fossify 캘린더에 비공개 연락처 표시하기</string>
+    <string name="show_private_contacts">Fossify 전화, 메시지 및 캘린더에 비공개 연락처 표시하기</string>
     <string name="job_position">직위</string>
     <string name="fields_empty">하나 이상의 세부 항목을 작성해야 합니다</string>
     <string name="country">국가</string>
     <string name="select_account">계정 선택</string>
     <string name="format_phone_numbers">전화번호 형식 지정</string>
+    <string name="street">도로명 주소</string>
+    <string name="neighborhood">상세 주소</string>
+    <string name="city">시/군/구</string>
+    <string name="postcode">우편번호</string>
+    <string name="pobox">사서함</string>
+    <string name="region">시/도</string>
+    <string name="structured_addresses">항목별 주소 입력(편집 모드)</string>
+    <string name="contact_source">저장 위치</string>
+    <string name="instant_messaging">메신저</string>
+    <string name="delete_from_all_sources">이 연락처는 모든 저장 위치에서 삭제됩니다.</string>
 </resources>
