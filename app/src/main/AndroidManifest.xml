@@ -27,6 +27,14 @@
         <package android:name="org.fossify.contacts.debug" />
         <package android:name="org.fossify.contacts" />
 
+        <!-- Messenger quick-actions on the ViewContact screen check whether
+             these are installed before showing the corresponding menu item. -->
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+        <package android:name="org.telegram.messenger" />
+        <package android:name="org.telegram.messenger.web" />
+        <package android:name="org.thoughtcrime.securesms" />
+
         <!-- Required for loading contact accounts -->
         <intent>
             <action android:name="android.accounts.AccountAuthenticator" />
@@ -35,7 +43,8 @@
 
     <application
         android:name="org.fossify.commons.FossifyApp"
-        android:allowBackup="true"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:appCategory="social"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_launcher_name"
@@ -223,7 +232,8 @@
 
         <receiver
             android:name=".receivers.BootCompletedReceiver"
-            android:exported="true">
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
 
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

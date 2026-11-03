@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dsremo_messenger_row"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="?attr/selectableItemBackground"
+    android:paddingStart="@dimen/small_margin"
+    android:paddingEnd="@dimen/normal_margin">
+
+    <ImageView
+        android:id="@+id/dsremo_messenger_icon"
+        android:layout_width="@dimen/contact_icons_size"
+        android:layout_height="@dimen/contact_icons_size"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null" />
+
+    <org.fossify.commons.views.MyTextView
+        android:id="@+id/dsremo_messenger_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_toEndOf="@+id/dsremo_messenger_icon"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/bigger_text_size" />
+
+</RelativeLayout>
