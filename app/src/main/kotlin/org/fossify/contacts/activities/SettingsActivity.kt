@@ -19,8 +19,6 @@ import org.fossify.contacts.dialogs.ManageVisibleTabsDialog
 import org.fossify.contacts.extensions.*
 import org.fossify.contacts.helpers.VcfExporter
 import java.io.OutputStream
-import java.util.Locale
-import kotlin.system.exitProcess
 
 class SettingsActivity : SimpleActivity() {
     companion object {
@@ -47,8 +45,6 @@ class SettingsActivity : SimpleActivity() {
         setupManageShownContactFields()
         setupManageShownTabs()
         setupFontSize()
-        setupUseEnglish()
-        setupLanguage()
         setupShowContactThumbnails()
         setupShowPhoneNumbers()
         setupEnableNumberFormatting()
@@ -136,24 +132,6 @@ class SettingsActivity : SimpleActivity() {
                 config.fontSize = it as Int
                 binding.settingsFontSize.text = getFontSizeText()
             }
-        }
-    }
-
-    private fun setupUseEnglish() {
-        binding.settingsUseEnglishHolder.beVisibleIf((config.wasUseEnglishToggled || Locale.getDefault().language != "en") && !isTiramisuPlus())
-        binding.settingsUseEnglish.isChecked = config.useEnglish
-        binding.settingsUseEnglishHolder.setOnClickListener {
-            binding.settingsUseEnglish.toggle()
-            config.useEnglish = binding.settingsUseEnglish.isChecked
-            exitProcess(0)
-        }
-    }
-
-    private fun setupLanguage() {
-        binding.settingsLanguage.text = Locale.getDefault().displayLanguage
-        binding.settingsLanguageHolder.beVisibleIf(isTiramisuPlus())
-        binding.settingsLanguageHolder.setOnClickListener {
-            launchChangeAppLanguageIntent()
         }
     }
 

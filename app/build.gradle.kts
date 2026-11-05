@@ -104,8 +104,7 @@ android {
     }
 
     androidResources {
-        @Suppress("UnstableApiUsage")
-        generateLocaleConfig = true
+        generateLocaleConfig = false
     }
 
     tasks.withType<KotlinCompile> {
@@ -120,7 +119,6 @@ android {
         checkReleaseBuilds = false
         abortOnError = true
         warningsAsErrors = false
-        baseline = file("lint-baseline.xml")
         lintConfig = rootProject.file("lint.xml")
     }
 
@@ -132,7 +130,6 @@ android {
 }
 
 detekt {
-    baseline = file("detekt-baseline.xml")
     config.setFrom("$rootDir/detekt.yml")
     buildUponDefaultConfig = true
     allRules = false

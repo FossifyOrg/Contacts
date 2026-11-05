@@ -1,8 +1,0 @@
-Changed:
-
-• Updated translations
-
-Fixed:
-
-• Fixed contacts edits being silently discarded when using navigation arrow 
-

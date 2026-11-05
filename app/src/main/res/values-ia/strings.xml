@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="updating">Actualisante…</string>
-    <string name="search_groups">Cercar gruppos</string>
-    <string name="search_contacts">Cercar contactos</string>
-    <string name="search_favorites">Cercar favoritos</string>
-    <string name="phone_storage">Immagazinage de telephono</string>
-    <string name="phone_storage_hidden">Immagazinage de telephono (non visibile per altere applicationes)</string>
-</resources>
