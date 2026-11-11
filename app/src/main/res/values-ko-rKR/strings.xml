@@ -3,7 +3,7 @@
     <string name="app_launcher_name">연락처</string>
     <string name="address">주소</string>
     <string name="inserting">등록중…</string>
-    <string name="updating">수정중…</string>
+    <string name="updating">업데이트 중…</string>
     <string name="new_contact">새로운 연락처</string>
     <string name="select_contact">단건 연락처 선택</string>
     <string name="remove_photo">사진 삭제</string>
@@ -45,7 +45,7 @@
     <string name="show_contact_thumbnails">연락처 섬네일 표시하기</string>
     <string name="show_dialpad_button">메인 화면에 키패드 버튼 표시하기</string>
     <string name="emails">이메일</string>
-    <string name="toggle_favorite">즐겨찾기 토글</string>
+    <string name="toggle_favorite">즐겨찾기 전환</string>
     <string name="add_number_to_contact">연락처에 번호 추가</string>
     <string name="suffix">접미사</string>
     <string name="phone_numbers">전화번호</string>
@@ -70,4 +70,5 @@
     <string name="fields_empty">하나 이상의 세부 항목을 작성해야 합니다</string>
     <string name="country">국가</string>
     <string name="select_account">계정 선택</string>
+    <string name="format_phone_numbers">전화번호 형식 지정</string>
 </resources>

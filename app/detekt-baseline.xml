@@ -114,7 +114,6 @@
     <ID>MaxLineLength:MainActivity.kt$MainActivity$faqItems.add(FAQItem(org.fossify.commons.R.string.faq_6_title_commons, org.fossify.commons.R.string.faq_6_text_commons))</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$faqItems.add(FAQItem(org.fossify.commons.R.string.faq_7_title_commons, org.fossify.commons.R.string.faq_7_text_commons))</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$findItem(R.id.column_count).isVisible = currentFragment == findViewById(R.id.favorites_fragment) &amp;&amp; config.viewType == VIEW_TYPE_GRID</ID>
-    <ID>MaxLineLength:MainActivity.kt$MainActivity$findItem(R.id.more_apps_from_us).isVisible = !resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$findViewById&lt;MyViewPagerFragment&lt;*&gt;&gt;(R.id.contacts_fragment)?.startNameWithSurnameChanged(configStartNameWithSurname)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$findViewById&lt;MyViewPagerFragment&lt;*&gt;&gt;(R.id.favorites_fragment)?.startNameWithSurnameChanged(configStartNameWithSurname)</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$private fun getInactiveTabIndexes(activeIndex: Int)</ID>
