@@ -268,6 +268,7 @@ class ViewContactActivity : ContactActivity() {
         }
 
         setupPhoneNumbers()
+        renderConnectedApps()
         setupEmails()
         setupAddresses()
         setupIMs()
@@ -860,5 +861,48 @@ class ViewContactActivity : ContactActivity() {
             copyToClipboard(value)
             true
         }
+    }
+
+    private fun pickPreferredPhoneNumber(): String? {
+        val numbers = fullContact?.phoneNumbers ?: contact?.phoneNumbers ?: return null
+        if (numbers.isEmpty()) return null
+        val primary = numbers.firstOrNull { it.isPrimary }
+        val chosen = primary ?: numbers.first()
+        return chosen.normalizedNumber.ifBlank { chosen.value }
+    }
+
+    /**
+     * Google Contacts-style "Connected apps" section: one row per installed
+     * messenger action (Message on WhatsApp / Voice call on WhatsApp / Message
+     * on Telegram / Message on Signal / Message on Viber / etc.). Rows use the
+     * real app icon fetched from PackageManager. The whole section is hidden
+     * when the contact has no phone number, or when nothing supported is
+     * installed.
+     */
+    private fun renderConnectedApps() {
+        val holder = binding.dsremoConnectedAppsHolder
+        val leadingIcon = binding.dsremoConnectedAppsImage
+        holder.removeAllViews()
+        val number = pickPreferredPhoneNumber()
+        val installed = org.fossify.contacts.helpers.MessengerLauncher.installedActions(this)
+        if (number.isNullOrBlank() || installed.isEmpty()) {
+            holder.visibility = android.view.View.GONE
+            leadingIcon.visibility = android.view.View.GONE
+            return
+        }
+        val inflater = android.view.LayoutInflater.from(this)
+        installed.forEach { action ->
+            val row = inflater.inflate(R.layout.item_view_dsremo_messenger, holder, false)
+            val icon = row.findViewById<android.widget.ImageView>(R.id.dsremo_messenger_icon)
+            val label = row.findViewById<org.fossify.commons.views.MyTextView>(R.id.dsremo_messenger_label)
+            org.fossify.contacts.helpers.MessengerLauncher.appIcon(this, action.packageName)?.let { icon.setImageDrawable(it) }
+            label.text = getString(action.labelRes)
+            row.setOnClickListener {
+                org.fossify.contacts.helpers.MessengerLauncher.launch(this, action, number)
+            }
+            holder.addView(row)
+        }
+        holder.visibility = android.view.View.VISIBLE
+        leadingIcon.visibility = android.view.View.VISIBLE
     }
 }
