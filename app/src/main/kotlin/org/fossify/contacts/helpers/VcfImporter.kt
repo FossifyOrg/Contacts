@@ -55,10 +55,26 @@ class VcfImporter(val activity: SimpleActivity) {
             for (ezContact in ezContacts) {
                 val structuredName = ezContact.structuredName
                 val prefix = structuredName?.prefixes?.firstOrNull() ?: ""
-                val firstName = structuredName?.given ?: ""
+                var firstName = structuredName?.given ?: ""
                 val middleName = structuredName?.additionalNames?.firstOrNull() ?: ""
                 val surname = structuredName?.family ?: ""
                 val suffix = structuredName?.suffixes?.firstOrNull() ?: ""
+
+                // vCard 4.0 makes the structured name (N) optional while the
+                // formatted name (FN) is mandatory. When N is missing or yields
+                // no usable parts, fall back to FN. FN is a free-form display
+                // string with no guaranteed word order, so we keep it intact in
+                // firstName instead of guessing a given/family split, which
+                // would silently corrupt names like "von Neumann" or non-Western
+                // name orders.
+                val hasStructuredName = firstName.isNotBlank()
+                    || middleName.isNotBlank()
+                    || surname.isNotBlank()
+                val formattedName = ezContact.formattedName?.value?.trim().orEmpty()
+                if (!hasStructuredName && formattedName.isNotBlank()) {
+                    firstName = formattedName
+                }
+
                 val nickname = ezContact.nickname?.values?.firstOrNull() ?: ""
                 var photoUri = ""
 
@@ -267,16 +283,6 @@ class VcfImporter(val activity: SimpleActivity) {
                     mimetype = DEFAULT_MIMETYPE,
                     ringtone = ringtone
                 )
-
-                // if there is no N and ORG fields at the given contact, only FN, treat it as an organization
-                if (
-                    contact.getNameToDisplay().isEmpty()
-                    && contact.organization.isEmpty()
-                    && ezContact.formattedName?.value?.isNotEmpty() == true
-                ) {
-                    contact.organization.company = ezContact.formattedName.value
-                    contact.mimetype = CommonDataKinds.Organization.CONTENT_ITEM_TYPE
-                }
 
                 if (contact.isABusinessContact()) {
                     contact.mimetype = CommonDataKinds.Organization.CONTENT_ITEM_TYPE
