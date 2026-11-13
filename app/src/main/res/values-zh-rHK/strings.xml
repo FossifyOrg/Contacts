@@ -46,7 +46,7 @@
     <string name="manage_shown_contact_fields">管理顯示的聯絡人欄位</string>
     <string name="contacts">聯絡人</string>
     <string name="show_only_contacts_with_numbers">只顯示含有電話話碼的聯絡人</string>
-    <string name="show_private_contacts">顯示私人聯絡人給 Fossify 電話、Fossify 短訊與 Fossify 行事曆</string>
+    <string name="show_private_contacts">顯示私人聯絡人給 Fossify 電話、短訊與 Fossify 行事曆</string>
     <string name="merge_duplicate_contacts">合併相同的聯絡資訊</string>
     <string name="no_favorites">你似乎還沒加入任何我的最愛聯絡人。</string>
     <string name="toggle_favorite">切換我的最愛</string>
