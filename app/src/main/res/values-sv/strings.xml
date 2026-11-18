@@ -68,8 +68,8 @@
         <item quantity="one">%d grupp</item>
         <item quantity="other">%d grupper</item>
     </plurals>
-    <string name="faq_1_title">Jag vill ändra vilka fält som är synliga vid kontakter. Kan jag göra det\?</string>
-    <string name="faq_1_text">Ja, allt du behöver göra är att gå till Inställningar -&gt; Hantera visade kontaktfält. Där kan du välja vilka fält som ska vara synliga. Vissa av dem är till och med inaktiverade som standard, så du kanske hittar några nya där.</string>
+    <string name="faq_1_title">Jag vill ändra vilka kontaktfält som visas. Går det\?</string>
+    <string name="faq_1_text">Ja. Gå till Inställningar → Hantera visade kontaktfält. Där väljer du vilka fält som ska visas. Vissa är inaktiverade som standard, så du kan hitta fler fält där.</string>
     <string name="show_private_contacts">Visa privata kontakter för Fossify Phone, Messages och Calendar</string>
     <string name="prefix">Prefix</string>
     <string name="format_phone_numbers">Formatera telefonnummer</string>
