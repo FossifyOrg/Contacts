@@ -278,11 +278,40 @@
                 android:orientation="vertical"
                 android:visibility="gone" />
 
+            <!-- dsremo: Google Contacts-style "Connected apps" section.
+                 Populated by ViewContactActivity from the set of installed
+                 messengers that support phone-number-based intents (WhatsApp,
+                 WhatsApp Business, Telegram, Signal, Viber, Skype, ...). Each
+                 row uses the real app icon (via PackageManager) and a Google-
+                 style "Message on WhatsApp" / "Voice call on WhatsApp" label. -->
+            <ImageView
+                android:id="@+id/dsremo_connected_apps_image"
+                android:layout_width="@dimen/contact_icons_size"
+                android:layout_height="@dimen/contact_icons_size"
+                android:layout_below="@+id/contact_numbers_holder"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:contentDescription="@null"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:src="@drawable/ic_im"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dsremo_connected_apps_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_numbers_holder"
+                android:layout_toEndOf="@+id/dsremo_connected_apps_image"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
             <LinearLayout
                 android:id="@+id/contact_emails_holder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/contact_numbers_holder"
+                android:layout_below="@+id/dsremo_connected_apps_holder"
                 android:layout_toEndOf="@+id/contact_name_image"
                 android:orientation="vertical"
                 android:visibility="gone" />
