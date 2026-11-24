@@ -110,4 +110,15 @@
         Haven't found some strings? There's more at
         https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
+    <string name="dsremo_whatsapp_chat">Message on WhatsApp</string>
+    <string name="dsremo_whatsapp_call">Voice call on WhatsApp</string>
+    <string name="dsremo_whatsapp_business_chat">Message on WhatsApp Business</string>
+    <string name="dsremo_telegram_chat">Message on Telegram</string>
+    <string name="dsremo_telegram_foss_chat">Message on Telegram FOSS</string>
+    <string name="dsremo_signal_message">Message on Signal</string>
+    <string name="dsremo_viber_chat">Message on Viber</string>
+    <string name="dsremo_skype_chat">Message on Skype</string>
+    <string name="dsremo_skype_call">Voice call on Skype</string>
+    <string name="dsremo_app_not_installed">App not installed</string>
+    <string name="dsremo_no_phone_number_for_contact">No phone number for this contact</string>
 </resources>
