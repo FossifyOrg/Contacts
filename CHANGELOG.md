@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Fixed contacts imported from vCard files being mis-sorted (filed after "Z") when their name fields contained leading or trailing whitespace ([#195])
 
 ## [1.6.0] - 2026-01-30
 ### Added
@@ -119,6 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#30]: https://github.com/FossifyOrg/Contacts/issues/30
 [#78]: https://github.com/FossifyOrg/Contacts/issues/78
 [#157]: https://github.com/FossifyOrg/Contacts/issues/157
+[#195]: https://github.com/FossifyOrg/Contacts/issues/195
 [#201]: https://github.com/FossifyOrg/Contacts/issues/201
 [#281]: https://github.com/FossifyOrg/Contacts/issues/281
 [#289]: https://github.com/FossifyOrg/Contacts/issues/289
